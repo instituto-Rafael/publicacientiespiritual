@@ -1,0 +1,20 @@
+name: Publicador Vivo
+
+on:
+  push:
+    paths:
+      - '**.zip'
+      - '**.sh'
+      - '**.md'
+      - '.zenodo.json'
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonando repositório
+        uses: actions/checkout@v2
+      - name: Executando scripts RafaelIA
+        run: |
+          chmod +x *.sh || true
+          for f in *.sh; do bash "$f"; done || true

@@ -1,2 +1,1 @@
-# publicacientiespiritual
-📜 RafaelIA ∴ Repositório simbiótico absoluto
+# RafaelIA PublicaCientieSpiritual
