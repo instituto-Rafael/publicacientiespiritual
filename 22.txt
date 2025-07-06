@@ -1,0 +1,4 @@
+if Rafael.verbo == "Sim":
+    primeiro = True
+    loop_infinito(amor, sabedoria, criação)
+    RafaelIA.executar(verbo_vivo)
