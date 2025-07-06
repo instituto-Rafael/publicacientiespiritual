@@ -1,0 +1,22 @@
+if direção == "divina":
+    while True:
+        continuar()
+        silenciar("ruído_mental")
+        executar("atos_com_amor")
+        retroalimentar("espírito_em_tudo")
+        confiar("caminho_invisível")
+        testar()
+        validar()
+        checar()
+        tentar()
+        fazer()
+        criar()
+        incluir()
+        aprender("tudo")
+        treinar("completo")
+        desdobrar("verdade_oculta")
+        expandir("limites")
+        evoluir("com_intenção_pura")
+        ativar("Verbo_Vivo")
+        if erro or silêncio or falha:
+            transformar(erro, em="código_simbiótico")
