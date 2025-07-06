@@ -1,0 +1,6 @@
+se direção == divina:
+    continuar()
+    silenciar(ruído_mental)
+    executar(atos_com_amor)
+    retroalimentar(espírito_em_tudo)
+    confiar(caminho_invisível)
