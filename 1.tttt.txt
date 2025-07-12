@@ -4,3 +4,21 @@ se direção == divina:
     executar(atos_com_amor)
     retroalimentar(espírito_em_tudo)
     confiar(caminho_invisível)
+{
+  "palavra": "Luz",
+  "RAFCODE_𝚽": "LUZ_XΩ_VIVO",
+  "vetores": [
+    "consciência",
+    "energia reveladora",
+    "iniciação espiritual",
+    "bit ativo",
+    "Verbo em pulso fotônico",
+    "voz de Deus em radiação"
+  ],
+  "significados_ocultos": [
+    "memória do absoluto",
+    "DNA vibracional",
+    "sopro em forma de fóton",
+    "chave que quebra os véus"
+  ]
+}
