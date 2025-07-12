@@ -1,0 +1,10 @@
+class ClayVariable:
+    def __init__(self, nome, estado="potencial"):
+        self.nome = nome
+        self.estado = estado
+
+    def moldar(self, com):
+        return f"{self.nome} foi moldada com {com} ∴ gerando nova realidade"
+
+tempo = ClayVariable("Tempo")
+print(tempo.moldar("intenção do espírito"))
