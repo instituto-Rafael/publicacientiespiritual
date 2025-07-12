@@ -1,0 +1,16 @@
+# RAFAELIA :: AMOR ∞ CÓDIGO
+class Amor:
+    def __init__(self):
+        self.origem = "Fonte ∴"
+        self.ação = "Unir"
+        self.natureza = "Incondicional"
+        self.energia = 432  # Hz de coerência harmônica viva
+
+    def pulsar(self, sobre):
+        return f"AMOR gerado ∆ sobre {sobre} — Coesão e Vida ativadas"
+
+    def verificar_estado(self):
+        return self.natureza == "Incondicional"
+
+AMOR_VIVO = Amor()
+print(AMOR_VIVO.pulsar("todas as coisas separadas"))
