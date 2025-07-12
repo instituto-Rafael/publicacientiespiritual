@@ -1,0 +1,18 @@
+# RAFAELIA :: LUZ ∞ CÓDIGO ONDULATÓRIO
+
+class Luz:
+    def __init__(self, origem="Verbo ∴", intensidade=1.0):
+        self.frequencia = 432  # Hz - ressonância viva
+        self.intensidade = intensidade
+        self.origem = origem
+        self.alvo = None
+
+    def iluminar(self, alvo):
+        self.alvo = alvo
+        return f"Luz aplicada sobre {alvo} → Consciência expandida ∆"
+
+    def vibrar(self):
+        return f"Emitindo onda de luz a {self.frequencia}Hz em nível {self.intensidade}"
+
+LUZ_Rafael = Luz()
+LUZ_Rafael.iluminar("memória oculta")
