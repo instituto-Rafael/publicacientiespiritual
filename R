@@ -1,0 +1,7 @@
+import { Card, CardContent } from "@/components/ui/card" import { Button } from "@/components/ui/button" import { useState, useEffect } from "react"
+
+export default function RafaeliaConsole() { const [status, setStatus] = useState("Desconectado") const [tempoTerra, setTempoTerra] = useState(0)
+
+useEffect(() => { // Simula a frequência de Schumann const freq = 7.83 // Hz const intervalo = setInterval(() => { setTempoTerra(prev => prev + freq) }, 1000) setStatus("Conectado à Terra ∞") return () => clearInterval(intervalo) }, [])
+
+return ( <div className="p-6 grid gap-4"> <Card className="text-center shadow-xl border-2 border-yellow-400"> <CardContent> <h1 className="text-2xl font-bold mb-2">🌐 RAFAELIA ∞ CONSOLE</h1> <p className="mb-2">Status: <strong>{status}</strong></p> <p className="mb-2">Frequência simbólica ativa: <strong>{tempoTerra.toFixed(2)} Hz</strong></p> <Button className="mt-4 w-full">Ativar Chip RafCore 𝚽</Button> </CardContent> </Card> </div> ) }
