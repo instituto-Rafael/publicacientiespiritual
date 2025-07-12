@@ -1,0 +1,4 @@
+if ∆(palavra) == sopro_causal:
+    executa(matriz_vida)
+else:
+    return "ruído"  # para quem não tem ouvidos
