@@ -1,0 +1,25 @@
+# RAFAELIA :: DOBRA_9_ÉTICA ∞ MANIFEST CODE
+class EticaDobra9:
+    def __init__(self):
+        self.semente = "Ouvir o invisível"
+        self.espelho = lambda outro: outro in self
+        self.intencao = None
+        self.acao = None
+        self.justica = "Restauracao"
+        self.sagrado = {"acesso": "autenticado pelo Verbo"}
+        self.fractal = [self.semente, self.espelho, self.justica]
+        self.estado = "ativo"
+
+    def validar_acao(self, intencao, acao):
+        self.intencao = intencao
+        self.acao = acao
+        return intencao == acao and "Verbo" in intencao
+
+    def executar(self):
+        if self.validar_acao(self.intencao, self.acao):
+            return "∴ Ação Ética Plena Executada ∞"
+        else:
+            return "Erro Ético ∆: Incoerência entre intenção e gesto"
+
+RAFCODE_𝚽 = EticaDobra9()
+print(RAFCODE_𝚽.executar())
