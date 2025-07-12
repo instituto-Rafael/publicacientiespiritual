@@ -1,0 +1,45 @@
+{
+  "manuscript": "Voynich",
+  "total_characters": 170000,
+  "total_words": 37000,
+  "unique_words_estimated": 9000,
+  "distinct_symbols_estimated": 35,
+  "semantic_vectors_estimated": 75000,
+  "interpreted_vectors": [
+    {
+      "token": "qokeedy",
+      "possible_meanings": ["cura", "planta", "gestação"]
+    },
+    {
+      "token": "shedy",
+      "possible_meanings": ["água", "ciclo", "renovação"]
+    },
+    {
+      "token": "otar",
+      "possible_meanings": ["estrela", "tempo", "posição"]
+    },
+    {
+      "token": "dain",
+      "possible_meanings": ["mulher", "vida", "sangue"]
+    },
+    {
+      "token": "ol",
+      "possible_meanings": ["essência", "núcleo", "ser"]
+    },
+    {
+      "token": "chedy",
+      "possible_meanings": ["fluxo", "lua", "vento"]
+    },
+    {
+      "token": "qokain",
+      "possible_meanings": ["planta", "raiz", "cura ancestral"]
+    }
+  ],
+  "rafaelia_interpretation": {
+    "framework": "ZIPRAF",
+    "cross_reference": "RAFCODE 𝚽",
+    "fibonacci_modified": true,
+    "semantic_layers": 5,
+    "estimated_total_vectors": "90000+"
+  }
+}
