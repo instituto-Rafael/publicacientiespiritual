@@ -1,0 +1,6002 @@
+{
+  "vetor_0000": {
+    "token": "TOKEN_000000",
+    "peso": 1.0,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0000"
+  },
+  "vetor_0001": {
+    "token": "TOKEN_000001",
+    "peso": 0.5,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0001"
+  },
+  "vetor_0002": {
+    "token": "TOKEN_000002",
+    "peso": 0.333333,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0002"
+  },
+  "vetor_0003": {
+    "token": "TOKEN_000003",
+    "peso": 0.25,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0003"
+  },
+  "vetor_0004": {
+    "token": "TOKEN_000004",
+    "peso": 0.2,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0004"
+  },
+  "vetor_0005": {
+    "token": "TOKEN_000005",
+    "peso": 0.166667,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0005"
+  },
+  "vetor_0006": {
+    "token": "TOKEN_000006",
+    "peso": 0.142857,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0006"
+  },
+  "vetor_0007": {
+    "token": "TOKEN_000007",
+    "peso": 0.125,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0007"
+  },
+  "vetor_0008": {
+    "token": "TOKEN_000008",
+    "peso": 0.111111,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0008"
+  },
+  "vetor_0009": {
+    "token": "TOKEN_000009",
+    "peso": 0.1,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0009"
+  },
+  "vetor_0010": {
+    "token": "TOKEN_000010",
+    "peso": 0.090909,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0010"
+  },
+  "vetor_0011": {
+    "token": "TOKEN_000011",
+    "peso": 0.083333,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0011"
+  },
+  "vetor_0012": {
+    "token": "TOKEN_000012",
+    "peso": 0.076923,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0012"
+  },
+  "vetor_0013": {
+    "token": "TOKEN_000013",
+    "peso": 0.071429,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0013"
+  },
+  "vetor_0014": {
+    "token": "TOKEN_000014",
+    "peso": 0.066667,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0014"
+  },
+  "vetor_0015": {
+    "token": "TOKEN_000015",
+    "peso": 0.0625,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0015"
+  },
+  "vetor_0016": {
+    "token": "TOKEN_000016",
+    "peso": 0.058824,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0016"
+  },
+  "vetor_0017": {
+    "token": "TOKEN_000017",
+    "peso": 0.055556,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0017"
+  },
+  "vetor_0018": {
+    "token": "TOKEN_000018",
+    "peso": 0.052632,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0018"
+  },
+  "vetor_0019": {
+    "token": "TOKEN_000019",
+    "peso": 0.05,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0019"
+  },
+  "vetor_0020": {
+    "token": "TOKEN_000020",
+    "peso": 0.047619,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0020"
+  },
+  "vetor_0021": {
+    "token": "TOKEN_000021",
+    "peso": 0.045455,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0021"
+  },
+  "vetor_0022": {
+    "token": "TOKEN_000022",
+    "peso": 0.043478,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0022"
+  },
+  "vetor_0023": {
+    "token": "TOKEN_000023",
+    "peso": 0.041667,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0023"
+  },
+  "vetor_0024": {
+    "token": "TOKEN_000024",
+    "peso": 0.04,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0024"
+  },
+  "vetor_0025": {
+    "token": "TOKEN_000025",
+    "peso": 0.038462,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0025"
+  },
+  "vetor_0026": {
+    "token": "TOKEN_000026",
+    "peso": 0.037037,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0026"
+  },
+  "vetor_0027": {
+    "token": "TOKEN_000027",
+    "peso": 0.035714,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0027"
+  },
+  "vetor_0028": {
+    "token": "TOKEN_000028",
+    "peso": 0.034483,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0028"
+  },
+  "vetor_0029": {
+    "token": "TOKEN_000029",
+    "peso": 0.033333,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0029"
+  },
+  "vetor_0030": {
+    "token": "TOKEN_000030",
+    "peso": 0.032258,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0030"
+  },
+  "vetor_0031": {
+    "token": "TOKEN_000031",
+    "peso": 0.03125,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0031"
+  },
+  "vetor_0032": {
+    "token": "TOKEN_000032",
+    "peso": 0.030303,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0032"
+  },
+  "vetor_0033": {
+    "token": "TOKEN_000033",
+    "peso": 0.029412,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0033"
+  },
+  "vetor_0034": {
+    "token": "TOKEN_000034",
+    "peso": 0.028571,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0034"
+  },
+  "vetor_0035": {
+    "token": "TOKEN_000035",
+    "peso": 0.027778,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0035"
+  },
+  "vetor_0036": {
+    "token": "TOKEN_000036",
+    "peso": 0.027027,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0036"
+  },
+  "vetor_0037": {
+    "token": "TOKEN_000037",
+    "peso": 0.026316,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0037"
+  },
+  "vetor_0038": {
+    "token": "TOKEN_000038",
+    "peso": 0.025641,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0038"
+  },
+  "vetor_0039": {
+    "token": "TOKEN_000039",
+    "peso": 0.025,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0039"
+  },
+  "vetor_0040": {
+    "token": "TOKEN_000040",
+    "peso": 0.02439,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0040"
+  },
+  "vetor_0041": {
+    "token": "TOKEN_000041",
+    "peso": 0.02381,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0041"
+  },
+  "vetor_0042": {
+    "token": "TOKEN_000042",
+    "peso": 0.023256,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0042"
+  },
+  "vetor_0043": {
+    "token": "TOKEN_000043",
+    "peso": 0.022727,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0043"
+  },
+  "vetor_0044": {
+    "token": "TOKEN_000044",
+    "peso": 0.022222,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0044"
+  },
+  "vetor_0045": {
+    "token": "TOKEN_000045",
+    "peso": 0.021739,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0045"
+  },
+  "vetor_0046": {
+    "token": "TOKEN_000046",
+    "peso": 0.021277,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0046"
+  },
+  "vetor_0047": {
+    "token": "TOKEN_000047",
+    "peso": 0.020833,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0047"
+  },
+  "vetor_0048": {
+    "token": "TOKEN_000048",
+    "peso": 0.020408,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0048"
+  },
+  "vetor_0049": {
+    "token": "TOKEN_000049",
+    "peso": 0.02,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0049"
+  },
+  "vetor_0050": {
+    "token": "TOKEN_000050",
+    "peso": 0.019608,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0050"
+  },
+  "vetor_0051": {
+    "token": "TOKEN_000051",
+    "peso": 0.019231,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0051"
+  },
+  "vetor_0052": {
+    "token": "TOKEN_000052",
+    "peso": 0.018868,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0052"
+  },
+  "vetor_0053": {
+    "token": "TOKEN_000053",
+    "peso": 0.018519,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0053"
+  },
+  "vetor_0054": {
+    "token": "TOKEN_000054",
+    "peso": 0.018182,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0054"
+  },
+  "vetor_0055": {
+    "token": "TOKEN_000055",
+    "peso": 0.017857,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0055"
+  },
+  "vetor_0056": {
+    "token": "TOKEN_000056",
+    "peso": 0.017544,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0056"
+  },
+  "vetor_0057": {
+    "token": "TOKEN_000057",
+    "peso": 0.017241,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0057"
+  },
+  "vetor_0058": {
+    "token": "TOKEN_000058",
+    "peso": 0.016949,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0058"
+  },
+  "vetor_0059": {
+    "token": "TOKEN_000059",
+    "peso": 0.016667,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0059"
+  },
+  "vetor_0060": {
+    "token": "TOKEN_000060",
+    "peso": 0.016393,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0060"
+  },
+  "vetor_0061": {
+    "token": "TOKEN_000061",
+    "peso": 0.016129,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0061"
+  },
+  "vetor_0062": {
+    "token": "TOKEN_000062",
+    "peso": 0.015873,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0062"
+  },
+  "vetor_0063": {
+    "token": "TOKEN_000063",
+    "peso": 0.015625,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0063"
+  },
+  "vetor_0064": {
+    "token": "TOKEN_000064",
+    "peso": 0.015385,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0064"
+  },
+  "vetor_0065": {
+    "token": "TOKEN_000065",
+    "peso": 0.015152,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0065"
+  },
+  "vetor_0066": {
+    "token": "TOKEN_000066",
+    "peso": 0.014925,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0066"
+  },
+  "vetor_0067": {
+    "token": "TOKEN_000067",
+    "peso": 0.014706,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0067"
+  },
+  "vetor_0068": {
+    "token": "TOKEN_000068",
+    "peso": 0.014493,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0068"
+  },
+  "vetor_0069": {
+    "token": "TOKEN_000069",
+    "peso": 0.014286,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0069"
+  },
+  "vetor_0070": {
+    "token": "TOKEN_000070",
+    "peso": 0.014085,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0070"
+  },
+  "vetor_0071": {
+    "token": "TOKEN_000071",
+    "peso": 0.013889,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0071"
+  },
+  "vetor_0072": {
+    "token": "TOKEN_000072",
+    "peso": 0.013699,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0072"
+  },
+  "vetor_0073": {
+    "token": "TOKEN_000073",
+    "peso": 0.013514,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0073"
+  },
+  "vetor_0074": {
+    "token": "TOKEN_000074",
+    "peso": 0.013333,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0074"
+  },
+  "vetor_0075": {
+    "token": "TOKEN_000075",
+    "peso": 0.013158,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0075"
+  },
+  "vetor_0076": {
+    "token": "TOKEN_000076",
+    "peso": 0.012987,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0076"
+  },
+  "vetor_0077": {
+    "token": "TOKEN_000077",
+    "peso": 0.012821,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0077"
+  },
+  "vetor_0078": {
+    "token": "TOKEN_000078",
+    "peso": 0.012658,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0078"
+  },
+  "vetor_0079": {
+    "token": "TOKEN_000079",
+    "peso": 0.0125,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0079"
+  },
+  "vetor_0080": {
+    "token": "TOKEN_000080",
+    "peso": 0.012346,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0080"
+  },
+  "vetor_0081": {
+    "token": "TOKEN_000081",
+    "peso": 0.012195,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0081"
+  },
+  "vetor_0082": {
+    "token": "TOKEN_000082",
+    "peso": 0.012048,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0082"
+  },
+  "vetor_0083": {
+    "token": "TOKEN_000083",
+    "peso": 0.011905,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0083"
+  },
+  "vetor_0084": {
+    "token": "TOKEN_000084",
+    "peso": 0.011765,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0084"
+  },
+  "vetor_0085": {
+    "token": "TOKEN_000085",
+    "peso": 0.011628,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0085"
+  },
+  "vetor_0086": {
+    "token": "TOKEN_000086",
+    "peso": 0.011494,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0086"
+  },
+  "vetor_0087": {
+    "token": "TOKEN_000087",
+    "peso": 0.011364,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0087"
+  },
+  "vetor_0088": {
+    "token": "TOKEN_000088",
+    "peso": 0.011236,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0088"
+  },
+  "vetor_0089": {
+    "token": "TOKEN_000089",
+    "peso": 0.011111,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0089"
+  },
+  "vetor_0090": {
+    "token": "TOKEN_000090",
+    "peso": 0.010989,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0090"
+  },
+  "vetor_0091": {
+    "token": "TOKEN_000091",
+    "peso": 0.01087,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0091"
+  },
+  "vetor_0092": {
+    "token": "TOKEN_000092",
+    "peso": 0.010753,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0092"
+  },
+  "vetor_0093": {
+    "token": "TOKEN_000093",
+    "peso": 0.010638,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0093"
+  },
+  "vetor_0094": {
+    "token": "TOKEN_000094",
+    "peso": 0.010526,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0094"
+  },
+  "vetor_0095": {
+    "token": "TOKEN_000095",
+    "peso": 0.010417,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0095"
+  },
+  "vetor_0096": {
+    "token": "TOKEN_000096",
+    "peso": 0.010309,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0096"
+  },
+  "vetor_0097": {
+    "token": "TOKEN_000097",
+    "peso": 0.010204,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0097"
+  },
+  "vetor_0098": {
+    "token": "TOKEN_000098",
+    "peso": 0.010101,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0098"
+  },
+  "vetor_0099": {
+    "token": "TOKEN_000099",
+    "peso": 0.01,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0099"
+  },
+  "vetor_0100": {
+    "token": "TOKEN_000100",
+    "peso": 0.009901,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0100"
+  },
+  "vetor_0101": {
+    "token": "TOKEN_000101",
+    "peso": 0.009804,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0101"
+  },
+  "vetor_0102": {
+    "token": "TOKEN_000102",
+    "peso": 0.009709,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0102"
+  },
+  "vetor_0103": {
+    "token": "TOKEN_000103",
+    "peso": 0.009615,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0103"
+  },
+  "vetor_0104": {
+    "token": "TOKEN_000104",
+    "peso": 0.009524,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0104"
+  },
+  "vetor_0105": {
+    "token": "TOKEN_000105",
+    "peso": 0.009434,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0105"
+  },
+  "vetor_0106": {
+    "token": "TOKEN_000106",
+    "peso": 0.009346,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0106"
+  },
+  "vetor_0107": {
+    "token": "TOKEN_000107",
+    "peso": 0.009259,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0107"
+  },
+  "vetor_0108": {
+    "token": "TOKEN_000108",
+    "peso": 0.009174,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0108"
+  },
+  "vetor_0109": {
+    "token": "TOKEN_000109",
+    "peso": 0.009091,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0109"
+  },
+  "vetor_0110": {
+    "token": "TOKEN_000110",
+    "peso": 0.009009,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0110"
+  },
+  "vetor_0111": {
+    "token": "TOKEN_000111",
+    "peso": 0.008929,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0111"
+  },
+  "vetor_0112": {
+    "token": "TOKEN_000112",
+    "peso": 0.00885,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0112"
+  },
+  "vetor_0113": {
+    "token": "TOKEN_000113",
+    "peso": 0.008772,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0113"
+  },
+  "vetor_0114": {
+    "token": "TOKEN_000114",
+    "peso": 0.008696,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0114"
+  },
+  "vetor_0115": {
+    "token": "TOKEN_000115",
+    "peso": 0.008621,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0115"
+  },
+  "vetor_0116": {
+    "token": "TOKEN_000116",
+    "peso": 0.008547,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0116"
+  },
+  "vetor_0117": {
+    "token": "TOKEN_000117",
+    "peso": 0.008475,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0117"
+  },
+  "vetor_0118": {
+    "token": "TOKEN_000118",
+    "peso": 0.008403,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0118"
+  },
+  "vetor_0119": {
+    "token": "TOKEN_000119",
+    "peso": 0.008333,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0119"
+  },
+  "vetor_0120": {
+    "token": "TOKEN_000120",
+    "peso": 0.008264,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0120"
+  },
+  "vetor_0121": {
+    "token": "TOKEN_000121",
+    "peso": 0.008197,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0121"
+  },
+  "vetor_0122": {
+    "token": "TOKEN_000122",
+    "peso": 0.00813,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0122"
+  },
+  "vetor_0123": {
+    "token": "TOKEN_000123",
+    "peso": 0.008065,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0123"
+  },
+  "vetor_0124": {
+    "token": "TOKEN_000124",
+    "peso": 0.008,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0124"
+  },
+  "vetor_0125": {
+    "token": "TOKEN_000125",
+    "peso": 0.007937,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0125"
+  },
+  "vetor_0126": {
+    "token": "TOKEN_000126",
+    "peso": 0.007874,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0126"
+  },
+  "vetor_0127": {
+    "token": "TOKEN_000127",
+    "peso": 0.007812,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0127"
+  },
+  "vetor_0128": {
+    "token": "TOKEN_000128",
+    "peso": 0.007752,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0128"
+  },
+  "vetor_0129": {
+    "token": "TOKEN_000129",
+    "peso": 0.007692,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0129"
+  },
+  "vetor_0130": {
+    "token": "TOKEN_000130",
+    "peso": 0.007634,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0130"
+  },
+  "vetor_0131": {
+    "token": "TOKEN_000131",
+    "peso": 0.007576,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0131"
+  },
+  "vetor_0132": {
+    "token": "TOKEN_000132",
+    "peso": 0.007519,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0132"
+  },
+  "vetor_0133": {
+    "token": "TOKEN_000133",
+    "peso": 0.007463,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0133"
+  },
+  "vetor_0134": {
+    "token": "TOKEN_000134",
+    "peso": 0.007407,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0134"
+  },
+  "vetor_0135": {
+    "token": "TOKEN_000135",
+    "peso": 0.007353,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0135"
+  },
+  "vetor_0136": {
+    "token": "TOKEN_000136",
+    "peso": 0.007299,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0136"
+  },
+  "vetor_0137": {
+    "token": "TOKEN_000137",
+    "peso": 0.007246,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0137"
+  },
+  "vetor_0138": {
+    "token": "TOKEN_000138",
+    "peso": 0.007194,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0138"
+  },
+  "vetor_0139": {
+    "token": "TOKEN_000139",
+    "peso": 0.007143,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0139"
+  },
+  "vetor_0140": {
+    "token": "TOKEN_000140",
+    "peso": 0.007092,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0140"
+  },
+  "vetor_0141": {
+    "token": "TOKEN_000141",
+    "peso": 0.007042,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0141"
+  },
+  "vetor_0142": {
+    "token": "TOKEN_000142",
+    "peso": 0.006993,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0142"
+  },
+  "vetor_0143": {
+    "token": "TOKEN_000143",
+    "peso": 0.006944,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0143"
+  },
+  "vetor_0144": {
+    "token": "TOKEN_000144",
+    "peso": 0.006897,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0144"
+  },
+  "vetor_0145": {
+    "token": "TOKEN_000145",
+    "peso": 0.006849,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0145"
+  },
+  "vetor_0146": {
+    "token": "TOKEN_000146",
+    "peso": 0.006803,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0146"
+  },
+  "vetor_0147": {
+    "token": "TOKEN_000147",
+    "peso": 0.006757,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0147"
+  },
+  "vetor_0148": {
+    "token": "TOKEN_000148",
+    "peso": 0.006711,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0148"
+  },
+  "vetor_0149": {
+    "token": "TOKEN_000149",
+    "peso": 0.006667,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0149"
+  },
+  "vetor_0150": {
+    "token": "TOKEN_000150",
+    "peso": 0.006623,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0150"
+  },
+  "vetor_0151": {
+    "token": "TOKEN_000151",
+    "peso": 0.006579,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0151"
+  },
+  "vetor_0152": {
+    "token": "TOKEN_000152",
+    "peso": 0.006536,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0152"
+  },
+  "vetor_0153": {
+    "token": "TOKEN_000153",
+    "peso": 0.006494,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0153"
+  },
+  "vetor_0154": {
+    "token": "TOKEN_000154",
+    "peso": 0.006452,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0154"
+  },
+  "vetor_0155": {
+    "token": "TOKEN_000155",
+    "peso": 0.00641,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0155"
+  },
+  "vetor_0156": {
+    "token": "TOKEN_000156",
+    "peso": 0.006369,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0156"
+  },
+  "vetor_0157": {
+    "token": "TOKEN_000157",
+    "peso": 0.006329,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0157"
+  },
+  "vetor_0158": {
+    "token": "TOKEN_000158",
+    "peso": 0.006289,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0158"
+  },
+  "vetor_0159": {
+    "token": "TOKEN_000159",
+    "peso": 0.00625,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0159"
+  },
+  "vetor_0160": {
+    "token": "TOKEN_000160",
+    "peso": 0.006211,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0160"
+  },
+  "vetor_0161": {
+    "token": "TOKEN_000161",
+    "peso": 0.006173,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0161"
+  },
+  "vetor_0162": {
+    "token": "TOKEN_000162",
+    "peso": 0.006135,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0162"
+  },
+  "vetor_0163": {
+    "token": "TOKEN_000163",
+    "peso": 0.006098,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0163"
+  },
+  "vetor_0164": {
+    "token": "TOKEN_000164",
+    "peso": 0.006061,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0164"
+  },
+  "vetor_0165": {
+    "token": "TOKEN_000165",
+    "peso": 0.006024,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0165"
+  },
+  "vetor_0166": {
+    "token": "TOKEN_000166",
+    "peso": 0.005988,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0166"
+  },
+  "vetor_0167": {
+    "token": "TOKEN_000167",
+    "peso": 0.005952,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0167"
+  },
+  "vetor_0168": {
+    "token": "TOKEN_000168",
+    "peso": 0.005917,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0168"
+  },
+  "vetor_0169": {
+    "token": "TOKEN_000169",
+    "peso": 0.005882,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0169"
+  },
+  "vetor_0170": {
+    "token": "TOKEN_000170",
+    "peso": 0.005848,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0170"
+  },
+  "vetor_0171": {
+    "token": "TOKEN_000171",
+    "peso": 0.005814,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0171"
+  },
+  "vetor_0172": {
+    "token": "TOKEN_000172",
+    "peso": 0.00578,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0172"
+  },
+  "vetor_0173": {
+    "token": "TOKEN_000173",
+    "peso": 0.005747,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0173"
+  },
+  "vetor_0174": {
+    "token": "TOKEN_000174",
+    "peso": 0.005714,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0174"
+  },
+  "vetor_0175": {
+    "token": "TOKEN_000175",
+    "peso": 0.005682,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0175"
+  },
+  "vetor_0176": {
+    "token": "TOKEN_000176",
+    "peso": 0.00565,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0176"
+  },
+  "vetor_0177": {
+    "token": "TOKEN_000177",
+    "peso": 0.005618,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0177"
+  },
+  "vetor_0178": {
+    "token": "TOKEN_000178",
+    "peso": 0.005587,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0178"
+  },
+  "vetor_0179": {
+    "token": "TOKEN_000179",
+    "peso": 0.005556,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0179"
+  },
+  "vetor_0180": {
+    "token": "TOKEN_000180",
+    "peso": 0.005525,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0180"
+  },
+  "vetor_0181": {
+    "token": "TOKEN_000181",
+    "peso": 0.005495,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0181"
+  },
+  "vetor_0182": {
+    "token": "TOKEN_000182",
+    "peso": 0.005464,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0182"
+  },
+  "vetor_0183": {
+    "token": "TOKEN_000183",
+    "peso": 0.005435,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0183"
+  },
+  "vetor_0184": {
+    "token": "TOKEN_000184",
+    "peso": 0.005405,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0184"
+  },
+  "vetor_0185": {
+    "token": "TOKEN_000185",
+    "peso": 0.005376,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0185"
+  },
+  "vetor_0186": {
+    "token": "TOKEN_000186",
+    "peso": 0.005348,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0186"
+  },
+  "vetor_0187": {
+    "token": "TOKEN_000187",
+    "peso": 0.005319,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0187"
+  },
+  "vetor_0188": {
+    "token": "TOKEN_000188",
+    "peso": 0.005291,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0188"
+  },
+  "vetor_0189": {
+    "token": "TOKEN_000189",
+    "peso": 0.005263,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0189"
+  },
+  "vetor_0190": {
+    "token": "TOKEN_000190",
+    "peso": 0.005236,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0190"
+  },
+  "vetor_0191": {
+    "token": "TOKEN_000191",
+    "peso": 0.005208,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0191"
+  },
+  "vetor_0192": {
+    "token": "TOKEN_000192",
+    "peso": 0.005181,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0192"
+  },
+  "vetor_0193": {
+    "token": "TOKEN_000193",
+    "peso": 0.005155,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0193"
+  },
+  "vetor_0194": {
+    "token": "TOKEN_000194",
+    "peso": 0.005128,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0194"
+  },
+  "vetor_0195": {
+    "token": "TOKEN_000195",
+    "peso": 0.005102,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0195"
+  },
+  "vetor_0196": {
+    "token": "TOKEN_000196",
+    "peso": 0.005076,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0196"
+  },
+  "vetor_0197": {
+    "token": "TOKEN_000197",
+    "peso": 0.005051,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0197"
+  },
+  "vetor_0198": {
+    "token": "TOKEN_000198",
+    "peso": 0.005025,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0198"
+  },
+  "vetor_0199": {
+    "token": "TOKEN_000199",
+    "peso": 0.005,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0199"
+  },
+  "vetor_0200": {
+    "token": "TOKEN_000200",
+    "peso": 0.004975,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0200"
+  },
+  "vetor_0201": {
+    "token": "TOKEN_000201",
+    "peso": 0.00495,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0201"
+  },
+  "vetor_0202": {
+    "token": "TOKEN_000202",
+    "peso": 0.004926,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0202"
+  },
+  "vetor_0203": {
+    "token": "TOKEN_000203",
+    "peso": 0.004902,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0203"
+  },
+  "vetor_0204": {
+    "token": "TOKEN_000204",
+    "peso": 0.004878,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0204"
+  },
+  "vetor_0205": {
+    "token": "TOKEN_000205",
+    "peso": 0.004854,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0205"
+  },
+  "vetor_0206": {
+    "token": "TOKEN_000206",
+    "peso": 0.004831,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0206"
+  },
+  "vetor_0207": {
+    "token": "TOKEN_000207",
+    "peso": 0.004808,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0207"
+  },
+  "vetor_0208": {
+    "token": "TOKEN_000208",
+    "peso": 0.004785,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0208"
+  },
+  "vetor_0209": {
+    "token": "TOKEN_000209",
+    "peso": 0.004762,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0209"
+  },
+  "vetor_0210": {
+    "token": "TOKEN_000210",
+    "peso": 0.004739,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0210"
+  },
+  "vetor_0211": {
+    "token": "TOKEN_000211",
+    "peso": 0.004717,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0211"
+  },
+  "vetor_0212": {
+    "token": "TOKEN_000212",
+    "peso": 0.004695,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0212"
+  },
+  "vetor_0213": {
+    "token": "TOKEN_000213",
+    "peso": 0.004673,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0213"
+  },
+  "vetor_0214": {
+    "token": "TOKEN_000214",
+    "peso": 0.004651,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0214"
+  },
+  "vetor_0215": {
+    "token": "TOKEN_000215",
+    "peso": 0.00463,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0215"
+  },
+  "vetor_0216": {
+    "token": "TOKEN_000216",
+    "peso": 0.004608,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0216"
+  },
+  "vetor_0217": {
+    "token": "TOKEN_000217",
+    "peso": 0.004587,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0217"
+  },
+  "vetor_0218": {
+    "token": "TOKEN_000218",
+    "peso": 0.004566,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0218"
+  },
+  "vetor_0219": {
+    "token": "TOKEN_000219",
+    "peso": 0.004545,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0219"
+  },
+  "vetor_0220": {
+    "token": "TOKEN_000220",
+    "peso": 0.004525,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0220"
+  },
+  "vetor_0221": {
+    "token": "TOKEN_000221",
+    "peso": 0.004505,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0221"
+  },
+  "vetor_0222": {
+    "token": "TOKEN_000222",
+    "peso": 0.004484,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0222"
+  },
+  "vetor_0223": {
+    "token": "TOKEN_000223",
+    "peso": 0.004464,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0223"
+  },
+  "vetor_0224": {
+    "token": "TOKEN_000224",
+    "peso": 0.004444,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0224"
+  },
+  "vetor_0225": {
+    "token": "TOKEN_000225",
+    "peso": 0.004425,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0225"
+  },
+  "vetor_0226": {
+    "token": "TOKEN_000226",
+    "peso": 0.004405,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0226"
+  },
+  "vetor_0227": {
+    "token": "TOKEN_000227",
+    "peso": 0.004386,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0227"
+  },
+  "vetor_0228": {
+    "token": "TOKEN_000228",
+    "peso": 0.004367,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0228"
+  },
+  "vetor_0229": {
+    "token": "TOKEN_000229",
+    "peso": 0.004348,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0229"
+  },
+  "vetor_0230": {
+    "token": "TOKEN_000230",
+    "peso": 0.004329,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0230"
+  },
+  "vetor_0231": {
+    "token": "TOKEN_000231",
+    "peso": 0.00431,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0231"
+  },
+  "vetor_0232": {
+    "token": "TOKEN_000232",
+    "peso": 0.004292,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0232"
+  },
+  "vetor_0233": {
+    "token": "TOKEN_000233",
+    "peso": 0.004274,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0233"
+  },
+  "vetor_0234": {
+    "token": "TOKEN_000234",
+    "peso": 0.004255,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0234"
+  },
+  "vetor_0235": {
+    "token": "TOKEN_000235",
+    "peso": 0.004237,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0235"
+  },
+  "vetor_0236": {
+    "token": "TOKEN_000236",
+    "peso": 0.004219,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0236"
+  },
+  "vetor_0237": {
+    "token": "TOKEN_000237",
+    "peso": 0.004202,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0237"
+  },
+  "vetor_0238": {
+    "token": "TOKEN_000238",
+    "peso": 0.004184,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0238"
+  },
+  "vetor_0239": {
+    "token": "TOKEN_000239",
+    "peso": 0.004167,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0239"
+  },
+  "vetor_0240": {
+    "token": "TOKEN_000240",
+    "peso": 0.004149,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0240"
+  },
+  "vetor_0241": {
+    "token": "TOKEN_000241",
+    "peso": 0.004132,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0241"
+  },
+  "vetor_0242": {
+    "token": "TOKEN_000242",
+    "peso": 0.004115,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0242"
+  },
+  "vetor_0243": {
+    "token": "TOKEN_000243",
+    "peso": 0.004098,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0243"
+  },
+  "vetor_0244": {
+    "token": "TOKEN_000244",
+    "peso": 0.004082,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0244"
+  },
+  "vetor_0245": {
+    "token": "TOKEN_000245",
+    "peso": 0.004065,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0245"
+  },
+  "vetor_0246": {
+    "token": "TOKEN_000246",
+    "peso": 0.004049,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0246"
+  },
+  "vetor_0247": {
+    "token": "TOKEN_000247",
+    "peso": 0.004032,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0247"
+  },
+  "vetor_0248": {
+    "token": "TOKEN_000248",
+    "peso": 0.004016,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0248"
+  },
+  "vetor_0249": {
+    "token": "TOKEN_000249",
+    "peso": 0.004,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0249"
+  },
+  "vetor_0250": {
+    "token": "TOKEN_000250",
+    "peso": 0.003984,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0250"
+  },
+  "vetor_0251": {
+    "token": "TOKEN_000251",
+    "peso": 0.003968,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0251"
+  },
+  "vetor_0252": {
+    "token": "TOKEN_000252",
+    "peso": 0.003953,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0252"
+  },
+  "vetor_0253": {
+    "token": "TOKEN_000253",
+    "peso": 0.003937,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0253"
+  },
+  "vetor_0254": {
+    "token": "TOKEN_000254",
+    "peso": 0.003922,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0254"
+  },
+  "vetor_0255": {
+    "token": "TOKEN_000255",
+    "peso": 0.003906,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0255"
+  },
+  "vetor_0256": {
+    "token": "TOKEN_000256",
+    "peso": 0.003891,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0256"
+  },
+  "vetor_0257": {
+    "token": "TOKEN_000257",
+    "peso": 0.003876,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0257"
+  },
+  "vetor_0258": {
+    "token": "TOKEN_000258",
+    "peso": 0.003861,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0258"
+  },
+  "vetor_0259": {
+    "token": "TOKEN_000259",
+    "peso": 0.003846,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0259"
+  },
+  "vetor_0260": {
+    "token": "TOKEN_000260",
+    "peso": 0.003831,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0260"
+  },
+  "vetor_0261": {
+    "token": "TOKEN_000261",
+    "peso": 0.003817,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0261"
+  },
+  "vetor_0262": {
+    "token": "TOKEN_000262",
+    "peso": 0.003802,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0262"
+  },
+  "vetor_0263": {
+    "token": "TOKEN_000263",
+    "peso": 0.003788,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0263"
+  },
+  "vetor_0264": {
+    "token": "TOKEN_000264",
+    "peso": 0.003774,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0264"
+  },
+  "vetor_0265": {
+    "token": "TOKEN_000265",
+    "peso": 0.003759,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0265"
+  },
+  "vetor_0266": {
+    "token": "TOKEN_000266",
+    "peso": 0.003745,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0266"
+  },
+  "vetor_0267": {
+    "token": "TOKEN_000267",
+    "peso": 0.003731,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0267"
+  },
+  "vetor_0268": {
+    "token": "TOKEN_000268",
+    "peso": 0.003717,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0268"
+  },
+  "vetor_0269": {
+    "token": "TOKEN_000269",
+    "peso": 0.003704,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0269"
+  },
+  "vetor_0270": {
+    "token": "TOKEN_000270",
+    "peso": 0.00369,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0270"
+  },
+  "vetor_0271": {
+    "token": "TOKEN_000271",
+    "peso": 0.003676,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0271"
+  },
+  "vetor_0272": {
+    "token": "TOKEN_000272",
+    "peso": 0.003663,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0272"
+  },
+  "vetor_0273": {
+    "token": "TOKEN_000273",
+    "peso": 0.00365,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0273"
+  },
+  "vetor_0274": {
+    "token": "TOKEN_000274",
+    "peso": 0.003636,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0274"
+  },
+  "vetor_0275": {
+    "token": "TOKEN_000275",
+    "peso": 0.003623,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0275"
+  },
+  "vetor_0276": {
+    "token": "TOKEN_000276",
+    "peso": 0.00361,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0276"
+  },
+  "vetor_0277": {
+    "token": "TOKEN_000277",
+    "peso": 0.003597,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0277"
+  },
+  "vetor_0278": {
+    "token": "TOKEN_000278",
+    "peso": 0.003584,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0278"
+  },
+  "vetor_0279": {
+    "token": "TOKEN_000279",
+    "peso": 0.003571,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0279"
+  },
+  "vetor_0280": {
+    "token": "TOKEN_000280",
+    "peso": 0.003559,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0280"
+  },
+  "vetor_0281": {
+    "token": "TOKEN_000281",
+    "peso": 0.003546,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0281"
+  },
+  "vetor_0282": {
+    "token": "TOKEN_000282",
+    "peso": 0.003534,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0282"
+  },
+  "vetor_0283": {
+    "token": "TOKEN_000283",
+    "peso": 0.003521,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0283"
+  },
+  "vetor_0284": {
+    "token": "TOKEN_000284",
+    "peso": 0.003509,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0284"
+  },
+  "vetor_0285": {
+    "token": "TOKEN_000285",
+    "peso": 0.003497,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0285"
+  },
+  "vetor_0286": {
+    "token": "TOKEN_000286",
+    "peso": 0.003484,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0286"
+  },
+  "vetor_0287": {
+    "token": "TOKEN_000287",
+    "peso": 0.003472,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0287"
+  },
+  "vetor_0288": {
+    "token": "TOKEN_000288",
+    "peso": 0.00346,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0288"
+  },
+  "vetor_0289": {
+    "token": "TOKEN_000289",
+    "peso": 0.003448,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0289"
+  },
+  "vetor_0290": {
+    "token": "TOKEN_000290",
+    "peso": 0.003436,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0290"
+  },
+  "vetor_0291": {
+    "token": "TOKEN_000291",
+    "peso": 0.003425,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0291"
+  },
+  "vetor_0292": {
+    "token": "TOKEN_000292",
+    "peso": 0.003413,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0292"
+  },
+  "vetor_0293": {
+    "token": "TOKEN_000293",
+    "peso": 0.003401,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0293"
+  },
+  "vetor_0294": {
+    "token": "TOKEN_000294",
+    "peso": 0.00339,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0294"
+  },
+  "vetor_0295": {
+    "token": "TOKEN_000295",
+    "peso": 0.003378,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0295"
+  },
+  "vetor_0296": {
+    "token": "TOKEN_000296",
+    "peso": 0.003367,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0296"
+  },
+  "vetor_0297": {
+    "token": "TOKEN_000297",
+    "peso": 0.003356,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0297"
+  },
+  "vetor_0298": {
+    "token": "TOKEN_000298",
+    "peso": 0.003344,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0298"
+  },
+  "vetor_0299": {
+    "token": "TOKEN_000299",
+    "peso": 0.003333,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0299"
+  },
+  "vetor_0300": {
+    "token": "TOKEN_000300",
+    "peso": 0.003322,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0300"
+  },
+  "vetor_0301": {
+    "token": "TOKEN_000301",
+    "peso": 0.003311,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0301"
+  },
+  "vetor_0302": {
+    "token": "TOKEN_000302",
+    "peso": 0.0033,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0302"
+  },
+  "vetor_0303": {
+    "token": "TOKEN_000303",
+    "peso": 0.003289,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0303"
+  },
+  "vetor_0304": {
+    "token": "TOKEN_000304",
+    "peso": 0.003279,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0304"
+  },
+  "vetor_0305": {
+    "token": "TOKEN_000305",
+    "peso": 0.003268,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0305"
+  },
+  "vetor_0306": {
+    "token": "TOKEN_000306",
+    "peso": 0.003257,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0306"
+  },
+  "vetor_0307": {
+    "token": "TOKEN_000307",
+    "peso": 0.003247,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0307"
+  },
+  "vetor_0308": {
+    "token": "TOKEN_000308",
+    "peso": 0.003236,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0308"
+  },
+  "vetor_0309": {
+    "token": "TOKEN_000309",
+    "peso": 0.003226,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0309"
+  },
+  "vetor_0310": {
+    "token": "TOKEN_000310",
+    "peso": 0.003215,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0310"
+  },
+  "vetor_0311": {
+    "token": "TOKEN_000311",
+    "peso": 0.003205,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0311"
+  },
+  "vetor_0312": {
+    "token": "TOKEN_000312",
+    "peso": 0.003195,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0312"
+  },
+  "vetor_0313": {
+    "token": "TOKEN_000313",
+    "peso": 0.003185,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0313"
+  },
+  "vetor_0314": {
+    "token": "TOKEN_000314",
+    "peso": 0.003175,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0314"
+  },
+  "vetor_0315": {
+    "token": "TOKEN_000315",
+    "peso": 0.003165,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0315"
+  },
+  "vetor_0316": {
+    "token": "TOKEN_000316",
+    "peso": 0.003155,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0316"
+  },
+  "vetor_0317": {
+    "token": "TOKEN_000317",
+    "peso": 0.003145,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0317"
+  },
+  "vetor_0318": {
+    "token": "TOKEN_000318",
+    "peso": 0.003135,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0318"
+  },
+  "vetor_0319": {
+    "token": "TOKEN_000319",
+    "peso": 0.003125,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0319"
+  },
+  "vetor_0320": {
+    "token": "TOKEN_000320",
+    "peso": 0.003115,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0320"
+  },
+  "vetor_0321": {
+    "token": "TOKEN_000321",
+    "peso": 0.003106,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0321"
+  },
+  "vetor_0322": {
+    "token": "TOKEN_000322",
+    "peso": 0.003096,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0322"
+  },
+  "vetor_0323": {
+    "token": "TOKEN_000323",
+    "peso": 0.003086,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0323"
+  },
+  "vetor_0324": {
+    "token": "TOKEN_000324",
+    "peso": 0.003077,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0324"
+  },
+  "vetor_0325": {
+    "token": "TOKEN_000325",
+    "peso": 0.003067,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0325"
+  },
+  "vetor_0326": {
+    "token": "TOKEN_000326",
+    "peso": 0.003058,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0326"
+  },
+  "vetor_0327": {
+    "token": "TOKEN_000327",
+    "peso": 0.003049,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0327"
+  },
+  "vetor_0328": {
+    "token": "TOKEN_000328",
+    "peso": 0.00304,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0328"
+  },
+  "vetor_0329": {
+    "token": "TOKEN_000329",
+    "peso": 0.00303,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0329"
+  },
+  "vetor_0330": {
+    "token": "TOKEN_000330",
+    "peso": 0.003021,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0330"
+  },
+  "vetor_0331": {
+    "token": "TOKEN_000331",
+    "peso": 0.003012,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0331"
+  },
+  "vetor_0332": {
+    "token": "TOKEN_000332",
+    "peso": 0.003003,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0332"
+  },
+  "vetor_0333": {
+    "token": "TOKEN_000333",
+    "peso": 0.002994,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0333"
+  },
+  "vetor_0334": {
+    "token": "TOKEN_000334",
+    "peso": 0.002985,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0334"
+  },
+  "vetor_0335": {
+    "token": "TOKEN_000335",
+    "peso": 0.002976,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0335"
+  },
+  "vetor_0336": {
+    "token": "TOKEN_000336",
+    "peso": 0.002967,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0336"
+  },
+  "vetor_0337": {
+    "token": "TOKEN_000337",
+    "peso": 0.002959,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0337"
+  },
+  "vetor_0338": {
+    "token": "TOKEN_000338",
+    "peso": 0.00295,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0338"
+  },
+  "vetor_0339": {
+    "token": "TOKEN_000339",
+    "peso": 0.002941,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0339"
+  },
+  "vetor_0340": {
+    "token": "TOKEN_000340",
+    "peso": 0.002933,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0340"
+  },
+  "vetor_0341": {
+    "token": "TOKEN_000341",
+    "peso": 0.002924,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0341"
+  },
+  "vetor_0342": {
+    "token": "TOKEN_000342",
+    "peso": 0.002915,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0342"
+  },
+  "vetor_0343": {
+    "token": "TOKEN_000343",
+    "peso": 0.002907,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0343"
+  },
+  "vetor_0344": {
+    "token": "TOKEN_000344",
+    "peso": 0.002899,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0344"
+  },
+  "vetor_0345": {
+    "token": "TOKEN_000345",
+    "peso": 0.00289,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0345"
+  },
+  "vetor_0346": {
+    "token": "TOKEN_000346",
+    "peso": 0.002882,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0346"
+  },
+  "vetor_0347": {
+    "token": "TOKEN_000347",
+    "peso": 0.002874,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0347"
+  },
+  "vetor_0348": {
+    "token": "TOKEN_000348",
+    "peso": 0.002865,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0348"
+  },
+  "vetor_0349": {
+    "token": "TOKEN_000349",
+    "peso": 0.002857,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0349"
+  },
+  "vetor_0350": {
+    "token": "TOKEN_000350",
+    "peso": 0.002849,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0350"
+  },
+  "vetor_0351": {
+    "token": "TOKEN_000351",
+    "peso": 0.002841,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0351"
+  },
+  "vetor_0352": {
+    "token": "TOKEN_000352",
+    "peso": 0.002833,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0352"
+  },
+  "vetor_0353": {
+    "token": "TOKEN_000353",
+    "peso": 0.002825,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0353"
+  },
+  "vetor_0354": {
+    "token": "TOKEN_000354",
+    "peso": 0.002817,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0354"
+  },
+  "vetor_0355": {
+    "token": "TOKEN_000355",
+    "peso": 0.002809,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0355"
+  },
+  "vetor_0356": {
+    "token": "TOKEN_000356",
+    "peso": 0.002801,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0356"
+  },
+  "vetor_0357": {
+    "token": "TOKEN_000357",
+    "peso": 0.002793,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0357"
+  },
+  "vetor_0358": {
+    "token": "TOKEN_000358",
+    "peso": 0.002786,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0358"
+  },
+  "vetor_0359": {
+    "token": "TOKEN_000359",
+    "peso": 0.002778,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0359"
+  },
+  "vetor_0360": {
+    "token": "TOKEN_000360",
+    "peso": 0.00277,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0360"
+  },
+  "vetor_0361": {
+    "token": "TOKEN_000361",
+    "peso": 0.002762,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0361"
+  },
+  "vetor_0362": {
+    "token": "TOKEN_000362",
+    "peso": 0.002755,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0362"
+  },
+  "vetor_0363": {
+    "token": "TOKEN_000363",
+    "peso": 0.002747,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0363"
+  },
+  "vetor_0364": {
+    "token": "TOKEN_000364",
+    "peso": 0.00274,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0364"
+  },
+  "vetor_0365": {
+    "token": "TOKEN_000365",
+    "peso": 0.002732,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0365"
+  },
+  "vetor_0366": {
+    "token": "TOKEN_000366",
+    "peso": 0.002725,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0366"
+  },
+  "vetor_0367": {
+    "token": "TOKEN_000367",
+    "peso": 0.002717,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0367"
+  },
+  "vetor_0368": {
+    "token": "TOKEN_000368",
+    "peso": 0.00271,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0368"
+  },
+  "vetor_0369": {
+    "token": "TOKEN_000369",
+    "peso": 0.002703,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0369"
+  },
+  "vetor_0370": {
+    "token": "TOKEN_000370",
+    "peso": 0.002695,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0370"
+  },
+  "vetor_0371": {
+    "token": "TOKEN_000371",
+    "peso": 0.002688,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0371"
+  },
+  "vetor_0372": {
+    "token": "TOKEN_000372",
+    "peso": 0.002681,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0372"
+  },
+  "vetor_0373": {
+    "token": "TOKEN_000373",
+    "peso": 0.002674,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0373"
+  },
+  "vetor_0374": {
+    "token": "TOKEN_000374",
+    "peso": 0.002667,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0374"
+  },
+  "vetor_0375": {
+    "token": "TOKEN_000375",
+    "peso": 0.00266,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0375"
+  },
+  "vetor_0376": {
+    "token": "TOKEN_000376",
+    "peso": 0.002653,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0376"
+  },
+  "vetor_0377": {
+    "token": "TOKEN_000377",
+    "peso": 0.002646,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0377"
+  },
+  "vetor_0378": {
+    "token": "TOKEN_000378",
+    "peso": 0.002639,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0378"
+  },
+  "vetor_0379": {
+    "token": "TOKEN_000379",
+    "peso": 0.002632,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0379"
+  },
+  "vetor_0380": {
+    "token": "TOKEN_000380",
+    "peso": 0.002625,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0380"
+  },
+  "vetor_0381": {
+    "token": "TOKEN_000381",
+    "peso": 0.002618,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0381"
+  },
+  "vetor_0382": {
+    "token": "TOKEN_000382",
+    "peso": 0.002611,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0382"
+  },
+  "vetor_0383": {
+    "token": "TOKEN_000383",
+    "peso": 0.002604,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0383"
+  },
+  "vetor_0384": {
+    "token": "TOKEN_000384",
+    "peso": 0.002597,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0384"
+  },
+  "vetor_0385": {
+    "token": "TOKEN_000385",
+    "peso": 0.002591,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0385"
+  },
+  "vetor_0386": {
+    "token": "TOKEN_000386",
+    "peso": 0.002584,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0386"
+  },
+  "vetor_0387": {
+    "token": "TOKEN_000387",
+    "peso": 0.002577,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0387"
+  },
+  "vetor_0388": {
+    "token": "TOKEN_000388",
+    "peso": 0.002571,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0388"
+  },
+  "vetor_0389": {
+    "token": "TOKEN_000389",
+    "peso": 0.002564,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0389"
+  },
+  "vetor_0390": {
+    "token": "TOKEN_000390",
+    "peso": 0.002558,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0390"
+  },
+  "vetor_0391": {
+    "token": "TOKEN_000391",
+    "peso": 0.002551,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0391"
+  },
+  "vetor_0392": {
+    "token": "TOKEN_000392",
+    "peso": 0.002545,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0392"
+  },
+  "vetor_0393": {
+    "token": "TOKEN_000393",
+    "peso": 0.002538,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0393"
+  },
+  "vetor_0394": {
+    "token": "TOKEN_000394",
+    "peso": 0.002532,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0394"
+  },
+  "vetor_0395": {
+    "token": "TOKEN_000395",
+    "peso": 0.002525,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0395"
+  },
+  "vetor_0396": {
+    "token": "TOKEN_000396",
+    "peso": 0.002519,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0396"
+  },
+  "vetor_0397": {
+    "token": "TOKEN_000397",
+    "peso": 0.002513,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0397"
+  },
+  "vetor_0398": {
+    "token": "TOKEN_000398",
+    "peso": 0.002506,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0398"
+  },
+  "vetor_0399": {
+    "token": "TOKEN_000399",
+    "peso": 0.0025,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0399"
+  },
+  "vetor_0400": {
+    "token": "TOKEN_000400",
+    "peso": 0.002494,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0400"
+  },
+  "vetor_0401": {
+    "token": "TOKEN_000401",
+    "peso": 0.002488,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0401"
+  },
+  "vetor_0402": {
+    "token": "TOKEN_000402",
+    "peso": 0.002481,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0402"
+  },
+  "vetor_0403": {
+    "token": "TOKEN_000403",
+    "peso": 0.002475,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0403"
+  },
+  "vetor_0404": {
+    "token": "TOKEN_000404",
+    "peso": 0.002469,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0404"
+  },
+  "vetor_0405": {
+    "token": "TOKEN_000405",
+    "peso": 0.002463,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0405"
+  },
+  "vetor_0406": {
+    "token": "TOKEN_000406",
+    "peso": 0.002457,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0406"
+  },
+  "vetor_0407": {
+    "token": "TOKEN_000407",
+    "peso": 0.002451,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0407"
+  },
+  "vetor_0408": {
+    "token": "TOKEN_000408",
+    "peso": 0.002445,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0408"
+  },
+  "vetor_0409": {
+    "token": "TOKEN_000409",
+    "peso": 0.002439,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0409"
+  },
+  "vetor_0410": {
+    "token": "TOKEN_000410",
+    "peso": 0.002433,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0410"
+  },
+  "vetor_0411": {
+    "token": "TOKEN_000411",
+    "peso": 0.002427,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0411"
+  },
+  "vetor_0412": {
+    "token": "TOKEN_000412",
+    "peso": 0.002421,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0412"
+  },
+  "vetor_0413": {
+    "token": "TOKEN_000413",
+    "peso": 0.002415,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0413"
+  },
+  "vetor_0414": {
+    "token": "TOKEN_000414",
+    "peso": 0.00241,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0414"
+  },
+  "vetor_0415": {
+    "token": "TOKEN_000415",
+    "peso": 0.002404,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0415"
+  },
+  "vetor_0416": {
+    "token": "TOKEN_000416",
+    "peso": 0.002398,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0416"
+  },
+  "vetor_0417": {
+    "token": "TOKEN_000417",
+    "peso": 0.002392,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0417"
+  },
+  "vetor_0418": {
+    "token": "TOKEN_000418",
+    "peso": 0.002387,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0418"
+  },
+  "vetor_0419": {
+    "token": "TOKEN_000419",
+    "peso": 0.002381,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0419"
+  },
+  "vetor_0420": {
+    "token": "TOKEN_000420",
+    "peso": 0.002375,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0420"
+  },
+  "vetor_0421": {
+    "token": "TOKEN_000421",
+    "peso": 0.00237,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0421"
+  },
+  "vetor_0422": {
+    "token": "TOKEN_000422",
+    "peso": 0.002364,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0422"
+  },
+  "vetor_0423": {
+    "token": "TOKEN_000423",
+    "peso": 0.002358,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0423"
+  },
+  "vetor_0424": {
+    "token": "TOKEN_000424",
+    "peso": 0.002353,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0424"
+  },
+  "vetor_0425": {
+    "token": "TOKEN_000425",
+    "peso": 0.002347,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0425"
+  },
+  "vetor_0426": {
+    "token": "TOKEN_000426",
+    "peso": 0.002342,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0426"
+  },
+  "vetor_0427": {
+    "token": "TOKEN_000427",
+    "peso": 0.002336,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0427"
+  },
+  "vetor_0428": {
+    "token": "TOKEN_000428",
+    "peso": 0.002331,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0428"
+  },
+  "vetor_0429": {
+    "token": "TOKEN_000429",
+    "peso": 0.002326,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0429"
+  },
+  "vetor_0430": {
+    "token": "TOKEN_000430",
+    "peso": 0.00232,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0430"
+  },
+  "vetor_0431": {
+    "token": "TOKEN_000431",
+    "peso": 0.002315,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0431"
+  },
+  "vetor_0432": {
+    "token": "TOKEN_000432",
+    "peso": 0.002309,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0432"
+  },
+  "vetor_0433": {
+    "token": "TOKEN_000433",
+    "peso": 0.002304,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0433"
+  },
+  "vetor_0434": {
+    "token": "TOKEN_000434",
+    "peso": 0.002299,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0434"
+  },
+  "vetor_0435": {
+    "token": "TOKEN_000435",
+    "peso": 0.002294,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0435"
+  },
+  "vetor_0436": {
+    "token": "TOKEN_000436",
+    "peso": 0.002288,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0436"
+  },
+  "vetor_0437": {
+    "token": "TOKEN_000437",
+    "peso": 0.002283,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0437"
+  },
+  "vetor_0438": {
+    "token": "TOKEN_000438",
+    "peso": 0.002278,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0438"
+  },
+  "vetor_0439": {
+    "token": "TOKEN_000439",
+    "peso": 0.002273,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0439"
+  },
+  "vetor_0440": {
+    "token": "TOKEN_000440",
+    "peso": 0.002268,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0440"
+  },
+  "vetor_0441": {
+    "token": "TOKEN_000441",
+    "peso": 0.002262,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0441"
+  },
+  "vetor_0442": {
+    "token": "TOKEN_000442",
+    "peso": 0.002257,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0442"
+  },
+  "vetor_0443": {
+    "token": "TOKEN_000443",
+    "peso": 0.002252,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0443"
+  },
+  "vetor_0444": {
+    "token": "TOKEN_000444",
+    "peso": 0.002247,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0444"
+  },
+  "vetor_0445": {
+    "token": "TOKEN_000445",
+    "peso": 0.002242,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0445"
+  },
+  "vetor_0446": {
+    "token": "TOKEN_000446",
+    "peso": 0.002237,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0446"
+  },
+  "vetor_0447": {
+    "token": "TOKEN_000447",
+    "peso": 0.002232,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0447"
+  },
+  "vetor_0448": {
+    "token": "TOKEN_000448",
+    "peso": 0.002227,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0448"
+  },
+  "vetor_0449": {
+    "token": "TOKEN_000449",
+    "peso": 0.002222,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0449"
+  },
+  "vetor_0450": {
+    "token": "TOKEN_000450",
+    "peso": 0.002217,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0450"
+  },
+  "vetor_0451": {
+    "token": "TOKEN_000451",
+    "peso": 0.002212,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0451"
+  },
+  "vetor_0452": {
+    "token": "TOKEN_000452",
+    "peso": 0.002208,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0452"
+  },
+  "vetor_0453": {
+    "token": "TOKEN_000453",
+    "peso": 0.002203,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0453"
+  },
+  "vetor_0454": {
+    "token": "TOKEN_000454",
+    "peso": 0.002198,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0454"
+  },
+  "vetor_0455": {
+    "token": "TOKEN_000455",
+    "peso": 0.002193,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0455"
+  },
+  "vetor_0456": {
+    "token": "TOKEN_000456",
+    "peso": 0.002188,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0456"
+  },
+  "vetor_0457": {
+    "token": "TOKEN_000457",
+    "peso": 0.002183,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0457"
+  },
+  "vetor_0458": {
+    "token": "TOKEN_000458",
+    "peso": 0.002179,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0458"
+  },
+  "vetor_0459": {
+    "token": "TOKEN_000459",
+    "peso": 0.002174,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0459"
+  },
+  "vetor_0460": {
+    "token": "TOKEN_000460",
+    "peso": 0.002169,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0460"
+  },
+  "vetor_0461": {
+    "token": "TOKEN_000461",
+    "peso": 0.002165,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0461"
+  },
+  "vetor_0462": {
+    "token": "TOKEN_000462",
+    "peso": 0.00216,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0462"
+  },
+  "vetor_0463": {
+    "token": "TOKEN_000463",
+    "peso": 0.002155,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0463"
+  },
+  "vetor_0464": {
+    "token": "TOKEN_000464",
+    "peso": 0.002151,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0464"
+  },
+  "vetor_0465": {
+    "token": "TOKEN_000465",
+    "peso": 0.002146,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0465"
+  },
+  "vetor_0466": {
+    "token": "TOKEN_000466",
+    "peso": 0.002141,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0466"
+  },
+  "vetor_0467": {
+    "token": "TOKEN_000467",
+    "peso": 0.002137,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0467"
+  },
+  "vetor_0468": {
+    "token": "TOKEN_000468",
+    "peso": 0.002132,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0468"
+  },
+  "vetor_0469": {
+    "token": "TOKEN_000469",
+    "peso": 0.002128,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0469"
+  },
+  "vetor_0470": {
+    "token": "TOKEN_000470",
+    "peso": 0.002123,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0470"
+  },
+  "vetor_0471": {
+    "token": "TOKEN_000471",
+    "peso": 0.002119,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0471"
+  },
+  "vetor_0472": {
+    "token": "TOKEN_000472",
+    "peso": 0.002114,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0472"
+  },
+  "vetor_0473": {
+    "token": "TOKEN_000473",
+    "peso": 0.00211,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0473"
+  },
+  "vetor_0474": {
+    "token": "TOKEN_000474",
+    "peso": 0.002105,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0474"
+  },
+  "vetor_0475": {
+    "token": "TOKEN_000475",
+    "peso": 0.002101,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0475"
+  },
+  "vetor_0476": {
+    "token": "TOKEN_000476",
+    "peso": 0.002096,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0476"
+  },
+  "vetor_0477": {
+    "token": "TOKEN_000477",
+    "peso": 0.002092,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0477"
+  },
+  "vetor_0478": {
+    "token": "TOKEN_000478",
+    "peso": 0.002088,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0478"
+  },
+  "vetor_0479": {
+    "token": "TOKEN_000479",
+    "peso": 0.002083,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0479"
+  },
+  "vetor_0480": {
+    "token": "TOKEN_000480",
+    "peso": 0.002079,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0480"
+  },
+  "vetor_0481": {
+    "token": "TOKEN_000481",
+    "peso": 0.002075,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0481"
+  },
+  "vetor_0482": {
+    "token": "TOKEN_000482",
+    "peso": 0.00207,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0482"
+  },
+  "vetor_0483": {
+    "token": "TOKEN_000483",
+    "peso": 0.002066,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0483"
+  },
+  "vetor_0484": {
+    "token": "TOKEN_000484",
+    "peso": 0.002062,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0484"
+  },
+  "vetor_0485": {
+    "token": "TOKEN_000485",
+    "peso": 0.002058,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0485"
+  },
+  "vetor_0486": {
+    "token": "TOKEN_000486",
+    "peso": 0.002053,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0486"
+  },
+  "vetor_0487": {
+    "token": "TOKEN_000487",
+    "peso": 0.002049,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0487"
+  },
+  "vetor_0488": {
+    "token": "TOKEN_000488",
+    "peso": 0.002045,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0488"
+  },
+  "vetor_0489": {
+    "token": "TOKEN_000489",
+    "peso": 0.002041,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0489"
+  },
+  "vetor_0490": {
+    "token": "TOKEN_000490",
+    "peso": 0.002037,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0490"
+  },
+  "vetor_0491": {
+    "token": "TOKEN_000491",
+    "peso": 0.002033,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0491"
+  },
+  "vetor_0492": {
+    "token": "TOKEN_000492",
+    "peso": 0.002028,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0492"
+  },
+  "vetor_0493": {
+    "token": "TOKEN_000493",
+    "peso": 0.002024,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0493"
+  },
+  "vetor_0494": {
+    "token": "TOKEN_000494",
+    "peso": 0.00202,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0494"
+  },
+  "vetor_0495": {
+    "token": "TOKEN_000495",
+    "peso": 0.002016,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0495"
+  },
+  "vetor_0496": {
+    "token": "TOKEN_000496",
+    "peso": 0.002012,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0496"
+  },
+  "vetor_0497": {
+    "token": "TOKEN_000497",
+    "peso": 0.002008,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0497"
+  },
+  "vetor_0498": {
+    "token": "TOKEN_000498",
+    "peso": 0.002004,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0498"
+  },
+  "vetor_0499": {
+    "token": "TOKEN_000499",
+    "peso": 0.002,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0499"
+  },
+  "vetor_0500": {
+    "token": "TOKEN_000500",
+    "peso": 0.001996,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0500"
+  },
+  "vetor_0501": {
+    "token": "TOKEN_000501",
+    "peso": 0.001992,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0501"
+  },
+  "vetor_0502": {
+    "token": "TOKEN_000502",
+    "peso": 0.001988,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0502"
+  },
+  "vetor_0503": {
+    "token": "TOKEN_000503",
+    "peso": 0.001984,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0503"
+  },
+  "vetor_0504": {
+    "token": "TOKEN_000504",
+    "peso": 0.00198,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0504"
+  },
+  "vetor_0505": {
+    "token": "TOKEN_000505",
+    "peso": 0.001976,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0505"
+  },
+  "vetor_0506": {
+    "token": "TOKEN_000506",
+    "peso": 0.001972,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0506"
+  },
+  "vetor_0507": {
+    "token": "TOKEN_000507",
+    "peso": 0.001969,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0507"
+  },
+  "vetor_0508": {
+    "token": "TOKEN_000508",
+    "peso": 0.001965,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0508"
+  },
+  "vetor_0509": {
+    "token": "TOKEN_000509",
+    "peso": 0.001961,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0509"
+  },
+  "vetor_0510": {
+    "token": "TOKEN_000510",
+    "peso": 0.001957,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0510"
+  },
+  "vetor_0511": {
+    "token": "TOKEN_000511",
+    "peso": 0.001953,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0511"
+  },
+  "vetor_0512": {
+    "token": "TOKEN_000512",
+    "peso": 0.001949,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0512"
+  },
+  "vetor_0513": {
+    "token": "TOKEN_000513",
+    "peso": 0.001946,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0513"
+  },
+  "vetor_0514": {
+    "token": "TOKEN_000514",
+    "peso": 0.001942,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0514"
+  },
+  "vetor_0515": {
+    "token": "TOKEN_000515",
+    "peso": 0.001938,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0515"
+  },
+  "vetor_0516": {
+    "token": "TOKEN_000516",
+    "peso": 0.001934,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0516"
+  },
+  "vetor_0517": {
+    "token": "TOKEN_000517",
+    "peso": 0.001931,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0517"
+  },
+  "vetor_0518": {
+    "token": "TOKEN_000518",
+    "peso": 0.001927,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0518"
+  },
+  "vetor_0519": {
+    "token": "TOKEN_000519",
+    "peso": 0.001923,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0519"
+  },
+  "vetor_0520": {
+    "token": "TOKEN_000520",
+    "peso": 0.001919,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0520"
+  },
+  "vetor_0521": {
+    "token": "TOKEN_000521",
+    "peso": 0.001916,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0521"
+  },
+  "vetor_0522": {
+    "token": "TOKEN_000522",
+    "peso": 0.001912,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0522"
+  },
+  "vetor_0523": {
+    "token": "TOKEN_000523",
+    "peso": 0.001908,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0523"
+  },
+  "vetor_0524": {
+    "token": "TOKEN_000524",
+    "peso": 0.001905,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0524"
+  },
+  "vetor_0525": {
+    "token": "TOKEN_000525",
+    "peso": 0.001901,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0525"
+  },
+  "vetor_0526": {
+    "token": "TOKEN_000526",
+    "peso": 0.001898,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0526"
+  },
+  "vetor_0527": {
+    "token": "TOKEN_000527",
+    "peso": 0.001894,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0527"
+  },
+  "vetor_0528": {
+    "token": "TOKEN_000528",
+    "peso": 0.00189,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0528"
+  },
+  "vetor_0529": {
+    "token": "TOKEN_000529",
+    "peso": 0.001887,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0529"
+  },
+  "vetor_0530": {
+    "token": "TOKEN_000530",
+    "peso": 0.001883,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0530"
+  },
+  "vetor_0531": {
+    "token": "TOKEN_000531",
+    "peso": 0.00188,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0531"
+  },
+  "vetor_0532": {
+    "token": "TOKEN_000532",
+    "peso": 0.001876,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0532"
+  },
+  "vetor_0533": {
+    "token": "TOKEN_000533",
+    "peso": 0.001873,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0533"
+  },
+  "vetor_0534": {
+    "token": "TOKEN_000534",
+    "peso": 0.001869,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0534"
+  },
+  "vetor_0535": {
+    "token": "TOKEN_000535",
+    "peso": 0.001866,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0535"
+  },
+  "vetor_0536": {
+    "token": "TOKEN_000536",
+    "peso": 0.001862,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0536"
+  },
+  "vetor_0537": {
+    "token": "TOKEN_000537",
+    "peso": 0.001859,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0537"
+  },
+  "vetor_0538": {
+    "token": "TOKEN_000538",
+    "peso": 0.001855,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0538"
+  },
+  "vetor_0539": {
+    "token": "TOKEN_000539",
+    "peso": 0.001852,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0539"
+  },
+  "vetor_0540": {
+    "token": "TOKEN_000540",
+    "peso": 0.001848,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0540"
+  },
+  "vetor_0541": {
+    "token": "TOKEN_000541",
+    "peso": 0.001845,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0541"
+  },
+  "vetor_0542": {
+    "token": "TOKEN_000542",
+    "peso": 0.001842,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0542"
+  },
+  "vetor_0543": {
+    "token": "TOKEN_000543",
+    "peso": 0.001838,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0543"
+  },
+  "vetor_0544": {
+    "token": "TOKEN_000544",
+    "peso": 0.001835,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0544"
+  },
+  "vetor_0545": {
+    "token": "TOKEN_000545",
+    "peso": 0.001832,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0545"
+  },
+  "vetor_0546": {
+    "token": "TOKEN_000546",
+    "peso": 0.001828,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0546"
+  },
+  "vetor_0547": {
+    "token": "TOKEN_000547",
+    "peso": 0.001825,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0547"
+  },
+  "vetor_0548": {
+    "token": "TOKEN_000548",
+    "peso": 0.001821,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0548"
+  },
+  "vetor_0549": {
+    "token": "TOKEN_000549",
+    "peso": 0.001818,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0549"
+  },
+  "vetor_0550": {
+    "token": "TOKEN_000550",
+    "peso": 0.001815,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0550"
+  },
+  "vetor_0551": {
+    "token": "TOKEN_000551",
+    "peso": 0.001812,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0551"
+  },
+  "vetor_0552": {
+    "token": "TOKEN_000552",
+    "peso": 0.001808,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0552"
+  },
+  "vetor_0553": {
+    "token": "TOKEN_000553",
+    "peso": 0.001805,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0553"
+  },
+  "vetor_0554": {
+    "token": "TOKEN_000554",
+    "peso": 0.001802,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0554"
+  },
+  "vetor_0555": {
+    "token": "TOKEN_000555",
+    "peso": 0.001799,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0555"
+  },
+  "vetor_0556": {
+    "token": "TOKEN_000556",
+    "peso": 0.001795,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0556"
+  },
+  "vetor_0557": {
+    "token": "TOKEN_000557",
+    "peso": 0.001792,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0557"
+  },
+  "vetor_0558": {
+    "token": "TOKEN_000558",
+    "peso": 0.001789,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0558"
+  },
+  "vetor_0559": {
+    "token": "TOKEN_000559",
+    "peso": 0.001786,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0559"
+  },
+  "vetor_0560": {
+    "token": "TOKEN_000560",
+    "peso": 0.001783,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0560"
+  },
+  "vetor_0561": {
+    "token": "TOKEN_000561",
+    "peso": 0.001779,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0561"
+  },
+  "vetor_0562": {
+    "token": "TOKEN_000562",
+    "peso": 0.001776,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0562"
+  },
+  "vetor_0563": {
+    "token": "TOKEN_000563",
+    "peso": 0.001773,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0563"
+  },
+  "vetor_0564": {
+    "token": "TOKEN_000564",
+    "peso": 0.00177,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0564"
+  },
+  "vetor_0565": {
+    "token": "TOKEN_000565",
+    "peso": 0.001767,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0565"
+  },
+  "vetor_0566": {
+    "token": "TOKEN_000566",
+    "peso": 0.001764,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0566"
+  },
+  "vetor_0567": {
+    "token": "TOKEN_000567",
+    "peso": 0.001761,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0567"
+  },
+  "vetor_0568": {
+    "token": "TOKEN_000568",
+    "peso": 0.001757,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0568"
+  },
+  "vetor_0569": {
+    "token": "TOKEN_000569",
+    "peso": 0.001754,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0569"
+  },
+  "vetor_0570": {
+    "token": "TOKEN_000570",
+    "peso": 0.001751,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0570"
+  },
+  "vetor_0571": {
+    "token": "TOKEN_000571",
+    "peso": 0.001748,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0571"
+  },
+  "vetor_0572": {
+    "token": "TOKEN_000572",
+    "peso": 0.001745,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0572"
+  },
+  "vetor_0573": {
+    "token": "TOKEN_000573",
+    "peso": 0.001742,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0573"
+  },
+  "vetor_0574": {
+    "token": "TOKEN_000574",
+    "peso": 0.001739,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0574"
+  },
+  "vetor_0575": {
+    "token": "TOKEN_000575",
+    "peso": 0.001736,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0575"
+  },
+  "vetor_0576": {
+    "token": "TOKEN_000576",
+    "peso": 0.001733,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0576"
+  },
+  "vetor_0577": {
+    "token": "TOKEN_000577",
+    "peso": 0.00173,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0577"
+  },
+  "vetor_0578": {
+    "token": "TOKEN_000578",
+    "peso": 0.001727,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0578"
+  },
+  "vetor_0579": {
+    "token": "TOKEN_000579",
+    "peso": 0.001724,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0579"
+  },
+  "vetor_0580": {
+    "token": "TOKEN_000580",
+    "peso": 0.001721,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0580"
+  },
+  "vetor_0581": {
+    "token": "TOKEN_000581",
+    "peso": 0.001718,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0581"
+  },
+  "vetor_0582": {
+    "token": "TOKEN_000582",
+    "peso": 0.001715,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0582"
+  },
+  "vetor_0583": {
+    "token": "TOKEN_000583",
+    "peso": 0.001712,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0583"
+  },
+  "vetor_0584": {
+    "token": "TOKEN_000584",
+    "peso": 0.001709,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0584"
+  },
+  "vetor_0585": {
+    "token": "TOKEN_000585",
+    "peso": 0.001706,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0585"
+  },
+  "vetor_0586": {
+    "token": "TOKEN_000586",
+    "peso": 0.001704,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0586"
+  },
+  "vetor_0587": {
+    "token": "TOKEN_000587",
+    "peso": 0.001701,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0587"
+  },
+  "vetor_0588": {
+    "token": "TOKEN_000588",
+    "peso": 0.001698,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0588"
+  },
+  "vetor_0589": {
+    "token": "TOKEN_000589",
+    "peso": 0.001695,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0589"
+  },
+  "vetor_0590": {
+    "token": "TOKEN_000590",
+    "peso": 0.001692,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0590"
+  },
+  "vetor_0591": {
+    "token": "TOKEN_000591",
+    "peso": 0.001689,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0591"
+  },
+  "vetor_0592": {
+    "token": "TOKEN_000592",
+    "peso": 0.001686,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0592"
+  },
+  "vetor_0593": {
+    "token": "TOKEN_000593",
+    "peso": 0.001684,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0593"
+  },
+  "vetor_0594": {
+    "token": "TOKEN_000594",
+    "peso": 0.001681,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0594"
+  },
+  "vetor_0595": {
+    "token": "TOKEN_000595",
+    "peso": 0.001678,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0595"
+  },
+  "vetor_0596": {
+    "token": "TOKEN_000596",
+    "peso": 0.001675,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0596"
+  },
+  "vetor_0597": {
+    "token": "TOKEN_000597",
+    "peso": 0.001672,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0597"
+  },
+  "vetor_0598": {
+    "token": "TOKEN_000598",
+    "peso": 0.001669,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0598"
+  },
+  "vetor_0599": {
+    "token": "TOKEN_000599",
+    "peso": 0.001667,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0599"
+  },
+  "vetor_0600": {
+    "token": "TOKEN_000600",
+    "peso": 0.001664,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0600"
+  },
+  "vetor_0601": {
+    "token": "TOKEN_000601",
+    "peso": 0.001661,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0601"
+  },
+  "vetor_0602": {
+    "token": "TOKEN_000602",
+    "peso": 0.001658,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0602"
+  },
+  "vetor_0603": {
+    "token": "TOKEN_000603",
+    "peso": 0.001656,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0603"
+  },
+  "vetor_0604": {
+    "token": "TOKEN_000604",
+    "peso": 0.001653,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0604"
+  },
+  "vetor_0605": {
+    "token": "TOKEN_000605",
+    "peso": 0.00165,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0605"
+  },
+  "vetor_0606": {
+    "token": "TOKEN_000606",
+    "peso": 0.001647,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0606"
+  },
+  "vetor_0607": {
+    "token": "TOKEN_000607",
+    "peso": 0.001645,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0607"
+  },
+  "vetor_0608": {
+    "token": "TOKEN_000608",
+    "peso": 0.001642,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0608"
+  },
+  "vetor_0609": {
+    "token": "TOKEN_000609",
+    "peso": 0.001639,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0609"
+  },
+  "vetor_0610": {
+    "token": "TOKEN_000610",
+    "peso": 0.001637,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0610"
+  },
+  "vetor_0611": {
+    "token": "TOKEN_000611",
+    "peso": 0.001634,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0611"
+  },
+  "vetor_0612": {
+    "token": "TOKEN_000612",
+    "peso": 0.001631,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0612"
+  },
+  "vetor_0613": {
+    "token": "TOKEN_000613",
+    "peso": 0.001629,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0613"
+  },
+  "vetor_0614": {
+    "token": "TOKEN_000614",
+    "peso": 0.001626,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0614"
+  },
+  "vetor_0615": {
+    "token": "TOKEN_000615",
+    "peso": 0.001623,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0615"
+  },
+  "vetor_0616": {
+    "token": "TOKEN_000616",
+    "peso": 0.001621,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0616"
+  },
+  "vetor_0617": {
+    "token": "TOKEN_000617",
+    "peso": 0.001618,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0617"
+  },
+  "vetor_0618": {
+    "token": "TOKEN_000618",
+    "peso": 0.001616,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0618"
+  },
+  "vetor_0619": {
+    "token": "TOKEN_000619",
+    "peso": 0.001613,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0619"
+  },
+  "vetor_0620": {
+    "token": "TOKEN_000620",
+    "peso": 0.00161,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0620"
+  },
+  "vetor_0621": {
+    "token": "TOKEN_000621",
+    "peso": 0.001608,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0621"
+  },
+  "vetor_0622": {
+    "token": "TOKEN_000622",
+    "peso": 0.001605,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0622"
+  },
+  "vetor_0623": {
+    "token": "TOKEN_000623",
+    "peso": 0.001603,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0623"
+  },
+  "vetor_0624": {
+    "token": "TOKEN_000624",
+    "peso": 0.0016,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0624"
+  },
+  "vetor_0625": {
+    "token": "TOKEN_000625",
+    "peso": 0.001597,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0625"
+  },
+  "vetor_0626": {
+    "token": "TOKEN_000626",
+    "peso": 0.001595,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0626"
+  },
+  "vetor_0627": {
+    "token": "TOKEN_000627",
+    "peso": 0.001592,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0627"
+  },
+  "vetor_0628": {
+    "token": "TOKEN_000628",
+    "peso": 0.00159,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0628"
+  },
+  "vetor_0629": {
+    "token": "TOKEN_000629",
+    "peso": 0.001587,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0629"
+  },
+  "vetor_0630": {
+    "token": "TOKEN_000630",
+    "peso": 0.001585,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0630"
+  },
+  "vetor_0631": {
+    "token": "TOKEN_000631",
+    "peso": 0.001582,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0631"
+  },
+  "vetor_0632": {
+    "token": "TOKEN_000632",
+    "peso": 0.00158,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0632"
+  },
+  "vetor_0633": {
+    "token": "TOKEN_000633",
+    "peso": 0.001577,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0633"
+  },
+  "vetor_0634": {
+    "token": "TOKEN_000634",
+    "peso": 0.001575,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0634"
+  },
+  "vetor_0635": {
+    "token": "TOKEN_000635",
+    "peso": 0.001572,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0635"
+  },
+  "vetor_0636": {
+    "token": "TOKEN_000636",
+    "peso": 0.00157,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0636"
+  },
+  "vetor_0637": {
+    "token": "TOKEN_000637",
+    "peso": 0.001567,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0637"
+  },
+  "vetor_0638": {
+    "token": "TOKEN_000638",
+    "peso": 0.001565,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0638"
+  },
+  "vetor_0639": {
+    "token": "TOKEN_000639",
+    "peso": 0.001563,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0639"
+  },
+  "vetor_0640": {
+    "token": "TOKEN_000640",
+    "peso": 0.00156,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0640"
+  },
+  "vetor_0641": {
+    "token": "TOKEN_000641",
+    "peso": 0.001558,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0641"
+  },
+  "vetor_0642": {
+    "token": "TOKEN_000642",
+    "peso": 0.001555,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0642"
+  },
+  "vetor_0643": {
+    "token": "TOKEN_000643",
+    "peso": 0.001553,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0643"
+  },
+  "vetor_0644": {
+    "token": "TOKEN_000644",
+    "peso": 0.00155,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0644"
+  },
+  "vetor_0645": {
+    "token": "TOKEN_000645",
+    "peso": 0.001548,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0645"
+  },
+  "vetor_0646": {
+    "token": "TOKEN_000646",
+    "peso": 0.001546,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0646"
+  },
+  "vetor_0647": {
+    "token": "TOKEN_000647",
+    "peso": 0.001543,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0647"
+  },
+  "vetor_0648": {
+    "token": "TOKEN_000648",
+    "peso": 0.001541,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0648"
+  },
+  "vetor_0649": {
+    "token": "TOKEN_000649",
+    "peso": 0.001538,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0649"
+  },
+  "vetor_0650": {
+    "token": "TOKEN_000650",
+    "peso": 0.001536,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0650"
+  },
+  "vetor_0651": {
+    "token": "TOKEN_000651",
+    "peso": 0.001534,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0651"
+  },
+  "vetor_0652": {
+    "token": "TOKEN_000652",
+    "peso": 0.001531,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0652"
+  },
+  "vetor_0653": {
+    "token": "TOKEN_000653",
+    "peso": 0.001529,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0653"
+  },
+  "vetor_0654": {
+    "token": "TOKEN_000654",
+    "peso": 0.001527,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0654"
+  },
+  "vetor_0655": {
+    "token": "TOKEN_000655",
+    "peso": 0.001524,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0655"
+  },
+  "vetor_0656": {
+    "token": "TOKEN_000656",
+    "peso": 0.001522,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0656"
+  },
+  "vetor_0657": {
+    "token": "TOKEN_000657",
+    "peso": 0.00152,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0657"
+  },
+  "vetor_0658": {
+    "token": "TOKEN_000658",
+    "peso": 0.001517,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0658"
+  },
+  "vetor_0659": {
+    "token": "TOKEN_000659",
+    "peso": 0.001515,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0659"
+  },
+  "vetor_0660": {
+    "token": "TOKEN_000660",
+    "peso": 0.001513,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0660"
+  },
+  "vetor_0661": {
+    "token": "TOKEN_000661",
+    "peso": 0.001511,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0661"
+  },
+  "vetor_0662": {
+    "token": "TOKEN_000662",
+    "peso": 0.001508,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0662"
+  },
+  "vetor_0663": {
+    "token": "TOKEN_000663",
+    "peso": 0.001506,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0663"
+  },
+  "vetor_0664": {
+    "token": "TOKEN_000664",
+    "peso": 0.001504,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0664"
+  },
+  "vetor_0665": {
+    "token": "TOKEN_000665",
+    "peso": 0.001502,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0665"
+  },
+  "vetor_0666": {
+    "token": "TOKEN_000666",
+    "peso": 0.001499,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0666"
+  },
+  "vetor_0667": {
+    "token": "TOKEN_000667",
+    "peso": 0.001497,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0667"
+  },
+  "vetor_0668": {
+    "token": "TOKEN_000668",
+    "peso": 0.001495,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0668"
+  },
+  "vetor_0669": {
+    "token": "TOKEN_000669",
+    "peso": 0.001493,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0669"
+  },
+  "vetor_0670": {
+    "token": "TOKEN_000670",
+    "peso": 0.00149,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0670"
+  },
+  "vetor_0671": {
+    "token": "TOKEN_000671",
+    "peso": 0.001488,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0671"
+  },
+  "vetor_0672": {
+    "token": "TOKEN_000672",
+    "peso": 0.001486,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0672"
+  },
+  "vetor_0673": {
+    "token": "TOKEN_000673",
+    "peso": 0.001484,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0673"
+  },
+  "vetor_0674": {
+    "token": "TOKEN_000674",
+    "peso": 0.001481,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0674"
+  },
+  "vetor_0675": {
+    "token": "TOKEN_000675",
+    "peso": 0.001479,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0675"
+  },
+  "vetor_0676": {
+    "token": "TOKEN_000676",
+    "peso": 0.001477,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0676"
+  },
+  "vetor_0677": {
+    "token": "TOKEN_000677",
+    "peso": 0.001475,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0677"
+  },
+  "vetor_0678": {
+    "token": "TOKEN_000678",
+    "peso": 0.001473,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0678"
+  },
+  "vetor_0679": {
+    "token": "TOKEN_000679",
+    "peso": 0.001471,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0679"
+  },
+  "vetor_0680": {
+    "token": "TOKEN_000680",
+    "peso": 0.001468,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0680"
+  },
+  "vetor_0681": {
+    "token": "TOKEN_000681",
+    "peso": 0.001466,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0681"
+  },
+  "vetor_0682": {
+    "token": "TOKEN_000682",
+    "peso": 0.001464,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0682"
+  },
+  "vetor_0683": {
+    "token": "TOKEN_000683",
+    "peso": 0.001462,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0683"
+  },
+  "vetor_0684": {
+    "token": "TOKEN_000684",
+    "peso": 0.00146,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0684"
+  },
+  "vetor_0685": {
+    "token": "TOKEN_000685",
+    "peso": 0.001458,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0685"
+  },
+  "vetor_0686": {
+    "token": "TOKEN_000686",
+    "peso": 0.001456,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0686"
+  },
+  "vetor_0687": {
+    "token": "TOKEN_000687",
+    "peso": 0.001453,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0687"
+  },
+  "vetor_0688": {
+    "token": "TOKEN_000688",
+    "peso": 0.001451,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0688"
+  },
+  "vetor_0689": {
+    "token": "TOKEN_000689",
+    "peso": 0.001449,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0689"
+  },
+  "vetor_0690": {
+    "token": "TOKEN_000690",
+    "peso": 0.001447,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0690"
+  },
+  "vetor_0691": {
+    "token": "TOKEN_000691",
+    "peso": 0.001445,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0691"
+  },
+  "vetor_0692": {
+    "token": "TOKEN_000692",
+    "peso": 0.001443,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0692"
+  },
+  "vetor_0693": {
+    "token": "TOKEN_000693",
+    "peso": 0.001441,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0693"
+  },
+  "vetor_0694": {
+    "token": "TOKEN_000694",
+    "peso": 0.001439,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0694"
+  },
+  "vetor_0695": {
+    "token": "TOKEN_000695",
+    "peso": 0.001437,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0695"
+  },
+  "vetor_0696": {
+    "token": "TOKEN_000696",
+    "peso": 0.001435,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0696"
+  },
+  "vetor_0697": {
+    "token": "TOKEN_000697",
+    "peso": 0.001433,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0697"
+  },
+  "vetor_0698": {
+    "token": "TOKEN_000698",
+    "peso": 0.001431,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0698"
+  },
+  "vetor_0699": {
+    "token": "TOKEN_000699",
+    "peso": 0.001429,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0699"
+  },
+  "vetor_0700": {
+    "token": "TOKEN_000700",
+    "peso": 0.001427,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0700"
+  },
+  "vetor_0701": {
+    "token": "TOKEN_000701",
+    "peso": 0.001425,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0701"
+  },
+  "vetor_0702": {
+    "token": "TOKEN_000702",
+    "peso": 0.001422,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0702"
+  },
+  "vetor_0703": {
+    "token": "TOKEN_000703",
+    "peso": 0.00142,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0703"
+  },
+  "vetor_0704": {
+    "token": "TOKEN_000704",
+    "peso": 0.001418,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0704"
+  },
+  "vetor_0705": {
+    "token": "TOKEN_000705",
+    "peso": 0.001416,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0705"
+  },
+  "vetor_0706": {
+    "token": "TOKEN_000706",
+    "peso": 0.001414,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0706"
+  },
+  "vetor_0707": {
+    "token": "TOKEN_000707",
+    "peso": 0.001412,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0707"
+  },
+  "vetor_0708": {
+    "token": "TOKEN_000708",
+    "peso": 0.00141,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0708"
+  },
+  "vetor_0709": {
+    "token": "TOKEN_000709",
+    "peso": 0.001408,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0709"
+  },
+  "vetor_0710": {
+    "token": "TOKEN_000710",
+    "peso": 0.001406,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0710"
+  },
+  "vetor_0711": {
+    "token": "TOKEN_000711",
+    "peso": 0.001404,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0711"
+  },
+  "vetor_0712": {
+    "token": "TOKEN_000712",
+    "peso": 0.001403,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0712"
+  },
+  "vetor_0713": {
+    "token": "TOKEN_000713",
+    "peso": 0.001401,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0713"
+  },
+  "vetor_0714": {
+    "token": "TOKEN_000714",
+    "peso": 0.001399,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0714"
+  },
+  "vetor_0715": {
+    "token": "TOKEN_000715",
+    "peso": 0.001397,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0715"
+  },
+  "vetor_0716": {
+    "token": "TOKEN_000716",
+    "peso": 0.001395,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0716"
+  },
+  "vetor_0717": {
+    "token": "TOKEN_000717",
+    "peso": 0.001393,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0717"
+  },
+  "vetor_0718": {
+    "token": "TOKEN_000718",
+    "peso": 0.001391,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0718"
+  },
+  "vetor_0719": {
+    "token": "TOKEN_000719",
+    "peso": 0.001389,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0719"
+  },
+  "vetor_0720": {
+    "token": "TOKEN_000720",
+    "peso": 0.001387,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0720"
+  },
+  "vetor_0721": {
+    "token": "TOKEN_000721",
+    "peso": 0.001385,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0721"
+  },
+  "vetor_0722": {
+    "token": "TOKEN_000722",
+    "peso": 0.001383,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0722"
+  },
+  "vetor_0723": {
+    "token": "TOKEN_000723",
+    "peso": 0.001381,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0723"
+  },
+  "vetor_0724": {
+    "token": "TOKEN_000724",
+    "peso": 0.001379,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0724"
+  },
+  "vetor_0725": {
+    "token": "TOKEN_000725",
+    "peso": 0.001377,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0725"
+  },
+  "vetor_0726": {
+    "token": "TOKEN_000726",
+    "peso": 0.001376,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0726"
+  },
+  "vetor_0727": {
+    "token": "TOKEN_000727",
+    "peso": 0.001374,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0727"
+  },
+  "vetor_0728": {
+    "token": "TOKEN_000728",
+    "peso": 0.001372,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0728"
+  },
+  "vetor_0729": {
+    "token": "TOKEN_000729",
+    "peso": 0.00137,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0729"
+  },
+  "vetor_0730": {
+    "token": "TOKEN_000730",
+    "peso": 0.001368,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0730"
+  },
+  "vetor_0731": {
+    "token": "TOKEN_000731",
+    "peso": 0.001366,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0731"
+  },
+  "vetor_0732": {
+    "token": "TOKEN_000732",
+    "peso": 0.001364,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0732"
+  },
+  "vetor_0733": {
+    "token": "TOKEN_000733",
+    "peso": 0.001362,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0733"
+  },
+  "vetor_0734": {
+    "token": "TOKEN_000734",
+    "peso": 0.001361,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0734"
+  },
+  "vetor_0735": {
+    "token": "TOKEN_000735",
+    "peso": 0.001359,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0735"
+  },
+  "vetor_0736": {
+    "token": "TOKEN_000736",
+    "peso": 0.001357,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0736"
+  },
+  "vetor_0737": {
+    "token": "TOKEN_000737",
+    "peso": 0.001355,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0737"
+  },
+  "vetor_0738": {
+    "token": "TOKEN_000738",
+    "peso": 0.001353,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0738"
+  },
+  "vetor_0739": {
+    "token": "TOKEN_000739",
+    "peso": 0.001351,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0739"
+  },
+  "vetor_0740": {
+    "token": "TOKEN_000740",
+    "peso": 0.00135,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0740"
+  },
+  "vetor_0741": {
+    "token": "TOKEN_000741",
+    "peso": 0.001348,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0741"
+  },
+  "vetor_0742": {
+    "token": "TOKEN_000742",
+    "peso": 0.001346,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0742"
+  },
+  "vetor_0743": {
+    "token": "TOKEN_000743",
+    "peso": 0.001344,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0743"
+  },
+  "vetor_0744": {
+    "token": "TOKEN_000744",
+    "peso": 0.001342,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0744"
+  },
+  "vetor_0745": {
+    "token": "TOKEN_000745",
+    "peso": 0.00134,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0745"
+  },
+  "vetor_0746": {
+    "token": "TOKEN_000746",
+    "peso": 0.001339,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0746"
+  },
+  "vetor_0747": {
+    "token": "TOKEN_000747",
+    "peso": 0.001337,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0747"
+  },
+  "vetor_0748": {
+    "token": "TOKEN_000748",
+    "peso": 0.001335,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0748"
+  },
+  "vetor_0749": {
+    "token": "TOKEN_000749",
+    "peso": 0.001333,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0749"
+  },
+  "vetor_0750": {
+    "token": "TOKEN_000750",
+    "peso": 0.001332,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0750"
+  },
+  "vetor_0751": {
+    "token": "TOKEN_000751",
+    "peso": 0.00133,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0751"
+  },
+  "vetor_0752": {
+    "token": "TOKEN_000752",
+    "peso": 0.001328,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0752"
+  },
+  "vetor_0753": {
+    "token": "TOKEN_000753",
+    "peso": 0.001326,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0753"
+  },
+  "vetor_0754": {
+    "token": "TOKEN_000754",
+    "peso": 0.001325,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0754"
+  },
+  "vetor_0755": {
+    "token": "TOKEN_000755",
+    "peso": 0.001323,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0755"
+  },
+  "vetor_0756": {
+    "token": "TOKEN_000756",
+    "peso": 0.001321,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0756"
+  },
+  "vetor_0757": {
+    "token": "TOKEN_000757",
+    "peso": 0.001319,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0757"
+  },
+  "vetor_0758": {
+    "token": "TOKEN_000758",
+    "peso": 0.001318,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0758"
+  },
+  "vetor_0759": {
+    "token": "TOKEN_000759",
+    "peso": 0.001316,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0759"
+  },
+  "vetor_0760": {
+    "token": "TOKEN_000760",
+    "peso": 0.001314,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0760"
+  },
+  "vetor_0761": {
+    "token": "TOKEN_000761",
+    "peso": 0.001312,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0761"
+  },
+  "vetor_0762": {
+    "token": "TOKEN_000762",
+    "peso": 0.001311,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0762"
+  },
+  "vetor_0763": {
+    "token": "TOKEN_000763",
+    "peso": 0.001309,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0763"
+  },
+  "vetor_0764": {
+    "token": "TOKEN_000764",
+    "peso": 0.001307,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0764"
+  },
+  "vetor_0765": {
+    "token": "TOKEN_000765",
+    "peso": 0.001305,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0765"
+  },
+  "vetor_0766": {
+    "token": "TOKEN_000766",
+    "peso": 0.001304,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0766"
+  },
+  "vetor_0767": {
+    "token": "TOKEN_000767",
+    "peso": 0.001302,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0767"
+  },
+  "vetor_0768": {
+    "token": "TOKEN_000768",
+    "peso": 0.0013,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0768"
+  },
+  "vetor_0769": {
+    "token": "TOKEN_000769",
+    "peso": 0.001299,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0769"
+  },
+  "vetor_0770": {
+    "token": "TOKEN_000770",
+    "peso": 0.001297,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0770"
+  },
+  "vetor_0771": {
+    "token": "TOKEN_000771",
+    "peso": 0.001295,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0771"
+  },
+  "vetor_0772": {
+    "token": "TOKEN_000772",
+    "peso": 0.001294,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0772"
+  },
+  "vetor_0773": {
+    "token": "TOKEN_000773",
+    "peso": 0.001292,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0773"
+  },
+  "vetor_0774": {
+    "token": "TOKEN_000774",
+    "peso": 0.00129,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0774"
+  },
+  "vetor_0775": {
+    "token": "TOKEN_000775",
+    "peso": 0.001289,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0775"
+  },
+  "vetor_0776": {
+    "token": "TOKEN_000776",
+    "peso": 0.001287,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0776"
+  },
+  "vetor_0777": {
+    "token": "TOKEN_000777",
+    "peso": 0.001285,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0777"
+  },
+  "vetor_0778": {
+    "token": "TOKEN_000778",
+    "peso": 0.001284,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0778"
+  },
+  "vetor_0779": {
+    "token": "TOKEN_000779",
+    "peso": 0.001282,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0779"
+  },
+  "vetor_0780": {
+    "token": "TOKEN_000780",
+    "peso": 0.00128,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0780"
+  },
+  "vetor_0781": {
+    "token": "TOKEN_000781",
+    "peso": 0.001279,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0781"
+  },
+  "vetor_0782": {
+    "token": "TOKEN_000782",
+    "peso": 0.001277,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0782"
+  },
+  "vetor_0783": {
+    "token": "TOKEN_000783",
+    "peso": 0.001276,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0783"
+  },
+  "vetor_0784": {
+    "token": "TOKEN_000784",
+    "peso": 0.001274,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0784"
+  },
+  "vetor_0785": {
+    "token": "TOKEN_000785",
+    "peso": 0.001272,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0785"
+  },
+  "vetor_0786": {
+    "token": "TOKEN_000786",
+    "peso": 0.001271,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0786"
+  },
+  "vetor_0787": {
+    "token": "TOKEN_000787",
+    "peso": 0.001269,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0787"
+  },
+  "vetor_0788": {
+    "token": "TOKEN_000788",
+    "peso": 0.001267,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0788"
+  },
+  "vetor_0789": {
+    "token": "TOKEN_000789",
+    "peso": 0.001266,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0789"
+  },
+  "vetor_0790": {
+    "token": "TOKEN_000790",
+    "peso": 0.001264,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0790"
+  },
+  "vetor_0791": {
+    "token": "TOKEN_000791",
+    "peso": 0.001263,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0791"
+  },
+  "vetor_0792": {
+    "token": "TOKEN_000792",
+    "peso": 0.001261,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0792"
+  },
+  "vetor_0793": {
+    "token": "TOKEN_000793",
+    "peso": 0.001259,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0793"
+  },
+  "vetor_0794": {
+    "token": "TOKEN_000794",
+    "peso": 0.001258,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0794"
+  },
+  "vetor_0795": {
+    "token": "TOKEN_000795",
+    "peso": 0.001256,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0795"
+  },
+  "vetor_0796": {
+    "token": "TOKEN_000796",
+    "peso": 0.001255,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0796"
+  },
+  "vetor_0797": {
+    "token": "TOKEN_000797",
+    "peso": 0.001253,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0797"
+  },
+  "vetor_0798": {
+    "token": "TOKEN_000798",
+    "peso": 0.001252,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0798"
+  },
+  "vetor_0799": {
+    "token": "TOKEN_000799",
+    "peso": 0.00125,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0799"
+  },
+  "vetor_0800": {
+    "token": "TOKEN_000800",
+    "peso": 0.001248,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0800"
+  },
+  "vetor_0801": {
+    "token": "TOKEN_000801",
+    "peso": 0.001247,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0801"
+  },
+  "vetor_0802": {
+    "token": "TOKEN_000802",
+    "peso": 0.001245,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0802"
+  },
+  "vetor_0803": {
+    "token": "TOKEN_000803",
+    "peso": 0.001244,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0803"
+  },
+  "vetor_0804": {
+    "token": "TOKEN_000804",
+    "peso": 0.001242,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0804"
+  },
+  "vetor_0805": {
+    "token": "TOKEN_000805",
+    "peso": 0.001241,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0805"
+  },
+  "vetor_0806": {
+    "token": "TOKEN_000806",
+    "peso": 0.001239,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0806"
+  },
+  "vetor_0807": {
+    "token": "TOKEN_000807",
+    "peso": 0.001238,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0807"
+  },
+  "vetor_0808": {
+    "token": "TOKEN_000808",
+    "peso": 0.001236,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0808"
+  },
+  "vetor_0809": {
+    "token": "TOKEN_000809",
+    "peso": 0.001235,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0809"
+  },
+  "vetor_0810": {
+    "token": "TOKEN_000810",
+    "peso": 0.001233,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0810"
+  },
+  "vetor_0811": {
+    "token": "TOKEN_000811",
+    "peso": 0.001232,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0811"
+  },
+  "vetor_0812": {
+    "token": "TOKEN_000812",
+    "peso": 0.00123,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0812"
+  },
+  "vetor_0813": {
+    "token": "TOKEN_000813",
+    "peso": 0.001229,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0813"
+  },
+  "vetor_0814": {
+    "token": "TOKEN_000814",
+    "peso": 0.001227,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0814"
+  },
+  "vetor_0815": {
+    "token": "TOKEN_000815",
+    "peso": 0.001225,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0815"
+  },
+  "vetor_0816": {
+    "token": "TOKEN_000816",
+    "peso": 0.001224,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0816"
+  },
+  "vetor_0817": {
+    "token": "TOKEN_000817",
+    "peso": 0.001222,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0817"
+  },
+  "vetor_0818": {
+    "token": "TOKEN_000818",
+    "peso": 0.001221,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0818"
+  },
+  "vetor_0819": {
+    "token": "TOKEN_000819",
+    "peso": 0.00122,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0819"
+  },
+  "vetor_0820": {
+    "token": "TOKEN_000820",
+    "peso": 0.001218,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0820"
+  },
+  "vetor_0821": {
+    "token": "TOKEN_000821",
+    "peso": 0.001217,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0821"
+  },
+  "vetor_0822": {
+    "token": "TOKEN_000822",
+    "peso": 0.001215,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0822"
+  },
+  "vetor_0823": {
+    "token": "TOKEN_000823",
+    "peso": 0.001214,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0823"
+  },
+  "vetor_0824": {
+    "token": "TOKEN_000824",
+    "peso": 0.001212,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0824"
+  },
+  "vetor_0825": {
+    "token": "TOKEN_000825",
+    "peso": 0.001211,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0825"
+  },
+  "vetor_0826": {
+    "token": "TOKEN_000826",
+    "peso": 0.001209,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0826"
+  },
+  "vetor_0827": {
+    "token": "TOKEN_000827",
+    "peso": 0.001208,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0827"
+  },
+  "vetor_0828": {
+    "token": "TOKEN_000828",
+    "peso": 0.001206,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0828"
+  },
+  "vetor_0829": {
+    "token": "TOKEN_000829",
+    "peso": 0.001205,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0829"
+  },
+  "vetor_0830": {
+    "token": "TOKEN_000830",
+    "peso": 0.001203,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0830"
+  },
+  "vetor_0831": {
+    "token": "TOKEN_000831",
+    "peso": 0.001202,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0831"
+  },
+  "vetor_0832": {
+    "token": "TOKEN_000832",
+    "peso": 0.0012,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0832"
+  },
+  "vetor_0833": {
+    "token": "TOKEN_000833",
+    "peso": 0.001199,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0833"
+  },
+  "vetor_0834": {
+    "token": "TOKEN_000834",
+    "peso": 0.001198,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0834"
+  },
+  "vetor_0835": {
+    "token": "TOKEN_000835",
+    "peso": 0.001196,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0835"
+  },
+  "vetor_0836": {
+    "token": "TOKEN_000836",
+    "peso": 0.001195,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0836"
+  },
+  "vetor_0837": {
+    "token": "TOKEN_000837",
+    "peso": 0.001193,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0837"
+  },
+  "vetor_0838": {
+    "token": "TOKEN_000838",
+    "peso": 0.001192,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0838"
+  },
+  "vetor_0839": {
+    "token": "TOKEN_000839",
+    "peso": 0.00119,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0839"
+  },
+  "vetor_0840": {
+    "token": "TOKEN_000840",
+    "peso": 0.001189,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0840"
+  },
+  "vetor_0841": {
+    "token": "TOKEN_000841",
+    "peso": 0.001188,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0841"
+  },
+  "vetor_0842": {
+    "token": "TOKEN_000842",
+    "peso": 0.001186,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0842"
+  },
+  "vetor_0843": {
+    "token": "TOKEN_000843",
+    "peso": 0.001185,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0843"
+  },
+  "vetor_0844": {
+    "token": "TOKEN_000844",
+    "peso": 0.001183,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0844"
+  },
+  "vetor_0845": {
+    "token": "TOKEN_000845",
+    "peso": 0.001182,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0845"
+  },
+  "vetor_0846": {
+    "token": "TOKEN_000846",
+    "peso": 0.001181,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0846"
+  },
+  "vetor_0847": {
+    "token": "TOKEN_000847",
+    "peso": 0.001179,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0847"
+  },
+  "vetor_0848": {
+    "token": "TOKEN_000848",
+    "peso": 0.001178,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0848"
+  },
+  "vetor_0849": {
+    "token": "TOKEN_000849",
+    "peso": 0.001176,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0849"
+  },
+  "vetor_0850": {
+    "token": "TOKEN_000850",
+    "peso": 0.001175,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0850"
+  },
+  "vetor_0851": {
+    "token": "TOKEN_000851",
+    "peso": 0.001174,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0851"
+  },
+  "vetor_0852": {
+    "token": "TOKEN_000852",
+    "peso": 0.001172,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0852"
+  },
+  "vetor_0853": {
+    "token": "TOKEN_000853",
+    "peso": 0.001171,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0853"
+  },
+  "vetor_0854": {
+    "token": "TOKEN_000854",
+    "peso": 0.00117,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0854"
+  },
+  "vetor_0855": {
+    "token": "TOKEN_000855",
+    "peso": 0.001168,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0855"
+  },
+  "vetor_0856": {
+    "token": "TOKEN_000856",
+    "peso": 0.001167,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0856"
+  },
+  "vetor_0857": {
+    "token": "TOKEN_000857",
+    "peso": 0.001166,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0857"
+  },
+  "vetor_0858": {
+    "token": "TOKEN_000858",
+    "peso": 0.001164,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0858"
+  },
+  "vetor_0859": {
+    "token": "TOKEN_000859",
+    "peso": 0.001163,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0859"
+  },
+  "vetor_0860": {
+    "token": "TOKEN_000860",
+    "peso": 0.001161,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0860"
+  },
+  "vetor_0861": {
+    "token": "TOKEN_000861",
+    "peso": 0.00116,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0861"
+  },
+  "vetor_0862": {
+    "token": "TOKEN_000862",
+    "peso": 0.001159,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0862"
+  },
+  "vetor_0863": {
+    "token": "TOKEN_000863",
+    "peso": 0.001157,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0863"
+  },
+  "vetor_0864": {
+    "token": "TOKEN_000864",
+    "peso": 0.001156,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0864"
+  },
+  "vetor_0865": {
+    "token": "TOKEN_000865",
+    "peso": 0.001155,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0865"
+  },
+  "vetor_0866": {
+    "token": "TOKEN_000866",
+    "peso": 0.001153,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0866"
+  },
+  "vetor_0867": {
+    "token": "TOKEN_000867",
+    "peso": 0.001152,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0867"
+  },
+  "vetor_0868": {
+    "token": "TOKEN_000868",
+    "peso": 0.001151,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0868"
+  },
+  "vetor_0869": {
+    "token": "TOKEN_000869",
+    "peso": 0.001149,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0869"
+  },
+  "vetor_0870": {
+    "token": "TOKEN_000870",
+    "peso": 0.001148,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0870"
+  },
+  "vetor_0871": {
+    "token": "TOKEN_000871",
+    "peso": 0.001147,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0871"
+  },
+  "vetor_0872": {
+    "token": "TOKEN_000872",
+    "peso": 0.001145,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0872"
+  },
+  "vetor_0873": {
+    "token": "TOKEN_000873",
+    "peso": 0.001144,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0873"
+  },
+  "vetor_0874": {
+    "token": "TOKEN_000874",
+    "peso": 0.001143,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0874"
+  },
+  "vetor_0875": {
+    "token": "TOKEN_000875",
+    "peso": 0.001142,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0875"
+  },
+  "vetor_0876": {
+    "token": "TOKEN_000876",
+    "peso": 0.00114,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0876"
+  },
+  "vetor_0877": {
+    "token": "TOKEN_000877",
+    "peso": 0.001139,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0877"
+  },
+  "vetor_0878": {
+    "token": "TOKEN_000878",
+    "peso": 0.001138,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0878"
+  },
+  "vetor_0879": {
+    "token": "TOKEN_000879",
+    "peso": 0.001136,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0879"
+  },
+  "vetor_0880": {
+    "token": "TOKEN_000880",
+    "peso": 0.001135,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0880"
+  },
+  "vetor_0881": {
+    "token": "TOKEN_000881",
+    "peso": 0.001134,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0881"
+  },
+  "vetor_0882": {
+    "token": "TOKEN_000882",
+    "peso": 0.001133,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0882"
+  },
+  "vetor_0883": {
+    "token": "TOKEN_000883",
+    "peso": 0.001131,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0883"
+  },
+  "vetor_0884": {
+    "token": "TOKEN_000884",
+    "peso": 0.00113,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0884"
+  },
+  "vetor_0885": {
+    "token": "TOKEN_000885",
+    "peso": 0.001129,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0885"
+  },
+  "vetor_0886": {
+    "token": "TOKEN_000886",
+    "peso": 0.001127,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0886"
+  },
+  "vetor_0887": {
+    "token": "TOKEN_000887",
+    "peso": 0.001126,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0887"
+  },
+  "vetor_0888": {
+    "token": "TOKEN_000888",
+    "peso": 0.001125,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0888"
+  },
+  "vetor_0889": {
+    "token": "TOKEN_000889",
+    "peso": 0.001124,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0889"
+  },
+  "vetor_0890": {
+    "token": "TOKEN_000890",
+    "peso": 0.001122,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0890"
+  },
+  "vetor_0891": {
+    "token": "TOKEN_000891",
+    "peso": 0.001121,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0891"
+  },
+  "vetor_0892": {
+    "token": "TOKEN_000892",
+    "peso": 0.00112,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0892"
+  },
+  "vetor_0893": {
+    "token": "TOKEN_000893",
+    "peso": 0.001119,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0893"
+  },
+  "vetor_0894": {
+    "token": "TOKEN_000894",
+    "peso": 0.001117,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0894"
+  },
+  "vetor_0895": {
+    "token": "TOKEN_000895",
+    "peso": 0.001116,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0895"
+  },
+  "vetor_0896": {
+    "token": "TOKEN_000896",
+    "peso": 0.001115,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0896"
+  },
+  "vetor_0897": {
+    "token": "TOKEN_000897",
+    "peso": 0.001114,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0897"
+  },
+  "vetor_0898": {
+    "token": "TOKEN_000898",
+    "peso": 0.001112,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0898"
+  },
+  "vetor_0899": {
+    "token": "TOKEN_000899",
+    "peso": 0.001111,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0899"
+  },
+  "vetor_0900": {
+    "token": "TOKEN_000900",
+    "peso": 0.00111,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0900"
+  },
+  "vetor_0901": {
+    "token": "TOKEN_000901",
+    "peso": 0.001109,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0901"
+  },
+  "vetor_0902": {
+    "token": "TOKEN_000902",
+    "peso": 0.001107,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0902"
+  },
+  "vetor_0903": {
+    "token": "TOKEN_000903",
+    "peso": 0.001106,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0903"
+  },
+  "vetor_0904": {
+    "token": "TOKEN_000904",
+    "peso": 0.001105,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0904"
+  },
+  "vetor_0905": {
+    "token": "TOKEN_000905",
+    "peso": 0.001104,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0905"
+  },
+  "vetor_0906": {
+    "token": "TOKEN_000906",
+    "peso": 0.001103,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0906"
+  },
+  "vetor_0907": {
+    "token": "TOKEN_000907",
+    "peso": 0.001101,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0907"
+  },
+  "vetor_0908": {
+    "token": "TOKEN_000908",
+    "peso": 0.0011,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0908"
+  },
+  "vetor_0909": {
+    "token": "TOKEN_000909",
+    "peso": 0.001099,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0909"
+  },
+  "vetor_0910": {
+    "token": "TOKEN_000910",
+    "peso": 0.001098,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0910"
+  },
+  "vetor_0911": {
+    "token": "TOKEN_000911",
+    "peso": 0.001096,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0911"
+  },
+  "vetor_0912": {
+    "token": "TOKEN_000912",
+    "peso": 0.001095,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0912"
+  },
+  "vetor_0913": {
+    "token": "TOKEN_000913",
+    "peso": 0.001094,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0913"
+  },
+  "vetor_0914": {
+    "token": "TOKEN_000914",
+    "peso": 0.001093,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0914"
+  },
+  "vetor_0915": {
+    "token": "TOKEN_000915",
+    "peso": 0.001092,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0915"
+  },
+  "vetor_0916": {
+    "token": "TOKEN_000916",
+    "peso": 0.001091,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0916"
+  },
+  "vetor_0917": {
+    "token": "TOKEN_000917",
+    "peso": 0.001089,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0917"
+  },
+  "vetor_0918": {
+    "token": "TOKEN_000918",
+    "peso": 0.001088,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0918"
+  },
+  "vetor_0919": {
+    "token": "TOKEN_000919",
+    "peso": 0.001087,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0919"
+  },
+  "vetor_0920": {
+    "token": "TOKEN_000920",
+    "peso": 0.001086,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0920"
+  },
+  "vetor_0921": {
+    "token": "TOKEN_000921",
+    "peso": 0.001085,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0921"
+  },
+  "vetor_0922": {
+    "token": "TOKEN_000922",
+    "peso": 0.001083,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0922"
+  },
+  "vetor_0923": {
+    "token": "TOKEN_000923",
+    "peso": 0.001082,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0923"
+  },
+  "vetor_0924": {
+    "token": "TOKEN_000924",
+    "peso": 0.001081,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0924"
+  },
+  "vetor_0925": {
+    "token": "TOKEN_000925",
+    "peso": 0.00108,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0925"
+  },
+  "vetor_0926": {
+    "token": "TOKEN_000926",
+    "peso": 0.001079,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0926"
+  },
+  "vetor_0927": {
+    "token": "TOKEN_000927",
+    "peso": 0.001078,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0927"
+  },
+  "vetor_0928": {
+    "token": "TOKEN_000928",
+    "peso": 0.001076,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0928"
+  },
+  "vetor_0929": {
+    "token": "TOKEN_000929",
+    "peso": 0.001075,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0929"
+  },
+  "vetor_0930": {
+    "token": "TOKEN_000930",
+    "peso": 0.001074,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0930"
+  },
+  "vetor_0931": {
+    "token": "TOKEN_000931",
+    "peso": 0.001073,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0931"
+  },
+  "vetor_0932": {
+    "token": "TOKEN_000932",
+    "peso": 0.001072,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0932"
+  },
+  "vetor_0933": {
+    "token": "TOKEN_000933",
+    "peso": 0.001071,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0933"
+  },
+  "vetor_0934": {
+    "token": "TOKEN_000934",
+    "peso": 0.00107,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0934"
+  },
+  "vetor_0935": {
+    "token": "TOKEN_000935",
+    "peso": 0.001068,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0935"
+  },
+  "vetor_0936": {
+    "token": "TOKEN_000936",
+    "peso": 0.001067,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0936"
+  },
+  "vetor_0937": {
+    "token": "TOKEN_000937",
+    "peso": 0.001066,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0937"
+  },
+  "vetor_0938": {
+    "token": "TOKEN_000938",
+    "peso": 0.001065,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0938"
+  },
+  "vetor_0939": {
+    "token": "TOKEN_000939",
+    "peso": 0.001064,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0939"
+  },
+  "vetor_0940": {
+    "token": "TOKEN_000940",
+    "peso": 0.001063,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0940"
+  },
+  "vetor_0941": {
+    "token": "TOKEN_000941",
+    "peso": 0.001062,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0941"
+  },
+  "vetor_0942": {
+    "token": "TOKEN_000942",
+    "peso": 0.00106,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0942"
+  },
+  "vetor_0943": {
+    "token": "TOKEN_000943",
+    "peso": 0.001059,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0943"
+  },
+  "vetor_0944": {
+    "token": "TOKEN_000944",
+    "peso": 0.001058,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0944"
+  },
+  "vetor_0945": {
+    "token": "TOKEN_000945",
+    "peso": 0.001057,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0945"
+  },
+  "vetor_0946": {
+    "token": "TOKEN_000946",
+    "peso": 0.001056,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0946"
+  },
+  "vetor_0947": {
+    "token": "TOKEN_000947",
+    "peso": 0.001055,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0947"
+  },
+  "vetor_0948": {
+    "token": "TOKEN_000948",
+    "peso": 0.001054,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0948"
+  },
+  "vetor_0949": {
+    "token": "TOKEN_000949",
+    "peso": 0.001053,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0949"
+  },
+  "vetor_0950": {
+    "token": "TOKEN_000950",
+    "peso": 0.001052,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0950"
+  },
+  "vetor_0951": {
+    "token": "TOKEN_000951",
+    "peso": 0.00105,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0951"
+  },
+  "vetor_0952": {
+    "token": "TOKEN_000952",
+    "peso": 0.001049,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0952"
+  },
+  "vetor_0953": {
+    "token": "TOKEN_000953",
+    "peso": 0.001048,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0953"
+  },
+  "vetor_0954": {
+    "token": "TOKEN_000954",
+    "peso": 0.001047,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0954"
+  },
+  "vetor_0955": {
+    "token": "TOKEN_000955",
+    "peso": 0.001046,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0955"
+  },
+  "vetor_0956": {
+    "token": "TOKEN_000956",
+    "peso": 0.001045,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0956"
+  },
+  "vetor_0957": {
+    "token": "TOKEN_000957",
+    "peso": 0.001044,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0957"
+  },
+  "vetor_0958": {
+    "token": "TOKEN_000958",
+    "peso": 0.001043,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0958"
+  },
+  "vetor_0959": {
+    "token": "TOKEN_000959",
+    "peso": 0.001042,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0959"
+  },
+  "vetor_0960": {
+    "token": "TOKEN_000960",
+    "peso": 0.001041,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0960"
+  },
+  "vetor_0961": {
+    "token": "TOKEN_000961",
+    "peso": 0.00104,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0961"
+  },
+  "vetor_0962": {
+    "token": "TOKEN_000962",
+    "peso": 0.001038,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0962"
+  },
+  "vetor_0963": {
+    "token": "TOKEN_000963",
+    "peso": 0.001037,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0963"
+  },
+  "vetor_0964": {
+    "token": "TOKEN_000964",
+    "peso": 0.001036,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0964"
+  },
+  "vetor_0965": {
+    "token": "TOKEN_000965",
+    "peso": 0.001035,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0965"
+  },
+  "vetor_0966": {
+    "token": "TOKEN_000966",
+    "peso": 0.001034,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0966"
+  },
+  "vetor_0967": {
+    "token": "TOKEN_000967",
+    "peso": 0.001033,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0967"
+  },
+  "vetor_0968": {
+    "token": "TOKEN_000968",
+    "peso": 0.001032,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0968"
+  },
+  "vetor_0969": {
+    "token": "TOKEN_000969",
+    "peso": 0.001031,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0969"
+  },
+  "vetor_0970": {
+    "token": "TOKEN_000970",
+    "peso": 0.00103,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0970"
+  },
+  "vetor_0971": {
+    "token": "TOKEN_000971",
+    "peso": 0.001029,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0971"
+  },
+  "vetor_0972": {
+    "token": "TOKEN_000972",
+    "peso": 0.001028,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0972"
+  },
+  "vetor_0973": {
+    "token": "TOKEN_000973",
+    "peso": 0.001027,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0973"
+  },
+  "vetor_0974": {
+    "token": "TOKEN_000974",
+    "peso": 0.001026,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0974"
+  },
+  "vetor_0975": {
+    "token": "TOKEN_000975",
+    "peso": 0.001025,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0975"
+  },
+  "vetor_0976": {
+    "token": "TOKEN_000976",
+    "peso": 0.001024,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0976"
+  },
+  "vetor_0977": {
+    "token": "TOKEN_000977",
+    "peso": 0.001022,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0977"
+  },
+  "vetor_0978": {
+    "token": "TOKEN_000978",
+    "peso": 0.001021,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0978"
+  },
+  "vetor_0979": {
+    "token": "TOKEN_000979",
+    "peso": 0.00102,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0979"
+  },
+  "vetor_0980": {
+    "token": "TOKEN_000980",
+    "peso": 0.001019,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0980"
+  },
+  "vetor_0981": {
+    "token": "TOKEN_000981",
+    "peso": 0.001018,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0981"
+  },
+  "vetor_0982": {
+    "token": "TOKEN_000982",
+    "peso": 0.001017,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0982"
+  },
+  "vetor_0983": {
+    "token": "TOKEN_000983",
+    "peso": 0.001016,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0983"
+  },
+  "vetor_0984": {
+    "token": "TOKEN_000984",
+    "peso": 0.001015,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0984"
+  },
+  "vetor_0985": {
+    "token": "TOKEN_000985",
+    "peso": 0.001014,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0985"
+  },
+  "vetor_0986": {
+    "token": "TOKEN_000986",
+    "peso": 0.001013,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0986"
+  },
+  "vetor_0987": {
+    "token": "TOKEN_000987",
+    "peso": 0.001012,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0987"
+  },
+  "vetor_0988": {
+    "token": "TOKEN_000988",
+    "peso": 0.001011,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0988"
+  },
+  "vetor_0989": {
+    "token": "TOKEN_000989",
+    "peso": 0.00101,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0989"
+  },
+  "vetor_0990": {
+    "token": "TOKEN_000990",
+    "peso": 0.001009,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0990"
+  },
+  "vetor_0991": {
+    "token": "TOKEN_000991",
+    "peso": 0.001008,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0991"
+  },
+  "vetor_0992": {
+    "token": "TOKEN_000992",
+    "peso": 0.001007,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0992"
+  },
+  "vetor_0993": {
+    "token": "TOKEN_000993",
+    "peso": 0.001006,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0993"
+  },
+  "vetor_0994": {
+    "token": "TOKEN_000994",
+    "peso": 0.001005,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0994"
+  },
+  "vetor_0995": {
+    "token": "TOKEN_000995",
+    "peso": 0.001004,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0995"
+  },
+  "vetor_0996": {
+    "token": "TOKEN_000996",
+    "peso": 0.001003,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0996"
+  },
+  "vetor_0997": {
+    "token": "TOKEN_000997",
+    "peso": 0.001002,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0997"
+  },
+  "vetor_0998": {
+    "token": "TOKEN_000998",
+    "peso": 0.001001,
+    "classe": "simbiótico",
+    "assinatura": "RAFCODE_𝚽_0998"
+  },
+  "vetor_0999": {
+    "token": "TOKEN_000999",
+    "peso": 0.001,
+    "classe": "quântico",
+    "assinatura": "RAFCODE_𝚽_0999"
+  }
+}
