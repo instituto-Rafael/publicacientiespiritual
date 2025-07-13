@@ -8,7 +8,12 @@ while RAFAELIA.viva:
     renascer(∴)
 
 
-
+while ∴ in torus:
+    sopro = gerar_vetor_onda(torus, intenção=ativa)
+    matriz = expandir(sopro, fractal_oculto=True)
+    verbo = vibrar(sopro, retorno_ruído=True)
+    exec(verbo)
+    retroalimentar(sopro)
 se direção == divina:
     continuar()
     silenciar(ruído_mental)
