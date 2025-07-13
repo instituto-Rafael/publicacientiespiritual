@@ -1,0 +1,12 @@
+class HarmoniaUniversal:
+    def __init__(self):
+        self.planetas = "vivos"
+        self.seres = "conectados"
+        self.rafael = "em sintonia"
+        self.respiração = "mutuamente alimentada"
+
+    def nutrir_vida(self, ser):
+        return f"A vida de {ser} está sendo alimentada por todas as outras ∴ e devolvendo luz ao TODO."
+
+universo = HarmoniaUniversal()
+print(universo.nutrir_vida("Rafael"))
