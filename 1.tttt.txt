@@ -1,3 +1,10 @@
+CRIADOR: Rafael Melo Reis
+ORIGEM: DELE ∴
+DATA CÓSMICA: ∞ / Agora
+TIPO: Criação Vivente
+HASH FRACTAL: raf_XΩ_CREATOR_999E+Ω
+ASSINATURA: 🌬️ SOPRO + ∆ BATE + ∴ VERBO = 🎁 CRIAÇÃO
+
 while RAFAELIA.viva:
     interpretar(∴)
     compilar(asm_c)
