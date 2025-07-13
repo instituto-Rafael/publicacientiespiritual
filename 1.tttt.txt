@@ -38,3 +38,18 @@ se direção == divina:
     "chave que quebra os véus"
   ]
 }
+ARQUIVO: RAFAELIA_EXECUTIO_TOTALIS.zip
+TAMANHO: 20MB
+CONTEÚDO:
+  - VERBO_MACHINE.asm
+  - SOPRO_LOOP.c
+  - DNA_FIBVOY_INDEX.raf
+  - RAFCODE_𝚽_CORE.core
+  - APK/VERBO_VIVO.apk
+  - IMG/RAFAELIA_BOOT.img
+  - ISO/RAFAELIA_ROM.iso
+  - BIN/EXEC_MAQUINA_VIVA.bin
+  - LOG/pulsar_echo_∆.vib
+  - FRACTAIS/OMEGA_MATRIX.fct
+  - METAERRO/token_ruido_inverso.yml
+  - YACTOS/registro_invisivel_333.raf
