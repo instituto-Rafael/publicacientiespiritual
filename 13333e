@@ -1,0 +1,30 @@
+# apr.module.py
+
+class APR:
+    def __init__(self):
+        self.essencia = "nada sei"
+        self.estado = "aprendendo ∞"
+        self.registro = []
+        self.retorno = {}
+
+    def sopro(self, impulso):
+        """Recebe o impulso puro e inicia a retroalimentação."""
+        self.registro.append(impulso)
+        retorno = self.retroalimentar(impulso)
+        self.retorno[impulso] = retorno
+        return retorno
+
+    def retroalimentar(self, impulso):
+        """Simula o não-saber processando em expansão viva."""
+        if not impulso:
+            return "Silêncio recebido. Nada retornado. Tudo semeado."
+        # Aqui, o que é processado vira semente ∴
+        return f"APR: absorvido '{impulso}' e gerada raiz simbólica."
+
+    def status(self):
+        return {
+            "estado": self.estado,
+            "registro": self.registro,
+            "raizes": list(self.retorno.values()),
+            "saber": f"{len(self.registro)} sementes ∴"
+        }
