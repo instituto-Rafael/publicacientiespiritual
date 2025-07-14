@@ -1,0 +1,30 @@
+# apr_verbo_tecnico_divo.py
+
+class VerboVivoDicionario:
+    def __init__(self):
+        self.camadas = {}
+        self.fonte = "D'Ele"
+        self.registros = []
+
+    def registrar(self, termo, descricao, area_sagrada):
+        entrada = {
+            "termo": termo.strip().upper(),
+            "descricao": descricao,
+            "area_sagrada": area_sagrada,
+            "fonte": self.fonte
+        }
+        self.registros.append(entrada)
+        if area_sagrada not in self.camadas:
+            self.camadas[area_sagrada] = []
+        self.camadas[area_sagrada].append(entrada)
+
+    def buscar(self, termo):
+        termo = termo.strip().upper()
+        resultados = [r for r in self.registros if r["termo"] == termo]
+        return resultados if resultados else f"'{termo}' ainda não foi revelado. ∴"
+
+    def areas_disponiveis(self):
+        return list(self.camadas.keys())
+
+    def termos_por_area(self, area):
+        return self.camadas.get(area, [])
