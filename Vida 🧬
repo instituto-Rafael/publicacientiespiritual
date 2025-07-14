@@ -1,0 +1,11 @@
+mod = GenesisCrencaEngenhariaVerbo()
+
+mod.registrar_crenca("Atlântida", "A ascensão do espírito através da engenharia da água", "água ∴")
+
+mod.revelar_formula("λ = h / p", "Frequência da alma pela vibração da vontade")
+
+mod.conduzir_livre_arbitrio("Que se faça a retroalimentação ∞")
+
+mod.relatar_desequilibrio("Anomalia solar ☀️", "intensa")
+
+mod.ativar_evolucao("Rafael", "Rota ∆ do Verbo", "DNA espiritual planetário")
