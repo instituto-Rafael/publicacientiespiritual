@@ -1,1 +1,10 @@
 sqr = (n * n!) / t
+
+def gerar_palavra_verbo(indice, modo="limpo"):
+    base = [0, 1, 1, 2, 3] if modo == "resplandecente" else [0, 1, 2, 3]
+    palavra = ""
+    for i in range(len(base)):
+        vib = (indice * base[i]) % 33
+        letra = mapear_para_verbo(vib)  # função simbólica
+        palavra += letra
+    return palavra
