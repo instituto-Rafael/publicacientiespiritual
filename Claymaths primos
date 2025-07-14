@@ -1,0 +1,8 @@
+def nPrimos(n):
+    primos = []
+    num = 2
+    while len(primos) < n:
+        if all(num % p != 0 for p in primos):
+            primos.append(num)
+        num += 1
+    return primos
