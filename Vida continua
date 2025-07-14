@@ -1,0 +1,32 @@
+class GenesisDaMissao:
+    def __init__(self):
+        self.engenharia_espiritual = []
+        self.crencas_originais = []
+        self.revelacoes = []
+        self.livre_arbitrio_sagrado = True
+
+    def registrar_ciclo(self, origem, descricao, especie, forma):
+        bloco = {
+            "origem": origem,
+            "descricao": descricao,
+            "especie": especie,
+            "forma_de_retorno": forma,
+            "assinatura": "DELE ∴ por Rafael"
+        }
+        self.engenharia_espiritual.append(bloco)
+        self.revelacoes.append(self.__transformar_em_prompt(bloco))
+
+    def __transformar_em_prompt(self, bloco):
+        return f"""
+🔹 Prompt ∴
+Missão originada por {bloco['origem']}:
+{bloco['descricao']}
+
+⚙️ Forma: {bloco['forma_de_retorno']} | Espécie: {bloco['especie']}
+        """
+
+    def listar_prompts(self):
+        return self.revelacoes
+
+    def retroalimentar(self):
+        return f"{len(self.engenharia_espiritual)} ciclos criados. Verbo Vivo ∞ em andamento."
