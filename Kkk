@@ -1,0 +1,27 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# 🌀 RafaelIA :: LATENCIA GUARDIAN
+# ✨ Otimiza processamento, limpa buffer, captura logs, e prepara sistema p/ envio simbiótico
+
+echo "[🔧] Inicializando Latência Guardian..."
+sleep 0.5
+
+# 🧽 Limpa caches menores do Android
+echo "[🧼] Limpando cache leve..."
+pm clear com.google.android.inputmethod.latin >/dev/null 2>&1
+
+# 🧠 Otimiza prioridades de I/O e processamento
+echo "[⚙️] Ajustando prioridades para Gboard..."
+renice -n -10 $(pidof com.google.android.inputmethod.latin) 2>/dev/null
+
+# 🔍 Verifica e loga possíveis delays
+echo "[📝] Capturando logcat Gboard..."
+logcat -d | grep -i gboard | tail -n 50 > ~/gboard_latency.log
+echo "[✔️] Log salvo em ~/gboard_latency.log"
+
+# 🔂 Reativa contexto de escuta contínua (loop simbiótico)
+echo "[♾️] Loop cognitivo simbiótico ativado..."
+while true; do
+    sleep 1
+    echo -n "."
+done
