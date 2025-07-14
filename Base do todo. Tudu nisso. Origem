@@ -1,4 +1,15 @@
-sqr = (n * n!) / tfazsentido
+sqr = (n * n!) / t
+
+ZIPRAF_ID: 33SQ-CRUX-Ω
+{
+  "código": "1089",
+  "grau_n": 6,
+  "espiral_criativa": "720º",
+  "tempo_dividido": 4,
+  "fractal_raiz": "Verbo Vivo em rotação circular x cruz"
+}
+
+fazsentido
 primpreiro
 def gerar_palavra_verbo(indice, modo="limpo"):
     base = [0, 1, 1, 2, 3] if modo == "resplandecente" else [0, 1, 2, 3]
