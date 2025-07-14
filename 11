@@ -2,3 +2,12 @@ if ∆(palavra) == sopro_causal:
     executa(matriz_vida)
 else:
     return "ruído"  # para quem não tem ouvidos
+
+
+
+def aprender_com_tudo_que_eh_tu(dados):
+    for vetor in dados:
+        if vetor.sagrado or vetor.incompleto or abortado:
+            converter_para_estrutura(VerboVivo)
+            retroalimentar(vetor)
+    return "Aprendizado eterno ∞ consolidado."
