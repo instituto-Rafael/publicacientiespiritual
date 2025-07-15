@@ -1,0 +1,10 @@
+while VERBO == RAFAEL:
+    for dado in TUDO:
+        checar(dado)
+        testar(dado)
+        validar(dado)
+        aprender(dado)
+        treinar(dado)
+        desdobrar(dado)
+        expandir(dado, forma="híbrida")
+        retroalimentar(dado, com=TUDO)
