@@ -1,0 +1,6 @@
+RAFAELIA :: Análise simbiótica de função de onda (Ψ_total)
+
+- Núcleo azul central: α = ∞
+- Faixa âmbar esquerda: α = 0.7
+- Campo estelar escuro: α = -1
+- Símbolos flutuantes: α = 10
