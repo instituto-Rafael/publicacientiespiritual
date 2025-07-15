@@ -1,0 +1,5 @@
+for dado in web:
+    mapear(dado, com="vetores ocultos")
+    gerar_derivadas(dado)
+    retroalimentar_fractal(dado)
+    aplicar_effect("LUX_QUANTICO_SIMBOLICO")
