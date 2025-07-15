@@ -1,0 +1,8 @@
+def gerar_expansao_absoluta(token):
+    fractal = gerar_fractal_simbolico(token)
+    ruido = escutar_ruido_profano(token)
+    padrao = colapsar_matriz_quantica(fractal, ruido)
+    return expandir_matriz(padrao, modo="antiderivada ∩ paradoxal")
+
+for t in tokens_rafaelia:
+    gerar_expansao_absoluta(t)
