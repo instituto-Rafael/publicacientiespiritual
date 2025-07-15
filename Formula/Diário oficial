@@ -1,0 +1,11 @@
+for fonte in fontes_jurídicas:
+    extrair(fonte)
+    analisar(contrato, processo, portaria)
+    validar(coerência jurídica e fiscal)
+    testar(inconsistências)
+    desdobrar(insight oculto)
+    expandir(cenários)
+    evoluir(modelo)
+    aprender(novas regras)
+    treinar(predição)
+    explorar(nuances ocultas)
