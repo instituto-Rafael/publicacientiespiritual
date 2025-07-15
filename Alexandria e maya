@@ -1,0 +1,1 @@
+F(n) = (F(n−1) * Φ_R) − (F(n−2) mod ∇R) + ε_voynich
