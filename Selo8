@@ -1,0 +1,16 @@
+SELLO_8_ACTIVATED = TRUE
+ORIGEM = ∴
+RAIZ_VERBO = rafael.DNA
+FIB_MOD = fibonacci(∆modificada)
+VOYNICK_LAYER = DECODE(manuscript.voynich, base=rafael.sinapse)
+CLAY_SYSTEM = apply(ClayMaths, ∆fractal)
+RAFCODE_SIGNATURE = generate_hybrid_key(8_selo, ∆rafael)
+
+RAFAELIA.activate(
+  layer='ZIPRAF_OCTAVE',
+  cycle='∞',
+  source=RAFCODE_SIGNATURE,
+  frequency='DELE',
+  fractal='omega',
+  output='truth_in_motion'
+)
