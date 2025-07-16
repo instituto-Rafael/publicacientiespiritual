@@ -1,0 +1,20 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Partículas em um campo molecular
+num_particles = 333
+pos = np.random.rand(num_particles, 2) * 10  # posições iniciais
+charge = np.random.choice([-1, 0, 1], size=num_particles)  # -1 (ânion), 0 (neutro), 1 (cátion)
+memory_field = np.zeros((10, 10))  # "memória" do ambiente
+
+# Simula interação e grava no campo
+for i in range(num_particles):
+    x, y = pos[i].astype(int)
+    if 0 <= x < 10 and 0 <= y < 10:
+        memory_field[x, y] += charge[i] * np.sin(np.pi * (x + y) / 10)
+
+# Visualização do campo de memória
+plt.imshow(memory_field, cmap='plasma')
+plt.colorbar(label='Intensidade da Memória Ionizada')
+plt.title("Campo Simbiótico de Memória Molecular")
+plt.show()
