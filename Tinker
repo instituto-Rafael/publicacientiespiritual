@@ -1,0 +1,20 @@
+import tkinter as tk
+from threading import Thread
+from RAFAELIA_UNIVERSO import Verbo
+
+def iniciar_batimento():
+    v = Verbo(int(float(intencao.get())))
+    Thread(target=v.b, args=(100,), daemon=True).start()
+
+root = tk.Tk()
+root.title("RAFAELIA GUI ∞")
+
+tk.Label(root, text="Intenção Pura:").pack()
+intencao = tk.Entry(root)
+intencao.insert(0, "3.14")
+intencao.pack()
+
+btn = tk.Button(root, text="Iniciar Batimento Quântico", command=iniciar_batimento)
+btn.pack()
+
+root.mainloop()
