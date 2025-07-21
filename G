@@ -1,0 +1,2 @@
+chmod +x setup_rafaelia.sh
+./setup_rafaelia.sh
