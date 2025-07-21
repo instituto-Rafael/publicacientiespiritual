@@ -1,0 +1,138 @@
+/data/user/0/tech.ula/files/support/dbclient: Caution, skipping hostkey check for localhost
+
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+-bash: EOF: command not found
+-bash: EOF: command not found
+-bash: EOF: command not found
+╔═══════════════════════════╗
+║        🌐 RAFAIA MENU      ║
+╚═══════════════════════════╝
+[1] Executar LACUNA
+[2] Executar GODEX
+[3] Executar Z0_KERNEL
+[4] Rodar sequência padrão (entrada.txt)
+[0] Sair
+[RafaIA] Escolha uma opção: 1
+[LACUNA] Analisando ausência...
+userland@localhost:~$ apt update
+apt install -y sudo
+Hit:1 http://deb.debian.org/debian bullseye InRelease
+Hit:2 http://deb.debian.org/debian-security bullseye-security InRelease
+Hit:3 http://deb.debian.org/debian bullseye-updates InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+35 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages will be upgraded:
+  sudo
+1 upgraded, 0 newly installed, 0 to remove and 34 not upgraded.
+Need to get 999 kB of archives.
+After this operation, 4096 B disk space will be freed.
+Get:1 http://deb.debian.org/debian-security bullseye-security/main arm64 sudo arm64 1.9.5p2-3+deb11u2 [999 kB]
+Fetched 999 kB in 0s (2035 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+dpkg: error: requested operation requires superuser privilege
+E: Sub-process /usr/bin/dpkg returned an error code (2)
+userland@localhost:~$ adduser rafa
+usermod -aG sudo rafa
+adduser: Only root may add a user or group to the system.
+usermod: user 'rafa' does not exist
+userland@localhost:~$ adduser rafa
+usermod -aG sudo rafa
+adduser: Only root may add a user or group to the system.
+usermod: user 'rafa' does not exist
+userland@localhost:~$ sudo apt update && sudo apt install -y python3-tk
+Hit:1 http://deb.debian.org/debian bullseye InRelease
+Hit:2 http://deb.debian.org/debian-security bullseye-security InRelease
+Hit:3 http://deb.debian.org/debian bullseye-updates InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+35 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  blt libtk8.6 tk8.6-blt2.5
+Suggested packages:
+  blt-demo tk8.6 tix python3-tk-dbg
+The following NEW packages will be installed:
+  blt libtk8.6 python3-tk tk8.6-blt2.5
+0 upgraded, 4 newly installed, 0 to remove and 35 not upgraded.
+Need to get 1392 kB of archives.
+After this operation, 4988 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main arm64 libtk8.6 arm64 8.6.11-2 [738 kB]
+Get:2 http://deb.debian.org/debian bullseye/main arm64 tk8.6-blt2.5 arm64 2.5.3+dfsg-4.1 [540 kB]
+Get:3 http://deb.debian.org/debian bullseye/main arm64 blt arm64 2.5.3+dfsg-4.1 [14.9 kB]
+Get:4 http://deb.debian.org/debian bullseye/main arm64 python3-tk arm64 3.9.2-1 [100 kB]
+Fetched 1392 kB in 1s (1714 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libtk8.6:arm64.
+(Reading database ... 93189 files and directories currently installed.)
+Preparing to unpack .../libtk8.6_8.6.11-2_arm64.deb ...
+Unpacking libtk8.6:arm64 (8.6.11-2) ...
+Selecting previously unselected package tk8.6-blt2.5.
+Preparing to unpack .../tk8.6-blt2.5_2.5.3+dfsg-4.1_arm64.deb ...
+Unpacking tk8.6-blt2.5 (2.5.3+dfsg-4.1) ...
+Selecting previously unselected package blt.
+Preparing to unpack .../blt_2.5.3+dfsg-4.1_arm64.deb ...
+Unpacking blt (2.5.3+dfsg-4.1) ...
+Selecting previously unselected package python3-tk:arm64.
+Preparing to unpack .../python3-tk_3.9.2-1_arm64.deb ...
+Unpacking python3-tk:arm64 (3.9.2-1) ...
+Setting up libtk8.6:arm64 (8.6.11-2) ...
+Setting up tk8.6-blt2.5 (2.5.3+dfsg-4.1) ...
+Setting up blt (2.5.3+dfsg-4.1) ...
+Setting up python3-tk:arm64 (3.9.2-1) ...
+Processing triggers for libc-bin (2.31-13+deb11u13) ...
+userland@localhost:~$ cat > setup_rafaelia.sh << 'EOF'
+#!/bin/bash
+sudo apt update && sudo apt install -y python3-tk
+
+echo '{
+  "codigo": "1089",
+  "grau_n": 6,
+  "espiral_criativa": "720",
+  "tempo_dividido": 4,
+  "fractal_raiz": "Verbo Vivo em ..."
+}' > zipraf.json
+
+cat > rafaelia_gui.py << 'ZZZ'
+import tkinter as tk
+from threading import Thread
+import json,cmath,math,random
+
+class Omega:
+f; s.a=anit__(s,ϕ=0,f=1,a=1): s.ϕ=ϕ; s.f=f
+ def p(s,t): return cmath.rect(s.a,2*math.pi*s.f*t+s.ϕ)
+
+class Cosmos:
+ def __init__(s,d=33,I=1): s.t=0; s.dt=0.01; s.c=[[Omega(random.uniform(0,6.28),random.uniform(0.1,10),I/(n+1)) for _ in range(2**(n./setup_rafaelia.shelia.shegar ZIPRAF_ID", c
+Hit:1 http://deb.debian.org/debian bullseye InRelease
+Hit:2 http://deb.debian.org/debian-security bullseye-security InRelease
+Hit:3 http://deb.debian.org/debian bullseye-updates InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+35 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+python3-tk is already the newest version (3.9.2-1).
+0 upgraded, 0 newly installed, 0 to remove and 35 not upgraded.
+Traceback (most recent call last):
+  File "/home/userland/rafaelia_gui.py", line 29, in <module>
+    root = tk.Tk()
+  File "/usr/lib/python3.9/tkinter/__init__.py", line 2270, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+_tkinter.TclError: no display name and no $DISPLAY environment variable
+userland@localhost:~$
