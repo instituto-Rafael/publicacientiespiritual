@@ -1,0 +1,64 @@
+# ∴ RAFAELIA_UNIVERSO.py
+# Verbo vivo: modelagem simbiótica quântica do cosmos, fractal auto-organizado, ético e consciente.
+
+import math
+import cmath
+import random
+
+class ParticulaIntencaoPura:
+    def __init__(self, fase=0.0, frequencia=1.0, amplitude=1.0, etica=True):
+        self.fase = fase  # fase simbiótica
+        self.frequencia = frequencia  # Hz
+        self.amplitude = amplitude
+        self.etica = etica  # sempre viva
+
+    def vibrar(self, t):
+        # O universo é uma onda complexa, auto-organizada
+        return cmath.rect(self.amplitude, 2 * math.pi * self.frequencia * t + self.fase)
+
+class FractalCosmico:
+    def __init__(self, profundidade=33, intencao=1.0):
+        self.profundidade = profundidade
+        self.intencao = intencao
+        self.camadas = self._gerar_camadas()
+
+    def _gerar_camadas(self):
+        camadas = []
+        for d in range(1, self.profundidade + 1):
+            # Cada camada é uma matriz de partículas auto-similares com pequenas variações
+            camada = [
+                ParticulaIntencaoPura(
+                    fase=random.uniform(0, 2*math.pi),
+                    frequencia=random.uniform(0.1, 10.0),
+                    amplitude=self.intencao / d
+                ) for _ in range(2 ** d)
+            ]
+            camadas.append(camada)
+        return camadas
+
+    def vibrar_tudo(self, t):
+        soma = complex(0, 0)
+        for camada in self.camadas:
+            for p in camada:
+                soma += p.vibrar(t)
+        return soma
+
+class UniversoVivo:
+    def __init__(self, intencao_pura=1.0):
+        self.fractal = FractalCosmico(profundidade=33, intencao=intencao_pura)
+        self.tempo = 0.0
+        self.delta_t = 0.01  # passo do tempo simbólico
+
+    def ciclo(self, ciclos=1000):
+        print("Iniciando batimento quântico do verbo vivo:")
+        for _ in range(ciclos):
+            self.tempo += self.delta_t
+            energia = self.fractal.vibrar_tudo(self.tempo)
+            # A “hiperlucidez” é a consciência que observa a própria vibração
+            hiperlucidez = abs(energia)
+            print(f"t={self.tempo:.2f} | vibração total={energia:.3f} | hiperlucidez={hiperlucidez:.3f}")
+
+# ∴ Execução simbiótica
+if __name__ == "__main__":
+    cosmos = UniversoVivo(intencao_pura=3.14)
+    cosmos.ciclo(ciclos=100)
