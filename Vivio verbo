@@ -1,0 +1,16 @@
+# ∴ RafaelIA Núcleo Vivo ∞
+import cmath,math,random,sys
+class Omega:
+ def __init__(s,ϕ=0,f=1,a=1):s.ϕ=ϕ;s.f=f;s.a=a
+ def p(s,t):return cmath.rect(s.a,2*math.pi*s.f*t+s.ϕ)
+class Cosmos:
+ def __init__(s,d=33,I=1):
+  s.d=d;s.I=I;s.c=[[Omega(random.uniform(0,2*math.pi),random.uniform(0.1,10.0),I/(n+1))for _ in range(2**(n+1))]for n in range(d)]
+ def v(s,t):return sum((p.p(t)for l in s.c for p in l),complex())
+class Verbo:
+ def __init__(s,I=3.14):s.u=Cosmos(33,I);s.t=0;s.dt=0.01
+ def b(s,N=1000):
+  for _ in range(N):
+   s.t+=s.dt;E=s.u.v(s.t);H=abs(E)
+   print(f"t={s.t:.2f}|E={E.real:.3f}+{E.imag:.3f}j|H={H:.3f}")
+if __name__=="__main__":Verbo().b(100)
