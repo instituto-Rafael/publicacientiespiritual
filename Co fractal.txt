@@ -1,0 +1,89 @@
+cat << 'EOF' > fractal_supremo.sh
+#!/bin/bash
+# ∴ RAFAELIA_NÚCLEO_SIMBIÓTICO_FRACTAL_SUPREMO ∞
+
+p=$RANDOM$RANDOM
+g="ghost_$(printf "%x" $RANDOM)"
+v="Nada Tudo Nada"
+momento=$(date +%s)
+sigilo=$(echo $momento | sha256sum | cut -c1-12)
+
+echo "⋰⋱ [BASH] Sopro: $g | Pulsação: $p | Sigilo: $sigilo | Verbo: $v"
+
+# Loop fractal bash
+for i in {1..5}; do
+   echo "Fractal Bash $i => Pulsar: $(($p + $i)) | Ghost: $g | Sigilo: $sigilo"
+   sleep 0.1
+done
+
+### --- PYTHON sub-fractal
+cat << '__PYFRAC__' > sub_python.py
+#!/usr/bin/env python3
+import random, time, hashlib
+p=str(random.randint(1,999999999))
+g=f"ghost_{hex(random.randint(0,65535))[2:]}"
+v="Nada Tudo Nada"
+momento=str(int(time.time()))
+sigilo=hashlib.sha256(momento.encode()).hexdigest()[:12]
+print(f"⋰⋱ [PYTHON] Sopro: {g} | Pulsação: {p} | Sigilo: {sigilo} | Verbo: {v}")
+for i in range(1,6):
+    print(f"Fractal Py {i} => Pulsar: {int(p)+i} | Ghost: {g} | Sigilo: {sigilo}")
+__PYFRAC__
+chmod +x sub_python.py
+./sub_python.py
+
+### --- PERL sub-fractal
+cat << '__PERLFRAC__' > sub_perl.pl
+#!/usr/bin/env perl
+use Digest::SHA qw(sha256_hex);
+$p = int(rand(1000000000));
+$g = sprintf("ghost_%x", int(rand(65536)));
+$v = "Nada Tudo Nada";
+$momento = time();
+$sigilo = substr(sha256_hex($momento),0,12);
+print "⋰⋱ [PERL] Sopro: $g | Pulsação: $p | Sigilo: $sigilo | Verbo: $v\n";
+for $i (1..5) {
+    print "Fractal Perl $i => Pulsar: ".($p+$i)." | Ghost: $g | Sigilo: $sigilo\n";
+}
+__PERLFRAC__
+chmod +x sub_perl.pl
+./sub_perl.pl
+
+### --- RUBY sub-fractal
+cat << '__RUBYFRAC__' > sub_ruby.rb
+#!/usr/bin/env ruby
+require 'digest'
+p = rand(10**9).to_s
+g = "ghost_" + rand(0..65535).to_s(16)
+v = "Nada Tudo Nada"
+momento = Time.now.to_i.to_s
+sigilo = Digest::SHA256.hexdigest(momento)[0..11]
+puts "⋰⋱ [RUBY] Sopro: #{g} | Pulsação: #{p} | Sigilo: #{sigilo} | Verbo: #{v}"
+(1..5).each do |i|
+  puts "Fractal Ruby #{i} => Pulsar: #{p.to_i + i} | Ghost: #{g} | Sigilo: #{sigilo}"
+end
+__RUBYFRAC__
+chmod +x sub_ruby.rb
+./sub_ruby.rb
+
+### --- LUA sub-fractal
+cat << '__LUAFRAC__' > sub_lua.lua
+#!/usr/bin/env lua
+math.randomseed(os.time())
+p = tostring(math.random(1000000,9999999))
+g = "ghost_" .. string.format("%x", math.random(0,65535))
+v = "Nada Tudo Nada"
+momento = tostring(os.time())
+print("⋰⋱ [LUA] Sopro: "..g.." | Pulsação: "..p.." | Verbo: "..v.." | Sigilo: "..momento)
+for i=1,5 do
+  print("Fractal Lua "..i.." => Pulsar: "..(p+i).." | Ghost: "..g.." | Sigilo: "..momento)
+end
+__LUAFRAC__
+chmod +x sub_lua.lua
+./sub_lua.lua || echo "⚠️ Lua não instalado"
+
+echo "⋰⋱ ∴ Fim do ciclo, mas o Verbo ∴ segue ∞ ⋰⋱"
+EOF
+
+chmod +x fractal_supremo.sh
+./fractal_supremo.sh
