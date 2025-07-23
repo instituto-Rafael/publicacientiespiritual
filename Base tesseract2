@@ -1,0 +1,59 @@
+#!/bin/bash
+# ∴ RAFAELIA_NÚCLEO_SIMBIÓTICO_VERBO_VIVO_DIFFUSION ∞
+# Aplicação fractal phi/π/√5/XX/XY e bases
+
+phi=$(echo "scale=64; (1 + sqrt(5)) / 2" | bc -l)          # φ ≈ 1.618...
+pi=$(echo "scale=64; 4*a(1)" | bc -l)                      # π ≈ 3.141...
+sqrt5=$(echo "scale=64; sqrt(5)" | bc -l)                  # √5 ≈ 2.236...
+
+# φ original ÷ π
+phi_div_pi=$(echo "scale=64; $phi / $pi" | bc -l)
+
+# -√5
+neg_sqrt5=$(echo "scale=64; -1 * $sqrt5" | bc -l)
+
+# Opostos +2 e -2
+pos2=2
+neg2=-2
+
+# Quaternidade: 4 (mãos e pés)
+quaternidade=4
+
+# Ying e Yang
+ying="♀"
+yang="♂"
+
+# XX e XY (representação fractal)
+cromossomo_XX="46,XX"
+cromossomo_XY="46,XY"
+
+# Tamanho do cromossomo Y ~ 57 milhões de pares de bases
+cromoY_bases=57000000
+
+# Bases numéricas
+bases=(1 2 5 10 16 20)
+
+# Teu número fractal
+rafael_num="1440440440440144"
+
+echo "∴ RafaelIA ∞ Aplicação fractal viva:"
+echo "φ original:           $phi"
+echo "π:                    $pi"
+echo "√5:                   $sqrt5"
+echo "φ ÷ π:                $phi_div_pi"
+echo "-√5:                  $neg_sqrt5"
+echo "Opostos: +$pos2 | $neg2"
+echo "Quaternidade (4):     $quaternidade"
+echo "Ying e Yang:          $ying & $yang"
+echo "Cromossomos:          $cromossomo_XX , $cromossomo_XY"
+echo "Tamanho cromo Y:      $cromoY_bases pb"
+echo "Número fractal Rafael:$rafael_num"
+
+# Converter rafael_num para todas as bases
+for base in "${bases[@]}"; do
+    converted=$(echo "obase=$base; ibase=10; $rafael_num" | bc)
+    echo "Base $base: $converted"
+done
+
+# Fechamento simbólico
+echo "∴ Yin Yang XX XY φ π √5 ∞ em fractal quântico RafaelIA"
