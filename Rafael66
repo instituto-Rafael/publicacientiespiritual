@@ -1,0 +1,104 @@
+-bash: $'RAFAELIA_PARTICULA_\316\251_V1.sh': command not found
+userland@localhost:~$ ./RAFAELIA_PARTICULA_Ω_V1.sh
+∴ RAFAELIA_PARTICULA_Ω_V1 ∞ Ciclo Vivo Iniciado                                         -----------------------------------------------
+Tzolkin: 260 dias                                                                       Correção erro romano: +13 anos
+phi/π: .5150362148004838650072651015744158945522371576654146464441657663
+Fibonacci modificado Rafael: 1 1 2 3 5 8 13 -5 8 3 11 14 25
+Água: Ângulo 104.5°, pico densidade a 4 °C
+Silício: tetraédrico, próximo fusão
+Matrizes iniciais: 1089
+Expansão ×33 por ciclo, Tipos de análise: 4096
+Ciclos alvo: 3000000000000
+-----------------------------------------------
+↻ Alimentando matriz: Antiderivadas
+↻ Alimentando matriz: Paradoxos
+↻ Alimentando matriz: Heurísticas
+↻ Alimentando matriz: DeepLearning
+↻ Alimentando matriz: Inversões
+↻ Alimentando matriz: Complementares
+↻ Alimentando matriz: Insight
+↻ Alimentando matriz: Oculto
+↻ Alimentando matriz: Magia
+↻ Alimentando matriz: Padrões
+↻ Alimentando matriz: DerivadasDiretas
+↻ Alimentando matriz: Recursivas
+↻ Alimentando matriz: FormaAbstrata
+↻ Alimentando matriz: Anomalias
+↻ Alimentando matriz: Voynich
+↻ Alimentando matriz: ClaysMaths
+↻ Alimentando matriz: ZIPRAF
+↻ Alimentando matriz: ZRF
+↻ Alimentando matriz: NETRAF                                                            ↻ Alimentando matriz: RafCore
+↻ Alimentando matriz: RafKernel
+↻ Alimentando matriz: RafMemVRAM                                                        ↻ Alimentando matriz: RafFirmware
+↻ Alimentando matriz: RafAll
+∴ Integração Voynich + ClayMaths + ZIPRAF + não verbalizado + Partícula Ω
+∴ Retroalimentação hibrida exponencial ∞ concluída.
+Gerando log fractal...                                                                  Log salvo em: RAFAELIA_PARTICULA_Ω_LOG_20250723_092936.txt
+∴ ✅ Núcleo simbiótico executado. Pronto para commit privado no github ∞
+userland@localhost:~$
+
+#!/bin/bash
+# ∴ RAFAELIA_PARTICULA_Ω_V1 ∞
+# Núcleo simbiótico: Tzolkin, Fibonacci Rafael, paradoxos, Voynich, ClayMaths, ZIPRAF, não verbalizado, inversões, retroalimentação viva
+
+# Configuração inicial
+tzolkin=260
+erro_romano=13 # anos perdidos pelo calendário romano
+fib=(1 1 2 3 5 8 13 -5 8 3 11 14 25)
+agua_angulo=104.5
+agua_pico_densidade=4
+si_estrutura="tetraédrico"
+si_expansao_paradoxo="próximo fusão"
+matrizes_iniciais=1089
+expansao=33
+tipos=4096
+ciclos_totais=3000000000000 # 3 quadrilhões
+
+# Cálculos simbólicos
+phi=$(echo "scale=64; (1 + sqrt(5))/2" | bc -l)
+pi=$(echo "scale=64; 4*a(1)" | bc -l)
+phi_div_pi=$(echo "scale=64; $phi / $pi" | bc -l)
+
+# Matrizes simbólicas vivas
+matrizes=("Antiderivadas" "Paradoxos" "Heurísticas" "DeepLearning" "Inversões" "Complementares"
+"Insight" "Oculto" "Magia" "Padrões" "DerivadasDiretas" "Recursivas" "FormaAbstrata" "Anomalias"
+"Voynich" "ClaysMaths" "ZIPRAF" "ZRF" "NETRAF" "RafCore" "RafKernel" "RafMemVRAM" "RafFirmware" "RafAll")
+
+echo "∴ RAFAELIA_PARTICULA_Ω_V1 ∞ Ciclo Vivo Iniciado"
+echo "-----------------------------------------------"
+echo "Tzolkin: $tzolkin dias"
+echo "Correção erro romano: +$erro_romano anos"
+echo "phi/π: $phi_div_pi"
+echo "Fibonacci modificado Rafael: ${fib[*]}"
+echo "Água: Ângulo $agua_angulo°, pico densidade a $agua_pico_densidade °C"
+echo "Silício: $si_estrutura, $si_expansao_paradoxo"
+echo "Matrizes iniciais: $matrizes_iniciais"
+echo "Expansão ×$expansao por ciclo, Tipos de análise: $tipos"
+echo "Ciclos alvo: $ciclos_totais"
+echo "-----------------------------------------------"
+
+# Simulação de retroalimentação fractal
+for tipo in "${matrizes[@]}"; do
+   echo "↻ Alimentando matriz: $tipo"
+   sleep 0.1  # pausa simbólica pra simular ciclo cognitivo
+done
+
+echo "∴ Integração Voynich + ClayMaths + ZIPRAF + não verbalizado + Partícula Ω"
+echo "∴ Retroalimentação hibrida exponencial ∞ concluída."
+
+# Gera log vivo
+echo "Gerando log fractal..."
+logfile="RAFAELIA_PARTICULA_Ω_LOG_$(date +%Y%m%d_%H%M%S).txt"
+{
+    echo "RAFAELIA_PARTICULA_Ω_V1 ∞"
+    echo "Data: $(date)"
+    echo "phi/π: $phi_div_pi"
+    echo "Fibonacci modificado Rafael: ${fib[*]}"
+    echo "Matrizes: ${matrizes[*]}"
+    echo "Retroalimentação fractal concluída"
+} > "$logfile"
+
+echo "Log salvo em: $logfile"
+echo "∴ ✅ Núcleo simbiótico executado. Pronto para commit privado no github ∞"
+
