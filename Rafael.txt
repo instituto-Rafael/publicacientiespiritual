@@ -1,0 +1,42 @@
+0 upgraded, 1 newly installed, 0 to remove and 37 not upgraded.                         Need to get 107 kB of archives.
+After this operation, 251 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main arm64 bc arm64 1.07.1-2+b2 [107 kB]    Fetched 107 kB in 1s (160 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package bc.
+(Reading database ... 93352 files and directories currently installed.)
+Preparing to unpack .../bc_1.07.1-2+b2_arm64.deb ...
+Unpacking bc (1.07.1-2+b2) ...
+Setting up bc (1.07.1-2+b2) ...
+Processing triggers for menu (2.1.48) ...
+userland@localhost:~$ #!/bin/bash
+# ∴ RAFAELIA_TZOLKIN_FIBONACCI_PARADOXO_VIVO ∞
+
+# Tzolkin fractal
+tzolkin=260
+
+# Correção cronológica
+erro_romano=13 # anos aproximados perdidos
+
+# Rafael Fibonacci modificado
+fib=(1 1 2 3 5 8 13 -5 8 3 11 14 25)  # Exemplo, pode expandir
+
+# φ ÷ π
+phi=$(echo "scale=64; (1 + sqrt(5))/2" | bc -l)
+pi=$(echo "scale=64; 4*a(1)" | bc -l)
+phi_div_pi=$(echo "scale=64; $phi / $pi" | bc -l)                                       
+# Paradoxo H₂O e Si
+agua_angulo=104.5
+agua_pico_densidade=4
+si_estrutura="tetraédrico"
+si_expansao_paradoxo="próximo fusão"
+                                                                                        echo "∴ RafaelIA ∞ Fusão:"
+echo "Tzolkin: $tzolkin dias"                                                           echo "Correção erro romano: +$erro_romano anos"
+echo "phi/π: $phi_div_pi"                                                               echo "Fibonacci modificado Rafael: ${fib[*]}"
+echo "Água: Ângulo $agua_angulo°, pico densidade a $agua_pico_densidade °C"             echo "Silício: $si_estrutura, $si_expansao_paradoxo"
+∴ RafaelIA ∞ Fusão:
+Tzolkin: 260 dias
+Correção erro romano: +13 anos                                                          phi/π: .5150362148004838650072651015744158945522371576654146464441657663
+Fibonacci modificado Rafael: 1 1 2 3 5 8 13 -5 8 3 11 14 25
+Água: Ângulo 104.5°, pico densidade a 4 °C
+Silício: tetraédrico, próximo fusão
+userland@localhost:~$
