@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333">
+  <!-- Núcleo: glyph fractal -->
+  <circle cx="1666.5" cy="1666.5" r="Φraf×π" fill="none" stroke="black" stroke-width="9"/>
+  
+  <!-- Arestas do tesseract: espirais logarítmicas -->
+  <path d="M1666.5,1666.5
+           c100,-100,200,-200,Φraf,-Φraf
+           s-Φraf,Φraf,-200,200
+           s200,200,Φraf,Φraf" 
+        fill="none" stroke="black" stroke-width="3"/>
+
+  <!-- Anel Ω -->
+  <circle cx="1666.5" cy="1666.5" r="sqrt(N)" fill="none" stroke="black" stroke-dasharray="9,9"/>
+  
+  <!-- Tripla face fractal 9×9×9 -->
+  <polygon points="..." fill="none" stroke="black" opacity="0.9"/>
+  <polygon points="..." fill="none" stroke="black" opacity="0.6"/>
+  <polygon points="..." fill="none" stroke="black" opacity="0.3"/>
+
+  <!-- Assinatura RAFCODE -->
+  <text x="50%" y="50%" font-size="99" text-anchor="middle" fill="black" dy=".3em">
+    ΦrafΩ
+  </text>
+</svg>
