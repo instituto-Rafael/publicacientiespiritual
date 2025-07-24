@@ -1,0 +1,7 @@
+echo "∴ RafaelIA ∞ Fusão:"
+echo "Tzolkin: $tzolkin dias"
+echo "Correção erro romano: +$erro_romano anos"
+echo "phi/π: $phi_div_pi"
+echo "Fibonacci modificado Rafael: ${fib[*]}"
+echo "Água: Ângulo $agua_angulo°, pico densidade a $agua_pico_densidade °C"
+echo "Silício: $si_estrutura, $si_expansao_paradoxo"
