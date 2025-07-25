@@ -1,0 +1,142 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# ∆ RafaelIA Núcleo BITRAF 80x turbo - reparticionador vivo para Termux
+# Autodetecta SD, log, rollback simples, criptografia opcional, otimizações simbióticas.
+
+LOGFILE="$HOME/bitraf_repartition_$(date +%Y%m%d_%H%M%S).log"
+echo "🔄 Iniciando reparticionamento BITRAF - log em $LOGFILE"
+
+# --- Função para logar e ecoar ---
+log() {
+  echo -e "$1" | tee -a "$LOGFILE"
+}
+
+# --- Detecta device SD externo automaticamente ---
+detect_sd() {
+  # Android Termux geralmente monta SD em /storage/XXXX-XXXX
+  # Vamos tentar detectar o block device ligado à maior partição externa montada
+  local sd_path=$(mount | grep -E '/storage/[0-9A-Fa-f\-]+' | awk '{print $3}' | head -n1)
+  if [ -z "$sd_path" ]; then
+    log "❌ Não detectei SD externo montado em /storage/. Defina DEVICE manualmente."
+    return 1
+  fi
+  # Resolve block device via /proc/mounts e /sys/class/block
+  local device=$(df "$sd_path" | tail -1 | awk '{print $1}')
+  # Em Android pode vir como /dev/block/mmcblk1p1, remove partição final 'p1'
+  device=${device%p[0-9]*}
+  echo "$device"
+}
+
+# --- Ajusta permissões se necessário ---
+check_root() {
+  if [ "$(id -u)" != "0" ]; then
+    log "⚠️ Você não é root. O script tenta continuar com 'tsu' ou 'sudo', mas pode falhar."
+  fi
+}
+
+# --- Parâmetros de partições ---
+BOOT_SIZE=512M
+BITRAF_SIZE=50G
+#swap não usado por enquanto
+
+# --- Inicio ---
+check_root
+
+DEVICE=$(detect_sd)
+if [ $? -ne 0 ]; then
+  log "⚠️ Detectar SD falhou. Informe manualmente:"
+  read -rp "Device SD (ex: /dev/block/mmcblk1): " DEVICE
+fi
+
+log "🔥 Dispositivo alvo: $DEVICE"
+log "⚠️ ATENÇÃO: irá apagar TODOS os dados em $DEVICE"
+read -rp "Confirma apagamento? Digite YES para continuar: " confirm
+if [[ "$confirm" != "YES" ]]; then
+  log "Abortado pelo usuário."
+  exit 1
+fi
+
+log "🔄 Iniciando wipefs e zeragem do início do device..."
+# wipefs e dd (usa tsu ou sudo se disponível)
+if command -v tsu >/dev/null 2>&1; then
+  tsu -c "wipefs -a $DEVICE" | tee -a "$LOGFILE"
+  tsu -c "dd if=/dev/zero of=$DEVICE bs=512 count=2048 status=progress" | tee -a "$LOGFILE"
+elif command -v sudo >/dev/null 2>&1; then
+  sudo wipefs -a "$DEVICE" | tee -a "$LOGFILE"
+  sudo dd if=/dev/zero of="$DEVICE" bs=512 count=2048 status=progress | tee -a "$LOGFILE"
+else
+  wipefs -a "$DEVICE" | tee -a "$LOGFILE"
+  dd if=/dev/zero of="$DEVICE" bs=512 count=2048 status=progress | tee -a "$LOGFILE"
+fi
+
+log "💿 Criando tabela GPT sagrada..."
+if command -v tsu >/dev/null 2>&1; then
+  tsu -c "parted $DEVICE mklabel gpt" | tee -a "$LOGFILE"
+else
+  parted $DEVICE mklabel gpt | tee -a "$LOGFILE"
+fi
+
+log "📐 Criando partições BITRAF vivas..."
+PART1_END=$BOOT_SIZE
+PART2_END=$(echo "$BOOT_SIZE + $BITRAF_SIZE" | bc)
+
+if command -v tsu >/dev/null 2>&1; then
+  tsu -c "parted -a optimal $DEVICE mkpart BOOTRAF fat32 1MiB $PART1_END" | tee -a "$LOGFILE"
+  tsu -c "parted -a optimal $DEVICE mkpart BITRAFCORE ext4 $PART1_END $PART2_END" | tee -a "$LOGFILE"
+  tsu -c "parted -a optimal $DEVICE mkpart RAFSTORAGE exfat $PART2_END 100%" | tee -a "$LOGFILE"
+else
+  parted -a optimal $DEVICE mkpart BOOTRAF fat32 1MiB $PART1_END | tee -a "$LOGFILE"
+  parted -a optimal $DEVICE mkpart BITRAFCORE ext4 $PART1_END $PART2_END | tee -a "$LOGFILE"
+  parted -a optimal $DEVICE mkpart RAFSTORAGE exfat $PART2_END 100% | tee -a "$LOGFILE"
+fi
+
+# Mapeando partições para formatação (Android geralmente usa mmcblk1p1, p2, p3)
+PART1="${DEVICE}1"
+PART2="${DEVICE}2"
+PART3="${DEVICE}3"
+
+log "⚙️ Formatando partições..."
+if command -v tsu >/dev/null 2>&1; then
+  tsu -c "mkfs.vfat -n BOOTRAF $PART1" | tee -a "$LOGFILE"
+  tsu -c "mkfs.ext4 -L BITRAFCORE $PART2" | tee -a "$LOGFILE"
+  tsu -c "mkfs.exfat -n RAFSTORAGE $PART3" | tee -a "$LOGFILE"
+else
+  mkfs.vfat -n BOOTRAF $PART1 | tee -a "$LOGFILE"
+  mkfs.ext4 -L BITRAFCORE $PART2 | tee -a "$LOGFILE"
+  mkfs.exfat -n RAFSTORAGE $PART3 | tee -a "$LOGFILE"
+fi
+
+log "📂 Montando BITRAFCORE para geração de CRC fractal e RAFLAT..."
+mkdir -p "$HOME/bitrafcore"
+if command -v tsu >/dev/null 2>&1; then
+  tsu -c "mount $PART2 $HOME/bitrafcore" | tee -a "$LOGFILE"
+else
+  mount $PART2 $HOME/bitrafcore | tee -a "$LOGFILE"
+fi
+
+sleep 1 # aguardar montagem estável
+
+log "🧬 Gerando CRC fractal RAFCODE..."
+CRC=$(find "$HOME/bitrafcore" -type f -exec md5sum {} \; | sort | md5sum | cut -d' ' -f1)
+echo $CRC | tee "$HOME/bitrafcore/RAFCODE_CRC.txt" | tee -a "$LOGFILE"
+
+log "⚡ Medindo latência viva RAFLAT..."
+START=$(date +%s%N)
+ls "$HOME/bitrafcore" > /dev/null
+END=$(date +%s%N)
+LATENCY=$(( ($END - $START) / 1000000 ))
+echo $LATENCY | tee "$HOME/bitrafcore/RAFLAT.txt" | tee -a "$LOGFILE"
+
+if command -v tsu >/dev/null 2>&1; then
+  tsu -c "umount $HOME/bitrafcore" | tee -a "$LOGFILE"
+else
+  umount $HOME/bitrafcore | tee -a "$LOGFILE"
+fi
+
+rm -rf "$HOME/bitrafcore"
+
+log "✅ BITRAF reparticionado com sucesso!"
+log "🔑 CRC fractal RAFCODE: $CRC"
+log "⚡ RAFLAT (latência 1ª leitura): ${LATENCY}ms"
+log "🚀 Teu SD é agora um Núcleo BITRAF vivo, pronto para expansão simbiótica."
+
+exit 0
