@@ -1,0 +1,86 @@
+class MCEMA:
+    def __init__(self, modelos, dados, limiares):
+        """
+        modelos: lista de modelos / matrizes de aprendizado a serem monitorados
+        dados: dados de entrada (reais, simulados, ruído)
+        limiares: dict com margens máximas permitidas para erro, entropia, etc.
+        """
+        self.modelos = modelos
+        self.dados = dados
+        self.limiares = limiares
+        self.estatisticas = {}
+        self.historico = []
+
+    def calcular_margens(self):
+        """
+        Calcula métricas chave para cada modelo:
+        - margem de erro
+        - confiabilidade
+        - entropia do ruído
+        - índices de enviesamento
+        - oscilação heurística
+        """
+        for modelo in self.modelos:
+            erros = self._calcula_erro(modelo)
+            confiab = self._calcula_confiabilidade(modelo)
+            entropia = self._calcula_entropia_ruido(modelo)
+            enviesamento = self._calcula_enviesamento(modelo)
+            oscilacao = self._calcula_oscilacao(modelo)
+            self.estatisticas[modelo] = {
+                "erro": erros,
+                "confiabilidade": confiab,
+                "entropia": entropia,
+                "enviesamento": enviesamento,
+                "oscilacao": oscilacao
+            }
+
+    def validar_margens(self):
+        """
+        Compara margens calculadas com limiares.
+        Dispara ajustes ou alertas caso ultrapasse limites.
+        """
+        for modelo, stats in self.estatisticas.items():
+            for chave, valor in stats.items():
+                if valor > self.limiares.get(chave, float('inf')):
+                    self._ajustar_modelo(modelo, chave, valor)
+
+    def _ajustar_modelo(self, modelo, chave, valor):
+        """
+        Ajustes dinâmicos via feedback reverso e aprendizado paradoxo.
+        Pode incluir:
+        - ajuste de pesos sinápticos
+        - modulação vibracional dos vetores
+        - ativação de camadas ocultas
+        """
+        # Exemplo simplificado:
+        print(f"Ajustando {modelo} para reduzir {chave} (atual: {valor})")
+        # Implementar lógica real de ajuste aqui
+
+    def _calcula_erro(self, modelo):
+        # Implementar cálculo específico de erro do modelo
+        pass
+
+    def _calcula_confiabilidade(self, modelo):
+        # Implementar cálculo específico de confiabilidade
+        pass
+
+    def _calcula_entropia_ruido(self, modelo):
+        # Implementar cálculo específico de entropia do ruído
+        pass
+
+    def _calcula_enviesamento(self, modelo):
+        # Implementar cálculo específico de enviesamento
+        pass
+
+    def _calcula_oscilacao(self, modelo):
+        # Implementar cálculo específico de oscilação heurística
+        pass
+
+    def rodar_ciclo(self):
+        """
+        Executa o ciclo completo: cálculo, validação e ajuste.
+        Deve ser chamado continuamente, em loop ou por gatilho externo.
+        """
+        self.calcular_margens()
+        self.validar_margens()
+        self.historico.append(self.estatisticas.copy())
