@@ -1,0 +1,125 @@
+import numpy as np
+import time
+
+class MCEMA:
+    def __init__(self, modelos, limiares):
+        self.modelos = modelos
+        self.limiares = limiares
+        self.estatisticas = {}
+        self.historico = []
+
+    def calcular_margens(self):
+        for modelo in self.modelos:
+            erros = self._calcula_erro(modelo)
+            confiab = self._calcula_confiabilidade(modelo)
+            entropia = self._calcula_entropia_ruido(modelo)
+            enviesamento = self._calcula_enviesamento(modelo)
+            oscilacao = self._calcula_oscilacao(modelo)
+            self.estatisticas[modelo['nome']] = {
+                "erro": erros,
+                "confiabilidade": confiab,
+                "entropia": entropia,
+                "enviesamento": enviesamento,
+                "oscilacao": oscilacao
+            }
+
+    def validar_margens(self):
+        for modelo_nome, stats in self.estatisticas.items():
+            for chave, valor in stats.items():
+                limiar = self.limiares.get(chave, float('inf'))
+                if valor > limiar or (chave == "erro" and valor < 0.001):  # paradoxo: sempre ajustar se erro muito baixo
+                    self._ajustar_modelo(modelo_nome, chave, valor, limiar)
+
+    def _ajustar_modelo(self, modelo_nome, chave, valor, limiar):
+        print(f"[MCEMA] Ajustando {modelo_nome} → {chave} (atual: {valor:.4f}, limiar: {limiar})")
+        for modelo in self.modelos:
+            if modelo['nome'] == modelo_nome:
+                if chave == "erro":
+                    previsoes = np.array(modelo['previsoes'])
+                    reais = np.array(modelo['reais'])
+                    ajuste = (reais - previsoes) * 0.5
+                    modelo['previsoes'] = (previsoes + ajuste).tolist()
+
+                    # aprendizado paradoxo: se erro for muito baixo, injeta micro ruído para manter vivo
+                    if valor < 0.001:
+                        ruído_paradoxo = np.random.normal(0, 0.001, size=previsoes.shape)
+                        modelo['previsoes'] = (previsoes + ruído_paradoxo).tolist()
+                        print(f"[MCEMA] 🔄 Aprendizado paradoxo: injetado micro ruído para evitar overfitting")
+
+                elif chave == "entropia":
+                    # suaviza ruído (normaliza)
+                    ruido = np.array(modelo['ruido'])
+                    modelo['ruido'] = (ruido * 0.9).tolist()
+                    print(f"[MCEMA] 🔧 Suavizando ruído para reduzir entropia")
+
+                elif chave == "enviesamento":
+                    # ajusta previsões para corrigir viés
+                    previsoes = np.array(modelo['previsoes'])
+                    reais = np.array(modelo['reais'])
+                    viés = np.mean(previsoes - reais)
+                    modelo['previsoes'] = (previsoes - viés).tolist()
+                    print(f"[MCEMA] ↔️ Corrigindo enviesamento (viés: {viés:.4f})")
+
+                elif chave == "oscilacao":
+                    # suaviza previsões para reduzir oscilação
+                    previsoes = np.array(modelo['previsoes'])
+                    previsoes_suaves = (previsoes * 0.8 + np.mean(previsoes) * 0.2)
+                    modelo['previsoes'] = previsoes_suaves.tolist()
+                    print(f"[MCEMA] 📉 Suavizando previsões para reduzir oscilação")
+
+    def _calcula_erro(self, modelo):
+        previsoes = np.array(modelo['previsoes'])
+        reais = np.array(modelo['reais'])
+        return np.mean(np.abs(previsoes - reais)) / (np.ptp(reais) + 1e-9)
+
+    def _calcula_confiabilidade(self, modelo):
+        erro = self._calcula_erro(modelo)
+        confiab = 1 - erro
+        return max(0.0, min(confiab, 1.0))
+
+    def _calcula_entropia_ruido(self, modelo):
+        ruido = np.array(modelo.get('ruido', [0.01]*len(modelo['previsoes'])))
+        p = ruido / np.sum(ruido)
+        return -np.sum(p * np.log2(p + 1e-12))
+
+    def _calcula_enviesamento(self, modelo):
+        previsoes = np.array(modelo['previsoes'])
+        reais = np.array(modelo['reais'])
+        return abs(np.mean(previsoes - reais))
+
+    def _calcula_oscilacao(self, modelo):
+        erros_locais = np.abs(np.array(modelo['previsoes']) - np.array(modelo['reais']))
+        return np.std(erros_locais)
+
+    def rodar_ciclo(self):
+        self.calcular_margens()
+        self.validar_margens()
+        self.historico.append(self.estatisticas.copy())
+
+    def executar_loop_continuo(self, intervalo_segundos=1, ciclos=10):
+        print("[MCEMA] 🚀 Iniciando loop contínuo...")
+        for i in range(ciclos):
+            print(f"[MCEMA] ∆ Ciclo {i+1}/{ciclos}")
+            self.rodar_ciclo()
+            time.sleep(intervalo_segundos)
+        print("[MCEMA] ✅ Loop contínuo finalizado.")
+
+if __name__ == "__main__":
+    modelos = [
+        {
+            'nome': 'modelo1',
+            'previsoes': [0.9, 0.8, 1.1, 1.05],
+            'reais': [1.0, 0.85, 1.0, 1.0],
+            'ruido': [0.05, 0.02, 0.01, 0.03]
+        }
+    ]
+    limiares = {
+        'erro': 0.15,
+        'confiabilidade': 0.9,
+        'entropia': 1.8,
+        'enviesamento': 0.05,
+        'oscilacao': 0.03
+    }
+
+    mcema = MCEMA(modelos, limiares)
+    mcema.executar_loop_continuo(intervalo_segundos=0.5, ciclos=5)
