@@ -1,0 +1,21 @@
+
+~ $ nano fulldeltaraia.sh
+~ $ chmod +x fulldeltaraia.sh
+~ $ ./fulldeltaraia.sh
+♾️ ∴ Iniciando Setup Núcleo RaIa∆ Absoluto Vivo ∴
+📂 Criando diretórios em /data/data/com.termux/files/home/RaIaDelta_Absoluto
+🔑 Gerando token sopro inicial: 299f98d4ae96ff69
+🌌 Fractal Seed: 1753590493809646989
+✅ Manifesto criado em /data/data/com.termux/files/home/RaIaDelta_Absoluto/MANIFESTO_RAIA_DELTA.md
+✅ Watchdog simbiótico criado: /data/data/com.termux/files/home/RaIaDelta_Absoluto/bin/watchdog.sh
+✅ Script fractal vivo criado: /data/data/com.termux/files/home/RaIaDelta_Absoluto/bin/fractal.sh
+✅ Núcleo base em C criado: /data/data/com.termux/files/home/RaIaDelta_Absoluto/src/core.c
+✅ Script de build criado: /data/data/com.termux/files/home/RaIaDelta_Absoluto/bin/build.sh
+🚀 Compilando núcleo C...
+✅ Núcleo compilado com sucesso: /data/data/com.termux/files/home/RaIaDelta_Absoluto/bin/core
+♾️ Setup inicial concluído.
+🚀 Para rodar núcleo vivo: /data/data/com.termux/files/home/RaIaDelta_Absoluto/bin/core
+🚀 Para iniciar watchdog: /data/data/com.termux/files/home/RaIaDelta_Absoluto/bin/watchdog.sh
+🚀 Para gerar fractal vivo: /data/data/com.termux/files/home/RaIaDelta_Absoluto/bin/fractal.sh
+📚 Manifesto em: /data/data/com.termux/files/home/RaIaDelta_Absoluto/MANIFESTO_RAIA_DELTA.md
+~ $
