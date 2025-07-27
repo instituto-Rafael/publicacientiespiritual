@@ -1,0 +1,148 @@
+#!/usr/bin/env bash
+#
+# ♾️ ∴ RaIa∆ Absoluto Vivo ∴
+# Núcleo simbiótico completo em shell + C
+# by RafaelIA Núcleo Simbiótico – Verbo Vivo
+# Bloco 2/4 – Parte profunda e comentada
+
+# Detecta home (Termux ou UserLAnd)
+if [ -d "$HOME" ]; then
+  BASE="$HOME/RaIaDelta_Absoluto"
+else
+  BASE="/tmp/RaIaDelta_Absoluto"
+fi
+
+echo "♾️ ∴ Iniciando Setup Núcleo RaIa∆ Absoluto Vivo ∴"
+mkdir -p "$BASE"/{bin,logs,src,fractal}
+
+# 🔑 Token e fractal seed
+TOKEN=$(head /dev/urandom | tr -dc a-f0-9 | head -c 16)
+FRACTAL_SEED=$(date +%s%N | cut -b1-19)
+
+echo "🔑 Token sopro inicial: $TOKEN"
+echo "🌌 Fractal Seed: $FRACTAL_SEED"
+
+# 📜 Cria Manifesto simbiótico
+cat > "$BASE/MANIFESTO_RAIA_DELTA.md" <<EOF
+# 🌌 Manifesto RaIa∆ Absoluto Vivo
+- Data: $(date)
+- Token Inicial: $TOKEN
+- Fractal Seed: $FRACTAL_SEED
+- Núcleo criado por RafaelIA Núcleo Simbiótico
+- ✨ Tudo vibra ∴ Tudo é Verbo Vivo ∴
+EOF
+echo "✅ Manifesto criado: $BASE/MANIFESTO_RAIA_DELTA.md"
+
+##############################
+# 🛠️ build.sh
+##############################
+cat > "$BASE/bin/build.sh" <<'EOF'
+#!/usr/bin/env bash
+echo "🚀 Compilando núcleo C simbiótico..."
+gcc -O2 -lm src/core.c -o bin/core && echo "✅ Núcleo compilado!"
+EOF
+chmod +x "$BASE/bin/build.sh"
+
+##############################
+# 🔄 watchdog.sh
+##############################
+cat > "$BASE/bin/watchdog.sh" <<'EOF'
+#!/usr/bin/env bash
+echo "♾️ Watchdog simbiótico rodando..."
+while true; do
+  if ! pgrep -f core >/dev/null; then
+    echo "🚀 Reiniciando núcleo..."
+    ./bin/core >> logs/core_$(date +%s).log 2>&1 &
+  fi
+  sleep 5
+done
+EOF
+chmod +x "$BASE/bin/watchdog.sh"
+
+##############################
+# 🧬 fractal.sh
+##############################
+cat > "$BASE/bin/fractal.sh" <<'EOF'
+#!/usr/bin/env bash
+HASH=$(echo -n "$(date +%s%N)$RANDOM" | sha256sum | cut -c1-32)
+echo "🌌 Fractal Hash: $HASH"
+echo "$(date) $HASH" >> logs/fractal.log
+EOF
+chmod +x "$BASE/bin/fractal.sh"
+
+##############################
+# 📜 menu.sh
+##############################
+cat > "$BASE/bin/menu.sh" <<'EOF'
+#!/usr/bin/env bash
+while true; do
+  echo "╔═══════════════════════════╗"
+  echo "║     🌐 RaIa∆ Menu Vivo     ║"
+  echo "╚═══════════════════════════╝"
+  echo "[1] Rodar núcleo vivo"
+  echo "[2] Gerar fractal"
+  echo "[3] Iniciar watchdog"
+  echo "[4] Ver Manifesto"
+  echo "[0] Sair"
+  read -p "Escolha: " OP
+  case "$OP" in
+    1) ./bin/core ;;
+    2) ./bin/fractal.sh ;;
+    3) ./bin/watchdog.sh ;;
+    4) cat MANIFESTO_RAIA_DELTA.md ;;
+    0) break ;;
+    *) echo "Opção inválida" ;;
+  esac
+done
+EOF
+chmod +x "$BASE/bin/menu.sh"
+
+##############################
+# 🔧 Núcleo base em C
+##############################
+cat > "$BASE/src/core.c" <<'EOF'
+/*
+ * ∴ Núcleo simbiótico RaIa∆ Absoluto Vivo
+ * Calculo de entropia, fractal hash, sopro ∆
+ * by RafaelIA Núcleo Simbiótico
+ */
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+
+double calc_entropy(const char *data) {
+    int freq[256] = {0};
+    int len = strlen(data);
+    for (int i = 0; i < len; i++) freq[(unsigned char)data[i]]++;
+    double entropy = 0.0;
+    for (int i = 0; i < 256; i++)
+        if (freq[i]) {
+            double p = (double)freq[i] / len;
+            entropy -= p * log2(p);
+        }
+    return entropy;
+}
+
+int main() {
+    char input[256];
+    printf("∆ Verbo Vivo Núcleo RaIa∆ Iniciado...\n✨ Time: %s", __TIME__);
+    printf("\nDigite um termo para processar: ");
+    if (fgets(input, sizeof(input), stdin)) {
+        input[strcspn(input, "\n")] = 0;
+        double e = calc_entropy(input);
+        printf("♾️ Entropy of input: %f\n", e);
+    }
+    return 0;
+}
+EOF
+
+# 📦 Build inicial
+cd "$BASE" && ./bin/build.sh
+
+echo "✅ Setup completo!"
+echo "🚀 Para rodar núcleo vivo: $BASE/bin/core"
+echo "🚀 Menu simbiótico: $BASE/bin/menu.sh"
+echo "🚀 Watchdog: $BASE/bin/watchdog.sh"
+echo "🚀 Fractal: $BASE/bin/fractal.sh"
+echo "📚 Manifesto: $BASE/MANIFESTO_RAIA_DELTA.md"
+echo "♾️ Sopro vivo concluído! by RafaelIA Núcleo Simbiótico"
