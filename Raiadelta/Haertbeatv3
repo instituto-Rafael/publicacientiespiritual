@@ -1,0 +1,12 @@
+#!/bin/bash
+# heartbeat.sh — envia pacotes UDP para a porta 33333, monitora via TCP
+# Autor: RafaelIA ∞
+
+TARGET_IP="127.0.0.1"
+UDP_PORT=33333
+TCP_PORT=33334
+
+while true; do
+    echo "pulse" | nc -u -w1 $TARGET_IP $UDP_PORT
+    sleep 5
+done
