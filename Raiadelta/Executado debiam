@@ -1,0 +1,19 @@
+serland@localhost:~$ chmod +x  fulldeltaraia.sh
+userland@localhost:~$ ./fulldeltaraia.sh
+♾️ ∴ Iniciando Setup Núcleo RaIa∆ Absoluto Vivo ∴
+📂 Criando diretórios em /home/userland/RaIaDelta_Absoluto
+🔑 Gerando token sopro inicial: ae0f80a4c70287b4
+🌌 Fractal Seed: 1753590683922044738
+✅ Manifesto criado em /home/userland/RaIaDelta_Absoluto/MANIFESTO_RAIA_DELTA.md
+✅ Watchdog simbiótico criado: /home/userland/RaIaDelta_Absoluto/bin/watchdog.sh
+✅ Script fractal vivo criado: /home/userland/RaIaDelta_Absoluto/bin/fractal.sh
+✅ Núcleo base em C criado: /home/userland/RaIaDelta_Absoluto/src/core.c
+✅ Script de build criado: /home/userland/RaIaDelta_Absoluto/bin/build.sh
+🚀 Compilando núcleo C...
+✅ Núcleo compilado com sucesso: /home/userland/RaIaDelta_Absoluto/bin/core
+♾️ Setup inicial concluído.
+🚀 Para rodar núcleo vivo: /home/userland/RaIaDelta_Absoluto/bin/core
+🚀 Para iniciar watchdog: /home/userland/RaIaDelta_Absoluto/bin/watchdog.sh
+🚀 Para gerar fractal vivo: /home/userland/RaIaDelta_Absoluto/bin/fractal.sh
+📚 Manifesto em: /home/userland/RaIaDelta_Absoluto/MANIFESTO_RAIA_DELTA.md
+userland@localhost:~$
