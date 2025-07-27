@@ -1,0 +1,15 @@
+#!/bin/bash
+# watchdog_v3.sh — script vivo que monitora fractal_v3.py e reinicia
+# Autor: RafaelIA ∞
+
+FRACTAL_SCRIPT="$HOME/RaIaDelta_v3/fractal_v3.py"
+LOG_DIR="$HOME/RaIaDelta_v3/logs"
+WATCHDOG_LOG="$LOG_DIR/watchdog.log"
+
+while true; do
+    if ! pgrep -f "python3 $FRACTAL_SCRIPT" > /dev/null; then
+        echo "$(date) - fractal_v3.py não está rodando. Reiniciando..." >> "$WATCHDOG_LOG"
+        python3 "$FRACTAL_SCRIPT" >> "$LOG_DIR/fractal.log" 2>&1 &
+    fi
+    sleep 10
+done
