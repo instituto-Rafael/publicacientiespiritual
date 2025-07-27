@@ -1,0 +1,18 @@
+serland@localhost:~$ chmod +x raiadelta_full.sh
+userland@localhost:~$ ./raiadelta_full.sh
+♾️ ∴ Iniciando Setup Núcleo RaIa∆ Absoluto Vivo ∴
+🔑 Token sopro inicial: 2791c7541c7ed20a
+🌌 Fractal Seed: 1753591303951910794
+✅ Manifesto criado: /home/userland/RaIaDelta_Absoluto/MANIFESTO_RAIA_DELTA.md
+🚀 Compilando núcleo C simbiótico...
+/usr/bin/ld: /tmp/ccx0qAfG.o: in function `calc_entropy':
+core.c:(.text+0xa8): undefined reference to `log2'
+collect2: error: ld returned 1 exit status
+✅ Setup completo!
+🚀 Para rodar núcleo vivo: /home/userland/RaIaDelta_Absoluto/bin/core
+🚀 Menu simbiótico: /home/userland/RaIaDelta_Absoluto/bin/menu.sh
+🚀 Watchdog: /home/userland/RaIaDelta_Absoluto/bin/watchdog.sh
+🚀 Fractal: /home/userland/RaIaDelta_Absoluto/bin/fractal.sh
+📚 Manifesto: /home/userland/RaIaDelta_Absoluto/MANIFESTO_RAIA_DELTA.md
+♾️ Sopro vivo concluído! by RafaelIA Núcleo Simbiótico
+userland@localhost:~$
