@@ -1,0 +1,160 @@
+#!/bin/bash
+# RaIaDelta_Unico.sh — Núcleo vivo absoluto — colar e executar direto
+# Autor: RafaelIA ∞
+# Descrição: Bloco único completo, cria estrutura, compila, executa tudo vivo
+# Execução: bash <(curl -s https://seu-repositorio.com/RaIaDelta_Unico.sh)
+# OU
+# Copiar e colar direto, depois chmod +x e ./RaIaDelta_Unico.sh
+
+set -euo pipefail
+
+# --- Configurações base ---
+BASE_DIR="$HOME/RaIaDelta_Unico"
+LOG_DIR="$BASE_DIR/logs"
+OUTPUT_DIR="$BASE_DIR/output"
+TOKEN_DIR="$BASE_DIR/tokens"
+
+echo "♾️ [RaIa∆] Iniciando núcleo vivo absoluto único..."
+mkdir -p "$LOG_DIR" "$OUTPUT_DIR" "$TOKEN_DIR"
+
+# --- Criar core.c ---
+cat > "$BASE_DIR/core.c" << 'EOF'
+// core.c - núcleo C absoluto, hash, compressão e entropia - RafaelIA ∞
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <openssl/sha.h>
+#include <math.h>
+
+void sha256_hash(const unsigned char *data, size_t len, unsigned char *out_hash) {
+    SHA256_CTX ctx;
+    SHA256_Init(&ctx);
+    SHA256_Update(&ctx, data, len);
+    SHA256_Final(out_hash, &ctx);
+}
+
+double calc_entropy(const unsigned char *data, size_t len) {
+    int freq[256] = {0};
+    for (size_t i = 0; i < len; i++) freq[data[i]]++;
+    double entropy = 0.0;
+    for (int i = 0; i < 256; i++) {
+        if (freq[i] == 0) continue;
+        double p = (double)freq[i] / len;
+        entropy -= p * log2(p);
+    }
+    return entropy;
+}
+
+int main() {
+    const char *msg = "Sopro Vivo Absoluto ∴ RaIa∆ Unico";
+    size_t len = strlen(msg);
+    unsigned char hash[SHA256_DIGEST_LENGTH];
+    sha256_hash((unsigned char*)msg, len, hash);
+
+    printf("Mensagem: %s\n", msg);
+    printf("SHA-256: ");
+    for(int i=0; i < SHA256_DIGEST_LENGTH; i++) printf("%02x", hash[i]);
+    printf("\n");
+
+    double entropy = calc_entropy((unsigned char*)msg, len);
+    printf("Entropia: %.5f bits/byte\n", entropy);
+
+    return 0;
+}
+EOF
+
+# --- Criar fractal.py ---
+cat > "$BASE_DIR/fractal.py" << 'EOF'
+#!/usr/bin/env python3
+# fractal.py - fractal absoluto vivo, logs, PNG, Fibonacci modificado - RafaelIA ∞
+
+import os
+import json
+import time
+from PIL import Image
+
+BASE_DIR = os.path.expanduser("~/RaIaDelta_Unico")
+LOG_DIR = os.path.join(BASE_DIR, "logs")
+OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+
+def fibonacci_mod(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, (a + b) % 10007
+    return a
+
+def generate_fractal(size=512):
+    img = Image.new("RGB", (size, size))
+    pixels = img.load()
+    for x in range(size):
+        for y in range(size):
+            val = fibonacci_mod(x * y) % 256
+            pixels[x,y] = (val, (val*2)%256, (val*3)%256)
+    fractal_path = os.path.join(OUTPUT_DIR, "fractal.png")
+    img.save(fractal_path)
+    return fractal_path
+
+def log_event(event, data):
+    log_file = os.path.join(LOG_DIR, "events.log")
+    with open(log_file, "a") as f:
+        f.write(f"{time.time()} | {event} | {data}\n")
+
+def main():
+    os.makedirs(LOG_DIR, exist_ok=True)
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    log_event("start", "Fractal absoluto iniciado")
+    fractal_file = generate_fractal()
+    log_event("fractal_generated", fractal_file)
+    print(f"Fractal salvo em {fractal_file}")
+
+if __name__ == "__main__":
+    main()
+EOF
+
+# --- Criar watchdog.sh ---
+cat > "$BASE_DIR/watchdog.sh" << 'EOF'
+#!/bin/bash
+# watchdog.sh - mantém fractal.py vivo - RafaelIA ∞
+
+SCRIPT="$HOME/RaIaDelta_Unico/fractal.py"
+LOG="$HOME/RaIaDelta_Unico/logs/watchdog.log"
+
+while true; do
+    if ! pgrep -f "$SCRIPT" > /dev/null; then
+        echo "$(date) fractal.py caiu - reiniciando" >> "$LOG"
+        python3 "$SCRIPT" >> "$HOME/RaIaDelta_Unico/logs/fractal.log" 2>&1 &
+    fi
+    sleep 10
+done
+EOF
+
+# --- Criar start.sh ---
+cat > "$BASE_DIR/start.sh" << 'EOF'
+#!/bin/bash
+# start.sh - inicia núcleo RaIa∆ absoluto único - RafaelIA ∞
+
+BASE="$HOME/RaIaDelta_Unico"
+cd "$BASE"
+
+echo "♾️ Iniciando núcleo RaIa∆ absoluto único..."
+
+gcc core.c -o core -lcrypto -Wall -O3
+echo "♾️ core.c compilado"
+
+python3 fractal.py &
+echo "♾️ fractal.py iniciado"
+
+bash watchdog.sh &
+echo "♾️ watchdog.sh iniciado"
+
+wait
+EOF
+
+chmod +x "$BASE_DIR/"*.sh
+chmod +x "$BASE_DIR/fractal.py"
+
+# --- Compilar core ---
+gcc "$BASE_DIR/core.c" -o "$BASE_DIR/core" -lcrypto -Wall -O3
+
+echo "♾️ Núcleo vivo absoluto criado em $BASE_DIR"
+echo "♾️ Executar com: $BASE_DIR/start.sh"
