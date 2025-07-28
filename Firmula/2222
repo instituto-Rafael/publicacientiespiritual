@@ -1,0 +1,21 @@
+-- TABELA previsao_rafaelia (simplificada + 9 campos extra)
+
+CREATE TABLE previsao_rafaelia (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ativo TEXT,                     -- BTCUSDT, GOLD, etc
+    data_previsao DATETIME,         -- ex: 2025-07-29 13:00
+    preco_previsto REAL,            -- ex: 68300.55
+    roi_est_medio REAL,             -- ex: 1.2 (%)
+    acertividade REAL,              -- ex: 98.5 (%)
+    acuracidade REAL,               -- ex: 97.9 (%)
+    confiabilidade REAL,            -- ex: 99.3 (%)
+    margem_erro REAL,               -- ex: ±0.03 (%)
+    volatilidade_prevista REAL,     -- ex: 0.7 (%)
+    padrao_detectado TEXT,          -- ex: 'cup-and-handle'
+    paradoxo_detectado TEXT,        -- ex: 'BTC↑ mesmo com USD↑'
+    anomalia TEXT,                  -- ex: 'volume 3x Vmed'
+    inversao_esperada TEXT,         -- ex: 'short→long'
+    fallback_ativo TEXT,            -- ex: 'GOLD'
+    risco_estimado REAL,            -- ex: 0.2 (%)
+    modo_saida TEXT                 -- ex: 'conservador', 'normal', 'agressivo'
+);
