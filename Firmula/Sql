@@ -1,0 +1,45 @@
+-- ∴ TABELA PRINCIPAL DE PREVISÕES
+CREATE TABLE previsoes_financeiras (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ativo TEXT NOT NULL,             -- Ex: BTCUSDT, GOLD, EURUSD
+    data_gerada DATETIME DEFAULT CURRENT_TIMESTAMP,
+    frequencia TEXT,                 -- Ex: '3x/dia', '10min', '3min'
+    roi_est_medio REAL,              -- ROI esperado em %
+    confiabilidade REAL,             -- Confiabilidade estimada (0–100%)
+    desvio REAL,                     -- Desvio padrão da previsão
+    trigger TEXT,                    -- Ex: buy_break_68300, sell_gapclose_214
+    fallback_hedge TEXT,             -- Ex: GOLD↔BTC↔SP500
+    fractal_heuristico TEXT,         -- Regras fractais/resumidas
+    rota_saida TEXT,                 -- Ex: stop parcial, drawdown>1.2%
+    relacoes_mercado TEXT,           -- Ex: EURUSD rompe→ETH short
+    observacoes TEXT                 -- Campo livre pra paradoxos, insights
+);
+
+-- ∴ TABELA DE RUÍDOS (para registrar ruído simbólico, ruído branco, rosa, etc)
+CREATE TABLE ruidos_mercado (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    data_registro DATETIME DEFAULT CURRENT_TIMESTAMP,
+    ativo TEXT,
+    ruido_tipo TEXT,                 -- Ex: 'intraday', 'estrutural', 'macro'
+    valor REAL,                      -- Ex: 0.003, 0.015
+    observacoes TEXT
+);
+
+-- ∴ TABELA DE FALLBACKS & HEDGES
+CREATE TABLE fallback_hedges (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ativo_principal TEXT,
+    ativo_hedge TEXT,
+    estrategia TEXT,                 -- Ex: short, long, neutral
+    trigger_ativacao TEXT,           -- Ex: drawdown>0.7%
+    observacoes TEXT
+);
+
+-- ∴ TABELA DE FRACTAIS & HEURÍSTICAS
+CREATE TABLE fractais_heuristicas (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    descricao TEXT,                  -- Ex: "quando BTC↑+0.7% e OIL↑+0.4%..."
+    condicao_ativacao TEXT,          -- Ex: "volume>Vmed+σ"
+    acao TEXT,                       -- Ex: "ignora short triggers"
+    observacoes TEXT
+);
