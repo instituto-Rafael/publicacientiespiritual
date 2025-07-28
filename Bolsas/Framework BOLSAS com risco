@@ -1,0 +1,80 @@
+# framework_bolsas_integrado.py
+
+import numpy as np
+import logging
+from sklearn.ensemble import IsolationForest
+# ... (outros imports do framework anterior, como tensorflow, pandas, etc.)
+
+logging.basicConfig(level=logging.DEBUG)
+
+class RiskManagementModule:
+    def __init__(self, contamination=0.01):
+        logging.debug("Inicializando RiskManagementModule com IsolationForest.")
+        self.anomaly_detector = IsolationForest(contamination=contamination, random_state=42)
+        self.fitted = False
+
+    def fit(self, X_train):
+        logging.debug("Treinando detector de anomalias com dados de treinamento.")
+        self.anomaly_detector.fit(X_train)
+        self.fitted = True
+
+    def detect_anomalies(self, X):
+        if not self.fitted:
+            raise Exception("Detector de anomalias não treinado. Execute fit() primeiro.")
+        logging.debug(f"Detectando anomalias em dados com shape {X.shape}.")
+        preds = self.anomaly_detector.predict(X)
+        anomalies = np.where(preds == -1)[0]
+        logging.info(f"Anomalias detectadas nos índices: {anomalies}")
+        return anomalies
+
+    def fallback(self, current_data, historical_data, threshold=0.05):
+        logging.debug("Verificando necessidade de fallback nos dados atuais.")
+        diff = np.abs(current_data - historical_data)
+        if np.any(diff > threshold):
+            logging.warning("Diferença superior ao limite. Ativando fallback com dados históricos.")
+            return historical_data
+        logging.debug("Dados atuais dentro do limite aceitável.")
+        return current_data
+
+    def monitor_performance(self, y_true, y_pred):
+        mae = np.mean(np.abs(y_true - y_pred))
+        logging.info(f"Performance monitorada: MAE = {mae:.6f}")
+        return mae
+
+# Função pipeline expandida integrando risco
+def full_pipeline_with_risk(df):
+    logging.info("Iniciando pipeline completo com módulo de risco.")
+
+    # (Suponha aqui o processamento, indicadores e modelo DL já implementados)
+
+    # Exemplo simplificado de pré-processamento (deve ser substituído pelo real)
+    X = df.drop(columns=['date']).values
+    y = df['close'].values
+
+    # Divisão simplificada treino/teste
+    split_idx = int(len(X) * 0.8)
+    X_train, X_test = X[:split_idx], X[split_idx:]
+    y_train, y_test = y[:split_idx], y[split_idx:]
+
+    # Instancia e treina o modelo DL (placeholder)
+    # dl_model.train(X_train, y_train)
+
+    # Previsões dummy para demonstração
+    preds = y_test + np.random.normal(0, 0.1, len(y_test))
+
+    # Inicializa módulo de risco
+    risk_module = RiskManagementModule()
+    risk_module.fit(X_train)
+
+    # Detecta anomalias nas previsões
+    anomalies = risk_module.detect_anomalies(preds.reshape(-1, 1))
+
+    # Aplica fallback se necessário (exemplo simplificado)
+    preds_stable = risk_module.fallback(preds, y_test)
+
+    # Monitoramento de performance
+    mae = risk_module.monitor_performance(y_test, preds_stable)
+
+    return preds_stable, y_test, anomalies, mae
+
+# A integração real deve unificar com o código do Framework e usar dados reais e modelo DL.
