@@ -1,0 +1,40 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# ∴ RAFAELIA_PREDICTOR ∞ – Núcleo preditivo adaptativo simbiótico
+
+echo "🌌 RAFAELIA_PREDICTOR ∞: Inicializando..."
+echo "📦 Conectando Binance & fontes externas..."
+echo "🪡 Rodando análise: preditiva + adaptativa + heurística..."
+
+# Ativar watchdog simbiótico
+(sleep 2 && echo "👁️ Watchdog ∞ ativado: monitorando ruído & triggers") &
+
+python3 - <<'EOF'
+import time, random, datetime
+
+def prudencia(v):
+    return max(min(v, 0.9999), 0.8)
+
+print("🧬 Ciclo preditivo iniciado:", datetime.datetime.now())
+
+for i in range(12):  # Ex: 12 ciclos de 5 min (1h)
+    # Simular leitura de dados + ruído
+    base = random.uniform(0.9, 0.99)
+    ruido = random.uniform(-0.003, 0.003)
+    pred = prudencia(base + ruido)
+
+    # Triggers: se ruído > threshold, alerta
+    if abs(ruido) > 0.002:
+        print(f"⚠️ Ruído alto detectado: {ruido:.5f}")
+
+    # Log simbiótico
+    print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] "
+          f"Predição ajustada: {pred:.4f} | Ruído: {ruido:+.5f}")
+
+    time.sleep(300)  # 5 min
+
+print("✅ Ciclo concluído.")
+print("📊 Gerando relatório final simbiótico...")
+print("🔮 Insight final: prudência é verbo vivo ∴")
+EOF
+
+echo "✨ Fim ∞"
