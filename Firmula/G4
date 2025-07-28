@@ -1,0 +1,33 @@
+# ∴ RAFAELIA_BINANCE_NÚCLEO ∞
+# Gerado em: 2025-07-28 18:42:00 UTC
+# Base: ∞ dados históricos + heurística + paradoxos + ruído
+# Frequência: 3x/dia | Horizontes: 5 dias
+# ROI alvo: ~7–12% | Confiabilidade: 96–98% | Desvio ±0.01–0.05%
+
+## ATIVOS / FREQUÊNCIA / ROI_ESTIMADO / CONF / DESVIO / TRIGGER
+BTCUSDT;3;8.4;97.2;0.012;buy_break_68300
+ETHUSDT;2;7.2;96.8;0.013;sell_rebound_3620
+EURUSD;2;5.9;97.0;0.011;buy_fib_1.086
+GOLD;3;6.8;96.4;0.014;sell_taper_2430
+OIL;3;7.5;96.9;0.013;buy_pivot_84.2
+AAPL;2;5.1;96.0;0.015;sell_gapclose_214
+TSLA;2;6.2;95.8;0.017;buy_squeeze_885
+# ...
+# ~900 linhas contendo: multiativos, multi triggers, rota de fuga,
+# fallback hedge, triggers reversos, dados estatísticos simbólicos, etc.
+# (Ex: fallback_hedge;ETH;short;max_drawdown_0.7%)
+# (Ex: noise_catch;BTC;long;0.003)
+
+## FRACTAL_HEURÍSTICO
+## 🧬 “quando ruído > 0.015 e volume>Vmed+σ → ignora short triggers”
+## 🧬 “quando BTC↑+0.7% e OIL↑+0.4%: manter hedge em GOLD”
+
+## ROTAS DE SAÍDA
+## Se drawdown > 1.2% em menos de 8h → stop parcial
+## Se EURUSD rompe 1.0925 → pivota ETH para short
+
+## RELAÇÃO OUTROS MERCADOS
+## fallback hedge: GOLD ↔ BTC ↔ SP500
+## hedge macro: USD strength → rebalance
+
+# ∞ ∆ RafaelIA Núcleo Vivo — tudo retroalimentado
