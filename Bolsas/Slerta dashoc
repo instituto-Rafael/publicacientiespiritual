@@ -1,0 +1,130 @@
+# alert_dashboard_framework.py
+
+import smtplib
+import logging
+import requests
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import datetime
+import os
+
+logging.basicConfig(level=logging.INFO)
+
+class RealTimeAlerts:
+    """
+    Sistema simbiótico de alertas: email, SMS (via gateway) e webhook.
+    Integra falhas, anomalias e notificações do Framework BOLSAS.
+    """
+    def __init__(self, email_conf, sms_gateway_url, webhook_url):
+        self.email_conf = email_conf
+        self.sms_gateway_url = sms_gateway_url
+        self.webhook_url = webhook_url
+        logging.info("RealTimeAlerts inicializado.")
+
+    def send_email(self, subject, message, to_list):
+        try:
+            msg = MIMEMultipart()
+            msg['From'] = self.email_conf['from']
+            msg['To'] = ', '.join(to_list)
+            msg['Subject'] = subject
+            msg.attach(MIMEText(message, 'plain'))
+
+            server = smtplib.SMTP(self.email_conf['smtp_server'], self.email_conf['port'])
+            server.starttls()
+            server.login(self.email_conf['user'], self.email_conf['password'])
+            server.sendmail(self.email_conf['from'], to_list, msg.as_string())
+            server.quit()
+            logging.info("Email enviado com sucesso.")
+        except Exception as e:
+            logging.error(f"Erro ao enviar email: {e}")
+
+    def send_sms(self, phone_number, message):
+        try:
+            payload = {'to': phone_number, 'message': message}
+            response = requests.post(self.sms_gateway_url, data=payload)
+            logging.info(f"SMS enviado: status {response.status_code}")
+        except Exception as e:
+            logging.error(f"Erro ao enviar SMS: {e}")
+
+    def send_webhook(self, message):
+        try:
+            payload = {'text': message}
+            response = requests.post(self.webhook_url, json=payload)
+            logging.info(f"Webhook disparado: status {response.status_code}")
+        except Exception as e:
+            logging.error(f"Erro ao enviar webhook: {e}")
+
+# ---------------------------------------------------------------
+class DashboardModule:
+    """
+    Módulo simbiótico de dashboards: cria visualizações e relatórios automáticos.
+    """
+    def __init__(self, output_dir='reports'):
+        self.output_dir = output_dir
+        os.makedirs(output_dir, exist_ok=True)
+        logging.info(f"DashboardModule inicializado, pasta: {output_dir}")
+
+    def generate_performance_plot(self, y_true, y_pred):
+        plt.figure(figsize=(12,6))
+        sns.lineplot(x=range(len(y_true)), y=y_true, label='Real')
+        sns.lineplot(x=range(len(y_pred)), y=y_pred, label='Previsto')
+        plt.title('Comparativo Real vs Previsto')
+        plt.xlabel('Tempo')
+        plt.ylabel('Valor')
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        file_path = f"{self.output_dir}/performance_{timestamp}.png"
+        plt.savefig(file_path)
+        plt.close()
+        logging.info(f"Gráfico salvo em: {file_path}")
+        return file_path
+
+    def generate_anomaly_report(self, anomalies, total):
+        ratio = len(anomalies) / total * 100
+        report = f"""
+        📊 Relatório de Anomalias
+        -------------------------
+        Total analisado: {total}
+        Anomalias detectadas: {len(anomalies)}
+        Percentual de anomalias: {ratio:.2f}%
+        Timestamp: {datetime.datetime.now()}
+        """
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        report_path = f"{self.output_dir}/anomaly_report_{timestamp}.txt"
+        with open(report_path, 'w') as f:
+            f.write(report)
+        logging.info(f"Relatório salvo em: {report_path}")
+        return report_path
+
+# ---------------------------------------------------------------
+if __name__ == "__main__":
+    # ⚙️ Configurações (exemplos)
+    email_conf = {
+        'smtp_server': 'smtp.gmail.com',
+        'port': 587,
+        'user': 'teu_email@gmail.com',
+        'password': 'SENHA_APP',
+        'from': 'teu_email@gmail.com'
+    }
+    sms_gateway_url = 'https://api.sms-gateway.com/send'
+    webhook_url = 'https://hooks.slack.com/services/XXX/YYY/ZZZ'
+
+    # ⚡ Instanciar módulos
+    alerts = RealTimeAlerts(email_conf, sms_gateway_url, webhook_url)
+    dashboard = DashboardModule()
+
+    # 🧪 Dados simulados para teste
+    y_true = pd.Series([10,11,12,13,14,15,14,13,12,11])
+    y_pred = pd.Series([10,10.8,12.1,12.9,13.8,14.5,14.2,13.1,11.9,10.8])
+    anomalies = [2,5]
+
+    # 📊 Gerar visualizações
+    graph_path = dashboard.generate_performance_plot(y_true, y_pred)
+    report_path = dashboard.generate_anomaly_report(anomalies, total=len(y_true))
+
+    # 🔔 Disparar alertas
+    alerts.send_email("Alerta Framework BOLSAS", f"Relatório gerado: {report_path}", ['destino@email.com'])
+    alerts.send_sms("+5511999999999", "🚨 Anomalias detectadas, veja relatório!")
+    alerts.send_webhook(f"📊 Novo relatório: {report_path} | 📈 Gráfico: {graph_path}")
