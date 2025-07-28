@@ -1,0 +1,74 @@
+import numpy as np
+import logging
+from sklearn.ensemble import IsolationForest
+
+logging.basicConfig(level=logging.DEBUG)
+
+class RiskManagementModule:
+    """
+    Módulo para detectar anomalias, monitorar performance e gerenciar riscos operacionais
+    com técnicas de machine learning e mecanismos de fallback.
+    """
+
+    def __init__(self, contamination=0.01):
+        logging.debug("Inicializando RiskManagementModule com IsolationForest.")
+        # IsolationForest para detectar anomalias nos dados de entrada ou previsões
+        self.anomaly_detector = IsolationForest(contamination=contamination, random_state=42)
+        self.fitted = False
+
+    def fit(self, X_train):
+        logging.debug("Treinando detector de anomalias com dados de treinamento.")
+        self.anomaly_detector.fit(X_train)
+        self.fitted = True
+
+    def detect_anomalies(self, X):
+        if not self.fitted:
+            raise Exception("Detector de anomalias não treinado. Execute fit() primeiro.")
+        logging.debug(f"Detectando anomalias em dados com shape {X.shape}.")
+        preds = self.anomaly_detector.predict(X)
+        # -1 indica anomalia, 1 normal
+        anomalies = np.where(preds == -1)[0]
+        logging.info(f"Anomalias detectadas nos índices: {anomalies}")
+        return anomalies
+
+    def fallback(self, current_data, historical_data, threshold=0.05):
+        """
+        Verifica divergências grandes entre dados atuais e históricos.
+        Se divergência > threshold, usa fallback para dados históricos suavizados.
+        """
+        logging.debug("Verificando necessidade de fallback nos dados atuais.")
+        diff = np.abs(current_data - historical_data)
+        if np.any(diff > threshold):
+            logging.warning("Diferença superior ao limite. Ativando fallback com dados históricos.")
+            return historical_data  # fallback para estabilidade
+        logging.debug("Dados atuais dentro do limite aceitável.")
+        return current_data
+
+    def monitor_performance(self, y_true, y_pred):
+        """
+        Monitoramento simples de performance com cálculo de erro absoluto médio.
+        Pode ser expandido para alertas e re-treinamento automático.
+        """
+        mae = np.mean(np.abs(y_true - y_pred))
+        logging.info(f"Performance monitorada: MAE = {mae:.6f}")
+        return mae
+
+# Exemplo de uso dentro do pipeline
+if __name__ == "__main__":
+    # Dummy data para demonstração
+    np.random.seed(42)
+    X_train = np.random.normal(0, 1, (100, 10))
+    X_test = np.random.normal(0, 1, (20, 10))
+    y_true = np.random.normal(0, 1, 20)
+    y_pred = y_true + np.random.normal(0, 0.1, 20)
+
+    risk_module = RiskManagementModule()
+    risk_module.fit(X_train)
+
+    anomalies = risk_module.detect_anomalies(X_test)
+
+    current_data = np.array([0.1, 0.2, 0.3])
+    historical_data = np.array([0.1, 0.19, 0.29])
+    stable_data = risk_module.fallback(current_data, historical_data)
+
+    mae = risk_module.monitor_performance(y_true, y_pred)
