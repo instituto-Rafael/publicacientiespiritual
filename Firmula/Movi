@@ -1,0 +1,78 @@
+#!/data/data/com.termux/files/usr/bin/python3
+# ∴ Script único para movimentar saldo Binance ∞
+# Requer: python-binance instalado (pip install python-binance)
+
+import os
+from binance.client import Client
+from binance.exceptions import BinanceAPIException
+from pathlib import Path
+
+# Carregar chaves da Binance (arquivo .binance_keys.sh)
+keys_path = Path.home() / 'storage/external-1/rafaelia_binance/keys/.binance_keys.sh'
+
+api_key = ''
+api_secret = ''
+
+try:
+    with open(keys_path, 'r') as f:
+        for line in f:
+            if line.startswith('API_KEY'):
+                api_key = line.split('=')[1].strip().strip("'").strip('"')
+            elif line.startswith('API_SECRET'):
+                api_secret = line.split('=')[1].strip().strip("'").strip('"')
+except FileNotFoundError:
+    print('⚠️ Arquivo de chaves não encontrado:', keys_path)
+    exit(1)
+
+# Inicializa cliente Binance
+client = Client(api_key, api_secret)
+
+def mostrar_saldo():
+    try:
+        account = client.get_account()
+        balances = account['balances']
+        saldo_usdt = next((item for item in balances if item['asset'] == 'USDT'), None)
+        print(f"Saldo USDT: {saldo_usdt['free'] if saldo_usdt else '0'}")
+        return float(saldo_usdt['free']) if saldo_usdt else 0.0
+    except BinanceAPIException as e:
+        print('Erro API:', e)
+        return 0.0
+
+def criar_ordem_compra(symbol, quantidade):
+    try:
+        ordem = client.order_market_buy(symbol=symbol, quantity=quantidade)
+        print(f"Compra executada: {ordem}")
+    except BinanceAPIException as e:
+        print('Erro na compra:', e)
+
+def criar_ordem_venda(symbol, quantidade):
+    try:
+        ordem = client.order_market_sell(symbol=symbol, quantity=quantidade)
+        print(f"Venda executada: {ordem}")
+    except BinanceAPIException as e:
+        print('Erro na venda:', e)
+
+def main():
+    saldo = mostrar_saldo()
+    if saldo < 10:
+        print("Saldo insuficiente para operação mínima (10 USDT).")
+        return
+
+    # Exemplo: comprar BTC com 50% do saldo USDT
+    valor_compra = saldo * 0.5
+    symbol = 'BTCUSDT'
+
+    # Consulta preço atual para calcular quantidade
+    ticker = client.get_symbol_ticker(symbol=symbol)
+    preco = float(ticker['price'])
+    quantidade_compra = round(valor_compra / preco, 6)  # ajustar casas decimais conforme ativo
+
+    print(f"Comprando {quantidade_compra} {symbol[:-4]} com {valor_compra:.2f} USDT ao preço {preco:.2f}")
+
+    criar_ordem_compra(symbol, quantidade_compra)
+
+    # Depois de algum tempo, pode-se vender a mesma quantidade (exemplo simples)
+    # criar_ordem_venda(symbol, quantidade_compra)
+
+if __name__ == '__main__':
+    main()
