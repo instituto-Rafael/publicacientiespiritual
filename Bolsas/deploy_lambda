@@ -1,0 +1,27 @@
+import boto3
+import zipfile
+import os
+
+LAMBDA_FUNCTION_NAME = 'nome-da-sua-lambda'
+ZIP_FILE = 'deploy_package.zip'
+
+def zip_code():
+    with zipfile.ZipFile(ZIP_FILE, 'w') as z:
+        for foldername, subfolders, filenames in os.walk('.'):
+            for filename in filenames:
+                if filename.endswith('.py'):
+                    filepath = os.path.join(foldername, filename)
+                    z.write(filepath)
+
+def deploy_lambda():
+    zip_code()
+    client = boto3.client('lambda')
+    with open(ZIP_FILE, 'rb') as f:
+        response = client.update_function_code(
+            FunctionName=LAMBDA_FUNCTION_NAME,
+            ZipFile=f.read(),
+        )
+    print("Deploy realizado:", response)
+
+if __name__ == '__main__':
+    deploy_lambda()
