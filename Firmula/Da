@@ -1,0 +1,63 @@
+pkg install python git
+pip install python-binance sqlite3 pandas
+
+
+#!/data/data/com.termux/files/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import sqlite3, time, datetime
+from binance.client import Client
+import pandas as pd
+
+# Carrega keys
+api_key, api_secret = '', ''
+with open('keys/binance_keys.txt') as f:
+    for line in f:
+        if line.startswith('API_KEY'): api_key = line.split('=')[1].strip()
+        if line.startswith('API_SECRET'): api_secret = line.split('=')[1].strip()
+
+client = Client(api_key, api_secret)
+
+# Conecta no DB
+conn = sqlite3.connect('db/rain.db')
+c = conn.cursor()
+
+# Cria tabela se não existir
+c.execute('''
+CREATE TABLE IF NOT EXISTS previsoes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    data TEXT, hora TEXT, ativo TEXT,
+    freq INTEGER, dias INTEGER,
+    roi_estimado REAL, confiabilidade REAL, desvio REAL
+)
+''')
+conn.commit()
+
+# Lê pedidos
+with open('data/input.txt') as f:
+    linhas = f.readlines()
+
+for linha in linhas:
+    if linha.startswith('#') or not linha.strip(): continue
+    ativo, freq, dias = linha.strip().split(';')
+    freq, dias = int(freq), int(dias)
+
+    # === AQUI seria a lógica real preditiva ===
+    # Simulamos um cálculo só p/ exemplo:
+    roi = round(5 + dias * 0.5 + freq * 0.3, 2)  # ex: ROI estimado %
+    confiabilidade = round(95 - dias * 0.5, 2)   # %
+    desvio = round(0.01 + dias * 0.002, 4)
+
+    agora = datetime.datetime.now()
+    data, hora = agora.strftime("%Y-%m-%d"), agora.strftime("%H:%M:%S")
+
+    # Salva no DB
+    c.execute('''
+    INSERT INTO previsoes (data, hora, ativo, freq, dias, roi_estimado, confiabilidade, desvio)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    ''', (data, hora, ativo, freq, dias, roi, confiabilidade, desvio))
+
+    print(f"✅ {ativo}: ROI {roi}% | conf {confiabilidade}% | desvio ±{desvio}")
+
+conn.commit()
+conn.close()
