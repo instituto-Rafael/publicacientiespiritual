@@ -23,3 +23,4 @@ Este projeto é um **núcleo fractal simbiótico** que:
 
 ```math
 F'ₙ = F'ₙ₋₁ + F'ₙ₋₂ + ε
+φ′ = lim_{n→∞} F'ₙ / F'ₙ₋₁
