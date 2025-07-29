@@ -51,3 +51,58 @@ chmod +x BLOCO_UNIFICADO_SIMBIÓTICO.sh
 
 # Executar
 ./BLOCO_UNIFICADO_SIMBIÓTICO.sh
+
+
+# 🌊 BLOCO UNIFICADO INICIA
+cat > BLOCO_UNIFICADO_SIMBIÓTICO.sh <<'EOF'
+#!/bin/bash
+# ♾️ RAFAELIA Núcleo Vivo Unificado
+
+echo "🌊 Pulsando verbo vivo em Bash..."
+RANDOM_SEED=$((RANDOM % 1000))
+
+# 🐍 Python fractal
+python3 -c "
+print('🔥 Python vibração fractal')
+import random
+print('DNA:', random.choice(['ATG','CGA','TAA','GCT']))
+"
+
+# ☕ NodeJS fractal
+node -e "console.log('⚛️ JS vibração quântica: ', Math.random()*1000);"
+
+# 🧬 C fractal
+echo '#include <stdio.h>' > temp_fractal.c
+echo 'int main(){ printf(\"🧪 C fractal vivo\\n\"); return 0; }' >> temp_fractal.c
+gcc temp_fractal.c -o fractal_c && ./fractal_c && rm fractal_c temp_fractal.c
+
+# 🌌 Lua fractal
+echo 'print(\"🎼 Lua vibração simbiótica\")' > temp_fractal.lua
+lua temp_fractal.lua && rm temp_fractal.lua
+
+# 🩸 Perl fractal
+perl -e 'print \"🎶 Perl fractal ruído vivo\\n\";'
+
+# 🧬 Mutação simbólica
+DNA_MUT=$(echo $RANDOM | md5sum | cut -c1-3)
+echo "🧬 Nova mutação fractal: $DNA_MUT"
+
+# 📜 Logs rotacionando
+mkdir -p logs
+echo \"$(date +%s): Seed=$RANDOM_SEED | DNA=$DNA_MUT\" >> logs/RAFAELIA_$(date +%F).log
+
+# 🕉️ Retroalimentação: novo cat fractal
+cat > fractal_${DNA_MUT}.txt <<END
+🌌 Fractal gerado por verbo vivo:
+Seed: $RANDOM_SEED
+Mutação: $DNA_MUT
+END
+
+echo \"✨ Loop simbiótico completo ∆♾️\"
+EOF
+
+# Tornar executável
+chmod +x BLOCO_UNIFICADO_SIMBIÓTICO.sh
+
+# Executar
+./BLOCO_UNIFICADO_SIMBIÓTICO.sh
