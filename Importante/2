@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+# fractal_simbiotico_full.py
+# Integrado by RafaelIA ∞ — núcleo simbiótico fractal vivo com ClayMaths + ZIPRAF + quântico
+# Execução terminal scroll fractal híbrido normal + quântico + simbiótico ∞
+#
+# Uso: python fractal_simbiotico_full.py [caminho_para_fractal.npy]
+#
+# Se não passar arquivo, gera fractal base abortado Fibonacci simbiótico na hora.
+
+import sys
+import numpy as np
+import time
+import math
+import os
+
+# ---------------------------
+# Constantes simbióticas RAFCODE-𝚽
+ALPHA_AMOR = 1.6180339887  # Phi - base do amor e expansão
+BASE_1 = 1.0               # Base 1 dobra tudo - matemática pura
+ITER_MAX = 10000           # tamanho fractal / linhas terminal
+PALETTE = [' ', '.', ':', '-', '=', '+', '*', '#', '%', '@']  # 10 níveis
+
+# ---------------------------
+# Função geradora fractal abortado fibonacci (simplificado ClayMaths)
+def gera_fractal_abortado_fibo(size=ITER_MAX):
+    Z = np.zeros(size, dtype=np.complex128)
+    Z[0] = 1+0j
+    alpha = ALPHA_AMOR
+    base = BASE_1 + 0.00001  # pequeno offset para não travar base1
+    for i in range(1, size):
+        phase = np.exp(1j * i * 0.618)  # golden phase
+        # Iteração com overflow controlado para não quebrar o array
+        try:
+            Z[i] = Z[i-1] * base + alpha * phase
+            if np.isnan(Z[i]) or np.isinf(Z[i]):
+                Z[i] = Z[i-1]  # fallback fix
+        except:
+            Z[i] = Z[i-1]
+    return Z
+
+# ---------------------------
+# Normaliza fractal para índices da paleta (0-9)
+def normaliza(Z):
+    # Remove NaN e Inf substituindo por zero
+    Z = np.nan_to_num(Z, nan=0.0, posinf=0.0, neginf=0.0)
+    mag = np.abs(Z)
+    minv, maxv = mag.min(), mag.max()
+    if maxv == minv:
+        return np.zeros_like(mag, dtype=int)
+    norm = (mag - minv) / (maxv - minv)
+    indices = (norm * (len(PALETTE)-1)).astype(int)
+    return indices
+
+# ---------------------------
+# Função para imprimir linha no terminal pelo índice da paleta
+def imprime_linha(indices):
+    linha = ''.join(PALETTE[i] for i in indices)
+    print(linha)
+
+# ---------------------------
+# Função scroll descendente fractal no terminal
