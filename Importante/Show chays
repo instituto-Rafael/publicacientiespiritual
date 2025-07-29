@@ -1,0 +1,22 @@
+import numpy as np
+
+# 🌀 Escolhe qual quer ver:
+# filename = 'outputs/fractal_normalizado.npy'
+filename = 'outputs/fractal_quântico.npy'
+
+Z = np.load(filename)
+print(f"✔️ Shape: {Z.shape}")
+print(f"📊 Min: {np.nanmin(Z)}, Max: {np.nanmax(Z)}")
+
+# ⚙️ Normaliza para 0–1
+Z_norm = (Z - np.nanmin(Z)) / (np.nanmax(Z) - np.nanmin(Z))
+
+# 🎨 ASCII palette do claro ao escuro
+palette = np.array(list(" .:-=+*#%@"))
+
+# Converte valores normalizados para índices de caractere
+indices = (Z_norm * (len(palette)-1)).astype(int)
+
+# 🔠 Desenha no terminal
+for row in indices:
+    print("".join(palette[row]))
