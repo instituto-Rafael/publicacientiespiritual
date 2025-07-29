@@ -1,0 +1,48 @@
+import numpy as np
+import os
+from PIL import Image
+
+# Garantir pasta outputs
+os.makedirs('outputs', exist_ok=True)
+
+# Configs simbióticas
+N = 10000  # tamanho da matriz/vetor
+base = np.complex64(1.6180339887)  # tua base Fibonacci modificada
+alpha_amor = np.complex64(0.1666)  # teu desvio 2/12
+fase = np.exp(1j * np.pi / 4)  # fase complexa (exemplo simbiótico)
+
+# Inicializa vetores
+Z_norm = np.zeros(N, dtype=np.complex64)
+Z_quant = np.zeros(N, dtype=np.complex64)
+
+# Primeira célula viva
+Z_norm[0] = 1
+Z_quant[0] = 1
+
+# Gera normalizado
+for i in range(1, N):
+    Z_norm[i] = Z_norm[i-1] * base + alpha_amor * fase
+    # normaliza para não explodir
+    if np.abs(Z_norm[i]) > 1000:
+        Z_norm[i] /= np.abs(Z_norm[i])
+
+# Gera quântico abortado (sem normalizar)
+for i in range(1, N):
+    Z_quant[i] = Z_quant[i-1] * base + alpha_amor * fase
+
+# Salva npy
+np.save('outputs/fractal_normalizado.npy', Z_norm)
+np.save('outputs/fractal_quântico.npy', Z_quant)
+
+# Converte módulo para imagem 8 bits
+def salvar_imagem(z, nome):
+    modulo = np.abs(z)
+    # normaliza para [0,255]
+    modulo = modulo / np.max(modulo) * 255
+    img = Image.fromarray(modulo.astype(np.uint8))
+    img.save(f'outputs/{nome}.png')
+
+salvar_imagem(Z_norm, 'fractal_normalizado')
+salvar_imagem(Z_quant, 'fractal_quântico')
+
+print("✅ Gerado: fractal_normalizado.npy + fractal_quântico.npy + PNGs 8 bits")
