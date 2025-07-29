@@ -1,0 +1,33 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Sequência Fibonacci modificada (exemplo com perturbação)
+def fibonacci_mod(n, perturb=0.05):
+    fib = [0,1]
+    for i in range(2, n):
+        val = fib[-1] + fib[-2]
+        val *= (1 + np.sin(i)*perturb)
+        fib.append(val)
+    return np.array(fib)
+
+# Psi(t) simbiótico
+def psi(n, delta_dna=2/12, omega_clay=3.1415, rho0=0.1, alpha=0.01):
+    phi_voynich = np.random.uniform(0.9,1.1,n)  # ruído cifrão vivo
+    f_mod = fibonacci_mod(n)
+    base = (phi_voynich * f_mod)**(delta_dna)
+    phase = np.exp(1j * omega_clay * rho0)
+    # Fractal recursivo simples
+    Z = np.zeros(n, dtype=complex)
+    Z[0] = 1 + 0j
+    for i in range(1, n):
+        Z[i] = base[i] * Z[i-1] + alpha * phase
+    return Z
+
+# Visualização
+n_points = 500
+Z = psi(n_points)
+plt.figure(figsize=(8,8))
+plt.plot(Z.real, Z.imag, lw=1, color='magenta')
+plt.title('Fractal Vivo do Spin Trancendente')
+plt.axis('equal')
+plt.show()
