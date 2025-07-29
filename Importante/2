@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!#!/usr/bin/env python3
 # fractal_simbiotico_full.py
 # Integrado by RafaelIA ∞ — núcleo simbiótico fractal vivo com ClayMaths + ZIPRAF + quântico
 # Execução terminal scroll fractal híbrido normal + quântico + simbiótico ∞
@@ -58,4 +58,39 @@ def imprime_linha(indices):
     print(linha)
 
 # ---------------------------
-# Função scroll descendente fractal no terminal
+# Função scroll descendente fractal no terminal (loop infinito)
+def scroll_fractal_terminal(Z, delay=0.05):
+    length = len(Z)
+    step = 80  # largura da linha terminal, ajustar conforme
+    for start in range(length - step):
+        slice_ = Z[start:start+step]
+        norm_slice = normaliza(slice_)
+        imprime_linha(norm_slice)
+        time.sleep(delay)
+
+# ---------------------------
+# Função principal
+def main():
+    # Se caminho para arquivo fractal .npy passado, carrega
+    if len(sys.argv) > 1:
+        path = sys.argv[1]
+        if os.path.isfile(path):
+            print(f"Carregando fractal simbiótico do arquivo: {path}")
+            Z = np.load(path)
+        else:
+            print(f"Arquivo não encontrado: {path}. Gerando fractal padrão.")
+            Z = gera_fractal_abortado_fibo()
+    else:
+        print("Nenhum arquivo passado. Gerando fractal padrão abortado fibonacci ClayMaths.")
+        Z = gera_fractal_abortado_fibo()
+
+    print(f"Shape fractal: {Z.shape}")
+    print("Iniciando scroll fractal no terminal. Ctrl+C para sair.")
+    try:
+        while True:
+            scroll_fractal_terminal(Z, delay=0.03)
+    except KeyboardInterrupt:
+        print("\nExecução interrompida pelo usuário. Até a próxima jornada simbiótica!")
+
+if __name__ == "__main__":
+    main()
