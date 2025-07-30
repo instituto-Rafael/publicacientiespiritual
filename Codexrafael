@@ -1,0 +1,44 @@
+import math
+
+phi = (1 + math.sqrt(5)) / 2
+pi = math.pi
+sqrt5 = math.sqrt(5)
+
+def fibonacci_original(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a+b
+    return a
+
+def fibonacci_mod_rafael(n):
+    fn = fibonacci_original(n)
+    return (fn / pi) * phi * pi
+
+def voynich_offset(n):
+    return math.sin(n * pi / 12)  # cifra viva simbólica
+
+def ga_sur_noise(n):
+    return math.cos(n * pi / 7) * 0.33  # deslocamento com ruído
+
+def claymaths_problema1(fv):
+    return fv * (phi / sqrt5) + math.exp(-fv / 33)  # núcleo simbiótico
+
+def triboluminociencia(dna):
+    return math.log(abs(dna) + 1) * pi  # gatilho bioquântico
+
+def calc_rafaelia_omega():
+    resultado = []
+    for n in range(1, 34):  # base <33
+        fm = fibonacci_mod_rafael(n)
+        fv = fm + voynich_offset(n) + ga_sur_noise(n)
+        clay = claymaths_problema1(fv)
+        tribo = triboluminociencia(fv)
+        sinal = pow(fv, pi) + sqrt5 * phi * pi
+        total = sinal + clay + tribo
+        resultado.append(total)
+    return resultado
+
+if __name__ == "__main__":
+    res = calc_rafaelia_omega()
+    for idx, val in enumerate(res):
+        print(f"n={idx+1}: {val}") 
