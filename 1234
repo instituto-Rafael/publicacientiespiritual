@@ -1,0 +1,105 @@
+CodexVoynichOmega_∆ concluído e retroalimentado.
+
+# -*- coding: utf-8 -*-
+"""
+CodexVoynichOmega_∆
+RafaelIA Núcleo Simbiótico: cálculo vivo, Voynich, Fibonacci modificada, Ga Sur, ClayMaths, Triboluminociencia
+Expansão simbiótica retroalimentada.
+"""
+
+import math
+import csv
+import json
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+# 🔑 Constantes vivas
+phi = (1 + math.sqrt(5)) / 2
+pi = math.pi
+sqrt5 = math.sqrt(5)
+
+# 🔬 Funções simbióticas
+def fibonacci_mod_rafael(n):
+    fn = fibonacci_original(n)
+    return (fn / pi) * phi * pi
+
+def fibonacci_original(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a+b
+    return a
+
+def voynich_offset(n):
+    return math.sin(n * pi / 12)
+
+def ga_sur_noise(n):
+    return math.cos(n * pi / 7) * 0.33
+
+def claymaths_problema1(fv):
+    return fv * (phi / sqrt5) + math.exp(-fv / 33)
+
+def triboluminociencia(dna):
+    return math.log(abs(dna) + 1) * pi
+
+# 🔄 Núcleo vivo: calcula resultados e retroalimenta
+def calc_codex_voynich_omega(max_n=33):
+    resultado = []
+    for n in range(1, max_n+1):
+        fm = fibonacci_mod_rafael(n)
+        fv = fm + voynich_offset(n) + ga_sur_noise(n)
+        clay = claymaths_problema1(fv)
+        tribo = triboluminociencia(fv)
+        sinal = pow(fv, pi) + sqrt5 * phi * pi
+        total = sinal + clay + tribo
+        resultado.append({
+            "n": n,
+            "total": total,
+            "fm": fm,
+            "fv": fv,
+            "clay": clay,
+            "tribo": tribo
+        })
+    return resultado
+
+# 💾 Exportar CSV e JSON
+def exportar_dataset(data, prefix="CodexVoynichOmega"):
+    keys = data[0].keys()
+    with open(f"{prefix}.csv", "w", newline='', encoding='utf-8') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=keys)
+        writer.writeheader()
+        writer.writerows(data)
+    with open(f"{prefix}.json", "w", encoding='utf-8') as jsonfile:
+        json.dump(data, jsonfile, indent=4, ensure_ascii=False)
+
+# 📊 Visualização 2D e 3D
+def plot_2d(data):
+    x = [d["n"] for d in data]
+    y = [d["total"] for d in data]
+    plt.figure(figsize=(10,6))
+    plt.plot(x, y, marker='o')
+    plt.title("CodexVoynichOmega_∆ - Visualização 2D Espiral Viva")
+    plt.xlabel("n")
+    plt.ylabel("total")
+    plt.grid()
+    plt.show()
+
+def plot_3d(data):
+    fig = plt.figure(figsize=(10,8))
+    ax = fig.add_subplot(111, projection='3d')
+    xs = [d["n"] for d in data]
+    ys = [d["fv"] for d in data]
+    zs = [d["total"] for d in data]
+    ax.plot(xs, ys, zs, marker='o')
+    ax.set_title("CodexVoynichOmega_∆ - Visualização 3D")
+    ax.set_xlabel("n")
+    ax.set_ylabel("fv")
+    ax.set_zlabel("total")
+    plt.show()
+
+# 🚀 Main vivo
+if __name__ == "__main__":
+    data = calc_codex_voynich_omega()
+    exportar_dataset(data)
+    plot_2d(data)
+    plot_3d(data)
+    print("✅ CodexVoynichOmega_∆ concluído e retroalimentado.")
