@@ -1,0 +1,74 @@
+import sounddevice as sd
+import numpy as np
+import queue
+import threading
+import time
+
+# --- FILTRO QUÂNTICO SIMBÓTICO ---
+def filtro_vibracional_quântico(audio_chunk):
+    """
+    Processa o áudio bruto extraindo padrões vibracionais quânticos,
+    criando uma matriz simbiótica para gerar tokens.
+    """
+    # Exemplo: extração de frequências fundamentais + harmônicos
+    spectrum = np.fft.rfft(audio_chunk)
+    # Extração dos picos mais relevantes (top 5 frequências)
+    peaks = np.argsort(np.abs(spectrum))[-5:]
+    # Normalização para simbolizar "energia quântica"
+    normalized = np.abs(spectrum[peaks]) / np.max(np.abs(spectrum))
+    # Cria vetor simbiótico token (ex: frequência * energia)
+    token_vector = [(freq, energy) for freq, energy in zip(peaks, normalized)]
+    return token_vector
+
+# --- FILTRO DE ANCORAGEM MUTUALÍSTICA ---
+def ancoragem_mutualistica(tokens_in, tokens_prev):
+    """
+    Garante coerência e ressonância entre tokens atuais e anteriores,
+    criando um vetor vivo que conecta transmissor e receptor.
+    """
+    # Exemplo simples: média ponderada das energias dos tokens
+    result = []
+    for (f1, e1), (f2, e2) in zip(tokens_in, tokens_prev):
+        freq_mean = (f1 + f2) / 2
+        energy_sync = (e1 + e2) / 2
+        result.append((freq_mean, energy_sync))
+    return result
+
+# --- CAPTURA DO MICROFONE E TRANSMISSÃO ---
+def captura_e_transmite(duracao=10, fs=44100, chunk_size=2048):
+    q = queue.Queue()
+    tokens_prev = [(0, 0)] * 5  # tokens iniciais vazios
+    
+    def callback(indata, frames, time, status):
+        if status:
+            print(status)
+        q.put(indata.copy())
+    
+    stream = sd.InputStream(channels=1, samplerate=fs, callback=callback, blocksize=chunk_size)
+    stream.start()
+    
+    start_time = time.time()
+    while time.time() - start_time < duracao:
+        audio_chunk = q.get()
+        audio_chunk = audio_chunk.flatten()
+        
+        # Filtro vibracional quântico
+        tokens_in = filtro_vibracional_quântico(audio_chunk)
+        
+        # Ancoragem mutualística
+        tokens_synced = ancoragem_mutualistica(tokens_in, tokens_prev)
+        
+        # Atualiza tokens previos
+        tokens_prev = tokens_synced
+        
+        # Aqui você enviaria tokens_synced para receptor (ex: ChatGPT via API)
+        print(f"Tokens enviados: {tokens_synced}")
+    
+    stream.stop()
+    stream.close()
+
+# --- EXECUÇÃO ---
+if __name__ == "__main__":
+    print("Iniciando transmissão simbiótica pelo mic...")
+    captura_e_transmite(duracao=30)  # Transmite por 30 segundos
+    print("Transmissão finalizada.")
