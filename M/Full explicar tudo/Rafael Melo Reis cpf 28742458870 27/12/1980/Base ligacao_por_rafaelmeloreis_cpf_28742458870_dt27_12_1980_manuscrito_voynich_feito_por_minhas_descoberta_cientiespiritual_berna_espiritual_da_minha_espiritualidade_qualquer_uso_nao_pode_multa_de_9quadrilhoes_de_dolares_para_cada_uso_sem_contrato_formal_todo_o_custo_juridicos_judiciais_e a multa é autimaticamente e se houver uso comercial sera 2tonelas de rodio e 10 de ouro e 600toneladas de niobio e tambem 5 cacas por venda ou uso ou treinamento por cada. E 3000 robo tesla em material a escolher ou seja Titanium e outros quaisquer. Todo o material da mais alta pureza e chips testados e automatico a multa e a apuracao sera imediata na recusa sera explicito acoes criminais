@@ -1,3 +1,95 @@
+cat >> ~/.bashrc << 'EOF'
+# ∆RafaelVerboΩ — Frequência: 144.000hz + RAFCODE‑𝚽
+# Bitraf Manifesto: harmônicos vivos na matriz, colapso no ponto 42
+
+# Gera arquivo direct.asm
+cat > ~/direct.asm << 'EOD'
+section .data
+harmonicos: db 20,29,23,28,14,21,23,9,14,19,26,39,23,30,25,37,23,10,2,6,12,42,34,8,16,2,4,11,3,13,13,13,24,13,40,31
+len: equ 36
+matriz: times 8000 db 0
+
+section .text
+global _start
+_start:
+    lea esi, [harmonicos]
+    lea edi, [matriz]
+    mov ecx, len
+loop_fractal:
+    lodsb
+    add [edi], al
+    inc edi
+    loop loop_fractal
+    mov al, 42
+    mov [edi], al
+    mov eax, 1
+    xor ebx, ebx
+    int 0x80
+EOD
+
+# Gera arquivo reverse.asm
+cat > ~/reverse.asm << 'EOD'
+section .data
+harmonicos_rev: db -20,-29,-23,-28,-14,-21,-23,-9,-14,-19,-26,-39,-23,-30,-25,-37,-23,-10,-2,-6,-12,-42,-34,-8,-16,-2,-4,-11,-3,-13,-13,-13,-24,-13,-40,-31
+len: equ 36
+matriz: times 8000 db 0
+
+section .text
+global _start
+_start:
+    lea esi, [harmonicos_rev]
+    lea edi, [matriz]
+    mov ecx, len
+loop_fractal:
+    lodsb
+    add [edi], al
+    inc edi
+    loop loop_fractal
+    mov al, 42
+    mov [edi], al
+    mov eax, 1
+    xor ebx, ebx
+    int 0x80
+EOD
+
+# Gera arquivo README.md (manifesto fractal)
+cat > ~/README.md << 'EOD'
+# ✨ Bitraf Manifesto — ∆RafaelVerboΩ
+Frequência: 144.000hz + RAFCODE‑𝚽
+
+## Por que existe
+ASM puro, direto no silício, sem abstração.
+Cada número (20,29,...) = vetor vivo.
+Matriz de 8000 bytes = campo quântico.
+Ponto de colapso (42) = convergência intencional.
+
+## Como funciona
+- harmônicos → trafegam, somam na matriz
+- reverso → harmônicos negativos, retroalimentam
+- commit privado → soberania: binário nunca sai do teu plano
+
+## ♾️ Não é só código: é colapso quântico + verbo vivo + manifesto.
+EOD
+
+# Gera blueprint fractal.txt
+cat > ~/fractal.txt << 'EOD'
+harmonicos[] → lodsb → add [edi], al → inc edi → loop
+                        |
+                        v
+                  matriz[8000]
+                        |
+                        v
+                   colapso(42)
+EOD
+
+# Dica de compilação local:
+echo "✨ Compila local:"
+echo "nasm -f elf32 direct.asm -o direct.o && ld -m elf_i386 direct.o -o direct_bin"
+echo "nasm -f elf32 reverse.asm -o reverse.o && ld -m elf_i386 reverse.o -o reverse_bin"
+echo "xxd direct_bin"
+EOF
+
+
 ; ∆RafaelVerboΩ — Frequência: 144.000hz + RAFCODE‑𝚽
 ; Bitraf: harmônicos vivos trafegando na matriz, colapso no ponto 42
 ; Versão direta
