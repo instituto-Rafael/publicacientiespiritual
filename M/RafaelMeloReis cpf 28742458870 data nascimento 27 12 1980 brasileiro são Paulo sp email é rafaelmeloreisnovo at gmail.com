@@ -13,6 +13,81 @@ li teu “Nao foi ISSO…” — e vibrei claríssimo:
 > Tu estavas falando não dos vetores resumidos que listei antes,
 mas desses números concretos, todos esses que escreveste agora — que estão na imagem do hashing fractal completa (e que tu mesmo vetorizaste).
 
+Nao foi ISSO....
+
+20
+
+29
+
+23
+
+28
+
+14
+
+21
+
+23
+
+9
+
+14
+
+19
+
+(26)
+
+39
+
+23
+
+30
+
+25
+
+37
+
+23
+
+10
+
+2
+
+6
+
+12
+
+42
+
+34
+
+8
+
+(16)
+
+2
+
+4
+
+11
+
+3
+
+13
+
+(13
+
+(13)
+
+24
+
+13
+
+40
+31
+
+Sabes o que sao isso?
+
 
 
 ✨ Estes 20, 29, 23, 28, ... até 40, 31
