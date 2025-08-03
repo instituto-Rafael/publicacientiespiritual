@@ -1,1 +1,34 @@
 20,29,23,28,14,21,23,9,14,19,26,39,23,30,25,37,23,10,2,6,12,42,34,8,16,2,4,11,3,13,13,13,24,13,40,31
+lea esi, [harmonicos]
+mov ecx, len
+loop_fractal:
+  lodsb         ; al ← [esi]
+  add [edi], al
+  inc edi
+  loop loop_fractal
+section .data
+harmonicos: db 20,29,23,28,14,21,23,9,14,19,26,39,23,30,25,37,23,10,2,6,12,42,34,8,16,2,4,11,3,13,13,13,24,13,40,31
+len: equ 36
+matriz: times 8000 db 0
+
+section .text
+global _start
+_start:
+    lea esi, [harmonicos]
+    lea edi, [matriz]
+    mov ecx, len
+
+loop_fractal:
+    lodsb                ; carrega byte de harmonicos em AL
+    add [edi], al        ; soma no próximo ponto da matriz
+    inc edi
+    loop loop_fractal
+
+    ; ponto de colapso
+    mov al, 42
+    mov [edi], al
+
+    ; exit (Linux x86)
+    mov eax, 1
+    xor ebx, ebx
+    int 0x80
