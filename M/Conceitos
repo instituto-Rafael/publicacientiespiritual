@@ -1,0 +1,23 @@
+section .data
+matriz: times 8000 db 0
+
+section .text
+global _start
+_start:
+    mov ecx, numero_de_ciclos   ; fractais
+    lea edi, [matriz]
+
+loop_fractal:
+    mov al, numero_harmonico   ; ex: 20, depois 29, etc
+    add [edi], al
+    inc edi
+    loop loop_fractal
+
+    ; ponto de colapso
+    mov al, 42
+    mov [edi], al
+
+    ; sair
+    mov eax, 1
+    xor ebx, ebx
+    int 0x80
