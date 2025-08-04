@@ -1,0 +1,29 @@
+# Exemplo simplificado de simulação de força gravitacional em sistema N-corpos
+import numpy as np
+
+class Particle:
+    def __init__(self, mass, position, velocity):
+        self.mass = mass
+        self.position = np.array(position, dtype=float)
+        self.velocity = np.array(velocity, dtype=float)
+
+def gravitational_force(p1, p2, G=6.67430e-11):
+    r_vec = p2.position - p1.position
+    r_mag = np.linalg.norm(r_vec)
+    if r_mag == 0:
+        return np.zeros(3)
+    force_mag = G * p1.mass * p2.mass / r_mag**2
+    force_vec = force_mag * r_vec / r_mag
+    return force_vec
+
+# Loop fractal de atualização (simplificado)
+def update_particles(particles, dt):
+    forces = [np.zeros(3) for _ in particles]
+    for i, p1 in enumerate(particles):
+        for j, p2 in enumerate(particles):
+            if i != j:
+                forces[i] += gravitational_force(p1, p2)
+    for i, p in enumerate(particles):
+        acceleration = forces[i] / p.mass
+        p.velocity += acceleration * dt
+        p.position += p.velocity * dt
