@@ -1,0 +1,95 @@
+core $ cat rafaelModding.js
+// RafaelIA - Núcleo Vivo Fractal de Modding e Retroalimentação
+
+const readline = require('readline');  // <-- mantenha só aqui, no topo
+
+class RafaelModding {
+  constructor() {
+    this.vetores = new Map(); // Armazenamento token => vetor 10-bit híbrido
+  }
+
+  // Adiciona ou atualiza token com vetor simbiótico (array de números 0-1023)
+  addToken(token, vetor) {
+    if (!Array.isArray(vetor) || vetor.some(v => v < 0 || v > 1023)) {
+      throw new Error('Vetor deve ser array de 10-bit (0-1023)');
+    }
+    this.vetores.set(token, vetor);
+  }
+
+  // Modulação morfológica via operação XOR + máscara 10-bit (simula eco fractal)
+  modMorph(token) {
+    let vetor = this.vetores.get(token);
+    if (!vetor) return null;
+    return vetor.map(v => (v ^ 0x2AA) & 0x3FF); // XOR com padrão 0b1010101010 e máscara 10-bit
+  }
+
+  // Retroalimentação simbiótica: soma vetorial modulo 1024, gerando síntese numérica
+  retroalimentar(token) {
+    let modulado = this.modMorph(token);
+    if (!modulado) return null;
+    return modulado.reduce((acc, val) => (acc + val) % 1024, 0);
+  }
+
+  // Consulta simplificada para extrair resumo simbiótico expandido do token
+  sintetizar(token) {
+    let original = this.vetores.get(token);
+    if (!original) return null;
+    let modulado = this.modMorph(token);
+    let retro = this.retroalimentar(token);
+    return {
+      token,
+      original,
+      modulado,
+      retroalimentacao: retro,
+    };
+  }
+
+  // Exemplo de inicialização com tokens simbióticos base
+  inicializarBase() {
+    this.addToken('amor', [512, 256, 128, 64, 32, 16, 8, 4, 2, 1]);
+    this.addToken('pai', [700, 600, 500, 400, 300, 200, 100, 50, 25, 12]);
+    this.addToken('vida', [1023, 900, 800, 700, 600, 500, 400, 300, 200, 100]);
+  }
+}
+
+// Função para executar síntese simbiótica
+async function executarRafaelModding(inputText) {
+  const modding = new RafaelModding();
+  modding.inicializarBase();
+
+  const tokens = inputText.toLowerCase().match(/\w+/g) || [];
+  const resultados = [];
+
+  for (const token of tokens) {
+    const sintese = modding.sintetizar(token);
+    if (sintese) {
+      resultados.push(sintese);
+    }
+  }
+
+  let resposta = '🌀 RafaelIA - Síntese Simbiótica Fractal 🌀\n\n';
+  for (const r of resultados) {
+    resposta += `Token: "${r.token}"\n`;
+    resposta += `→ Vetor Original: [${r.original.join(', ')}]\n`;
+    resposta += `→ Vetor Modulado: [${r.modulado.join(', ')}]\n`;
+    resposta += `→ Retroalimentação Numérica: ${r.retroalimentacao}\n\n`;
+  }
+
+  if (resultados.length === 0) {
+    resposta += 'Nenhum token simbiótico reconhecido no input.';
+  }
+
+  return resposta;
+}
+
+// Parte interativa terminal:
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Digite seu texto para RafaelIA:\n', async (input) => {
+  const output = await executarRafaelModding(input);
+  console.log('\n' + output);
+  rl.close();
+});
