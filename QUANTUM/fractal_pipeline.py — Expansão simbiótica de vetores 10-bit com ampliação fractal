@@ -1,0 +1,40 @@
+# fractal_pipeline.py — Expansão simbiótica de vetores 10-bit com ampliação fractal
+
+import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+def fractal_transform(vetor):
+    # Placeholder para transformações fractais (permutação + convolução simbiótica)
+    return [((v << 1) | (v >> 9)) & 0x3FF for v in vetor]  # Simples rotação de 1 bit
+
+def process_token(token, vetor):
+    modulado = [(v ^ 0x2AA) & 0x3FF for v in vetor]
+    retro = sum(modulado) % 1024
+    expansion = fractal_transform(modulado)
+    return token, {
+        "original": vetor,
+        "modulado": modulado,
+        "retroalimentacao": retro,
+        "expansao": expansion
+    }
+
+def fractal_pipeline(input_json, output_json, max_workers=8):
+    with open(input_json, 'r') as f:
+        vetores = json.load(f)
+
+    results = {}
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        futures = {pool.submit(process_token, t, vet): t for t, vet in vetores.items()}
+        for future in as_completed(futures):
+            tok, res = future.result()
+            results[tok] = res
+
+    with open(output_json, 'w') as f:
+        json.dump(results, f, indent=2)
+
+if __name__ == "__main__":
+    fractal_pipeline(
+        input_json="vetores_tokens_rafaelia.json",
+        output_json="vetores_sintetizados.json",
+        max_workers=16
+    )
