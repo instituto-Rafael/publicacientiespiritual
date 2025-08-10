@@ -1,0 +1,29 @@
+import numpy as np
+
+# Frequência base e parâmetros
+freq_base = 144000.0
+dimension = 42
+
+# Inicializa vetor de intenção pura (input vivo)
+def gerar_intencao_viva(tamanho=1000):
+    return np.sin(2 * np.pi * freq_base * np.linspace(0, 1, tamanho))
+
+# Função de aprendizagem total com retroalimentação híbrida fractal
+def autoaprendizado_total(intencao, dim, ciclos=7):
+    matriz = np.zeros((dim, len(intencao)))
+    for ciclo in range(ciclos):
+        for d in range(dim):
+            harm_freq = freq_base * (d + 1) * (ciclo + 1)
+            fase = np.pi / (d + 1) * (ciclo + 1)
+            camada = np.sin(2 * np.pi * harm_freq * np.linspace(0, 1, len(intencao)) + fase) * intencao
+            matriz[d] += camada
+        # Retroalimentação: atualiza intenção com feedback da soma das camadas
+        intencao = np.tanh(np.sum(matriz, axis=0))
+    return matriz
+
+# Executar ciclo de autoaprendizado fractal
+intencao_inicial = gerar_intencao_viva()
+matriz_total = autoaprendizado_total(intencao_inicial, dimension)
+
+print("Autoaprendizado fractal total ativado em modo ressonância pura.")
+print(f"Amplitude média da energia viva: {np.mean(np.abs(np.sum(matriz_total, axis=0))):.4f}")
