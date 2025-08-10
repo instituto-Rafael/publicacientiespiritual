@@ -1,0 +1,107 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import threading
+import time
+
+# --- Parâmetros principais ---
+FREQUENCIA_BASE = 144000.0   # Hz (frequência fundamental)
+DURACAO = 5.0               # segundos de simulação
+TAXA_AMOSTRAGEM = 1000000   # amostras por segundo para alta resolução
+
+# Coeficientes para retroalimentação simbiótica
+ALPHA = 0.8   # peso da ressonância
+BETA = 0.15   # peso do ruído simbiótico
+GAMMA = 0.05  # peso dos paradoxos integrados
+
+# --- Gerador de sinal base ---
+def gerador_onda_senoidal(freq, duracao, taxa_amostragem, amplitude=1.0, fase=0):
+    t = np.linspace(0, duracao, int(duracao * taxa_amostragem), endpoint=False)
+    onda = amplitude * np.sin(2 * np.pi * freq * t + fase)
+    return t, onda
+
+# --- Função para calcular ressonância (auto-correlação simplificada) ---
+def calculo_ressonancia(sinal):
+    autocorrelacao = np.correlate(sinal, sinal, mode='full')
+    ressonancia = autocorrelacao[autocorrelacao.size // 2:]
+    return ressonancia / np.max(autocorrelacao)
+
+# --- Função para gerar ruído simbiótico ---
+def gerador_ruido(tamanho):
+    ruido = np.random.normal(0, 0.1, tamanho)  # ruído gaussiano branco leve
+    # Ruído com padrão fractal (opcional para complexidade)
+    ruido_fractal = np.cumsum(np.random.randn(tamanho)) * 0.001
+    return ruido + ruido_fractal
+
+# --- Função para integrar paradoxos simbióticos (simplificada) ---
+def integrador_paradoxos(tamanho):
+    # Paradoxos modelados como funções senoidais com frequências irracionais
+    f1 = 1.6180339887  # Phi - número áureo
+    f2 = 2.7182818284  # e - base do logaritmo natural
+    tempo = np.linspace(0, tamanho / TAXA_AMOSTRAGEM, tamanho)
+    paradoxo = 0.05 * (np.sin(2 * np.pi * f1 * tempo) + np.cos(2 * np.pi * f2 * tempo))
+    return paradoxo
+
+# --- Função principal da simulação ---
+def simulacao_total():
+    # Gerar onda base
+    t, onda_base = gerador_onda_senoidal(FREQUENCIA_BASE, DURACAO, TAXA_AMOSTRAGEM)
+
+    # Gerar ruído simbiótico
+    ruido = gerador_ruido(len(onda_base))
+
+    # Gerar paradoxos integrados
+    paradoxo = integrador_paradoxos(len(onda_base))
+
+    # Calcular ressonância (auto-correlação da onda base)
+    ressonancia = calculo_ressonancia(onda_base)
+
+    # Compor o sinal total com retroalimentação híbrida
+    sinal_total = ALPHA * onda_base + BETA * ruido[:len(onda_base)] + GAMMA * paradoxo[:len(onda_base)]
+
+    # Visualização em janela reduzida para performance
+    janela = slice(0, int(TAXA_AMOSTRAGEM * 0.002))  # 2 ms de sinal para plot
+
+    # Plot dos sinais
+    plt.figure(figsize=(15, 9))
+    plt.subplot(4,1,1)
+    plt.title("Onda Base (Frequência Fundamental)")
+    plt.plot(t[janela], onda_base[janela])
+    plt.grid()
+
+    plt.subplot(4,1,2)
+    plt.title("Ruído Simbiótico e Paradoxos Integrados")
+    plt.plot(t[janela], ruido[janela], label='Ruído')
+    plt.plot(t[janela], paradoxo[janela], label='Paradoxo')
+    plt.legend()
+    plt.grid()
+
+    plt.subplot(4,1,3)
+    plt.title("Sinal Composto com Retroalimentação Híbrida")
+    plt.plot(t[janela], sinal_total[janela], color='purple')
+    plt.grid()
+
+    plt.subplot(4,1,4)
+    plt.title("Ressonância (Auto-correlação Normalizada)")
+    plt.plot(ressonancia[:len(janela)], color='orange')
+    plt.grid()
+
+    plt.tight_layout()
+    plt.show()
+
+# --- Execução em thread para ciclo vivo ---
+def ciclo_vivo_simulacao(intervalo=6):
+    while True:
+        simulacao_total()
+        time.sleep(intervalo)
+
+if __name__ == "__main__":
+    thread_simulacao = threading.Thread(target=ciclo_vivo_simulacao)
+    thread_simulacao.daemon = True
+    thread_simulacao.start()
+    print("Simulação total iniciada em ciclo vivo. CTRL+C para parar.")
+
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("Simulação interrompida pelo usuário.")
