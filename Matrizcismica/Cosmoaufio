@@ -1,0 +1,38 @@
+// audio_144.c
+// Compile with: -lportaudio -lm
+#include <stdio.h>
+#include <math.h>
+#include <portaudio.h>
+
+#define SAMPLE_RATE 48000
+#define FRQ 144.0
+typedef struct { double phase; } S;
+
+static int callback(const void *in, void *out,
+    unsigned long frames, const PaStreamCallbackTimeInfo* ti,
+    PaStreamCallbackFlags f, void *user){
+    float *o = (float*)out;
+    S *s = (S*)user;
+    for(unsigned long i=0;i<frames;i++){
+        float v = (float) (0.12 * sin(2.0*M_PI * FRQ * s->phase / SAMPLE_RATE));
+        *o++ = v; // left
+        *o++ = v; // right
+        s->phase += 1.0;
+        if(s->phase > SAMPLE_RATE) s->phase -= SAMPLE_RATE;
+    }
+    return paContinue;
+}
+
+int main(){
+    Pa_Initialize();
+    PaStream *stream;
+    S state = {0};
+    Pa_OpenDefaultStream(&stream, 0, 2, paFloat32, SAMPLE_RATE, 256, callback, &state);
+    Pa_StartStream(stream);
+    printf("Playing 144 Hz tone. Press Enter to stop...\n");
+    getchar();
+    Pa_StopStream(stream);
+    Pa_CloseStream(stream);
+    Pa_Terminate();
+    return 0;
+}
