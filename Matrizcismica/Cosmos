@@ -1,0 +1,99 @@
+// main.c
+// Compile: see instructions below
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+
+const char *vertex_shader_src =
+"#version 330 core\n"
+"layout(location=0) in vec2 aPos;\n"
+"out vec2 uv;\n"
+"void main(){ uv = aPos*0.5+0.5; gl_Position = vec4(aPos,0.0,1.0); }\n";
+
+const char *fragment_shader_src =
+"#version 330 core\n"
+"out vec4 FragColor;\n"
+"in vec2 uv;\n" 
+"uniform vec2 iResolution;\n"
+"uniform float iTime;\n" 
+"uniform float pulseHz; // 144.0\n"
+"\n// golden ratio\n" 
+"const float PHI = 1.61803398874989484820459;\n\n// pseudo-Fibonacci function (returns nth Fibonacci mod 1 for color variation)\nfloat fib_mod(float n){\n    // use Binet-ish continuous interpolation\n    float phi = PHI;\n    float f = pow(phi, n) / sqrt(5.0);\n    return fract(f);\n}\n\nmat3 rot3(float a){\n    float c = cos(a), s = sin(a);\n    return mat3(c,0,s, 0,1,0, -s,0,c);\n}\n\n// A simple 4D-style variation folded into 3D shader using time and trigonometric embedding.\nvec3 map(vec3 p){\n    // warp by golden scaling and time\n    float t = iTime;\n    float pulse = 0.5 + 0.5*sin(2.0*3.14159265 * pulseHz * t);\n    p *= mix(0.8, PHI*1.2, 0.5 + 0.5*sin(t*0.8));\n    p = rot3(t*0.2 + length(p)) * p;\n\n    // iterative fold (fractal-ish)\n    float scale = 2.0 + 0.5 * sin(t*0.6);\n    float accum = 0.0;\n    vec3 z = p;\n    for(int i=0;i<20;i++){\n        z = abs(z) / dot(z,z) * scale - vec3(0.5);\n        accum += exp(-0.4*float(i)) * length(z);\n    }\n    return vec3(accum*pulse, accum*0.6, accum*0.3);\n}\n\nvec3 palette(float m){\n    // use fibonacci modulation and 42 factor for final hue shift\n    float f = fib_mod(m*6.0 + 42.0);\n    return vec3(0.5+0.5*cos(6.2831*(f+vec3(0.00,0.33,0.67))));\n}\n\nvoid main(){\n    vec2 p = (gl_FragCoord.xy / iResolution.xy) * 2.0 - 1.0;\n    p.x *= iResolution.x / iResolution.y;\n\n    // ray origin & direction (simple camera)\n    vec3 ro = vec3(0.0, 0.0, -3.0 + 0.5*sin(iTime*0.3));\n    vec3 rd = normalize(vec3(p, 1.5));\n\n    // march along ray and accumulate color from map\n    vec3 col = vec3(0.0);\n    float total = 0.0;\n    float t = 0.0;\n    for(int i=0;i<120;i++){\n        vec3 pos = ro + rd * t;\n        vec3 m = map(pos);\n        float weight = exp(-0.2*float(i));\n        col += palette(length(m)) * weight;\n        total += weight;\n        t += 0.03 + 0.02*sin(iTime*0.5 + float(i)*0.12);\n    }\n    col /= total;\n\n    // final tone mapping + boost with pulse\n    float pulse = 0.5 + 0.5*sin(2.0*3.14159265 * pulseHz * iTime);\n    col *= 0.6 + 0.8*pow(pulse, 0.8);\n    col = pow(col, vec3(0.8));\n    FragColor = vec4(col,1.0);\n}\n";
+
+static void error_callback(int error, const char *desc){
+    fprintf(stderr,"Error: %s\n", desc);
+}
+static void key_callback(GLFWwindow* w, int key, int sc, int act, int mods){
+    if(key==GLFW_KEY_ESCAPE && act==GLFW_PRESS) glfwSetWindowShouldClose(w,1);
+}
+
+GLuint compile_shader(GLenum type, const char* src){
+    GLuint s = glCreateShader(type);
+    glShaderSource(s,1,&src,NULL);
+    glCompileShader(s);
+    GLint ok; glGetShaderiv(s, GL_COMPILE_STATUS, &ok);
+    if(!ok){ char log[10240]; glGetShaderInfoLog(s, sizeof(log), NULL, log); fprintf(stderr,"Shader compile error: %s\n", log); exit(1); }
+    return s;
+}
+
+int main(){
+    glfwSetErrorCallback(error_callback);
+    if(!glfwInit()) return 1;
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    GLFWwindow* win = glfwCreateWindow(1280,720,"Harmonia Quântica 144Ω", NULL, NULL);
+    if(!win){ glfwTerminate(); return 2; }
+    glfwMakeContextCurrent(win);
+    glfwSwapInterval(1); // vsync (useful but you can disable)
+    glewExperimental = GL_TRUE;
+    if(glewInit()!=GLEW_OK){ fprintf(stderr,"GLEW init failed\n"); return 3; }
+    glfwSetKeyCallback(win, key_callback);
+
+    // full screen quad
+    float verts[] = { -1.0f,-1.0f,  1.0f,-1.0f,  -1.0f,1.0f,  1.0f,1.0f };
+    GLuint vao, vbo;
+    glGenVertexArrays(1,&vao); glBindVertexArray(vao);
+    glGenBuffers(1,&vbo); glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(verts), verts, GL_STATIC_DRAW);
+    glEnableVertexAttribArray(0); glVertexAttribPointer(0,2,GL_FLOAT,GL_FALSE,0,(void*)0);
+
+    // compile program
+    GLuint vs = compile_shader(GL_VERTEX_SHADER, vertex_shader_src);
+    GLuint fs = compile_shader(GL_FRAGMENT_SHADER, fragment_shader_src);
+    GLuint prog = glCreateProgram();
+    glAttachShader(prog,vs); glAttachShader(prog,fs);
+    glLinkProgram(prog);
+    GLint ok; glGetProgramiv(prog, GL_LINK_STATUS, &ok);
+    if(!ok){ char log[10240]; glGetProgramInfoLog(prog, sizeof(log), NULL, log); fprintf(stderr,"Link error: %s\n", log); return 4; }
+    glDeleteShader(vs); glDeleteShader(fs);
+
+    GLint locRes = glGetUniformLocation(prog,"iResolution");
+    GLint locTime = glGetUniformLocation(prog,"iTime");
+    GLint locPulse = glGetUniformLocation(prog,"pulseHz");
+
+    double start = glfwGetTime();
+    while(!glfwWindowShouldClose(win)){
+        int w,h; glfwGetFramebufferSize(win,&w,&h);
+        glViewport(0,0,w,h);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        glUseProgram(prog);
+        glUniform2f(locRes, (float)w, (float)h);
+        float t = (float)(glfwGetTime() - start);
+        glUniform1f(locTime, t);
+        glUniform1f(locPulse, 144.0f);
+
+        glBindVertexArray(vao);
+        glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+
+        glfwPollEvents();
+        glfwSwapBuffers(win);
+    }
+
+    glfwDestroyWindow(win);
+    glfwTerminate();
+    return 0;
+}
