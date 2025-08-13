@@ -1,0 +1,130 @@
+rBeleza, foco total no ruído comercial: “seca + aluguel de ponto + vendas de desodorante/perfume quando a demanda/receita baixa (∆¢)”.
+Segue um playbook prático (gatilhos → ações → métricas) pra você aplicar já — sem “imagem bonitinha”.
+
+1) Sinal do clima que interessa (seco x calor)
+
+Defina um índice simples de “secura térmica” (d dá pra rodar no celular):
+
+\textbf{DI} = z(T^\circ C) - z(\text{UR}\%)
+
+Gatilhos (heurísticos, valide localmente):
+
+DI ≥ +1,0 (quente e seco) → pico de desodorante (suor/mal‑odor).
+
+DI ≤ −0,5 (úmido/frio/chuva) → desodorante estável; perfume reage melhor a data/estado de humor (eventos, salário, noite).
+
+
+
+Opcional (melhora o sinal): some índice de vento (+) e ressaca/poeira/inversão térmica (+) ao DI quando houver.
+
+2) Modelo de previsão (curto prazo, 10–60 min e D+1)
+
+Use um linear com features baratas:
+
+\widehat{V}=\alpha + \beta_1 DI + \beta_2 \text{Footfall} + \beta_3 \text{PreçoRel} + \beta_4 \text{Promo} + \beta_5 \text{Evento/Holiday} + \beta_6 \text{Adstock} + \beta_7 \text{SocialBuzz}
+
+Footfall: fluxo no ponto (câmera/contador/loja vizinha).
+
+PreçoRel: seu preço ÷ média do bairro.
+
+Promo: binário (combo, brinde, desconto).
+
+Evento/Holiday: feriado, pós‑salário, noite/“sair de casa”.
+
+Adstock: memória dos anúncios/placas perfumadas no ponto.
+
+SocialBuzz: menções locais (bairro/cidade) — mesmo proxy já ajuda.
+
+
+3) Ações quando a receita baixa (∆¢)
+
+a) Desodorante (impulso térmico)
+
+Trigger: DI ≥ +1,0 ou sensação térmica ↑ e vento ↑.
+
+Ação: combo 2× (ou 1 + refil), tamanho acessível (roll‑on/spray 50–90 ml), display na entrada + brinde mini.
+
+Extra: “teste de fragrância” rápido (toalhinha/álcool gel aromatizado).
+
+
+b) Perfume (impulso emocional/data)
+
+Trigger: DI neutro/baixo + noite/fim de semana/feriado + SocialBuzz↑.
+
+Ação: kitting (EDT 30–50 ml + desodorante coordenado), parcelamento leve, mostrador olfativo (3 famílias: cítrico, amadeirado, doce).
+
+Extra: “presente imediato” (sacola, cartão, laço) → aumenta conversão.
+
+
+4) Estratégia de aluguel de ponto (empreendimento)
+
+Modelo: fixo baixo + % de receita (ex.: 5–8%).
+
+Escalonar o % com DI e footfall (tabela dinâmica por horário).
+
+Horários quentes: 11–14h e 17–20h (ajuste ao bairro).
+
+Pop‑up em dias de DI alto perto de academias/estações/terminais.
+
+
+5) Embalagem & preço (baixa renda/baixa demanda)
+
+Pack acessível: 30–50 ml (perfume) e 50–90 ml (desodorante); refil.
+
+Preço‑âncora: manter 1 SKU abaixo do “preço psicológico” do bairro.
+
+Combo “duas ocasiões”: trabalho (desodorante) + noite (colônia 30 ml).
+
+
+6) Métricas que você pediu (monitore no dia)
+
+MAE de previsão (vendas/un): alvo ≤ 8–12% em 14 dias de ajuste.
+
+Acurácia direcional (subiu/baixou vs. previsão): ≥ 0,85.
+
+Lift por gatilho DI:  vs. dias sem DI alto.
+
+Conversão na entrada (display/mostrador) e ticket médio.
+
+ROI da ação: .
+
+Quebra (stock‑out): < 2% nos SKUs líderes.
+
+
+7) Tabela de gatilhos (cola de bolso)
+
+Sinal (em tempo real)	Gatilho	Ação rápida	KPI alvo
+
+DI ≥ +1,0	Calor + seco	Combo desodorante + refil; exibir na entrada	+15–25% vendas desod.
+DI neutro e noite/feriado	Humor/saída	Kit perfume 30–50 ml + deo	+10–20% ticket
+Footfall ↑ e SocialBuzz ↑	Pico de fluxo	“3 notas olfativas” no balcão + parcelamento	+5 p.p. conversão
+Receita ↓ 2 dias	Baixa demanda	Reposicionar preço do SKU âncora e empurrar kits	MAE ↓, margem ↑
+Previsão chuva/inversão	Tráfego reduz	Push em delivery/online + brinde	Vendas totais estáveis
+
+
+> Observação: os percentuais são faixas para meta inicial. Ajuste localmente com 7–14 dias de dados.
+
+
+
+8) Mini‑fórmula de decisão (rodável no app)
+
+\textbf{Score} = 0{,}6\cdot DI + 0{,}2\cdot \text{Footfall}_z + 0{,}1\cdot \text{SocialBuzz}_z + 0{,}1\cdot \text{Evento}
+
+Score 0,4–0,8 → Modo Perfume (kit + presente).
+
+Score < 0,4 → manter preço/estoque, coletar dados (sem promo).
+
+
+9) Plano de 10 dias (rápido)
+
+D1–D3: medir DI, footfall, baseline de vendas; instalar mostrador 3 notas.
+
+D4–D7: testar 2 gatilhos (DI alto/baixo) e 1 promoção por linha.
+
+D8–D10: ajustar preços/combos, escolher modelo de aluguel (fixo+%).
+
+D+10: revisar MAE, direcional, ticket; travar o que deu lift.
+
+
+Se quiser, eu te entrego um CSV‑template pra logar DI/footfall/vendas por hora e já te retorno com margem de erro e acerto do teu ponto real (sem prometer milagre, só número).
+
