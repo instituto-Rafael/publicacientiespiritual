@@ -1,0 +1,172 @@
+# plec_observatory.py  — roda 1s, leve (Termux/Android)
+# deps: pip install ccxt requests numpy
+import time, math, os, threading, requests, ccxt
+import numpy as np
+
+# ---------- CONFIG RÁPIDA ----------
+PAIRS = ["BTC/USDT","ETH/USDT"]   # adicione pares
+HTTP_TIME_HEADS = [
+    "https://google.com", "https://cloudflare.com", "https://bing.com"
+]
+LAMBDA = 0.9      # EWMA p/ média
+ALPHA  = 0.2      # EWMA p/ sigma do d_t
+W      = 120      # janela entropia (seg)
+SEED, EXEC = 1.33, 1.666
+LOW, HIGH = 1.10, 1.33           # histerese
+Z_MIN = 1.2                      # força mínima de sinal
+DECAY = 0.98                     # decaimento da matriz 42x42
+# -----------------------------------
+
+ex = ccxt.binance({'enableRateLimit': True})
+
+# ----- utilidades leves -----
+def http_utc_offset_ms():
+    # proxy “pobre” de NTP: mede diferença local vs Date do servidor
+    offs = []
+    for url in HTTP_TIME_HEADS:
+        try:
+            t0 = time.time()
+            r = requests.head(url, timeout=1.5)
+            t1 = time.time()
+            if "Date" in r.headers:
+                # parse RFC1123 sem lib pesada
+                from email.utils import parsedate_to_datetime
+                srv = parsedate_to_datetime(r.headers["Date"]).timestamp()
+                rtt = (t1 - t0)
+                loc = (t0 + t1) / 2.0
+                offs.append((srv - loc)*1000.0)  # ms
+        except Exception:
+            pass
+    if not offs: return 0.0
+    # mediana robusta
+    offs.sort()
+    return offs[len(offs)//2]
+
+def entropy01(p):
+    if p<=0 or p>=1: return 0.0
+    return -(p*math.log(p) + (1-p)*math.log(1-p)) / math.log(2)
+
+# ----- coletores por par (preço) -----
+class PairFeed:
+    def __init__(self, symbol):
+        self.sym = symbol
+        self.last = None
+        self.mu = 0.0
+        self.var = 1e-8
+        self.signs = []
+        self.state = "00"
+        self.zprev = 0.0
+        self.Hprev = 0.5
+        self.pnl = 0.0
+
+    def tick(self):
+        px = ex.fetch_ticker(self.sym)['last']
+        if self.last is None:
+            self.last = px
+            return None
+        d = math.log(px / self.last)
+        # EWMA de curto prazo (média suave)
+        self.mu = (1-LAMBDA)*d + LAMBDA*self.mu
+        # EWMA de variância (sigma “barato”)
+        self.var = (ALPHA*d*d) + (1-ALPHA)*self.var
+        sigma = math.sqrt(max(self.var, 1e-12))
+        z = max(0.0, (d - self.mu)/(sigma + 1e-12))
+
+        # entropia direcional 1s
+        self.signs.append(1 if d>0 else 0)
+        if len(self.signs)>W: self.signs.pop(0)
+        p = sum(self.signs)/len(self.signs)
+        H = entropy01(p)         # [0..1]
+        e = 1 - min(1.0, H)      # menos caos => e↑
+
+        # escore 1.666 (com +3% implícito no gatilho EXEC)
+        S = 1 + 0.6*z + 0.006*e
+        S = min(S, 1.666)
+
+        # FSM 00-01-11-10-00
+        changed = None
+        if self.state=="00" and S>=SEED and z>0:
+            self.state="01"; changed=("SEED",px,S,z)
+        elif self.state=="01" and S>=EXEC and (z>=Z_MIN):
+            self.state="11"; changed=("EXEC",px,S,z)
+        elif self.state=="11" and (S<=HIGH or z<0.1):
+            self.state="10"; changed=("DISARM",px,S,z)
+        elif self.state=="10" and S<=LOW:
+            self.state="00"; changed=("RESET",px,S,z)
+
+        self.last = px
+        self.zprev = z; self.Hprev = H
+        return (px, d, sigma, z, H, S, self.state, changed)
+
+# ----- 42×42: acoplamento simples v v^T com decaimento -----
+N = 42
+C = np.zeros((N,N), dtype=np.float64)
+
+# mapeamos features em até 42 slots (preço BTC/ETH + offset tempo + entropia local, etc.)
+def feature_vector(pair_data, utc_ms, local_entropy):
+    # constrói 42-dim: [z_BTC, S_BTC, z_ETH, S_ETH, utc_ms_norm, ent_loc_norm, ... zeros]
+    v = np.zeros(N, dtype=np.float64)
+    k = 0
+    for pd in pair_data:
+        if pd is None: 
+            k += 4; continue
+        _,_,_, z, H, S, _, _ = pd
+        v[k+0] = z
+        v[k+1] = S
+        v[k+2] = 1-H
+        v[k+3] = 1.0 if S>=EXEC else 0.0
+        k += 4
+    # UTC offset (ms) → normaliza por 100ms
+    v[k]   = max(-1.0, min(1.0, utc_ms/100.0)); k+=1
+    # entropia local: bytes XOR de /dev/urandom em 64B janela → normaliza
+    v[k]   = local_entropy; k+=1
+    return v
+
+def local_entropy_sample():
+    b = os.urandom(64)
+    acc = 0
+    for x in b: acc ^= x
+    return (acc/255.0)*2-1   # [-1,1]
+
+def print_hotzones(C):
+    # encontra top-5 acoplamentos
+    M = np.triu(C,1)
+    idx = np.dstack(np.unravel_index(np.argsort(M.ravel())[-5:], M.shape))[0]
+    pairs = [(int(i),int(j), float(C[i,j])) for i,j in idx]
+    pairs.sort(key=lambda x: x[2], reverse=True)
+    line = "hot-zones: " + ", ".join([f"D{i}.{j}:{w:.3f}" for i,j,w in pairs])
+    print(line)
+
+# ----- MAIN LOOP -----
+feeds = [PairFeed(p) for p in PAIRS]
+t0 = time.time()
+while True:
+    # 1) coletar preços
+    pd = [f.tick() for f in feeds]
+    # 2) offset “atômico pobre” (HTTP Date)
+    utc_ms = http_utc_offset_ms()
+    # 3) entropia local simples
+    le = local_entropy_sample()
+    # 4) vetor 42D e atualizar matriz
+    v = feature_vector(pd, utc_ms, le)
+    # normaliza vetor
+    norm = np.linalg.norm(v) or 1.0
+    u = v / norm
+    # acoplamento com decaimento
+    global C
+    C = DECAY*C + (1-DECAY)*(u[:,None]@u[None,:])
+
+    # logs curtos
+    now = time.strftime("%H:%M:%S")
+    marks = []
+    for f,x in zip(feeds,pd):
+        if x and x[-1]:
+            evt,px,S,z = x[-1]
+            marks.append(f"{f.sym}:{evt}@{px:.2f} S={S:.3f} z={z:.2f}")
+    if marks:
+        print(now, "|", "  ".join(marks))
+        print_hotzones(C)
+
+    # cadência exata 1s
+    dt = 1.0 - ((time.time()-t0) % 1.0)
+    if dt>0: time.sleep(dt)
