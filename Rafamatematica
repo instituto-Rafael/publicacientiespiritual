@@ -1,0 +1,229 @@
+∆RafaelVerboΩ — beleza. Aqui vai um protocolo único (prático + científico + simbiótico) para aprender-treinar-desdobrar-expandir-evoluir-ativar com retroalimentação contínua. Nomeei de HCPM-Ω (Hipótese → Coleta → Processamento → Modelagem → Validação → Expansão), já com passos acionáveis.
+
+HCPM-Ω (versão de campo)
+
+0) Preparação (1x só)
+
+Defina um escopo vivo: {empresas, holdings, patentes, balanços, cripto, notícias, posts}.
+
+Estrutura de pastas:
+
+/projeto_omega/
+  00_raw/           # dados brutos
+  01_clean/         # dados limpos
+  02_graph/         # grafos e features
+  03_models/        # modelos e métricas
+  04_reports/       # relatórios e dossiês
+  99_logs/          # logs e hashes
+
+Arquivo de controle: run.yaml (fonte, data, status, hash).
+
+
+
+---
+
+1) H — Hipótese
+
+Escreva 1–3 hipóteses mensuráveis, ex.:
+
+H1: “Empresas com depósito de patente ±30 dias após evento X têm ↑ probabilidade de fluxo financeiro atípico.”
+
+H2: “Holdings com offshore + uso de token/reward têm ↑ risco fiscal.”
+
+H3: “Padrão léxico em 8-K/10-K prevê variação anômala em 7–21 dias.”
+
+
+Métrica alvo: precisão/recall de alerta, n° de vínculos novos no grafo, tempo para achar 1 anomalia plausível.
+
+
+---
+
+2) C — Coleta
+
+Fontes mínimas (públicas/permitidas): balanços (SEC/DFP/ITR), patentes (USPTO/WIPO), cadastros (JUCESP), carteiras cripto públicas, notícias oficiais e postagens públicas.
+
+Salvar tudo em 00_raw/ com hash SHA-256 por arquivo e manifest.json (nome, fonte, data, hash).
+
+
+> Dica de comando (local):
+
+
+
+shasum -a 256 arquivo.ext >> 99_logs/hashes.txt
+
+
+---
+
+3) P — Processamento
+
+Limpeza: normalizar datas, CNPJ/CUSIP, remover duplicatas.
+
+Featureização:
+
+Tempo: Δdias entre patente e evento financeiro.
+
+Estrutural: grau do nó (empresa), centralidade, número de offshores ligadas.
+
+Texto: TF-IDF / embeddings de trechos de 8-K/10-K/MD&A; sinais como “token”, “reward”, “decentralized”, “audit”.
+
+
+Saída em 01_clean/ (CSV/Parquet) + log.
+
+
+
+---
+
+4) M — Modelagem (grafo + score)
+
+Grafo G(V,E): nós = {empresa, pessoa, patente, wallet}; arestas = {participação, transação, co-autor, citação}.
+
+Matriz A (adjacência ponderada) e vetor b (choques/entradas).
+
+Score de risco (Ω-score) por nó:
+
+Ω(v) = α·centralidade + β·(Δpatente_evento) + γ·(sinais_texto) + δ·(trilhas_fiscais)
+
+Alvo prático: top-N nós acima de um limiar → candidatos a “puxar o fio”.
+
+
+
+---
+
+5) V — Validação (prova mínima e plausível)
+
+Para cada candidato:
+
+Regra 3×3 (mínimo):
+
+1. 1 documento oficial (ex.: trecho de 8-K/DFP com linha e data),
+
+
+2. 1 evento temporal correlato (depósito de patente, criação de empresa, mudança societária),
+
+
+3. 1 relação no grafo (investidor, offshore, wallet, contrato).
+
+
+
+Gere “cartões de prova” em 04_reports/:
+
+Linha do tempo (3 datas),
+
+1 parágrafo de síntese,
+
+3 links/citações,
+
+hash do pacote (txt + prints).
+
+
+
+
+---
+
+6) E — Expansão (ciclo curto)
+
+Ajuste pesos (α,β,γ,δ) com base no que confirmou/negou.
+
+Active learning: pegue 10 casos fronteira e rotule manualmente → re-treine.
+
+Gere dossiê curto (1 página) e story (5–7 frases) para engajamento.
+
+
+
+---
+
+Matemática mínima (usável)
+
+Propagação de influência:
+
+x = (I − λA)⁻¹ b    (0<λ<1)
+
+“x” destaca nós onde choques (b) se amplificam pela rede (A).
+
+Risco composto:
+
+R(v) = σ(Ω(v)) ;  σ = logística
+
+Use R>0.7 como limiar inicial de “apurar”.
+
+
+
+---
+
+Scripts prontos (você roda local)
+
+1) Manifest de coleta (Python)
+
+import hashlib, json, pathlib, time
+raw = pathlib.Path("00_raw"); raw.mkdir(parents=True, exist_ok=True)
+log = []
+for p in raw.glob("**/*"):
+    if p.is_file():
+        h = hashlib.sha256(p.read_bytes()).hexdigest()
+        log.append({"path": str(p), "sha256": h, "ts": int(time.time())})
+pathlib.Path("99_logs").mkdir(exist_ok=True)
+pathlib.Path("99_logs/manifest.json").write_text(json.dumps(log, indent=2))
+
+2) Grafo e top-N suspeitos (Python)
+
+import pandas as pd, networkx as nx
+edges = pd.read_csv("01_clean/edges.csv")  # cols: src,dst,weight
+G = nx.from_pandas_edgelist(edges, "src","dst", edge_attr="weight", create_using=nx.DiGraph())
+cent = nx.pagerank(G, alpha=0.85, weight="weight")
+nodes = pd.DataFrame([{"node":n, "centrality":c} for n,c in cent.items()]).sort_values("centrality", ascending=False)
+nodes.head(50).to_csv("02_graph/top50.csv", index=False)
+
+3) Cartão de prova (template)
+
+# PROVA MÍNIMA — {NOME_DO_NO}
+- Data 1 (doc oficial): {YYYY-MM-DD} — {fonte/linha}
+- Data 2 (patente/marca): {YYYY-MM-DD} — {número}
+- Data 3 (evento financeiro): {YYYY-MM-DD} — {tipo}
+
+Relação no grafo: {NO_A} → {NO_B} (peso {w})
+Resumo (≤6 linhas): …
+Links/citações (3): …
+SHA-256 do pacote: …
+
+
+---
+
+Check-list “ativar agora” (30–60 min)
+
+1. Criar pastas do projeto e run.yaml.
+
+
+2. Escolher 1 hipótese (H1/H2/H3).
+
+
+3. Ingerir apenas 10–20 documentos (para girar o ciclo curto).
+
+
+4. Rodar scripts 1 e 2 → obter top-N.
+
+
+5. Preencher 1 cartão de prova (Regra 3×3).
+
+
+6. Publicar o cartão (README ou PDF) com hash.
+
+
+
+
+---
+
+Resultado esperado (primeiro ciclo)
+
+1–3 evidências pequenas e plausíveis, com datas/linhas e 1 relação no grafo.
+
+Uma lista priorizada do que puxar em seguida.
+
+Base repetível (você roda de novo só trocando a hipótese/fonte).
+
+
+
+---
+
+Quer que eu te entregue agora um cartão de prova preenchido (com texto-modelo “copiar e colar”) para você publicar no seu GitHub e já acionar o efeito dominó?
+Se sim, me diga qual hipótese (H1/H2/H3) você quer começar.
+
