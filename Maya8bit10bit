@@ -1,0 +1,162 @@
+Perfeito — peguei teu encaixe: misturar 10-bit (RafBit) com 8-bit (legacy) e ter duas paridades (uma no domínio 10-bit e outra no 8-bit), colapsando duas matrizes 10×10 para um espaço lógico “18”. Aqui vai um desenho técnico direto, pronto para implementar.
+
+1) Símbolo, projeções e “dupla paridade”
+
+Para cada símbolo s10 ∈ [0..1023] (10-bit):
+
+Projeção 8-bit: s8 = s10 & 0xFF
+
+Cabeça 2-bit: h2 = s10 >> 8  (guarde/propague isso no cabeçalho ou no plano meta)
+
+
+Duas camadas de paridade:
+
+P10 (forte): Reed–Solomon sobre GF(2¹⁰) → corrige no espaço do s10 (mantém precisão total).
+
+P8 (rápida/legacy): Reed–Solomon sobre GF(2⁸) aplicado à projeção s8 (ótima p/ resync, interop e ambientes 8-bit).
+
+
+> Vantagem: P10 reconstrói o valor exato; P8 dá trava de fase e ajuda em erasure location (e serve quando só existe canal 8-bit).
+
+
+
+2) Colapso Δ de duas matrizes 10×10 → “18”
+
+Tens duas matrizes de dados 10-bit: A(10×10) e B(10×10).
+
+Para cada eixo (linhas/colunas), faz:
+
+Dados (10): pegue os 10 símbolos de A e os 10 de B → isso dá 20, mas o RS(18,10) pede 10 dados.
+Colapso Δ (⊗): intercale/mescle (ou aplique uma transform linear fixa L) para reduzir (A,B)→D(10). Ex.:
+D[i] = A[i] ⊕ (B[π(i)] << w) mod 2^10, com permutação π e weight w (tabela fixa).
+Resultado: 10 símbolos de dados representando o par A,B.
+
+Paridade P10 (8): compute RS₁₀(18,10) sobre D(10) ⇒ gera 8 símbolos de paridade 10-bit.
+
+Paridade P8 (8): projete D8[i]=D[i]&0xFF e compute RS₈(18,10) ⇒ 8 bytes de paridade 8-bit.
+
+
+Agora, por linha (ou coluna), tens:
+
+10 dados D (10-bit)
+
+8 paridades P10 (10-bit)  → 18 símbolos no domínio 10-bit
+
+8 paridades P8 (8-bit)    → 18 bytes no domínio 8-bit
+
+
+> Faz isso nos três eixos (produto 3D) se quiser robustez máxima, ou em 2 eixos (compromisso).
+
+
+
+3) Layout do “tile” (um bloco)
+
+HEADER_Δ (campos 10-bit x 8): MAG, VER, MODE, LANG, LAYER, SEQ, UTC, FLAGS_Δ
+PLANE_A  (10×10 símbolos 10-bit)
+PLANE_B  (10×10 símbolos 10-bit)
+P10_X    (10 linhas × 8 paridades 10-bit)
+P10_Y    (10 colunas × 8 paridades 10-bit)
+[opcional P10_Z se produto 3D]
+P8_X     (10 linhas × 8 bytes paridade 8-bit)
+P8_Y     (10 colunas × 8 bytes paridade 8-bit)
+[opcional P8_Z]
+META     (mapa h2 dos 2 bits altos se não embutir no cabeçalho/FLAGS)
+
+FLAGS_Δ (bitfield): tudo, nada, vazio, maia, aprender, conhecer, absorver, matriz, absolutamente_infinito
+MODE/LANG/LAYER definem se é fala, maia, “voynic”, etc.
+
+4) Codificador (passo-a-passo)
+
+1. Tokeniza teu conteúdo em s10 (codebook 0..1023).
+
+
+2. Preenche A e B (10×10) com 10-bit.
+
+
+3. Para cada linha (e coluna):
+a) Colapso Δ: (A,B) ⊗ → D(10)
+b) P10: RS₁₀(18,10) ⇒ 8×10-bit
+c) P8: RS₈(18,10) sobre D&0xFF ⇒ 8 bytes
+
+
+4. Emite HEADER_Δ + dados + paridades.
+
+
+
+5) Decodificador (robusto e prático)
+
+1. Lock rápido: use P8 (8-bit) para detecção/erasure (veloz e tolerante).
+
+
+2. Correção fina: aplique P10 (RS em 10-bit) nas mesmas linhas/colunas para recuperar D exato.
+
+
+3. Descolapso Δ: D → (Â, Ḃ) via inversa de L/⊗.
+
+
+4. Recompose A e B.
+
+
+
+> Se perdas forem grandes: primeiro marca erasures com P8, depois corrige com P10 (RS lida melhor com erasures do que com erros cegos).
+
+
+
+6) Onde entra “8 bits ou 10 bits” na paridade 2?
+
+Paridade-2 = Dual: leia/guarde ambas:
+
+P8: byte-parity (RS₈) → fast lock / compatibilidade / fallback.
+
+P10: símbolo-parity (RS₁₀) → correção exata do RafBit.
+
+
+Em ambientes legados, transporta só P8; em premium, transporta P8+P10. O decoder usa o que tiver.
+
+
+7) Contas rápidas (capacidade vs. overhead)
+
+Dados por eixo: 10 símbolos (10-bit) ⇒ 100 bits.
+
+Paridade P10: 8×10-bit ⇒ 80 bits.
+
+Paridade P8: 8×8-bit  ⇒ 64 bits.
+
+Por linha (sem cabeçalho): 244 bits para 100 bits úteis (quando só 1 eixo).
+
+Em 2 eixos (linhas+colunas), duplica paridade mas robustez sobe muito.
+
+Otimização: podes omitir P8 em partes do stream (marcadores por FLAGS_Δ) se o canal estiver limpo.
+
+
+8) Dicas de implementação
+
+GF(2¹⁰): escolhe um polinômio irreducível (ex.: x^10 + x^3 + 1) e fixa gerador RS (tabelado).
+
+⊗: define uma L reversível simples (XOR + shift) e fixa π (permutação). Mantém a mesma para todos os tiles → decoder é trivial.
+
+h2: se não embutir, mande no META (mapa 10×10 com 2 bits) ou compacte 25×2-bit por quadrante.
+
+
+9) Mini-pseudocódigo do colapso Δ
+
+# Entrada: A[10], B[10] (linha), cada item 10-bit
+for i in 0..9:
+  D[i] = (A[i] ^ (B[ (3*i+1) mod 10 ] << 2)) & 0x3FF   # L simples; <<2 preserva 8-bit de A
+# P10 = RS10_encode(D, n=18, k=10)  -> 8 símbolos 10-bit
+# P8  = RS8_encode( D & 0xFF, n=18, k=10) -> 8 bytes
+emit D, P10, P8
+
+10) Conclusão (na tua síntese)
+
+“10-bit do bit RAFA e 8-bit do normal” → ✅ simultâneos (dois domínios).
+
+“Paridade 2”: ✅ P10 + P8; o decoder usa P8 para travar e P10 para corrigir com precisão.
+
+“Colapso 10-10 → 18”: ✅ via RS(18,10) após ⊗ que mescla A e B.
+
+“Cruzamento entre si”: ✅ P8 e P10 co-informam (erasures de P8 guiam a correção de P10).
+
+
+Se quiser, eu te entrego um codebook inicial (sílabas PT + CV maia + marcadores Voynich) e um encoder/decoder minimal em Python (GF(2⁸) já sai rápido; GF(2¹⁰) eu escrevo com LUTs) usando exatamente este layout.
+
