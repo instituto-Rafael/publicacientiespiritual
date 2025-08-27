@@ -1,0 +1,148 @@
+Beleza — “o rosto em Marte” (Cydonia) dá para olhar de duas formas: poesia do cérebro (pareidolia) e medição geométrica. Vamos direto ao cálculo, com um método que você pode repetir em qualquer imagem HiRISE/MGS.
+
+Roteiro de cálculo (objetivo: medir e testar “Fibonacci/φ” e simetria)
+
+1. Defina o contorno do morro (mesa)
+
+
+
+Abra a imagem com escala conhecida (HiRISE/MGS traz barra em m/px).
+
+Delimite o polígono externo (a “ilha” de rocha).
+
+Meça comprimento máximo L e largura máxima W (eixo maior/menor).
+
+
+2. Razões e “número de ouro”
+
+
+
+Calcule .
+
+Compare com  e com razões de Fibonacci (e.g., 13/8=1,625; 21/13=1,615).
+
+Erro relativo: .
+
+
+3. Simetria esquerda-direita (Sx)
+
+
+
+Trace um eixo vertical no meio do comprimento (axis splitting).
+
+Espelhe a metade esquerda e sobreponha à direita; compute a interseção sobre união (IoU).
+
+ (1 = simétrico perfeito).
+
+
+4. Proporção “olhos-nariz-boca” (se existirem saliências)
+
+
+
+Marque picos/sombras que parecem “olhos”/“nariz”/“boca”.
+
+Meça distâncias normalizadas pelo L ou W (para não depender de zoom).
+
+Compare com padrões humanos básicos (por ex., olho-olho ≈ 0,45–0,5 da largura da face humana; nariz-boca ≈ 0,1–0,2 da altura da face). A divergência grande indica pareidolia.
+
+
+5. Rugosidade / Fractal (box-counting)
+
+
+
+Rode detecção de borda (Canny), faça box-counting em múltiplas escalas e estime dimensão fractal D (relevo natural costuma dar D ~1,2–1,4 em contornos de cristas; nada “mágico”, mas útil para comparar com outras mesas vizinhas).
+
+
+6. Sombreado e elevação
+
+
+
+Se tiver DTM (modelo de terreno), meça amplitude altimétrica (Δh), declividade média e proeminência (pico – sela mais baixa). Mesas naturais mostram relações consistentes com erosão eólica.
+
+
+
+---
+
+Números ilustrativos (ordem de grandeza conhecidos na literatura)
+
+O “Face Mesa” em Cydonia tem cerca de L ≈ 1,7–2,0 km e W ≈ 1,3–1,5 km.
+
+Exemplo: L=1,9 km, W=1,5 km → .
+
+Comparando com , o erro relativo .
+
+Isso já afasta a hipótese de “ajuste dourado” simples do contorno global.
+
+Em imagens de alta resolução (MGS/HiRISE), o “rosto” se resolve como mesa erosiva com cristas e vales comuns — a simetria cai quando a iluminação muda, típico de pareidolia induzida por sombras de baixo ângulo.
+
+
+> Tradução prática: até agora, as medidas macroscópicas não sustentam uma geometria φ “clean”. Se você encontrar subconjuntos (um “olho” a “nariz”), meça localmente — mas cuidado com cherry-picking: quanto mais escolhas livres de pontos, maior a chance de “achar” um φ por acaso.
+
+
+
+
+---
+
+Mini-checklist para você rodar (qualquer editor de imagem + planilha)
+
+[ ] Anotar escala (m/px).
+
+[ ] Pontuar contorno → extrair L e W.
+
+[ ] Calcular ,  vs. φ e vs. razões de Fibonacci.
+
+[ ] Partir a imagem no eixo do comprimento → calcular IoU da simetria.
+
+[ ] Marcar “olhos/nariz/boca” se presentes → distâncias normalizadas.
+
+[ ] Rodar Canny → box-counting → estimar D.
+
+[ ] (Opcional com DTM) Δh, declividade, proeminência.
+
+
+
+---
+
+Por que vemos um rosto?
+
+Pareidolia: o cérebro tem bias fortíssimo para reconhecer faces (sobrevivência). Sombras rasantes + baixa resolução dos Vikings criaram um “template facial” que some nas imagens detalhadas e com iluminação diferente.
+
+
+---
+
+E a tua “Fibonacci modificada Rafael” nisso?
+
+Se você quer testar tua variante (sequência/espiral/grade própria), faça assim:
+
+1. Defina a geometria exata da tua espiral/grade (razões, ângulos, passo).
+
+
+2. Fixe as regras de encaixe antes de olhar a imagem (evitar ajuste ad hoc).
+
+
+3. Projete sobre a mesa e meça erro médio (RMSE) entre cristas/vales e tua malha.
+
+
+4. Teste controle: compare o mesmo encaixe em 10 mesas aleatórias próximas.
+
+
+5. Se tua malha performar melhor de forma estatisticamente significativa, você tem um sinal além de pareidolia.
+
+
+
+
+---
+
+Conclusão curta
+
+Medidas globais do “rosto” não batem com φ de forma convincente;
+
+Simetria cai quando a luz muda;
+
+Relevo é compatível com morfologia natural erosiva;
+
+Dá para testar rigorosamente tua Fibonacci modificada contra a superfície — mas com protocolo cego e controles, para separar insight de apofenia.
+
+
+Se quiser, te entrego um scriptzinho que calcula , , IoU de simetria e faz o box-counting a partir de uma imagem que você escolher. Também posso adaptar o script para a tua espiral “Fibonacci Modificada Rafael” e comparar contra mesas vizinhas.
+
