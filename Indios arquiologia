@@ -1,0 +1,188 @@
+Bora transformar tua ideia numa pipeline RAFAELIA de detecção de geoglifos → estimativa de população usando imagens históricas (Google/Planet/Landsat/Sentinel), espectroscopia (índices espectrais) e “ângulos por ano” (geometria Sol/sensor). Vou te dar um plano executável de ponta a ponta e um modelo estatístico pra converter evidência arqueológica em densidade humana — do jeitinho “trading base” que tu curte (sinal, qualidade, risco, backtest).
+
+Plano RAFAELIA GEOGLYPH → POP
+
+0) Por que funciona (base científica)
+
+Na Amazônia sul-ocidental há centenas de geoglifos (valas geométricas) — só no Acre são >450 ocupando ~13.000 km²; a distribuição se estende por uma faixa de ~1.800 km no sul da Amazônia e modelos sugerem potencial de >400.000 km² com estruturas similares. Estudos recentes falam em >10.000 (talvez até ~24.000) obras de terra ainda ocultas sob a floresta. 
+
+Terra preta (ADE) é outro marcador de ocupação densa e manejo de longo prazo; o próprio DNA do solo e artefatos reforçam caráter antrópico e alta fertilidade. 
+
+Imagens de média/alta resolução + LiDAR/índices espectrais têm revelado cidades-jardim, redes viárias e padrões urbanizados pré-coloniais (Xingu, Mojos, Upano). 
+
+
+1) Dados (camadas-alvo)
+
+Sentinel-2 L2A (10 m, 2015–presente): NDVI, NBR, NDMI, mNDWI; metadados sun/view angles para normalização BRDF simples.
+
+Landsat 5/7/8/9 (30 m, 1984–presente): série longa pra ver “aparecimento” de geoglifos quando áreas abriram (anos 80–2000).
+
+Planet NICFI (4.77 m, 2015–presente): mosaicos mensais/semianuais nos trópicos via Google Earth Engine (uso não-comercial). Ideal pra ver traços finos/valas e estradas antigas. 
+
+SRTM/DEM + HAND: relevo/hidrografia (rios são fortes preditores de sítios).
+
+Catálogos arqueológicos conhecidos (Acre): para rótulos de treino/validação. 
+
+
+2) Pré-processamento (por ano/estação)
+
+Máscara de nuvem: QA60 (S2) e CFMask (Landsat).
+
+Composição seca (jun–out) por mediana anual pra reduzir nuvem/umidade.
+
+Normalização angular: inclui sun_zenith, sun_azimuth, view_zenith como features e/ou aplica correção c-factor simples (evita “falsos contrastes” por ângulo solar em anos diferentes).
+
+
+3) Espectroscopia & realce de forma
+
+Índices: NDVI, NBR (queima/solo exposto), NDMI (umidade), mNDWI (água), SAVI (solo-vegetação).
+
+Textura (GLCM) e gradiente (Sobel/Canny).
+
+Morfologia: fechamento/abertura para reforçar círculos/quadrados/valas; Hough transform (círculos/linhas) para encontrar plazas, valas, estradas antigas.
+
+
+4) Segmentação/Detecção
+
+Duas vias complementares:
+a) Clássica supervisionada (Random Forest/LightGBM) em pixel+patch com features espectrais+textura+ângulos;
+b) Deep learning (U-Net) para segmentação de valas usando NICFI 4.77 m (ideal para bordas).
+
+Treino com polígonos/manual de geoglifos do Acre (rótulos positivos) + amostras negativas. Validação cruzada por blocos espaciais.
+
+
+5) Série temporal (1984→2025)
+
+Change detection: quando o desmatamento expõe sítios, a “assinatura” aparece. Marca primeiro ano de visibilidade por candidato.
+
+“Ângulos por ano”: robustez — o candidato deve persistir em ângulos solares distintos (não ser artefato de iluminação).
+
+
+6) Fusão com outros proxies
+
+Proximidade a rios/navegabilidade, declividade baixa, solos;
+
+Terra preta/ADE onde mapeada; densidade de estradas pré-históricas e padrões ortogonais (quando presentes). 
+
+
+7) Agrupamento e “sítio”
+
+Clusterização espacial (DBSCAN) para unir valas/estradas/plazas num complexo.
+
+Medidas: área total de terra movida, comprimento de valas, nº de recintos, complexidade geométrica.
+
+
+8) Modelo de população (hierárquico bayesiano)
+
+Queremos converter evidência arqueo-espectral em densidade humana.
+
+Grade o território em células (ex. 5×5 km).
+
+Para cada célula :
+
+
+\begin{aligned}
+  y_i &\sim \text{Poisson}(\lambda_i \cdot A_i) \\
+  \log \lambda_i &= \beta_0 + \beta_1 D^{(geo)}_i + \beta_2 A^{(valas)}_i + \beta_3 T^{(ADE)}_i + \beta_4 R^{(rio)}_i + u_{\text{eco}} + \epsilon_i
+  \end{aligned}
+
+Calibração: usa regiões com estudos detalhados (Acre, Alto Xingu, Mojos) para ancorar . Evidências recentes dão ordem de grandeza e distribuição regional (sul da Amazônia, Xingu, etc.). 
+
+Censura/descoberta: inclui termo de detectabilidade (probabilidade de ver um sítio dado cobertura florestal, ano, resolução).
+
+
+9) Métricas “trading-base” (qualidade do sinal)
+
+Tag14-Entropy do stack espectral (robustez multibanda).
+
+Sharpe do Sinal = (média da evidência anual)/(desvio temporal).
+
+Drawdown de certeza quando um candidato some com ângulos/estações.
+
+Backtest: retira anos aleatórios e mede estabilidade da detecção.
+
+
+10) Entregáveis
+
+GeoTIFF de Evidência de Terra Movida (0–1).
+
+GPKG com polígonos de sítios e atributos (área, forma, ano primeiro visível, confiança).
+
+Raster de densidade populacional estimada (com banda de incerteza).
+
+Relatório com trilha de auditoria (índices, ângulos, cenas usadas).
+
+
+
+---
+
+Esqueleto em Earth Engine (JS) — detecção básica
+
+// 1) Sentinel-2 seco (Jun-Out), máscara de nuvem
+var s2 = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
+  .filterBounds(geometry)
+  .filterDate('2016-06-01','2025-10-31')
+  .filter(ee.Filter.calendarRange(6,10,'month'))
+  .map(function(img){
+    var qa = img.select('QA60');
+    var mask = qa.bitwiseAnd(1<<10).eq(0).and(qa.bitwiseAnd(1<<11).eq(0));
+    return img.updateMask(mask)
+      .addBands(img.normalizedDifference(['B8','B4']).rename('NDVI'))
+      .addBands(img.normalizedDifference(['B8','B12']).rename('NDMI'))
+      .addBands(img.normalizedDifference(['B8','B11']).rename('NBR'))
+      .addBands(img.normalizedDifference(['B3','B11']).rename('mNDWI'))
+      .addBands(img.select(['SZA','SAA','VZA'], ['sun_zen','sun_az','view_zen'])); // se disponível
+  });
+var comp = s2.median();
+
+// 2) Realce de bordas
+var edges = comp.select('B8').convolve(ee.Kernel.sobel());
+
+// 3) Thresholds e candidatos
+var cand = edges.gt(0.1).selfMask();
+
+// 4) Exportar para vetor e treinar RF fora ou no GEE com rótulos do Acre
+
+NICFI no GEE (alta resolução)
+
+NICFI fornece mosaicos 4.77 m mensais/semianuais da Amazônia (2015→); perfeito para ver valas/estradas e avaliar “ângulos por ano” (mosaicos de épocas diferentes). Guia e coleção: Planet NICFI Basemaps. 
+
+
+---
+
+População (intervalos esperados)
+
+O pipeline acima não “chuta” um número único; ele produz faixas por célula/bioma com incerteza explícita. Isso dialoga com trabalhos que já modelaram distribuição de construtores de obras de terra em ~400.000 km² no sul da Amazônia e estimativas de >10.000 sítios ainda ocultos — base excelente para inferir densidades humanas pré-coloniais por região, em vez de uma cifra global única. 
+
+
+---
+
+Ética e segurança
+
+Geoprivacidade: mascarar coordenadas sensíveis de sítios (buffer/aggregates).
+
+Uso NICFI: respeitar termos (não-comercial por padrão via GEE). 
+
+Colaboração: arqueólogos/indigenistas revisam candidatos antes de qualquer divulgação.
+
+
+
+---
+
+Piloto imediato (rápido e certeiro)
+
+1. Janela Acre-leste (onde já há >450 geoglifos mapeados) para calibrar. 
+
+
+2. Rodar Sentinel-2 (2016–2025) e Landsat (1984–2015); compor “seco” e gerar candidatos.
+
+
+3. Refinar com NICFI (2015–2025) para bordas/estradas antigas. 
+
+
+4. Ajustar hierárquico bayesiano com priors informados por Acre/Xingu/Mojos e produzir o primeiro mapa de densidade humana pré-colonial com incerteza.
+
+
+
+Se quiser, eu já te deixo um kit de pastas e scripts (GEE + Python) padronizados no estilo RAFAELIA (incluindo métricas Tag14-Entropy e “Sharpe do Sinal”) pra tu plugar no teu fluxo.
+
