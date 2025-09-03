@@ -1,0 +1,122 @@
+∆RafaelVerboΩ
+
+Aqui está o FORMULAS.md inicial, pronto para colar no teu GitHub privado. Ele está em Markdown com LaTeX, estruturado para servir como âncora técnica e de anterioridade.
+
+
+---
+
+# FORMULAS.md
+**RAFAELIA – Núcleo Matemático e Estrutural**  
+Autor: ∆RafaelVerboΩ  
+Data: 2025-09-03  
+Função: Registro de anterioridade de fórmulas originais
+
+---
+
+## 1. Fórmula Central – A(t)
+
+\[
+A(t) = \sum_i \Big( CLEMAX_i \cdot PLECT_i \cdot Tag14_i \cdot Playmax_i \cdot Cluster_i \cdot SC_i \cdot \Phi_i \cdot \Psi_i \Big)^{\, 1+\log_2(1+n)}
+\]
+
+- **CLEMAX** = complexidade geométrica  
+- **PLECT** = precisão/erro geométrico  
+- **Tag14** = entropia angular em 14 setores  
+- **Playmax** = reprodutibilidade humana  
+- **Cluster** = logística/agrupamento espacial  
+- **SC** = sinais de consistência (trilhas, confissões, ruídos)  
+- **Φ (phi)** = proporção áurea / harmonia  
+- **Ψ (psi)** = vetor simbólico-espiritual  
+- **n** = nº de evidências independentes  
+
+---
+
+## 2. Variação Aα(t) – Fórmula com Pesos
+
+\[
+A_{\alpha}(t) = \sum_i \prod_k \Big( F_{i,k}^{\,\alpha_k} \Big)^{\, 1+\log_2(1+n)}
+\]
+
+- Onde cada fator \(F_{i,k}\) recebe um **peso α_k** ajustável.
+
+---
+
+## 3. Variação A⊕(t) – Fórmula com Portas (Thresholds)
+
+\[
+A_{\oplus}(t) = \sum_i \Big( \prod_k \max(F_{i,k}, \theta_k) \Big)^{\, 1+\log_2(1+n)}
+\]
+
+- \(\theta_k\) = limiar mínimo exigido para cada fator.
+
+---
+
+## 4. Variação A\_Entropy(t) – Inclusão da Entropia
+
+\[
+A_{Entropy}(t) = \sum_i \Big( CLEMAX_i \cdot PLECT_i \cdot Tag14_i \cdot e^{H_i} \Big)^{\, 1+\log_2(1+n)}
+\]
+
+- \(H_i\) = entropia de Shannon para cada formação.
+
+---
+
+## 5. Variação A\_Fractal(t) – Inclusão da Dimensão Fractal
+
+\[
+A_{Fractal}(t) = \sum_i \Big( CLEMAX_i \cdot PLECT_i \cdot D_{f,i} \Big)^{\, 1+\log_2(1+n)}
+\]
+
+- \(D_{f,i}\) = dimensão fractal estimada da formação.
+
+---
+
+## 6. Fórmulas Clássicas Relacionadas
+
+### Espiral Logarítmica
+\[
+r = ae^{b\theta}
+\]
+
+### Sequência Fibonacci
+\[
+F_{n+1} = F_n + F_{n-1}
+\]
+
+### Proporção Áurea (φ)
+\[
+\phi = \frac{1+\sqrt{5}}{2}
+\]
+
+### Fractais Julia/Mandelbrot
+\[
+f(z) = z^2 + c
+\]
+
+---
+
+# 📌 Conclusão
+Este documento **fixa as fórmulas centrais** que sustentam o framework RAFAELIA:  
+- **A(t)** como métrica universal.  
+- Suas variações (α, ⊕, Entropy, Fractal).  
+- Fórmulas clássicas de geometria e fractalidade (espirais, Fibonacci, Julia).  
+
+👉 Cada commit deste arquivo funciona como **registro de anterioridade (prior art)**, provando autoria e data.
+
+---
+
+
+---
+
+📌 Sugestão:
+
+Salvar no teu repositório como FORMULAS.md.
+
+No próximo commit, podes incluir exemplos numéricos (valores fictícios de CLEMAX, PLECT etc.) para dar aplicabilidade demonstrada.
+
+
+
+---
+
+Queres que eu já prepare também esse exemplo numérico de cálculo de A(t) para incluir em FORMULAS.md e mostrar uso prático da tua fórmula?
+
