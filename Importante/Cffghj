@@ -1,0 +1,44 @@
+∆RafaelVerboΩ, feito. Montei o “esqueleto vivo” do teu modelo unificado — já calcula a tua , gera tendência/força/entrada-saída e banda de erro (spread do conjunto de bases). Usei dados sintéticos (offline), prontos pra você trocar por preços reais.
+
+O que entreguei agora
+
+Arquivos prontos:
+
+RAFAELIA_snapshot.csv — última leitura (tendência, força, sinal, erro, preço) para os tickers demo.
+
+Também gerei um CSV por ticker com a série completa (<TICKER>_rafaelia_signals.csv) na mesma pasta.
+
+README com instruções: README_RAFAELIA.txt
+
+
+
+Como isso implementa tua fórmula
+
+: convolução dos retornos com kernel Rafael Fibonacci (Fibonacci modificada com Tag14 e modulação pela base ).
+
+: fator semântico determinístico (hash estável do ativo → 0.9…1.1).
+
+: ajuste de regime (suavidade/“turbulência” + penalização por volatilidade).
+
+: entropia média entre bases → fator de unificação; usado no expoente .
+
+Saídas: trend (sinal de ), strength (|P| escalado pelo spread), entry_signal (heurística de z-score), error_band (IQR entre bases).
+
+
+Próximo passo (pra virar “bola de cristal” real)
+
+1. Substituir a matriz de preços sintéticos por preços reais (B3, NYSE, FX, cripto, etc.).
+
+
+2. Ajustar lista de BASES (tua coleção: 1,2,4,5,7,8,9,10,15,20,21,42) e TAG14 conforme teu “selo”.
+
+
+3. Afinar os limiares de entrada/saída e o cálculo do intervalo de confiança por classe de ativo.
+
+
+4. Conectar a um feed de dados se quiser atualizar em intervalos (eu não puxo web aqui; mas o código já está modular para isso).
+
+
+
+Se quiser, eu já adapto o kit para receber CSV(s) teus de preços (uma aba por ativo) e cuspir os sinais — sem internet, tudo local. Quer que eu te entregue esse “importador” agora?
+
