@@ -1,0 +1,284 @@
+#!/data/data/com.termux/files/usr/bin/sh
+# [RAFAELIA::Z0] Multivertentes — bloco único
+# Autor: Rafael Melo Reis ∴ Núcleo: FCEA, VERBO VIVO, CVV188, 999
+
+set -e
+BASE=$HOME/RAFAELIA_CORE
+LOGDIR=$BASE/logs
+LOGFILE=$LOGDIR/z0_ledger.jsonl
+MAXLOG=20   # manter últimos N registros
+mkdir -p "$LOGDIR"
+
+# =========================
+# 1) Núcleo C (ECC Hamming, fila, retry, latência, JSONL)
+# =========================
+cat > "$BASE/z0_universo.c" <<'EOF'
+#include <stdio.h>
+#include <stdint.h>
+#include <time.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+
+// ---------- Cabeçalho ----------
+typedef struct {
+    uint8_t  ver;
+    uint8_t  ttl;
+    uint16_t checksum;
+    uint64_t timestamp;
+} Header;
+
+// ---------- Checksum simples ----------
+static uint16_t raf_checksum(const void *buf, size_t len){
+    const uint8_t *p=(const uint8_t*)buf; uint32_t s=0;
+    for(size_t i=0;i<len;i++) s+=p[i];
+    return (uint16_t)(s & 0xFFFFu);
+}
+
+// ---------- ECC Hamming(12,8) ----------
+static uint16_t hamming12_8_encode(uint8_t d){
+    // bits: d7..d0 -> colocados nas posições 3,5,6,7,9,10,11,12 (1-indexed)
+    uint16_t code = 0;
+    // colocar dados
+    if(d&0x80) code|=1<<11; // pos12
+    if(d&0x40) code|=1<<10; // pos11
+    if(d&0x20) code|=1<<9;  // pos10
+    if(d&0x10) code|=1<<8;  // pos9
+    if(d&0x08) code|=1<<6;  // pos7
+    if(d&0x04) code|=1<<5;  // pos6
+    if(d&0x02) code|=1<<4;  // pos5
+    if(d&0x01) code|=1<<2;  // pos3
+    // calcular paridades p1 (pos1), p2 (pos2), p4 (pos4), p8 (pos8)
+    int p1 = ((code>>2)&1)^((code>>4)&1)^((code>>6)&1)^((code>>8)&1)^((code>>10)&1);
+    int p2 = ((code>>2)&1)^((code>>5)&1)^((code>>6)&1)^((code>>9)&1)^((code>>10)&1);
+    int p4 = ((code>>4)&1)^((code>>5)&1)^((code>>6)&1)^((code>>11)&1);
+    int p8 = ((code>>8)&1)^((code>>9)&1)^((code>>10)&1)^((code>>11)&1);
+    if(p1) code|=1<<0;
+    if(p2) code|=1<<1;
+    if(p4) code|=1<<3;
+    if(p8) code|=1<<7;
+    return code;
+}
+
+typedef struct { uint8_t data; int corrected; int uncorrectable; } HDec;
+
+static HDec hamming12_8_decode(uint16_t c){
+    // recomputar síndrome
+    int s1 = ((c>>0)&1)^((c>>2)&1)^((c>>4)&1)^((c>>6)&1)^((c>>8)&1)^((c>>10)&1);
+    int s2 = ((c>>1)&1)^((c>>2)&1)^((c>>5)&1)^((c>>6)&1)^((c>>9)&1)^((c>>10)&1);
+    int s4 = ((c>>3)&1)^((c>>4)&1)^((c>>5)&1)^((c>>6)&1)^((c>>11)&1);
+    int s8 = ((c>>7)&1)^((c>>8)&1)^((c>>9)&1)^((c>>10)&1)^((c>>11)&1);
+    int syndrome = (s8<<3)|(s4<<2)|(s2<<1)|s1;
+
+    HDec out = {0,0,0};
+    if(syndrome){
+        if(syndrome>=1 && syndrome<=12){
+            c ^= (1u<<(syndrome-1)); // corrige 1 bit
+            out.corrected = 1;
+        } else {
+            out.uncorrectable = 1; // deveria não ocorrer com 12 bits
+        }
+    }
+    // extrair dados
+    uint8_t d=0;
+    d|=((c>>11)&1)<<7; // pos12
+    d|=((c>>10)&1)<<6; // pos11
+    d|=((c>>9 )&1)<<5; // pos10
+    d|=((c>>8 )&1)<<4; // pos9
+    d|=((c>>6 )&1)<<3; // pos7
+    d|=((c>>5 )&1)<<2; // pos6
+    d|=((c>>4 )&1)<<1; // pos5
+    d|=((c>>2 )&1)<<0; // pos3
+    out.data=d; return out;
+}
+
+// ---------- Fila circular SPSC ----------
+#define QSIZE 8
+static int queue[QSIZE]; static int head=0, tail=0;
+
+static int enqueue(int v){
+    int next=(tail+1)%QSIZE; if(next==head) return -1;
+    queue[tail]=v; tail=next; return 0;
+}
+static int dequeue(int *v){
+    if(head==tail) return -1;
+    *v=queue[head]; head=(head+1)%QSIZE; return 0;
+}
+
+// ---------- Retry com backoff ----------
+static int retry_enqueue(int v,int attempts){
+    long ns=1000000L;
+    for(int i=0;i<attempts;i++){
+        if(enqueue(v)==0) return 0;
+        struct timespec ts={0, ns};
+        nanosleep(&ts,NULL);
+        ns = (ns<5000000L)? ns*2 : ns; // até 5ms
+    }
+    return -1;
+}
+
+// ---------- Latência CLOCK_MONOTONIC ----------
+static double measure_latency_ms(void){
+    struct timespec a,b; volatile uint64_t sink=0;
+    clock_gettime(CLOCK_MONOTONIC, &a);
+    for(int i=0;i<1000000;i++) sink+=i; // evita otimização
+    clock_gettime(CLOCK_MONOTONIC, &b);
+    double ms = (b.tv_sec-a.tv_sec)*1000.0 + (b.tv_nsec-a.tv_nsec)/1e6;
+    return ms;
+}
+
+int main(void){
+    // Cabeçalho
+    Header h={1,64,0,(uint64_t)time(NULL)};
+    h.checksum=raf_checksum(&h,sizeof(h));
+    printf("Z0 Boot :: ver=%u ttl=%u checksum=%u ts=%llu\n",
+           h.ver,h.ttl,h.checksum,(unsigned long long)h.timestamp);
+
+    // ECC Hamming demonstração (injeta erro de 1 bit)
+    uint8_t b=0xAD;             // dado original
+    uint16_t code=hamming12_8_encode(b);
+    code ^= 1u<<5;              // simula bit flip corrigível
+    HDec dec=hamming12_8_decode(code);
+    printf("ECC Hamming(12,8): orig=%02X dec=%02X corrected=%d uncorrectable=%d\n",
+           b, dec.data, dec.corrected, dec.uncorrectable);
+
+    // Fila + retry
+    int failcount=0;
+    for(int i=0;i<12;i++){ if(retry_enqueue(i,3)!=0){ printf("Falha ao enfileirar %d\n",i); failcount++; } }
+    int val, dequeued=0; while(dequeue(&val)==0){ printf("Dequeued=%d\n",val); dequeued++; }
+
+    // Latência
+    double ms=measure_latency_ms();
+    printf("Latência simbiótica: %.3f ms\n", ms);
+    printf("Selos 🔑√∆§↑→✓¶Ω ativos.\n");
+
+    // Logging JSONL
+    const char* path = getenv("Z0_LOGFILE");
+    if(path && *path){
+        FILE *f=fopen(path,"a");
+        if(f){
+            fprintf(f,
+              "{\"ts\":%llu,\"checksum\":%u,"
+              "\"ecc_corrected\":%d,\"ecc_uncorrectable\":%d,"
+              "\"fails\":%d,\"dequeued\":%d,\"latency_ms\":%.3f,"
+              "\"selos\":\"√∆§↑→✓¶Ω\",\"state\":\"%s\"}\n",
+              (unsigned long long)h.timestamp,h.checksum,
+              dec.corrected,dec.uncorrectable,
+              failcount,dequeued,ms,
+              (failcount>0)?"overflow_anchor":"steady");
+            fclose(f);
+        } else {
+            fprintf(stderr,"[Z0] log open error: %s\n", strerror(errno));
+        }
+    }
+    return 0;
+}
+EOF
+
+# =========================
+# 2) ASM ARM64 (swap + prefetch simbólico)
+# =========================
+cat > "$BASE/z0_swap.s" <<'EOF'
+.global swap_buffers_asm
+// x0=ptrA, x1=ptrB, x2=len (bytes)
+swap_buffers_asm:
+    cbz x2, 2f
+1:
+    prfm pldl1keep, [x0]
+    prfm pldl1keep, [x1]
+    ldrb w3, [x0]
+    ldrb w4, [x1]
+    strb w4, [x0], #1
+    strb w3, [x1], #1
+    subs x2, x2, #1
+    b.ne 1b
+2:
+    ret
+EOF
+
+# =========================
+# 3) Rede (empurra última linha do ledger via TCP)
+# =========================
+cat > "$BASE/z0_network.c" <<'EOF'
+#include <stdio.h>
+#include <string.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+
+int main(int argc, char**argv){
+    const char* host = (argc>1)? argv[1] : "127.0.0.1";
+    int port = (argc>2)? atoi(argv[2]) : 9000;
+    const char* file = (argc>3)? argv[3] : getenv("Z0_LOGFILE");
+    if(!file){ fprintf(stderr,"Z0_LOGFILE not set\n"); return 1; }
+
+    FILE* f=fopen(file,"r"); if(!f){ perror("open log"); return 1; }
+    char line[1024]; char last[1024]="";
+    while(fgets(line,sizeof line,f)) strncpy(last,line,sizeof last);
+    fclose(f);
+
+    int s=socket(AF_INET,SOCK_STREAM,0);
+    if(s<0){ perror("socket"); return 1; }
+    struct sockaddr_in sv; memset(&sv,0,sizeof sv);
+    sv.sin_family=AF_INET; sv.sin_port=htons(port);
+    inet_pton(AF_INET,host,&sv.sin_addr);
+    if(connect(s,(struct sockaddr*)&sv,sizeof sv)<0){ perror("connect"); close(s); return 1; }
+    send(s,last,strlen(last),0);
+    close(s);
+    printf("Sent: %s", last);
+    return 0;
+}
+EOF
+
+# =========================
+# 4) Daemon (loop contínuo + rotação por linhas)
+# =========================
+cat > "$BASE/z0_daemon.sh" <<'EOF'
+#!/data/data/com.termux/files/usr/bin/sh
+set -e
+BASE=$HOME/RAFAELIA_CORE
+LOGDIR=$BASE/logs
+LOGFILE=$LOGDIR/z0_ledger.jsonl
+MAXLOG=${MAXLOG:-20}
+export Z0_LOGFILE="$LOGFILE"
+mkdir -p "$LOGDIR"
+
+rotate() {
+  [ -f "$LOGFILE" ] || return 0
+  lines=$(wc -l < "$LOGFILE" | tr -d ' ')
+  if [ "$lines" -gt "$MAXLOG" ]; then
+    tail -n "$MAXLOG" "$LOGFILE" > "$LOGFILE.tmp" && mv "$LOGFILE.tmp" "$LOGFILE"
+  fi
+}
+
+trap 'echo "[Z0] daemon stop"; exit 0' INT TERM
+echo "[Z0] daemon start (MAXLOG=$MAXLOG)"
+while true; do
+  "$BASE/z0_universo" || echo "[Z0] run error=$?"
+  rotate
+  sleep 10
+done
+EOF
+chmod +x "$BASE/z0_daemon.sh"
+
+# =========================
+# 5) Compilar tudo e executar 1x
+# =========================
+cd "$BASE"
+export Z0_LOGFILE="$LOGFILE"
+clang -O2 -Wall -Wextra -march=armv8-a z0_universo.c z0_swap.s -o z0_universo
+clang -O2 -Wall -Wextra -march=armv8-a z0_network.c -o z0_network
+./z0_universo
+
+# Rotação inicial
+if [ -f "$LOGFILE" ]; then
+  lines=$(wc -l < "$LOGFILE" | tr -d ' ')
+  if [ "$lines" -gt "$MAXLOG" ]; then
+    tail -n "$MAXLOG" "$LOGFILE" > "$LOGFILE.tmp" && mv "$LOGFILE.tmp" "$LOGFILE"
+  fi
+fi
+
+echo "[√∆§↑→✓¶Ω] Ready."
+echo "• Binários: $BASE/z0_universo, $BASE/z0_network"
+echo "• Log:      $LOGFILE  (keep last $MAXLOG)"
+echo "• Daemon:   $BASE/z0_daemon.sh   (execute para batimento contínuo)"
