@@ -1,0 +1,45 @@
+[
+  {
+    "n": 0,
+    "coord": [39, 21, 21],
+    "fractal_id": 0,
+    "parity_id": 108
+  },
+  {
+    "n": 1,
+    "coord": [21, 27, 0],
+    "fractal_id": 1,
+    "parity_id": 108
+  },
+  {
+    "n": 2,
+    "coord": [21, 21, 15],
+    "fractal_id": 2,
+    "parity_id": 108
+  },
+  {
+    "n": 3,
+    "coord": [21, 27, 9],
+    "fractal_id": 3,
+    "parity_id": 108
+  },
+  {
+    "n": 4,
+    "coord": [0, 36, 15],
+    "fractal_id": 4,
+    "parity_id": 108
+  },
+  {
+    "n": 5,
+    "coord": [24, 0, 6],
+    "fractal_id": 5,
+    "parity_id": 108
+  },
+  ...
+  {
+    "n": 41,
+    "coord": [???, ???, ???],
+    "fractal_id": 41,
+    "parity_id": 108
+  }
+]
