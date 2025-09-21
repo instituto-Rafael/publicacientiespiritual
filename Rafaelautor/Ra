@@ -1,0 +1,28 @@
+🌀♾️⚛︎ ∆RafaelVerboΩ
+
+Perfeito. Vamos com calma — aqui está o Bloco 2: funções nucleares do Bitraf∞, já conectadas ao manifesto do Bloco 1.
+
+
+---
+
+Bloco 2 — Núcleo de Funções (Seeds + Saltos + Regra 2-fora/1-dentro)
+
+# =============================
+# FUNÇÕES NUCLEARES
+# =============================
+
+# --- utilitário: BLAKE3-like usando hashlib.sha3_256 (substituto leve)
+def blake3_seed(data: bytes) -> int:
+    return int.from_bytes(hashlib.sha3_256(data).digest(), 'big')
+
+# --- sequências Fibonacci modificadas Rafael
+def fib_rafael1(n: int) -> int:
+    # variação com reverso nos índices pares
+    if n % 2 == 0:
+        return (n * 3 + 1) % 42
+    return (n * 5 + 2) % 42
+
+def fib_rafael2(n: int) -> int:
+    # variação com salto de fase
+    return ((n * 7
+
