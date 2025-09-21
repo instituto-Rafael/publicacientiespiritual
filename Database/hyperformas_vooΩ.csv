@@ -1,0 +1,31 @@
+id,name,short_desc,omega,scale,phi,noise,entropy,tags
+1,H1_giro,rotacional tesseract warp,144.0,1.618,1.618,0.005,0.12,seed,spin
+2,H2_emaranha,emaranhamento fractal,72.0,1.414,2.718,0.07,0.18,web,emaranha
+3,H3_ressonar,resonância harmónica,36.0,2.0,1.333,0.02,0.10,resonance,hum
+4,H4_echo,eco temporal,288.0,0.786,2.0,0.09,0.22,time,echo
+5,H5_tessera,projeção tesseract,144.0,1.0,1.0,0.01,0.08,tesseract,core
+6,H6_filigrana,detalhamento finíssimo,9.0,3.333,1.272,0.12,0.35,detail,lace
+7,H7_vórtice,vortex topológico,55.5,0.9,2.5,0.06,0.20,vortex,flow
+8,H8_pulsar,pulso rítmico fractal,333.0,1.21,3.14,0.03,0.09,pulse,beat
+9,H9_grafeno,malha condutora fractal,11.0,4.0,1.73,0.15,0.40,mesh,conduct
+10,H10_emergir,auto-organização,101.0,0.618,2.236,0.04,0.13,emergent,organize
+11,H11_selo,assinatura simbiótica,1440.0,0.1,1.0,0.00,0.02,seal,signature
+12,H12_subtrama,camadas ocultas,12.0,2.5,1.9,0.11,0.30,hidden,layer
+13,H13_fenda,time-warp fissure,7.0,0.55,2.91,0.2,0.45,warp,rift
+14,H14_corpo,gravidade local param,220.0,1.77,1.41,0.025,0.11,gravity,mass
+15,H15_arco,curvatura fase,33.3,1.05,2.05,0.035,0.10,curve,phase
+16,H16_metria,ritmo entropia,13.0,0.95,1.95,0.06,0.19,metric,entropy
+17,H17_vazio,void resonance,199.0,5.0,2.5,0.2,0.5,void,deep
+18,H18_rede,sinapse fractal,2.718,3.5,1.618,0.085,0.25,network,synapse
+19,H19_tempo,tempo local,60.0,0.88,0.999,0.013,0.07,time,local
+20,H20_luz,camada fotônica,420.0,1.333,3.0,0.01,0.05,photon,light
+21,H21_ecossistema,interação multiagente,8.8,2.22,1.44,0.09,0.28,eco,agents
+22,H22_sopro,vento simbólico,14.0,0.77,2.0,0.04,0.12,breath,wind
+23,H23_magneto,linha de fluxo,88.0,1.999,1.618,0.06,0.2,magnetic,flux
+24,H24_fronteira,limiar dimensional,7.7,0.66,2.666,0.14,0.36,threshold,limit
+25,H25_espelho,reflexo inverso,144.0,1.111,1.111,0.02,0.09,mirror,inverse
+26,H26_semente,gerador fractal,3.14,9.0,2.0,0.005,0.03,seed,genesis
+27,H27_âncora,paridade ritual,0.618,0.333,1.0,0.0,0.01,anchor,parity
+28,H28_pedra,estabilidade fractal,22.0,6.0,1.2,0.18,0.4,stone,stable
+29,H29_nebula,espuma cósmica,300.0,2.8,3.7,0.09,0.27,nebula,foam
+30,H30_omega,hiperforma ômega,999.0,0.999,0.999,0.001,0.02,omega,fina
