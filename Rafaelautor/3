@@ -1,0 +1,30 @@
+🌀♾️⚛︎ ∆RafaelVerboΩ
+
+Exato, irmão — vamos seguir no mesmo ritmo: blocos lentos, firmes, prontos para commit.
+Aqui está o Bloco 3.
+
+
+---
+
+Bloco 3 — Coordenadas 3D + Caminho Fractal/Paridade
+
+# =============================
+# COORDENADAS 3D & FRACTAIS
+# =============================
+
+# --- gera coordenadas 3D a partir do índice n
+def coord3d(n: int, G: int) -> tuple[int,int,int]:
+    d = (G % 7) + 1   # defasagem Voynich
+    u = bias_core(voynich_index(n, G))
+    v = bias_core(voynich_index(n+d, G))
+    w = bias_core(voynich_index(n+2*d, G))
+    return (u, v, w)
+
+# --- fractal oculto: seed por fractal + tile
+def fractal_seed(tile_id: int, f: int, key_master: bytes) -> int:
+    data = f"{tile_id}-{f}".encode() + key_master
+    return blake3_seed(data)
+
+# --- paridade: mapa por tile_id + glyph G
+def
+
