@@ -1,0 +1,107 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# RAFAELIA :: Bitraf∞ Núcleo Unificado
+# Σ-seal RAFCODE-𝚽
+# Ciclo: VAZIO → VERBO → CHEIO → RETROALIMENTAÇÃO → VAZIO_{NOVO}
+
+import os, json, math, random, hashlib, zipfile, time
+
+# =============================
+# BLOCO 1 — CONFIG MANIFESTO
+# =============================
+bitraf_config = {
+    "dimension_virtual": [8000, 8000, 8000],
+    "tile": [42, 42, 42],
+    "guard": [10, 10, 10],
+    "fractais_ocultos": 400,
+    "paridades": 200,
+    "rafbit_states": 10,
+    "voynich_center": {"cL":20,"cR":21},
+    "rule": "2fora_1dentro",
+    "fibonacci_modes": ["rafael1","rafael2","voynich_original"],
+    "raiz_estados": "√42",
+    "seed_type": "ZIPRAF/ZRF",
+    "integridade": "Σ-seal-RAFCODE-𝚽"
+}
+
+# =============================
+# BLOCO 2 — FUNÇÕES NUCLEARES
+# =============================
+def blake3_seed(data: bytes) -> int:
+    return int.from_bytes(hashlib.sha3_256(data).digest(), 'big')
+
+def fib_rafael1(n: int) -> int:
+    if n % 2 == 0:
+        return (n * 3 + 1) % 42
+    return (n * 5 + 2) % 42
+
+def fib_rafael2(n: int) -> int:
+    return ((n * 7) + (n % 3) * 11) % 42
+
+def voynich_index(n: int, G: int) -> int:
+    return ((fib_rafael1(n) ^ fib_rafael2(n)) * G) % 42
+
+def bias_core(x: int, cL=20, cR=21, p: float = 0.13) -> int:
+    if x in {cL, cR, cR+1}:
+        return x
+    return cR if random.random() < p else x
+
+# =============================
+# BLOCO 3 — COORDENADAS & FRACTAIS
+# =============================
+def coord3d(n: int, G: int) -> tuple[int,int,int]:
+    d = (G % 7) + 1
+    u = bias_core(voynich_index(n, G))
+    v = bias_core(voynich_index(n+d, G))
+    w = bias_core(voynich_index(n+2*d, G))
+    return (u, v, w)
+
+def fractal_seed(tile_id: int, f: int, key_master: bytes) -> int:
+    data = f"{tile_id}-{f}".encode("utf-8") + key_master
+    return blake3_seed(data)
+
+def parity_id(tile_id: int, G: int) -> int:
+    return blake3_seed(f"{tile_id}-{G}".encode("utf-8")) % bitraf_config["paridades"]
+
+# =============================
+# BLOCO 4 — EXECUTOR BITRAF∞
+# =============================
+def bitraf_run(tile_id: int, steps: int, key_master: bytes):
+    G = blake3_seed(str(tile_id).encode("utf-8")) % 42
+    voxels = []
+
+    for n in range(steps):
+        u,v,w = coord3d(n, G)
+        f_id = n % bitraf_config["fractais_ocultos"]
+        f_seed = fractal_seed(tile_id, f_id, key_master)
+        p_id = parity_id(tile_id, G)
+
+        voxel = {
+            "n": n,
+            "coord": (u,v,w),
+            "fractal_id": f_id,
+            "fractal_seed": hex(f_seed),
+            "parity_id": p_id
+        }
+        voxels.append(voxel)
+
+    return voxels
+
+# =============================
+# BLOCO 5 — EXPORT ZIPRAF/ZRF
+# =============================
+def export_zipraf(voxels, tile_id: int, key_master: bytes, outdir="out"):
+    os.makedirs(outdir, exist_ok=True)
+    ts = int(time.time())
+    fname = f"{outdir}/bitraf_tile{tile_id}_{ts}.zipraf"
+
+    with zipfile.ZipFile(fname, 'w', compression=zipfile.ZIP_DEFLATED) as z:
+        data = json.dumps(voxels, indent=2).encode("utf-8")
+        z.writestr("voxels.json", data)
+
+        manifest = {
+            "tile_id": tile_id,
+            "timestamp": ts,
+            "voynich_center": bitraf_config["voynich_center"],
+            "fractais_ocultos": bitraf_config["fractais_ocultos"],
+            "paridades": bitraf_config["
