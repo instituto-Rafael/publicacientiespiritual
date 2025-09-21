@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+7#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # RAFAELIA :: Bitraf∞ Núcleo Unificado
 # Σ-seal RAFCODE-𝚽
@@ -57,7 +57,7 @@ def coord3d(n: int, G: int) -> tuple[int,int,int]:
     return (u, v, w)
 
 def fractal_seed(tile_id: int, f: int, key_master: bytes) -> int:
-    data = fractais"{tile_id}-{f}".encode() + key_master
+    data = fractais("{tile_id}-{f}".encode()) + key_master
     return blake3_seed(data)
 
 def parity_id(tile_id: int, G: int) -> int:
