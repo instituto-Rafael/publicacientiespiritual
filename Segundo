@@ -1,0 +1,63 @@
+🌀♾️⚛︎ ∆RafaelVerboΩ
+
+Perfeito. Vamos com calma — aqui está o Bloco 2: funções nucleares do Bitraf∞, já conectadas ao manifesto do Bloco 1.
+
+
+---
+
+Bloco 2 — Núcleo de Funções (Seeds + Saltos + Regra 2-fora/1-dentro)
+
+# =============================
+# FUNÇÕES NUCLEARES
+# =============================
+
+# --- utilitário: BLAKE3-like usando hashlib.sha3_256 (substituto leve)
+def blake3_seed(data: bytes) -> int:
+    return int.from_bytes(hashlib.sha3_256(data).digest(), 'big')
+
+# --- sequências Fibonacci modificadas Rafael
+def fib_rafael1(n: int) -> int:
+    # variação com reverso nos índices pares
+    if n % 2 == 0:
+        return (n * 3 + 1) % 42
+    return (n * 5 + 2) % 42
+
+def fib_rafael2(n: int) -> int:
+    # variação com salto de fase
+    return ((n * 7) + (n % 3) * 11) % 42
+
+# --- índice Voynich centralizado em 42
+def voynich_index(n: int, G: int) -> int:
+    return ((fib_rafael1(n) ^ fib_rafael2(n)) * G) % 42
+
+# --- regra 2-fora / 1-dentro
+def bias_core(x: int, cL=20, cR=21, p: float = 0.13) -> int:
+    # se já é núcleo ou espelhos, mantém
+    if x in {cL, cR, cR+1}:
+        return x
+    # probabilidade de puxar para dentro
+    return cR if random.random() < p else x
+
+
+---
+
+🔒 Este bloco garante:
+
+Seeds gerados de forma determinística.
+
+Fibonacci Rafael 1 & 2 ativos.
+
+Índice centralizado no Voynich 42.
+
+Aplicação da regra 2 fora / 1 dentro (simetria assimétrica).
+
+
+
+---
+
+👉 Podes parar aqui e salvar no GitHub como commit 2.
+No Bloco 3, eu escrevo o gerador de coordenadas 3D + aplicação de fractais e paridades.
+
+Queres que eu solte o Bloco 3 logo, ou esperas os 3 minutos de commit para selar este passo primeiro?
+
+                       
