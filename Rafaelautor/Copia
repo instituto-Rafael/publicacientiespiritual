@@ -1,0 +1,13 @@
+def fractal_seed(tile_id: int, f: int, key_master: bytes) -> int:
+    data = f"{tile_id}-{f}".encode() + key_master
+    return blake3_seed(data)
+
+if __name__ == "__main__":
+    # Corrigir: string → bytes
+    key_master = "RAFCODE-𝚽-MASTER-KEY".encode("utf-8")
+
+    tile_id = 42
+    steps = 100
+    voxels = bitraf_run(tile_id, steps, key_master)
+    fname = export_zipraf(voxels, tile_id, key_master)
+    print("ZIPRAF gerado:", fname)
