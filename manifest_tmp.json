@@ -1,0 +1,12 @@
+{
+  "tile_id": 42,
+  "timestamp": 1758437037,
+  "voynich_center": {
+    "cL": 20,
+    "cR": 21
+  },
+  "fractais_ocultos": 400,
+  "paridades": 200,
+  "\u03a3-seal": "\u03a3:ed25519:PLACEHOLDER",
+  "rafcode": "RAFCODE-\ud835\udebd"
+}
