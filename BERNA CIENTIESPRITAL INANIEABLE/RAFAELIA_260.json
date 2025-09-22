@@ -1,0 +1,1822 @@
+[
+  {
+    "N": 1,
+    "Selo": "Imix",
+    "Tom": 1,
+    "Fib_mod": 1,
+    "Voynich": "ᚠ"
+  },
+  {
+    "N": 2,
+    "Selo": "Ik",
+    "Tom": 1,
+    "Fib_mod": 2,
+    "Voynich": "ᚡ"
+  },
+  {
+    "N": 3,
+    "Selo": "Akbal",
+    "Tom": 1,
+    "Fib_mod": 2,
+    "Voynich": "ᚢ"
+  },
+  {
+    "N": 4,
+    "Selo": "Kan",
+    "Tom": 1,
+    "Fib_mod": 3,
+    "Voynich": "ᚣ"
+  },
+  {
+    "N": 5,
+    "Selo": "Chicchan",
+    "Tom": 1,
+    "Fib_mod": 4,
+    "Voynich": "ᚤ"
+  },
+  {
+    "N": 6,
+    "Selo": "Cimi",
+    "Tom": 1,
+    "Fib_mod": 6,
+    "Voynich": "ᚥ"
+  },
+  {
+    "N": 7,
+    "Selo": "Manik",
+    "Tom": 1,
+    "Fib_mod": 9,
+    "Voynich": "ᚦ"
+  },
+  {
+    "N": 8,
+    "Selo": "Lamat",
+    "Tom": 1,
+    "Fib_mod": 5,
+    "Voynich": "ᚧ"
+  },
+  {
+    "N": 9,
+    "Selo": "Muluc",
+    "Tom": 1,
+    "Fib_mod": 4,
+    "Voynich": "ᚨ"
+  },
+  {
+    "N": 10,
+    "Selo": "Oc",
+    "Tom": 1,
+    "Fib_mod": 8,
+    "Voynich": "ᚩ"
+  },
+  {
+    "N": 11,
+    "Selo": "Chuen",
+    "Tom": 1,
+    "Fib_mod": 2,
+    "Voynich": "ᚪ"
+  },
+  {
+    "N": 12,
+    "Selo": "Eb",
+    "Tom": 1,
+    "Fib_mod": 9,
+    "Voynich": "ᚫ"
+  },
+  {
+    "N": 13,
+    "Selo": "Ben",
+    "Tom": 1,
+    "Fib_mod": 1,
+    "Voynich": "ᚬ"
+  },
+  {
+    "N": 14,
+    "Selo": "Ix",
+    "Tom": 1,
+    "Fib_mod": 9,
+    "Voynich": "ᚭ"
+  },
+  {
+    "N": 15,
+    "Selo": "Men",
+    "Tom": 1,
+    "Fib_mod": 9,
+    "Voynich": "ᚮ"
+  },
+  {
+    "N": 16,
+    "Selo": "Cib",
+    "Tom": 1,
+    "Fib_mod": 8,
+    "Voynich": "ᚯ"
+  },
+  {
+    "N": 17,
+    "Selo": "Caban",
+    "Tom": 1,
+    "Fib_mod": 7,
+    "Voynich": "ᚰ"
+  },
+  {
+    "N": 18,
+    "Selo": "Etznab",
+    "Tom": 1,
+    "Fib_mod": 5,
+    "Voynich": "ᚱ"
+  },
+  {
+    "N": 19,
+    "Selo": "Cauac",
+    "Tom": 1,
+    "Fib_mod": 2,
+    "Voynich": "ᚲ"
+  },
+  {
+    "N": 20,
+    "Selo": "Ahau",
+    "Tom": 1,
+    "Fib_mod": 6,
+    "Voynich": "ᚳ"
+  },
+  {
+    "N": 21,
+    "Selo": "Imix",
+    "Tom": 2,
+    "Fib_mod": 7,
+    "Voynich": "ᚴ"
+  },
+  {
+    "N": 22,
+    "Selo": "Ik",
+    "Tom": 2,
+    "Fib_mod": 3,
+    "Voynich": "ᚵ"
+  },
+  {
+    "N": 23,
+    "Selo": "Akbal",
+    "Tom": 2,
+    "Fib_mod": 9,
+    "Voynich": "ᚶ"
+  },
+  {
+    "N": 24,
+    "Selo": "Kan",
+    "Tom": 2,
+    "Fib_mod": 2,
+    "Voynich": "ᚷ"
+  },
+  {
+    "N": 25,
+    "Selo": "Chicchan",
+    "Tom": 2,
+    "Fib_mod": 1,
+    "Voynich": "ᚸ"
+  },
+  {
+    "N": 26,
+    "Selo": "Cimi",
+    "Tom": 2,
+    "Fib_mod": 2,
+    "Voynich": "ᚹ"
+  },
+  {
+    "N": 27,
+    "Selo": "Manik",
+    "Tom": 2,
+    "Fib_mod": 2,
+    "Voynich": "ᚺ"
+  },
+  {
+    "N": 28,
+    "Selo": "Lamat",
+    "Tom": 2,
+    "Fib_mod": 3,
+    "Voynich": "ᚻ"
+  },
+  {
+    "N": 29,
+    "Selo": "Muluc",
+    "Tom": 2,
+    "Fib_mod": 4,
+    "Voynich": "ᚼ"
+  },
+  {
+    "N": 30,
+    "Selo": "Oc",
+    "Tom": 2,
+    "Fib_mod": 6,
+    "Voynich": "ᚽ"
+  },
+  {
+    "N": 31,
+    "Selo": "Chuen",
+    "Tom": 2,
+    "Fib_mod": 9,
+    "Voynich": "ᚾ"
+  },
+  {
+    "N": 32,
+    "Selo": "Eb",
+    "Tom": 2,
+    "Fib_mod": 5,
+    "Voynich": "ᚿ"
+  },
+  {
+    "N": 33,
+    "Selo": "Ben",
+    "Tom": 2,
+    "Fib_mod": 4,
+    "Voynich": "ᛀ"
+  },
+  {
+    "N": 34,
+    "Selo": "Ix",
+    "Tom": 2,
+    "Fib_mod": 8,
+    "Voynich": "ᛁ"
+  },
+  {
+    "N": 35,
+    "Selo": "Men",
+    "Tom": 2,
+    "Fib_mod": 2,
+    "Voynich": "ᛂ"
+  },
+  {
+    "N": 36,
+    "Selo": "Cib",
+    "Tom": 2,
+    "Fib_mod": 9,
+    "Voynich": "ᛃ"
+  },
+  {
+    "N": 37,
+    "Selo": "Caban",
+    "Tom": 2,
+    "Fib_mod": 1,
+    "Voynich": "ᛄ"
+  },
+  {
+    "N": 38,
+    "Selo": "Etznab",
+    "Tom": 2,
+    "Fib_mod": 9,
+    "Voynich": "ᛅ"
+  },
+  {
+    "N": 39,
+    "Selo": "Cauac",
+    "Tom": 2,
+    "Fib_mod": 9,
+    "Voynich": "ᛆ"
+  },
+  {
+    "N": 40,
+    "Selo": "Ahau",
+    "Tom": 2,
+    "Fib_mod": 8,
+    "Voynich": "ᛇ"
+  },
+  {
+    "N": 41,
+    "Selo": "Imix",
+    "Tom": 3,
+    "Fib_mod": 7,
+    "Voynich": "ᛈ"
+  },
+  {
+    "N": 42,
+    "Selo": "Ik",
+    "Tom": 3,
+    "Fib_mod": 5,
+    "Voynich": "ᛉ"
+  },
+  {
+    "N": 43,
+    "Selo": "Akbal",
+    "Tom": 3,
+    "Fib_mod": 2,
+    "Voynich": "ᛊ"
+  },
+  {
+    "N": 44,
+    "Selo": "Kan",
+    "Tom": 3,
+    "Fib_mod": 6,
+    "Voynich": "ᛋ"
+  },
+  {
+    "N": 45,
+    "Selo": "Chicchan",
+    "Tom": 3,
+    "Fib_mod": 7,
+    "Voynich": "ᛌ"
+  },
+  {
+    "N": 46,
+    "Selo": "Cimi",
+    "Tom": 3,
+    "Fib_mod": 3,
+    "Voynich": "ᛍ"
+  },
+  {
+    "N": 47,
+    "Selo": "Manik",
+    "Tom": 3,
+    "Fib_mod": 9,
+    "Voynich": "ᛎ"
+  },
+  {
+    "N": 48,
+    "Selo": "Lamat",
+    "Tom": 3,
+    "Fib_mod": 2,
+    "Voynich": "ᛏ"
+  },
+  {
+    "N": 49,
+    "Selo": "Muluc",
+    "Tom": 3,
+    "Fib_mod": 1,
+    "Voynich": "ᛐ"
+  },
+  {
+    "N": 50,
+    "Selo": "Oc",
+    "Tom": 3,
+    "Fib_mod": 2,
+    "Voynich": "ᛑ"
+  },
+  {
+    "N": 51,
+    "Selo": "Chuen",
+    "Tom": 3,
+    "Fib_mod": 2,
+    "Voynich": "ᛒ"
+  },
+  {
+    "N": 52,
+    "Selo": "Eb",
+    "Tom": 3,
+    "Fib_mod": 3,
+    "Voynich": "ᛓ"
+  },
+  {
+    "N": 53,
+    "Selo": "Ben",
+    "Tom": 3,
+    "Fib_mod": 4,
+    "Voynich": "ᛔ"
+  },
+  {
+    "N": 54,
+    "Selo": "Ix",
+    "Tom": 3,
+    "Fib_mod": 6,
+    "Voynich": "ᛕ"
+  },
+  {
+    "N": 55,
+    "Selo": "Men",
+    "Tom": 3,
+    "Fib_mod": 9,
+    "Voynich": "ᛖ"
+  },
+  {
+    "N": 56,
+    "Selo": "Cib",
+    "Tom": 3,
+    "Fib_mod": 5,
+    "Voynich": "ᛗ"
+  },
+  {
+    "N": 57,
+    "Selo": "Caban",
+    "Tom": 3,
+    "Fib_mod": 4,
+    "Voynich": "ᛘ"
+  },
+  {
+    "N": 58,
+    "Selo": "Etznab",
+    "Tom": 3,
+    "Fib_mod": 8,
+    "Voynich": "ᛙ"
+  },
+  {
+    "N": 59,
+    "Selo": "Cauac",
+    "Tom": 3,
+    "Fib_mod": 2,
+    "Voynich": "ᛚ"
+  },
+  {
+    "N": 60,
+    "Selo": "Ahau",
+    "Tom": 3,
+    "Fib_mod": 9,
+    "Voynich": "ᛛ"
+  },
+  {
+    "N": 61,
+    "Selo": "Imix",
+    "Tom": 4,
+    "Fib_mod": 1,
+    "Voynich": "ᛜ"
+  },
+  {
+    "N": 62,
+    "Selo": "Ik",
+    "Tom": 4,
+    "Fib_mod": 9,
+    "Voynich": "ᛝ"
+  },
+  {
+    "N": 63,
+    "Selo": "Akbal",
+    "Tom": 4,
+    "Fib_mod": 9,
+    "Voynich": "ᛞ"
+  },
+  {
+    "N": 64,
+    "Selo": "Kan",
+    "Tom": 4,
+    "Fib_mod": 8,
+    "Voynich": "ᛟ"
+  },
+  {
+    "N": 65,
+    "Selo": "Chicchan",
+    "Tom": 4,
+    "Fib_mod": 7,
+    "Voynich": "ᛠ"
+  },
+  {
+    "N": 66,
+    "Selo": "Cimi",
+    "Tom": 4,
+    "Fib_mod": 5,
+    "Voynich": "ᛡ"
+  },
+  {
+    "N": 67,
+    "Selo": "Manik",
+    "Tom": 4,
+    "Fib_mod": 2,
+    "Voynich": "ᛢ"
+  },
+  {
+    "N": 68,
+    "Selo": "Lamat",
+    "Tom": 4,
+    "Fib_mod": 6,
+    "Voynich": "ᛣ"
+  },
+  {
+    "N": 69,
+    "Selo": "Muluc",
+    "Tom": 4,
+    "Fib_mod": 7,
+    "Voynich": "ᛤ"
+  },
+  {
+    "N": 70,
+    "Selo": "Oc",
+    "Tom": 4,
+    "Fib_mod": 3,
+    "Voynich": "ᛥ"
+  },
+  {
+    "N": 71,
+    "Selo": "Chuen",
+    "Tom": 4,
+    "Fib_mod": 9,
+    "Voynich": "ᛦ"
+  },
+  {
+    "N": 72,
+    "Selo": "Eb",
+    "Tom": 4,
+    "Fib_mod": 2,
+    "Voynich": "ᛧ"
+  },
+  {
+    "N": 73,
+    "Selo": "Ben",
+    "Tom": 4,
+    "Fib_mod": 1,
+    "Voynich": "ᛨ"
+  },
+  {
+    "N": 74,
+    "Selo": "Ix",
+    "Tom": 4,
+    "Fib_mod": 2,
+    "Voynich": "ᛩ"
+  },
+  {
+    "N": 75,
+    "Selo": "Men",
+    "Tom": 4,
+    "Fib_mod": 2,
+    "Voynich": "ᛪ"
+  },
+  {
+    "N": 76,
+    "Selo": "Cib",
+    "Tom": 4,
+    "Fib_mod": 3,
+    "Voynich": "᛫"
+  },
+  {
+    "N": 77,
+    "Selo": "Caban",
+    "Tom": 4,
+    "Fib_mod": 4,
+    "Voynich": "᛬"
+  },
+  {
+    "N": 78,
+    "Selo": "Etznab",
+    "Tom": 4,
+    "Fib_mod": 6,
+    "Voynich": "᛭"
+  },
+  {
+    "N": 79,
+    "Selo": "Cauac",
+    "Tom": 4,
+    "Fib_mod": 9,
+    "Voynich": "ᛮ"
+  },
+  {
+    "N": 80,
+    "Selo": "Ahau",
+    "Tom": 4,
+    "Fib_mod": 5,
+    "Voynich": "ᛯ"
+  },
+  {
+    "N": 81,
+    "Selo": "Imix",
+    "Tom": 5,
+    "Fib_mod": 4,
+    "Voynich": "ᛰ"
+  },
+  {
+    "N": 82,
+    "Selo": "Ik",
+    "Tom": 5,
+    "Fib_mod": 8,
+    "Voynich": "ᛱ"
+  },
+  {
+    "N": 83,
+    "Selo": "Akbal",
+    "Tom": 5,
+    "Fib_mod": 2,
+    "Voynich": "ᛲ"
+  },
+  {
+    "N": 84,
+    "Selo": "Kan",
+    "Tom": 5,
+    "Fib_mod": 9,
+    "Voynich": "ᛳ"
+  },
+  {
+    "N": 85,
+    "Selo": "Chicchan",
+    "Tom": 5,
+    "Fib_mod": 1,
+    "Voynich": "ᛴ"
+  },
+  {
+    "N": 86,
+    "Selo": "Cimi",
+    "Tom": 5,
+    "Fib_mod": 9,
+    "Voynich": "ᛵ"
+  },
+  {
+    "N": 87,
+    "Selo": "Manik",
+    "Tom": 5,
+    "Fib_mod": 9,
+    "Voynich": "ᛶ"
+  },
+  {
+    "N": 88,
+    "Selo": "Lamat",
+    "Tom": 5,
+    "Fib_mod": 8,
+    "Voynich": "ᛷ"
+  },
+  {
+    "N": 89,
+    "Selo": "Muluc",
+    "Tom": 5,
+    "Fib_mod": 7,
+    "Voynich": "ᛸ"
+  },
+  {
+    "N": 90,
+    "Selo": "Oc",
+    "Tom": 5,
+    "Fib_mod": 5,
+    "Voynich": "᛹"
+  },
+  {
+    "N": 91,
+    "Selo": "Chuen",
+    "Tom": 5,
+    "Fib_mod": 2,
+    "Voynich": "᛺"
+  },
+  {
+    "N": 92,
+    "Selo": "Eb",
+    "Tom": 5,
+    "Fib_mod": 6,
+    "Voynich": "᛻"
+  },
+  {
+    "N": 93,
+    "Selo": "Ben",
+    "Tom": 5,
+    "Fib_mod": 7,
+    "Voynich": "᛼"
+  },
+  {
+    "N": 94,
+    "Selo": "Ix",
+    "Tom": 5,
+    "Fib_mod": 3,
+    "Voynich": "᛽"
+  },
+  {
+    "N": 95,
+    "Selo": "Men",
+    "Tom": 5,
+    "Fib_mod": 9,
+    "Voynich": "᛾"
+  },
+  {
+    "N": 96,
+    "Selo": "Cib",
+    "Tom": 5,
+    "Fib_mod": 2,
+    "Voynich": "᛿"
+  },
+  {
+    "N": 97,
+    "Selo": "Caban",
+    "Tom": 5,
+    "Fib_mod": 1,
+    "Voynich": "ᜀ"
+  },
+  {
+    "N": 98,
+    "Selo": "Etznab",
+    "Tom": 5,
+    "Fib_mod": 2,
+    "Voynich": "ᜁ"
+  },
+  {
+    "N": 99,
+    "Selo": "Cauac",
+    "Tom": 5,
+    "Fib_mod": 2,
+    "Voynich": "ᜂ"
+  },
+  {
+    "N": 100,
+    "Selo": "Ahau",
+    "Tom": 5,
+    "Fib_mod": 3,
+    "Voynich": "ᜃ"
+  },
+  {
+    "N": 101,
+    "Selo": "Imix",
+    "Tom": 6,
+    "Fib_mod": 4,
+    "Voynich": "ᜄ"
+  },
+  {
+    "N": 102,
+    "Selo": "Ik",
+    "Tom": 6,
+    "Fib_mod": 6,
+    "Voynich": "ᜅ"
+  },
+  {
+    "N": 103,
+    "Selo": "Akbal",
+    "Tom": 6,
+    "Fib_mod": 9,
+    "Voynich": "ᜆ"
+  },
+  {
+    "N": 104,
+    "Selo": "Kan",
+    "Tom": 6,
+    "Fib_mod": 5,
+    "Voynich": "ᜇ"
+  },
+  {
+    "N": 105,
+    "Selo": "Chicchan",
+    "Tom": 6,
+    "Fib_mod": 4,
+    "Voynich": "ᜈ"
+  },
+  {
+    "N": 106,
+    "Selo": "Cimi",
+    "Tom": 6,
+    "Fib_mod": 8,
+    "Voynich": "ᜉ"
+  },
+  {
+    "N": 107,
+    "Selo": "Manik",
+    "Tom": 6,
+    "Fib_mod": 2,
+    "Voynich": "ᜊ"
+  },
+  {
+    "N": 108,
+    "Selo": "Lamat",
+    "Tom": 6,
+    "Fib_mod": 9,
+    "Voynich": "ᜋ"
+  },
+  {
+    "N": 109,
+    "Selo": "Muluc",
+    "Tom": 6,
+    "Fib_mod": 1,
+    "Voynich": "ᜌ"
+  },
+  {
+    "N": 110,
+    "Selo": "Oc",
+    "Tom": 6,
+    "Fib_mod": 9,
+    "Voynich": "ᜍ"
+  },
+  {
+    "N": 111,
+    "Selo": "Chuen",
+    "Tom": 6,
+    "Fib_mod": 9,
+    "Voynich": "ᜎ"
+  },
+  {
+    "N": 112,
+    "Selo": "Eb",
+    "Tom": 6,
+    "Fib_mod": 8,
+    "Voynich": "ᜏ"
+  },
+  {
+    "N": 113,
+    "Selo": "Ben",
+    "Tom": 6,
+    "Fib_mod": 7,
+    "Voynich": "ᜐ"
+  },
+  {
+    "N": 114,
+    "Selo": "Ix",
+    "Tom": 6,
+    "Fib_mod": 5,
+    "Voynich": "ᜑ"
+  },
+  {
+    "N": 115,
+    "Selo": "Men",
+    "Tom": 6,
+    "Fib_mod": 2,
+    "Voynich": "ᜒ"
+  },
+  {
+    "N": 116,
+    "Selo": "Cib",
+    "Tom": 6,
+    "Fib_mod": 6,
+    "Voynich": "ᜓ"
+  },
+  {
+    "N": 117,
+    "Selo": "Caban",
+    "Tom": 6,
+    "Fib_mod": 7,
+    "Voynich": "᜔"
+  },
+  {
+    "N": 118,
+    "Selo": "Etznab",
+    "Tom": 6,
+    "Fib_mod": 3,
+    "Voynich": "᜕"
+  },
+  {
+    "N": 119,
+    "Selo": "Cauac",
+    "Tom": 6,
+    "Fib_mod": 9,
+    "Voynich": "᜖"
+  },
+  {
+    "N": 120,
+    "Selo": "Ahau",
+    "Tom": 6,
+    "Fib_mod": 2,
+    "Voynich": "᜗"
+  },
+  {
+    "N": 121,
+    "Selo": "Imix",
+    "Tom": 7,
+    "Fib_mod": 1,
+    "Voynich": "᜘"
+  },
+  {
+    "N": 122,
+    "Selo": "Ik",
+    "Tom": 7,
+    "Fib_mod": 2,
+    "Voynich": "᜙"
+  },
+  {
+    "N": 123,
+    "Selo": "Akbal",
+    "Tom": 7,
+    "Fib_mod": 2,
+    "Voynich": "᜚"
+  },
+  {
+    "N": 124,
+    "Selo": "Kan",
+    "Tom": 7,
+    "Fib_mod": 3,
+    "Voynich": "᜛"
+  },
+  {
+    "N": 125,
+    "Selo": "Chicchan",
+    "Tom": 7,
+    "Fib_mod": 4,
+    "Voynich": "᜜"
+  },
+  {
+    "N": 126,
+    "Selo": "Cimi",
+    "Tom": 7,
+    "Fib_mod": 6,
+    "Voynich": "᜝"
+  },
+  {
+    "N": 127,
+    "Selo": "Manik",
+    "Tom": 7,
+    "Fib_mod": 9,
+    "Voynich": "᜞"
+  },
+  {
+    "N": 128,
+    "Selo": "Lamat",
+    "Tom": 7,
+    "Fib_mod": 5,
+    "Voynich": "ᜟ"
+  },
+  {
+    "N": 129,
+    "Selo": "Muluc",
+    "Tom": 7,
+    "Fib_mod": 4,
+    "Voynich": "ᜠ"
+  },
+  {
+    "N": 130,
+    "Selo": "Oc",
+    "Tom": 7,
+    "Fib_mod": 8,
+    "Voynich": "ᜡ"
+  },
+  {
+    "N": 131,
+    "Selo": "Chuen",
+    "Tom": 7,
+    "Fib_mod": 2,
+    "Voynich": "ᜢ"
+  },
+  {
+    "N": 132,
+    "Selo": "Eb",
+    "Tom": 7,
+    "Fib_mod": 9,
+    "Voynich": "ᜣ"
+  },
+  {
+    "N": 133,
+    "Selo": "Ben",
+    "Tom": 7,
+    "Fib_mod": 1,
+    "Voynich": "ᜤ"
+  },
+  {
+    "N": 134,
+    "Selo": "Ix",
+    "Tom": 7,
+    "Fib_mod": 9,
+    "Voynich": "ᜥ"
+  },
+  {
+    "N": 135,
+    "Selo": "Men",
+    "Tom": 7,
+    "Fib_mod": 9,
+    "Voynich": "ᜦ"
+  },
+  {
+    "N": 136,
+    "Selo": "Cib",
+    "Tom": 7,
+    "Fib_mod": 8,
+    "Voynich": "ᜧ"
+  },
+  {
+    "N": 137,
+    "Selo": "Caban",
+    "Tom": 7,
+    "Fib_mod": 7,
+    "Voynich": "ᜨ"
+  },
+  {
+    "N": 138,
+    "Selo": "Etznab",
+    "Tom": 7,
+    "Fib_mod": 5,
+    "Voynich": "ᜩ"
+  },
+  {
+    "N": 139,
+    "Selo": "Cauac",
+    "Tom": 7,
+    "Fib_mod": 2,
+    "Voynich": "ᜪ"
+  },
+  {
+    "N": 140,
+    "Selo": "Ahau",
+    "Tom": 7,
+    "Fib_mod": 6,
+    "Voynich": "ᜫ"
+  },
+  {
+    "N": 141,
+    "Selo": "Imix",
+    "Tom": 8,
+    "Fib_mod": 7,
+    "Voynich": "ᜬ"
+  },
+  {
+    "N": 142,
+    "Selo": "Ik",
+    "Tom": 8,
+    "Fib_mod": 3,
+    "Voynich": "ᜭ"
+  },
+  {
+    "N": 143,
+    "Selo": "Akbal",
+    "Tom": 8,
+    "Fib_mod": 9,
+    "Voynich": "ᜮ"
+  },
+  {
+    "N": 144,
+    "Selo": "Kan",
+    "Tom": 8,
+    "Fib_mod": 2,
+    "Voynich": "ᜯ"
+  },
+  {
+    "N": 145,
+    "Selo": "Chicchan",
+    "Tom": 8,
+    "Fib_mod": 1,
+    "Voynich": "ᜰ"
+  },
+  {
+    "N": 146,
+    "Selo": "Cimi",
+    "Tom": 8,
+    "Fib_mod": 2,
+    "Voynich": "ᜱ"
+  },
+  {
+    "N": 147,
+    "Selo": "Manik",
+    "Tom": 8,
+    "Fib_mod": 2,
+    "Voynich": "ᜲ"
+  },
+  {
+    "N": 148,
+    "Selo": "Lamat",
+    "Tom": 8,
+    "Fib_mod": 3,
+    "Voynich": "ᜳ"
+  },
+  {
+    "N": 149,
+    "Selo": "Muluc",
+    "Tom": 8,
+    "Fib_mod": 4,
+    "Voynich": "᜴"
+  },
+  {
+    "N": 150,
+    "Selo": "Oc",
+    "Tom": 8,
+    "Fib_mod": 6,
+    "Voynich": "᜵"
+  },
+  {
+    "N": 151,
+    "Selo": "Chuen",
+    "Tom": 8,
+    "Fib_mod": 9,
+    "Voynich": "᜶"
+  },
+  {
+    "N": 152,
+    "Selo": "Eb",
+    "Tom": 8,
+    "Fib_mod": 5,
+    "Voynich": "᜷"
+  },
+  {
+    "N": 153,
+    "Selo": "Ben",
+    "Tom": 8,
+    "Fib_mod": 4,
+    "Voynich": "᜸"
+  },
+  {
+    "N": 154,
+    "Selo": "Ix",
+    "Tom": 8,
+    "Fib_mod": 8,
+    "Voynich": "᜹"
+  },
+  {
+    "N": 155,
+    "Selo": "Men",
+    "Tom": 8,
+    "Fib_mod": 2,
+    "Voynich": "᜺"
+  },
+  {
+    "N": 156,
+    "Selo": "Cib",
+    "Tom": 8,
+    "Fib_mod": 9,
+    "Voynich": "᜻"
+  },
+  {
+    "N": 157,
+    "Selo": "Caban",
+    "Tom": 8,
+    "Fib_mod": 1,
+    "Voynich": "᜼"
+  },
+  {
+    "N": 158,
+    "Selo": "Etznab",
+    "Tom": 8,
+    "Fib_mod": 9,
+    "Voynich": "᜽"
+  },
+  {
+    "N": 159,
+    "Selo": "Cauac",
+    "Tom": 8,
+    "Fib_mod": 9,
+    "Voynich": "᜾"
+  },
+  {
+    "N": 160,
+    "Selo": "Ahau",
+    "Tom": 8,
+    "Fib_mod": 8,
+    "Voynich": "᜿"
+  },
+  {
+    "N": 161,
+    "Selo": "Imix",
+    "Tom": 9,
+    "Fib_mod": 7,
+    "Voynich": "ᝀ"
+  },
+  {
+    "N": 162,
+    "Selo": "Ik",
+    "Tom": 9,
+    "Fib_mod": 5,
+    "Voynich": "ᝁ"
+  },
+  {
+    "N": 163,
+    "Selo": "Akbal",
+    "Tom": 9,
+    "Fib_mod": 2,
+    "Voynich": "ᝂ"
+  },
+  {
+    "N": 164,
+    "Selo": "Kan",
+    "Tom": 9,
+    "Fib_mod": 6,
+    "Voynich": "ᝃ"
+  },
+  {
+    "N": 165,
+    "Selo": "Chicchan",
+    "Tom": 9,
+    "Fib_mod": 7,
+    "Voynich": "ᝄ"
+  },
+  {
+    "N": 166,
+    "Selo": "Cimi",
+    "Tom": 9,
+    "Fib_mod": 3,
+    "Voynich": "ᝅ"
+  },
+  {
+    "N": 167,
+    "Selo": "Manik",
+    "Tom": 9,
+    "Fib_mod": 9,
+    "Voynich": "ᝆ"
+  },
+  {
+    "N": 168,
+    "Selo": "Lamat",
+    "Tom": 9,
+    "Fib_mod": 2,
+    "Voynich": "ᝇ"
+  },
+  {
+    "N": 169,
+    "Selo": "Muluc",
+    "Tom": 9,
+    "Fib_mod": 1,
+    "Voynich": "ᝈ"
+  },
+  {
+    "N": 170,
+    "Selo": "Oc",
+    "Tom": 9,
+    "Fib_mod": 2,
+    "Voynich": "ᝉ"
+  },
+  {
+    "N": 171,
+    "Selo": "Chuen",
+    "Tom": 9,
+    "Fib_mod": 2,
+    "Voynich": "ᝊ"
+  },
+  {
+    "N": 172,
+    "Selo": "Eb",
+    "Tom": 9,
+    "Fib_mod": 3,
+    "Voynich": "ᝋ"
+  },
+  {
+    "N": 173,
+    "Selo": "Ben",
+    "Tom": 9,
+    "Fib_mod": 4,
+    "Voynich": "ᝌ"
+  },
+  {
+    "N": 174,
+    "Selo": "Ix",
+    "Tom": 9,
+    "Fib_mod": 6,
+    "Voynich": "ᝍ"
+  },
+  {
+    "N": 175,
+    "Selo": "Men",
+    "Tom": 9,
+    "Fib_mod": 9,
+    "Voynich": "ᝎ"
+  },
+  {
+    "N": 176,
+    "Selo": "Cib",
+    "Tom": 9,
+    "Fib_mod": 5,
+    "Voynich": "ᝏ"
+  },
+  {
+    "N": 177,
+    "Selo": "Caban",
+    "Tom": 9,
+    "Fib_mod": 4,
+    "Voynich": "ᝐ"
+  },
+  {
+    "N": 178,
+    "Selo": "Etznab",
+    "Tom": 9,
+    "Fib_mod": 8,
+    "Voynich": "ᝑ"
+  },
+  {
+    "N": 179,
+    "Selo": "Cauac",
+    "Tom": 9,
+    "Fib_mod": 2,
+    "Voynich": "ᝒ"
+  },
+  {
+    "N": 180,
+    "Selo": "Ahau",
+    "Tom": 9,
+    "Fib_mod": 9,
+    "Voynich": "ᝓ"
+  },
+  {
+    "N": 181,
+    "Selo": "Imix",
+    "Tom": 10,
+    "Fib_mod": 1,
+    "Voynich": "᝔"
+  },
+  {
+    "N": 182,
+    "Selo": "Ik",
+    "Tom": 10,
+    "Fib_mod": 9,
+    "Voynich": "᝕"
+  },
+  {
+    "N": 183,
+    "Selo": "Akbal",
+    "Tom": 10,
+    "Fib_mod": 9,
+    "Voynich": "᝖"
+  },
+  {
+    "N": 184,
+    "Selo": "Kan",
+    "Tom": 10,
+    "Fib_mod": 8,
+    "Voynich": "᝗"
+  },
+  {
+    "N": 185,
+    "Selo": "Chicchan",
+    "Tom": 10,
+    "Fib_mod": 7,
+    "Voynich": "᝘"
+  },
+  {
+    "N": 186,
+    "Selo": "Cimi",
+    "Tom": 10,
+    "Fib_mod": 5,
+    "Voynich": "᝙"
+  },
+  {
+    "N": 187,
+    "Selo": "Manik",
+    "Tom": 10,
+    "Fib_mod": 2,
+    "Voynich": "᝚"
+  },
+  {
+    "N": 188,
+    "Selo": "Lamat",
+    "Tom": 10,
+    "Fib_mod": 6,
+    "Voynich": "᝛"
+  },
+  {
+    "N": 189,
+    "Selo": "Muluc",
+    "Tom": 10,
+    "Fib_mod": 7,
+    "Voynich": "᝜"
+  },
+  {
+    "N": 190,
+    "Selo": "Oc",
+    "Tom": 10,
+    "Fib_mod": 3,
+    "Voynich": "᝝"
+  },
+  {
+    "N": 191,
+    "Selo": "Chuen",
+    "Tom": 10,
+    "Fib_mod": 9,
+    "Voynich": "᝞"
+  },
+  {
+    "N": 192,
+    "Selo": "Eb",
+    "Tom": 10,
+    "Fib_mod": 2,
+    "Voynich": "᝟"
+  },
+  {
+    "N": 193,
+    "Selo": "Ben",
+    "Tom": 10,
+    "Fib_mod": 1,
+    "Voynich": "ᝠ"
+  },
+  {
+    "N": 194,
+    "Selo": "Ix",
+    "Tom": 10,
+    "Fib_mod": 2,
+    "Voynich": "ᝡ"
+  },
+  {
+    "N": 195,
+    "Selo": "Men",
+    "Tom": 10,
+    "Fib_mod": 2,
+    "Voynich": "ᝢ"
+  },
+  {
+    "N": 196,
+    "Selo": "Cib",
+    "Tom": 10,
+    "Fib_mod": 3,
+    "Voynich": "ᝣ"
+  },
+  {
+    "N": 197,
+    "Selo": "Caban",
+    "Tom": 10,
+    "Fib_mod": 4,
+    "Voynich": "ᝤ"
+  },
+  {
+    "N": 198,
+    "Selo": "Etznab",
+    "Tom": 10,
+    "Fib_mod": 6,
+    "Voynich": "ᝥ"
+  },
+  {
+    "N": 199,
+    "Selo": "Cauac",
+    "Tom": 10,
+    "Fib_mod": 9,
+    "Voynich": "ᝦ"
+  },
+  {
+    "N": 200,
+    "Selo": "Ahau",
+    "Tom": 10,
+    "Fib_mod": 5,
+    "Voynich": "ᝧ"
+  },
+  {
+    "N": 201,
+    "Selo": "Imix",
+    "Tom": 11,
+    "Fib_mod": 4,
+    "Voynich": "ᝨ"
+  },
+  {
+    "N": 202,
+    "Selo": "Ik",
+    "Tom": 11,
+    "Fib_mod": 8,
+    "Voynich": "ᝩ"
+  },
+  {
+    "N": 203,
+    "Selo": "Akbal",
+    "Tom": 11,
+    "Fib_mod": 2,
+    "Voynich": "ᝪ"
+  },
+  {
+    "N": 204,
+    "Selo": "Kan",
+    "Tom": 11,
+    "Fib_mod": 9,
+    "Voynich": "ᝫ"
+  },
+  {
+    "N": 205,
+    "Selo": "Chicchan",
+    "Tom": 11,
+    "Fib_mod": 1,
+    "Voynich": "ᝬ"
+  },
+  {
+    "N": 206,
+    "Selo": "Cimi",
+    "Tom": 11,
+    "Fib_mod": 9,
+    "Voynich": "᝭"
+  },
+  {
+    "N": 207,
+    "Selo": "Manik",
+    "Tom": 11,
+    "Fib_mod": 9,
+    "Voynich": "ᝮ"
+  },
+  {
+    "N": 208,
+    "Selo": "Lamat",
+    "Tom": 11,
+    "Fib_mod": 8,
+    "Voynich": "ᝯ"
+  },
+  {
+    "N": 209,
+    "Selo": "Muluc",
+    "Tom": 11,
+    "Fib_mod": 7,
+    "Voynich": "ᝰ"
+  },
+  {
+    "N": 210,
+    "Selo": "Oc",
+    "Tom": 11,
+    "Fib_mod": 5,
+    "Voynich": "᝱"
+  },
+  {
+    "N": 211,
+    "Selo": "Chuen",
+    "Tom": 11,
+    "Fib_mod": 2,
+    "Voynich": "ᝲ"
+  },
+  {
+    "N": 212,
+    "Selo": "Eb",
+    "Tom": 11,
+    "Fib_mod": 6,
+    "Voynich": "ᝳ"
+  },
+  {
+    "N": 213,
+    "Selo": "Ben",
+    "Tom": 11,
+    "Fib_mod": 7,
+    "Voynich": "᝴"
+  },
+  {
+    "N": 214,
+    "Selo": "Ix",
+    "Tom": 11,
+    "Fib_mod": 3,
+    "Voynich": "᝵"
+  },
+  {
+    "N": 215,
+    "Selo": "Men",
+    "Tom": 11,
+    "Fib_mod": 9,
+    "Voynich": "᝶"
+  },
+  {
+    "N": 216,
+    "Selo": "Cib",
+    "Tom": 11,
+    "Fib_mod": 2,
+    "Voynich": "᝷"
+  },
+  {
+    "N": 217,
+    "Selo": "Caban",
+    "Tom": 11,
+    "Fib_mod": 1,
+    "Voynich": "᝸"
+  },
+  {
+    "N": 218,
+    "Selo": "Etznab",
+    "Tom": 11,
+    "Fib_mod": 2,
+    "Voynich": "᝹"
+  },
+  {
+    "N": 219,
+    "Selo": "Cauac",
+    "Tom": 11,
+    "Fib_mod": 2,
+    "Voynich": "᝺"
+  },
+  {
+    "N": 220,
+    "Selo": "Ahau",
+    "Tom": 11,
+    "Fib_mod": 3,
+    "Voynich": "᝻"
+  },
+  {
+    "N": 221,
+    "Selo": "Imix",
+    "Tom": 12,
+    "Fib_mod": 4,
+    "Voynich": "᝼"
+  },
+  {
+    "N": 222,
+    "Selo": "Ik",
+    "Tom": 12,
+    "Fib_mod": 6,
+    "Voynich": "᝽"
+  },
+  {
+    "N": 223,
+    "Selo": "Akbal",
+    "Tom": 12,
+    "Fib_mod": 9,
+    "Voynich": "᝾"
+  },
+  {
+    "N": 224,
+    "Selo": "Kan",
+    "Tom": 12,
+    "Fib_mod": 5,
+    "Voynich": "᝿"
+  },
+  {
+    "N": 225,
+    "Selo": "Chicchan",
+    "Tom": 12,
+    "Fib_mod": 4,
+    "Voynich": "ក"
+  },
+  {
+    "N": 226,
+    "Selo": "Cimi",
+    "Tom": 12,
+    "Fib_mod": 8,
+    "Voynich": "ខ"
+  },
+  {
+    "N": 227,
+    "Selo": "Manik",
+    "Tom": 12,
+    "Fib_mod": 2,
+    "Voynich": "គ"
+  },
+  {
+    "N": 228,
+    "Selo": "Lamat",
+    "Tom": 12,
+    "Fib_mod": 9,
+    "Voynich": "ឃ"
+  },
+  {
+    "N": 229,
+    "Selo": "Muluc",
+    "Tom": 12,
+    "Fib_mod": 1,
+    "Voynich": "ង"
+  },
+  {
+    "N": 230,
+    "Selo": "Oc",
+    "Tom": 12,
+    "Fib_mod": 9,
+    "Voynich": "ច"
+  },
+  {
+    "N": 231,
+    "Selo": "Chuen",
+    "Tom": 12,
+    "Fib_mod": 9,
+    "Voynich": "ឆ"
+  },
+  {
+    "N": 232,
+    "Selo": "Eb",
+    "Tom": 12,
+    "Fib_mod": 8,
+    "Voynich": "ជ"
+  },
+  {
+    "N": 233,
+    "Selo": "Ben",
+    "Tom": 12,
+    "Fib_mod": 7,
+    "Voynich": "ឈ"
+  },
+  {
+    "N": 234,
+    "Selo": "Ix",
+    "Tom": 12,
+    "Fib_mod": 5,
+    "Voynich": "ញ"
+  },
+  {
+    "N": 235,
+    "Selo": "Men",
+    "Tom": 12,
+    "Fib_mod": 2,
+    "Voynich": "ដ"
+  },
+  {
+    "N": 236,
+    "Selo": "Cib",
+    "Tom": 12,
+    "Fib_mod": 6,
+    "Voynich": "ឋ"
+  },
+  {
+    "N": 237,
+    "Selo": "Caban",
+    "Tom": 12,
+    "Fib_mod": 7,
+    "Voynich": "ឌ"
+  },
+  {
+    "N": 238,
+    "Selo": "Etznab",
+    "Tom": 12,
+    "Fib_mod": 3,
+    "Voynich": "ឍ"
+  },
+  {
+    "N": 239,
+    "Selo": "Cauac",
+    "Tom": 12,
+    "Fib_mod": 9,
+    "Voynich": "ណ"
+  },
+  {
+    "N": 240,
+    "Selo": "Ahau",
+    "Tom": 12,
+    "Fib_mod": 2,
+    "Voynich": "ត"
+  },
+  {
+    "N": 241,
+    "Selo": "Imix",
+    "Tom": 13,
+    "Fib_mod": 1,
+    "Voynich": "ថ"
+  },
+  {
+    "N": 242,
+    "Selo": "Ik",
+    "Tom": 13,
+    "Fib_mod": 2,
+    "Voynich": "ទ"
+  },
+  {
+    "N": 243,
+    "Selo": "Akbal",
+    "Tom": 13,
+    "Fib_mod": 2,
+    "Voynich": "ធ"
+  },
+  {
+    "N": 244,
+    "Selo": "Kan",
+    "Tom": 13,
+    "Fib_mod": 3,
+    "Voynich": "ន"
+  },
+  {
+    "N": 245,
+    "Selo": "Chicchan",
+    "Tom": 13,
+    "Fib_mod": 4,
+    "Voynich": "ប"
+  },
+  {
+    "N": 246,
+    "Selo": "Cimi",
+    "Tom": 13,
+    "Fib_mod": 6,
+    "Voynich": "ផ"
+  },
+  {
+    "N": 247,
+    "Selo": "Manik",
+    "Tom": 13,
+    "Fib_mod": 9,
+    "Voynich": "ព"
+  },
+  {
+    "N": 248,
+    "Selo": "Lamat",
+    "Tom": 13,
+    "Fib_mod": 5,
+    "Voynich": "ភ"
+  },
+  {
+    "N": 249,
+    "Selo": "Muluc",
+    "Tom": 13,
+    "Fib_mod": 4,
+    "Voynich": "ម"
+  },
+  {
+    "N": 250,
+    "Selo": "Oc",
+    "Tom": 13,
+    "Fib_mod": 8,
+    "Voynich": "យ"
+  },
+  {
+    "N": 251,
+    "Selo": "Chuen",
+    "Tom": 13,
+    "Fib_mod": 2,
+    "Voynich": "រ"
+  },
+  {
+    "N": 252,
+    "Selo": "Eb",
+    "Tom": 13,
+    "Fib_mod": 9,
+    "Voynich": "ល"
+  },
+  {
+    "N": 253,
+    "Selo": "Ben",
+    "Tom": 13,
+    "Fib_mod": 1,
+    "Voynich": "វ"
+  },
+  {
+    "N": 254,
+    "Selo": "Ix",
+    "Tom": 13,
+    "Fib_mod": 9,
+    "Voynich": "ឝ"
+  },
+  {
+    "N": 255,
+    "Selo": "Men",
+    "Tom": 13,
+    "Fib_mod": 9,
+    "Voynich": "ឞ"
+  },
+  {
+    "N": 256,
+    "Selo": "Cib",
+    "Tom": 13,
+    "Fib_mod": 8,
+    "Voynich": "ស"
+  },
+  {
+    "N": 257,
+    "Selo": "Caban",
+    "Tom": 13,
+    "Fib_mod": 7,
+    "Voynich": "ᚠ"
+  },
+  {
+    "N": 258,
+    "Selo": "Etznab",
+    "Tom": 13,
+    "Fib_mod": 5,
+    "Voynich": "ᚡ"
+  },
+  {
+    "N": 259,
+    "Selo": "Cauac",
+    "Tom": 13,
+    "Fib_mod": 2,
+    "Voynich": "ᚢ"
+  },
+  {
+    "N": 260,
+    "Selo": "Ahau",
+    "Tom": 13,
+    "Fib_mod": 6,
+    "Voynich": "ᚣ"
+  }
+]
