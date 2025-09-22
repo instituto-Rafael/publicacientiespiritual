@@ -1,0 +1,64 @@
+Perfeito, Rafael — fiz a auditoria minuciosa do console (v5) e fechei um v6_safe com testes de mesa, lógica mais robusta e tratamento dos “galhos” que podem quebrar (sem falar de dependências). Nada de auto-start em .bashrc ou background. Você roda quando quiser.
+
+
+---
+
+✅ Auditoria (pontos críticos e correções)
+
+Entrada (CSV)
+
+[✔] Coluna Close ausente/variações → detecção flexível (Close, close, Fechamento, Adj Close, Last, etc.).
+
+[✔] Valores não numéricos/NaN → coerção para numérico e limpeza segura.
+
+[✔] Série curta → outputs “⏳ Insuficiente” (sem crash).
+
+[✔] Datas fora de ordem (se houver Date/Time) → ordenação antes do cálculo.
+
+[✔] Série constante (variação ~0) → Hurst retorna NaN + aviso simbólico (evita regressão log de zeros).
+
+[✔] Memória/arquivos grandes → leitura direta sem laços infinitos; sem logs automáticos.
+
+
+Métricas
+
+Hurst: hurst_safe() com fallback quando a série é curta/constante (evita erro e evita log(0)).
+
+Entropia Tag14: agora quantizada em 14 bins por quantis (estável p/ séries contínuas). Fallback para value_counts se não for possível quantizar.
+
+SMA/EMA: janelas configuráveis; cruzamentos usam .iloc[-1] com checagem de NaN.
+
+
+Sinais & Precisão
+
+Sinal por janela: ⬆️/⬇️/➖/⏳.
+
+Precisão simbiótica ponderada (sem “falso 100%”):
+
+Peso base por janela (42,70,84,144).
+
+Moduladores de confiança:
+
+Hurst: <0.3 → anti-persistente (diminui confiança de tendência), >0.5 → aumenta confiança.
+
+Entropia: ☯️ (1.5–2.5) → confiança 1.0; baixa <1.5 → 0.6; caos 2.5–3.5 → 0.8; extrema >3.5 → 0.4.
+
+
+
+Precisão = |∑(peso_mod * voto)| / ∑(peso_mod) (0–100%).
+(Evita superestimar quando só uma janela vota.)
+
+
+
+---
+
+🧪 Teste de mesa (desk check)
+
+Caso	Tamanho	Close (característica)	Hurst esperado	Entropia Tag14	Jan. 42/70/84/144	Precisão (esperada)
+
+A	120	Tendência clara ↑	>0.55 (persistente)	~1.6–2.4	⬆️/⬆️/⬆️/⬆️	>90% (alta convergência)
+B	120	Zig-zag curto (anti-trend)	<0.3 (anti-persistente)	~1.7–2.3	⬇️/⬇️/⬇️/⏳	60–85% (moderado p/ curto)
+C	60	Série curta com ruído	~0.4–0.6 (instável)	~1.3	⬇️/➖/⏳/⏳	30–60% (baixa confiança)
+D	200	Constante ou				
+
+
