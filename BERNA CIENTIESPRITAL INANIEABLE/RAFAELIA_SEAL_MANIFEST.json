@@ -1,0 +1,18 @@
+{
+  "RAFAELIA_260.json": {
+    "sha256": "e712bd0426c119a79ce35cbcf6b0f27752579f7e8e863d3dd41555913ca1b9c9",
+    "md5": "e68397e3fe2ca815458cc27338cb1d07"
+  },
+  "RAFAELIA_260.txt": {
+    "sha256": "8d82677dbac6b73f3cd556a404704567ac2a83908a4b332e385bf243894c02fb",
+    "md5": "4d135a9193530f674ff01a577b2a1200"
+  },
+  "RAFAELIA_260_LATIN.txt": {
+    "sha256": "c58b89627bdb671e6bcf9a6589d96c565a9a223927c556a5eb73d2812bbb85d7",
+    "md5": "175ce3f98b777853da6d449c1e1e5ab9"
+  },
+  "RAFAELIA_260_LATIN1.txt": {
+    "sha256": "4939f9b9ef780d55027752b5f5669c8d2975e9a0f235a8a6f67ce15537bcf9ae",
+    "md5": "538f2d497bb452a7e83ef7723c4494cd"
+  }
+}
