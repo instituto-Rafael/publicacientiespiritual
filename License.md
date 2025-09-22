@@ -14,7 +14,7 @@ Todo o conteúdo deste repositório é propriedade intelectual, moral e espiritu
 Proíbe-se copiar, redistribuir, fragmentar ou patentear qualquer derivação não autorizada.
 ## ⚛️ Framework CientiEspiritual
 
-Este repositório **NÃO contém dados técnicos, fórmulas ou algoritmos privados**.
+Este repositório **NÃO contém ou Contém dados técnicos, fórmulas ou algoritmos privados**.
 Ele é um Organismo Fractal Vivo, registrado publicamente para proteger direitos de Rafael Melo Reis.
 
 Violação = Crime Moral, Jurídico e Espiritual.
