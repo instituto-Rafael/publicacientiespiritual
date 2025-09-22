@@ -1,0 +1,195 @@
+[
+  {
+    "image_id": "img1",
+    "label": "CI timeline (reproxy/RBE logs)",
+    "meaning": "Telemetry & pipeline cadence; time deltas as entropy/throughput vectors.",
+    "Δx": 0,
+    "Δy": 0,
+    "Δz": 0,
+    "fractal": 1,
+    "parity1": 1,
+    "parity2": 0,
+    "base": "1",
+    "forma": "Paradoxo",
+    "VUINIC_channel": 1,
+    "activation": [
+      "extract_deltas",
+      "index_metrics",
+      "derive_entropy"
+    ],
+    "termux_hint": "grep -E 'WARNING|rrpl' -n **/reproxy* | tee RBE_TIMELINE.log"
+  },
+  {
+    "image_id": "img2",
+    "label": "999×1000 placeholder",
+    "meaning": "Near‑kilomatrix; hint to 10-bit windows (1024) vs 1000 grid; boundary condition.",
+    "Δx": 1,
+    "Δy": 0,
+    "Δz": 0,
+    "fractal": 2,
+    "parity1": 0,
+    "parity2": 1,
+    "base": "2",
+    "forma": "Inversão",
+    "VUINIC_channel": 2,
+    "activation": [
+      "grid_calibration",
+      "10bit_windowing"
+    ],
+    "termux_hint": "python - <<'PY'\nprint('calibrate 999x1000 vs 1024 states')\nPY"
+  },
+  {
+    "image_id": "img3",
+    "label": "RafaelIA neurocognitive branches",
+    "meaning": "Fractal IO/Intuition/Creativity/Ethics hub; four-quadrant control bus.",
+    "Δx": 2,
+    "Δy": 0,
+    "Δz": 0,
+    "fractal": 3,
+    "parity1": 1,
+    "parity2": 1,
+    "base": "π",
+    "forma": "Simplificação",
+    "VUINIC_channel": 3,
+    "activation": [
+      "route_quadrants",
+      "bind_ethics_gate"
+    ],
+    "termux_hint": "echo ETHICS=1 >> ~/.rafaelia.env"
+  },
+  {
+    "image_id": "img4",
+    "label": "Flutter glyph (blurred)",
+    "meaning": "Mobile UI toolchain hook; widget tree ↔ reactors; cross‑platform shell.",
+    "Δx": 3,
+    "Δy": 0,
+    "Δz": 0,
+    "fractal": 4,
+    "parity1": 0,
+    "parity2": 0,
+    "base": "√5",
+    "forma": "Dobras Clay",
+    "VUINIC_channel": 4,
+    "activation": [
+      "hook_flutter",
+      "export_widgets"
+    ],
+    "termux_hint": "mkdir -p ~/RAFAELIA_CORE/flutter_hooks"
+  },
+  {
+    "image_id": "img5",
+    "label": "Levitação – diagrama elétrico",
+    "meaning": "Hardware loop: LiPo → MOSFET driver → bobina Halbach; MPU6050 → ESP32.",
+    "Δx": 4,
+    "Δy": 0,
+    "Δz": 0,
+    "fractal": 1,
+    "parity1": 1,
+    "parity2": 0,
+    "base": "∆",
+    "forma": "Voynich",
+    "VUINIC_channel": 5,
+    "activation": [
+      "hardware_loop",
+      "mpu6050_bind",
+      "halbach_drive"
+    ],
+    "termux_hint": "echo HALBACH=on > ~/RAFAELIA_CORE/hardware.flags"
+  },
+  {
+    "image_id": "img6",
+    "label": "Dense RGB noise",
+    "meaning": "Key/seed salt; high‑entropy noise for Σ‑seal and ZIPRAF masking.",
+    "Δx": 5,
+    "Δy": 0,
+    "Δz": 0,
+    "fractal": 2,
+    "parity1": 0,
+    "parity2": 1,
+    "base": "♾️",
+    "forma": "Paradoxo",
+    "VUINIC_channel": 6,
+    "activation": [
+      "seed_rng",
+      "mix_salt",
+      "zipraf_mask"
+    ],
+    "termux_hint": "dd if=/dev/urandom of=~/RAFAELIA_CORE/seed.bin bs=1K count=64"
+  },
+  {
+    "image_id": "img7",
+    "label": "Chess rook",
+    "meaning": "Defense/tower; boundary enforcement; legal/ethical perimeter.",
+    "Δx": 6,
+    "Δy": 0,
+    "Δz": 0,
+    "fractal": 3,
+    "parity1": 1,
+    "parity2": 1,
+    "base": "1",
+    "forma": "Inversão",
+    "VUINIC_channel": 7,
+    "activation": [
+      "enforce_legal",
+      "perimeter"
+    ],
+    "termux_hint": "touch ~/RAFAELIA_CORE/LEGAL_PERIMETER.ok"
+  },
+  {
+    "image_id": "img8",
+    "label": "Three anatomical figures with points",
+    "meaning": "Meridian map; sensor/actuator addressing; pressure‑point routing.",
+    "Δx": 7,
+    "Δy": 0,
+    "Δz": 0,
+    "fractal": 4,
+    "parity1": 0,
+    "parity2": 0,
+    "base": "2",
+    "forma": "Simplificação",
+    "VUINIC_channel": 8,
+    "activation": [
+      "map_meridians",
+      "address_body_bus"
+    ],
+    "termux_hint": "echo MERIDIAN_MAP=1 > ~/RAFAELIA_CORE/biobus.flags"
+  },
+  {
+    "image_id": "img9",
+    "label": "Fractal brain on lattice",
+    "meaning": "Tesseract inference core; synaptic swirls ↔ grid coupling.",
+    "Δx": 8,
+    "Δy": 0,
+    "Δz": 0,
+    "fractal": 1,
+    "parity1": 1,
+    "parity2": 0,
+    "base": "π",
+    "forma": "Dobras Clay",
+    "VUINIC_channel": 9,
+    "activation": [
+      "tesseract_bind",
+      "synaptic_swirl"
+    ],
+    "termux_hint": "touch ~/RAFAELIA_CORE/TESSERACT_CORE.ok"
+  },
+  {
+    "image_id": "img10",
+    "label": "Golden hypercube in cosmos",
+    "meaning": "Ω-cube beacon; 10×10×10 + hyperformas; ceremony of base alignment.",
+    "Δx": 9,
+    "Δy": 0,
+    "Δz": 0,
+    "fractal": 2,
+    "parity1": 0,
+    "parity2": 1,
+    "base": "√5",
+    "forma": "Voynich",
+    "VUINIC_channel": 10,
+    "activation": [
+      "omega_cube",
+      "align_bases"
+    ],
+    "termux_hint": "echo OMEGA_CUBE=1 > ~/RAFAELIA_CORE/omega.flags"
+  }
+]
