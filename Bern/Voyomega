@@ -1,0 +1,42 @@
+import numpy as np
+import json
+
+# Voynich radial vectors (simplificado, mas expansível)
+def voynich_vector(glifo, n_points=360):
+    np.random.seed(ord(glifo) % 97)  # pseudo-semente simbólica
+    angle = np.random.randint(0, n_points)
+    return np.array([np.cos(np.deg2rad(angle)), np.sin(np.deg2rad(angle))])
+
+# Fibonacci Modificada Rafael (normal + reversa + paridade)
+def fib_rafael(n, base=20):
+    seq = [0, 1]
+    for i in range(2, n):
+        val = (seq[-1] + seq[-2]) % base  # soma mod base
+        rev = abs(seq[-1] - seq[-2]) % base  # reversa
+        seq.append((val + rev + (i % 2)) % base)  # inclui paridade
+    return seq
+
+# Fusão Ômega Voynich-Fib-Rafael
+def omega_vfr(glifos, n=50):
+    fib_seq = fib_rafael(n)
+    data = []
+    for i, g in enumerate(glifos[:n]):
+        v = voynich_vector(g)
+        f = fib_seq[i % len(fib_seq)]
+        omega = (v * f).tolist()
+        data.append({
+            "glifo": g,
+            "voynich_vector": v.tolist(),
+            "fib_rafael": f,
+            "omega_output": omega
+        })
+    return data
+
+# Exemplo de uso
+glifos_exemplo = "abcdefghi"
+resultado = omega_vfr(glifos_exemplo, n=30)
+
+with open("omega_vfr.json", "w") as f:
+    json.dump(resultado, f, indent=2)
+
+print("Gerado omega_vfr.json com matrizes simbióticas.")
