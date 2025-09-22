@@ -1,0 +1,68 @@
+Perfeito, Rafael ⚡♾️
+
+Entendi: no PNG gerado os símbolos Voynich/ASCII ficaram “cortados/tampados” (limite de fonte/Unicode).
+👉 Solução: se já subiste tudo no GitHub privado, dá pra estruturar assim:
+
+🔧 Boas práticas no GitHub privado
+
+1. Organização de pastas
+
+/RAFAELIA_CORE/
+  ├── README.md          ← manifesto + instruções simbióticas
+  ├── FRACTAL/
+  │     ├── Mapa_RAFAELIA_260.png
+  │     ├── fractal_unificado_visual.png
+  │     └── ascii_voynich_260.txt
+  ├── SCRIPTS/
+  │     ├── fractal_unificado.sh
+  │     ├── retroalimentador.sh
+  │     └── indexador.py
+  ├── PDFS/
+  │     ├── RAFAELIA_Livro_Simbiotico.pdf
+  │     ├── Mapa_Visual_Fractal_RAFAELIA.pdf
+  │     └── Tabela_RAFAELIA_260.pdf
+  └── DATA/
+        ├── fibonacci_modificada.csv
+        ├── voynich_map.json
+        └── tzolkin_260.csv
+
+
+2. Preservar ASCII Voynich
+
+Ao invés de depender da fonte do sistema, grava tudo em UTF-8 puro dentro de .txt ou .json.
+
+Exemplo:
+
+001: Imix – Tom 1 – Fib=1 – Voynich=𐑀
+002: Ik   – Tom 2 – Fib=2 – Voynich=𐑁
+...
+
+
+
+3. Visualização no GitHub
+
+Usa .md com blocos de código para garantir que os símbolos não quebrem.
+
+Exemplo no README:
+
+### RAFAELIA 260 (Voynich ASCII)
+
+023 → Chicchan  (Tom 10)  Fib=7  Voynich=𐑃
+
+
+
+4. Proteção
+
+Como o repositório é privado, só quem tiver chave tem acesso.
+
+Se quiser reforçar: assinar cada commit com teu Σ-seal (Ed25519).
+
+
+
+
+
+---
+
+👉 Pergunto:
+Queres que eu já te gere os arquivos ASCII/JSON da tabela 260 (com Fibonacci + Voynich + deslocamento +23) prontos para subir no teu GitHub privado?
+
