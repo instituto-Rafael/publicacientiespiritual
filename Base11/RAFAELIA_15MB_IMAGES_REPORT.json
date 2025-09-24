@@ -1,0 +1,1433 @@
+{
+  "count": 83,
+  "by_orientation": {
+    "square": 52,
+    "portrait": 23,
+    "landscape": 8
+  },
+  "phi_like": 0,
+  "phi_inv_like": 0,
+  "sqrt3_2_like": 0,
+  "size_parity": {
+    "odd": 37,
+    "even": 46
+  },
+  "sha_parity": {
+    "odd": 42,
+    "even": 41
+  },
+  "entropy_avg": 7.884,
+  "items": [
+    {
+      "name": "publicacientiespiritual-main__mapa_alpha_resonante.jpg",
+      "bytes": 9729,
+      "size_parity": "odd",
+      "sha256": "74706830733007748ed8f69bc76658489e4c6397a644179b8ac8011cab95b39c",
+      "sha_parity": "odd",
+      "entropy": 4.944,
+      "w": 924,
+      "h": 924,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000002f886243babcbfc6e18c3fa0.jpg",
+      "bytes": 164206,
+      "size_parity": "even",
+      "sha256": "4dbc783ea6875b500dcf2bbd74b1dd9fe003336a91d2fc8d4c00a7b7fef3098b",
+      "sha_parity": "odd",
+      "entropy": 7.962,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__SELO_PROTECAO_RAFIA_(1).jpg",
+      "bytes": 39846,
+      "size_parity": "even",
+      "sha256": "a1d7c70b716aaa43c928d016d3143511affd09ad21817c095ec2df1e0fd2ea49",
+      "sha_parity": "odd",
+      "entropy": 7.232,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__Screenshot_20250711-213425.jpg",
+      "bytes": 83152,
+      "size_parity": "even",
+      "sha256": "b4b03024807a09e0b3c134668121b0cee2f31c10366076c4b548fd9e835be070",
+      "sha_parity": "even",
+      "entropy": 7.968,
+      "w": 540,
+      "h": 1200,
+      "ratio": 0.45,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__Screenshot_20250712-005216.jpg",
+      "bytes": 116974,
+      "size_parity": "even",
+      "sha256": "79a5ae314d07622d6620962bcff68166e81c430f7f347aace4040fd8260786ec",
+      "sha_parity": "even",
+      "entropy": 7.961,
+      "w": 540,
+      "h": 1200,
+      "ratio": 0.45,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__Screenshot_20250712-005231.jpg",
+      "bytes": 74743,
+      "size_parity": "odd",
+      "sha256": "590a07ba971152c3bc0a61547268a3291d0c8d397f28faed3755c8d47bf38bfd",
+      "sha_parity": "odd",
+      "entropy": 7.949,
+      "w": 540,
+      "h": 1200,
+      "ratio": 0.45,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__Screenshot_20250712-005252.jpg",
+      "bytes": 26183,
+      "size_parity": "odd",
+      "sha256": "25733359714544a34397639d467320627139d569c4372df25eaa1d6f6932c78e",
+      "sha_parity": "odd",
+      "entropy": 7.951,
+      "w": 58,
+      "h": 1200,
+      "ratio": 0.0483,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_0000000007346230abb0b0f730462283.jpg",
+      "bytes": 169928,
+      "size_parity": "even",
+      "sha256": "b60f409954c8df65519e78ee885c94a53442b5194fb01a5d5835ff5203145363",
+      "sha_parity": "odd",
+      "entropy": 7.946,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000131861f89b9d579056e6a630.jpg",
+      "bytes": 369621,
+      "size_parity": "odd",
+      "sha256": "065fc4d1db441427c3a184194aa4a2ca13ed82b0c395db19b5a28bbd77e24c9f",
+      "sha_parity": "even",
+      "entropy": 7.977,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000134461f99c48a430a77fd98b.jpg",
+      "bytes": 202353,
+      "size_parity": "odd",
+      "sha256": "1bc8559b98b40636e28e0c9edc2d1bd87791526f421cb9ea5eb0d054550bda3c",
+      "sha_parity": "even",
+      "entropy": 7.96,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_0000000015c461f5886adbc59f68527f.jpg",
+      "bytes": 246764,
+      "size_parity": "even",
+      "sha256": "dec4ca324acccabc0d75177acb6434792b092dc99d1a4aafd15d8ad7fd5bae2b",
+      "sha_parity": "odd",
+      "entropy": 7.985,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000001cd061f7bff24f889fdf32f7.jpg",
+      "bytes": 149371,
+      "size_parity": "odd",
+      "sha256": "cb6a4c9c078bddb3eeed6b063dfd93669214b2ffebcd46d33fef161299f31d4f",
+      "sha_parity": "even",
+      "entropy": 7.967,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000002e3861f5aa14d7e014ae261a.jpg",
+      "bytes": 67752,
+      "size_parity": "even",
+      "sha256": "f3b3fbeceb3a5035e1e345c6fceb7715adeb241ab294af2966bf947867a060a5",
+      "sha_parity": "odd",
+      "entropy": 7.941,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000002ea061f79d67b1212b44b353.jpg",
+      "bytes": 324534,
+      "size_parity": "even",
+      "sha256": "f1b68f657f341bf3d852a2556f0d086e2b136c5f65dcbeb9d82d246da1e6db97",
+      "sha_parity": "odd",
+      "entropy": 7.976,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000003d4c622fb0f5480c656fc99d.jpg",
+      "bytes": 288514,
+      "size_parity": "even",
+      "sha256": "e387ae7309eb809d6140b9d3e510790b73fa5f69c821f0f9622577a0cf1fe8b5",
+      "sha_parity": "odd",
+      "entropy": 7.984,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000003ed461fd8f70811db5daff52.jpg",
+      "bytes": 301327,
+      "size_parity": "odd",
+      "sha256": "177545728317362d170f559583e45033ef656a74863aabd4e429d23c65b3a0e3",
+      "sha_parity": "even",
+      "entropy": 7.975,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000422061f58eeb4f8ab1dc21ad.jpg",
+      "bytes": 286646,
+      "size_parity": "even",
+      "sha256": "ea6a968461608d2e07b1886002d852edcbc0187a2c0ab945882664e8a7aff3df",
+      "sha_parity": "even",
+      "entropy": 7.974,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_0000000058a061f5877b8f76a1c3194e.jpg",
+      "bytes": 183032,
+      "size_parity": "even",
+      "sha256": "116525ce02a4fe3a14bfdb5a093fd6fad1ab4932e9588d744ce2b304617c0ccd",
+      "sha_parity": "even",
+      "entropy": 7.971,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000006460623080ed6c5209412072.jpg",
+      "bytes": 326269,
+      "size_parity": "odd",
+      "sha256": "36f98c8d81aabd1ce5d83c101bd9c5b816ae6f639cfaaff4244f3f88787d0055",
+      "sha_parity": "odd",
+      "entropy": 7.982,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_0000000066ac61f8827f4136c291fee1.jpg",
+      "bytes": 318445,
+      "size_parity": "odd",
+      "sha256": "ab64f1faed77cc89a25da2ef409ac6e2f26a0518ce36bc806d027444ff9fca60",
+      "sha_parity": "odd",
+      "entropy": 7.951,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000007ffc61fd8baad961b28af411.jpg",
+      "bytes": 164766,
+      "size_parity": "even",
+      "sha256": "69b7f99099bc027dab50bc3ded39e2c4c46e13c128a8685326065ab050db9170",
+      "sha_parity": "even",
+      "entropy": 7.958,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000008e706230a2bb94b129bc09a7.jpg",
+      "bytes": 221826,
+      "size_parity": "even",
+      "sha256": "617cac71f6fe1b8b0685cb2deee36b4f361875c21a2f85e38aa2fd0388237586",
+      "sha_parity": "even",
+      "entropy": 7.96,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000008ed0622f8f486336069721b2.jpg",
+      "bytes": 185238,
+      "size_parity": "even",
+      "sha256": "cce4fe207aa77e9f4b46ece5488bd9bfb2765b768afc785175a4f5f97c27c764",
+      "sha_parity": "odd",
+      "entropy": 7.971,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000008ed4622fb3b31893ce7cadd3.jpg",
+      "bytes": 307068,
+      "size_parity": "even",
+      "sha256": "a0e5fc4200c68de258efe30e13ef47b541120362044b3c60244a89688de6081f",
+      "sha_parity": "even",
+      "entropy": 7.982,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_0000000090bc61fdb7b74122f198601a.jpg",
+      "bytes": 124217,
+      "size_parity": "odd",
+      "sha256": "e6506ae42a9c65b874961d27fc52d33065c4e5f8ab9065e825a4e6d7da6392cd",
+      "sha_parity": "even",
+      "entropy": 7.966,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000009a906246b75b1b8a57caffaf.jpg",
+      "bytes": 90293,
+      "size_parity": "odd",
+      "sha256": "c3527a02f514221b93cc2db79f74f05e9d5236ce4a899c25a5ebaabfb36011fa",
+      "sha_parity": "even",
+      "entropy": 7.914,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000009cc061f897cb5c8c276a73d5.jpg",
+      "bytes": 95798,
+      "size_parity": "even",
+      "sha256": "ca015ea7b19006d0128b833bc5f4abe93e46f5bcadb6221c3cddfe5a38dc22c5",
+      "sha_parity": "even",
+      "entropy": 7.968,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_000000009cdc622fb65c79ae7b4614cd.jpg",
+      "bytes": 448945,
+      "size_parity": "odd",
+      "sha256": "6b339743143a486f6bebd34a3e2e14bfe2d1dd20f2bdc73bdd5d9f3fb68e2236",
+      "sha_parity": "even",
+      "entropy": 7.973,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000a3e461fb9b137911a8b57d80_(1).jpg",
+      "bytes": 167224,
+      "size_parity": "even",
+      "sha256": "8ce0c684372aa4d64dfa8257ad5e89fe6bba5990b22c9fd72d28ebfb4db549df",
+      "sha_parity": "even",
+      "entropy": 7.968,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000a56061f8bc768e9d7b26b5e6.jpg",
+      "bytes": 345638,
+      "size_parity": "even",
+      "sha256": "99695f175b67e1467305fdf077ef6117d238fec49f23473f31930a3181af3514",
+      "sha_parity": "odd",
+      "entropy": 7.975,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000a5dc622f80f19b0bb430753c.jpg",
+      "bytes": 341958,
+      "size_parity": "even",
+      "sha256": "a5f876071602a576e8dec516b682483268da6b14c2ffd016c3fde8cbd667f878",
+      "sha_parity": "even",
+      "entropy": 7.983,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000a6e861f687514e5ad7dd7cbe.jpg",
+      "bytes": 228440,
+      "size_parity": "even",
+      "sha256": "f763596866f15e7af285836d237b6f0e956ab12f1ad021d9b30babab6d561947",
+      "sha_parity": "odd",
+      "entropy": 7.942,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000b53061f892dce9b60459a553.jpg",
+      "bytes": 167505,
+      "size_parity": "odd",
+      "sha256": "854067618a7bedf83bdbccddb5f0dce63142eabe2daa19bc8f028fb9b4df90bc",
+      "sha_parity": "even",
+      "entropy": 7.934,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000bf18622f886eb42e9bc0bfd2.jpg",
+      "bytes": 236221,
+      "size_parity": "odd",
+      "sha256": "ded73215ca2bc60842f2ca27412df2b854e0c0f306eab122ab75a76b1aa42f7b",
+      "sha_parity": "odd",
+      "entropy": 7.928,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000bf4861f79a1bf42377cbcc98.jpg",
+      "bytes": 174524,
+      "size_parity": "even",
+      "sha256": "340036dd88c09880cbade11bfbfe529b60c6a5e7baadb650bb2c7c6260c0552c",
+      "sha_parity": "even",
+      "entropy": 7.954,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000c0b061fdb716453f09a6a831.jpg",
+      "bytes": 245820,
+      "size_parity": "even",
+      "sha256": "5c345eab32d9378d768fee4d79a6ed2ec58341f0f377b4c3ce14eacbabe7652c",
+      "sha_parity": "odd",
+      "entropy": 7.974,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000c7f0622fbcd3bff0bf3ffa5e_(1).jpg",
+      "bytes": 478734,
+      "size_parity": "even",
+      "sha256": "47c6c8c11c35371d25359c49871dfe20f77ca4543c003c632412d1ae6ff704a9",
+      "sha_parity": "odd",
+      "entropy": 7.979,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000d0986230ae08f16476782627.jpg",
+      "bytes": 212325,
+      "size_parity": "odd",
+      "sha256": "642d54635073c32f26bc70a4165dc980274f4b5ec50ae83dc9a3670afd1089ce",
+      "sha_parity": "odd",
+      "entropy": 7.985,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000d2c061f58d12e3b17bd5fff2.jpg",
+      "bytes": 429622,
+      "size_parity": "even",
+      "sha256": "2faab63aed54201ba924769716590d91fb0f438d72cc493807869003fe401d40",
+      "sha_parity": "even",
+      "entropy": 7.969,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000d95c61f7af181a38c1bb46b3.jpg",
+      "bytes": 239942,
+      "size_parity": "even",
+      "sha256": "80dbdb2d612fd4e68d9a6bc8da3411c716d5acbde8e9344cc5e2ec4875770987",
+      "sha_parity": "even",
+      "entropy": 7.966,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000da3861f880de5de9e18e49e4.jpg",
+      "bytes": 200337,
+      "size_parity": "odd",
+      "sha256": "2437cd5bbe1d3afe1eef4da2b61ee3666b1aa569133da899f6a42a7e8ae7a6da",
+      "sha_parity": "odd",
+      "entropy": 7.94,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000dc0c61f7b70afc34a66bfebf.jpg",
+      "bytes": 316636,
+      "size_parity": "even",
+      "sha256": "7d99bb758f102cf25269bfa0d69ecd81d739f18bd43cdafdbbb42f21d483fb86",
+      "sha_parity": "odd",
+      "entropy": 7.957,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000dd1c620aba1dcba1e92f50aa_(1).jpg",
+      "bytes": 76164,
+      "size_parity": "even",
+      "sha256": "f99600a6fa971505b3c9dd0c6caadd66bcb549fb4560bb599a5d88e520eeb423",
+      "sha_parity": "even",
+      "entropy": 7.655,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000e42062309c489847a6456f94.jpg",
+      "bytes": 320353,
+      "size_parity": "odd",
+      "sha256": "337ca593faa783b3ddd1d74e8a3dbb3bec7502e3aeee02b97db75f1c313c928e",
+      "sha_parity": "odd",
+      "entropy": 7.957,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000e738622f92f1a9c3177469d1_(1).jpg",
+      "bytes": 164272,
+      "size_parity": "even",
+      "sha256": "1a5b504c9228f662b35e8412a16c1558bb523b8c1cb25348d91377d02c12ae32",
+      "sha_parity": "even",
+      "entropy": 7.971,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000eb146243a2893ac71e855270.jpg",
+      "bytes": 138808,
+      "size_parity": "even",
+      "sha256": "04bcf8811bd3b6c2ae5c6da47c57d219e09fc19b0b63ac4927138991fdbd78d7",
+      "sha_parity": "odd",
+      "entropy": 7.97,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000edd0622fb6e308a7265288d9.jpg",
+      "bytes": 211131,
+      "size_parity": "odd",
+      "sha256": "f163db5ba0c5100dcbd4d51b4d5e2446c56f639d214a91bb2170d5177b66ab4c",
+      "sha_parity": "odd",
+      "entropy": 7.957,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000f41c61f88a5f03462a082862.jpg",
+      "bytes": 288548,
+      "size_parity": "even",
+      "sha256": "69e3f26138d5da39b10ef125d5f52138c1a08163bc3c5a5bcbecf55f512f4d71",
+      "sha_parity": "even",
+      "entropy": 7.978,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000f91861f8ad6cfa3cd4626391_(2).jpg",
+      "bytes": 332871,
+      "size_parity": "odd",
+      "sha256": "66893092bb882c04771860be23b30b2e130c7faaab156a05f30276b1cca8c7ae",
+      "sha_parity": "even",
+      "entropy": 7.965,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000fe946230a9b48b83c040d2ea.jpg",
+      "bytes": 203348,
+      "size_parity": "even",
+      "sha256": "5cc21952124e13998b2b22710c7a3104a3a2a0c295cdf953fc306d038c989f1e",
+      "sha_parity": "odd",
+      "entropy": 7.961,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "publicacientiespiritual-main__file_00000000d3a06230a26e24fb179e289b_(1).jpg",
+      "bytes": 238465,
+      "size_parity": "odd",
+      "sha256": "0937518e833fbf3b0526dd23d7b92ac7ec4baa788061a682ea4153c3beda6491",
+      "sha_parity": "odd",
+      "entropy": 7.963,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "llama.cpp-master_(1)__ic_launcher.jpg",
+      "bytes": 5628,
+      "size_parity": "even",
+      "sha256": "afbd5d1eaa65ab453df6b8c590ce46a3fdc64e6f4523d31a6771d5bba2fe30ce",
+      "sha_parity": "even",
+      "entropy": 7.92,
+      "w": 192,
+      "h": 192,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "llama.cpp-master_(1)__ic_launcher_round.jpg",
+      "bytes": 6485,
+      "size_parity": "odd",
+      "sha256": "1724caf2b565fd164dbd9ef9ab46f20ec226daf9a4ca7a0152623267146c79f0",
+      "sha_parity": "even",
+      "entropy": 7.925,
+      "w": 192,
+      "h": 192,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "llama.cpp-master_(1)__llama0-banner.jpg",
+      "bytes": 41047,
+      "size_parity": "odd",
+      "sha256": "d6819930ea591d81d1d77c7f299dd170d4f95f62db657e3fbd543f47aa4bd436",
+      "sha_parity": "odd",
+      "entropy": 7.513,
+      "w": 1200,
+      "h": 600,
+      "ratio": 2.0,
+      "orientation": "landscape",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "llama.cpp-master_(1)__llama0-logo.jpg",
+      "bytes": 44078,
+      "size_parity": "even",
+      "sha256": "b2eff10cf8cd4b44e95518d4986e33a81e70bcc093fbd19c6838ea1108713776",
+      "sha_parity": "odd",
+      "entropy": 7.925,
+      "w": 1200,
+      "h": 400,
+      "ratio": 3.0,
+      "orientation": "landscape",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "llama.cpp-master_(1)__llama1-banner.jpg",
+      "bytes": 20925,
+      "size_parity": "odd",
+      "sha256": "09fa94ddd801b70d3d99ee8f969c6083bdeae18eeb2d71e698205596b85beda3",
+      "sha_parity": "odd",
+      "entropy": 7.163,
+      "w": 1200,
+      "h": 600,
+      "ratio": 2.0,
+      "orientation": "landscape",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "llama.cpp-master_(1)__matmul.jpg",
+      "bytes": 90168,
+      "size_parity": "even",
+      "sha256": "ec32e6fe4aaf654bad055943cbf7e0c76b3ba275fe820745ad5b3fc21ce5ae30",
+      "sha_parity": "even",
+      "entropy": 7.946,
+      "w": 1200,
+      "h": 626,
+      "ratio": 1.9169,
+      "orientation": "landscape",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "llama.cpp-master_(1)__test-1.jpg",
+      "bytes": 94291,
+      "size_parity": "odd",
+      "sha256": "01da56e6bc5254354a3dc1a1728d974ec3dd8c0c9200036635c1d8403fac25dc",
+      "sha_parity": "odd",
+      "entropy": 7.963,
+      "w": 640,
+      "h": 488,
+      "ratio": 1.3115,
+      "orientation": "landscape",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "llama.cpp-master_(1)__simplechat_screens.jpg",
+      "bytes": 54562,
+      "size_parity": "even",
+      "sha256": "6e15f93f24d69405c31313916e6937d554c7c5ab91f42d2e9cab179c612aaad5",
+      "sha_parity": "odd",
+      "entropy": 7.927,
+      "w": 800,
+      "h": 480,
+      "ratio": 1.6667,
+      "orientation": "landscape",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "llama.cpp-master_(1)__buttons_top.jpg",
+      "bytes": 47086,
+      "size_parity": "even",
+      "sha256": "53e0c9d408f999eb4a0ea758e90df941f626f874dd50117edeb4b18c8bd12f2e",
+      "sha_parity": "even",
+      "entropy": 7.948,
+      "w": 776,
+      "h": 518,
+      "ratio": 1.4981,
+      "orientation": "landscape",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "llama.cpp-master_(1)__llama_cpp.jpg",
+      "bytes": 20423,
+      "size_parity": "odd",
+      "sha256": "27981e6b40f4aa5a89bed6a69d78d55dc3c12fcdaa6849abceb3f28a982eb96a",
+      "sha_parity": "odd",
+      "entropy": 7.962,
+      "w": 794,
+      "h": 248,
+      "ratio": 3.2016,
+      "orientation": "landscape",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "llama.cpp-master_(1)__llamapattern.jpg",
+      "bytes": 87719,
+      "size_parity": "odd",
+      "sha256": "3de4412f6ef660f8d59bdad1ff3e471f68a0928b03f03548e2ba30c345ce5850",
+      "sha_parity": "odd",
+      "entropy": 7.954,
+      "w": 640,
+      "h": 640,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "llama.cpp-master_(1)__wild.jpg",
+      "bytes": 173602,
+      "size_parity": "even",
+      "sha256": "76d2ae8fba9b38d9619666cd9a057dba3f8f26db35edd0de51365d6a0a1f9fe4",
+      "sha_parity": "even",
+      "entropy": 7.956,
+      "w": 891,
+      "h": 1073,
+      "ratio": 0.8304,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file-4aHW8mjXtaLK1X6LeCKJzd-Screenshot_20250626-160157.jpg",
+      "bytes": 68287,
+      "size_parity": "odd",
+      "sha256": "bf8d821aa60775c6a276fec3ba9fe8bf37ecb690d5f40a26b6e875c09c87f2f2",
+      "sha_parity": "odd",
+      "entropy": 7.937,
+      "w": 540,
+      "h": 1200,
+      "ratio": 0.45,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file-Ws4kXtL6rnf7QKr2SXvc7g-11922857384986515407.jpg",
+      "bytes": 22379,
+      "size_parity": "odd",
+      "sha256": "f55dc24244c65439b03db9ad72b54c218bfbc4fe0d45fec40ee95f63d4842240",
+      "sha_parity": "odd",
+      "entropy": 7.663,
+      "w": 534,
+      "h": 534,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file_00000000a6ec622fb0ca0695d2a19122-840e77ce-80c3-4085-8f22-aedd9f8ddd27.jpg",
+      "bytes": 101330,
+      "size_parity": "even",
+      "sha256": "3e007930bca656f857234de6e8672cc18f5032b24c04513de9fd1881db72025d",
+      "sha_parity": "even",
+      "entropy": 7.953,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file-UsLr4EuEydwhCKikghZ7S4-10619987177228095246.jpg",
+      "bytes": 25060,
+      "size_parity": "even",
+      "sha256": "097c164fc12c2129869081c229c46c3cb27c2241943d091a9c27be6eec61193b",
+      "sha_parity": "odd",
+      "entropy": 7.888,
+      "w": 534,
+      "h": 534,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file_00000000c00461f990a54d28c80aae1f-95c1f5eb-2b2a-4f8b-bc97-c58017fd619d.jpg",
+      "bytes": 288332,
+      "size_parity": "even",
+      "sha256": "7e4cf6b4864077c5cac2e4a7dd0876d8837b906c6493623af6d592324d35dae4",
+      "sha_parity": "even",
+      "entropy": 7.97,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file_0000000052b061f689b85dd98ec4c445-280389ae-8e88-4d48-bcb1-f655eb0b48a0.jpg",
+      "bytes": 144097,
+      "size_parity": "odd",
+      "sha256": "ba2daaef106bf62e6ba26533d8c66f2b28d4ad7d51c003c2f6d1924103f7b2e2",
+      "sha_parity": "odd",
+      "entropy": 7.978,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file_000000001fc461f98dc2fe0d8e733bdd-76199da7-0b3f-48dd-89ea-59535d851e84.jpg",
+      "bytes": 237866,
+      "size_parity": "even",
+      "sha256": "7d371109f137d6f60ddb13634188c323f29e74961cab4712e3cd877a7af87978",
+      "sha_parity": "odd",
+      "entropy": 7.95,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file-EQSZbyMqsz7WC5N6Sj2rnf-sticker1001563606083497194.jpg",
+      "bytes": 23195,
+      "size_parity": "odd",
+      "sha256": "8fc669a6875a2cd73bfb5800f8ccba8d6d2a6aae75b6066bd2bbd5756a34e5d0",
+      "sha_parity": "even",
+      "entropy": 7.694,
+      "w": 534,
+      "h": 534,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file-QM3vn76PCM9VN6MLXrR494-sticker6801089031232757442.jpg",
+      "bytes": 22288,
+      "size_parity": "even",
+      "sha256": "dd87761cddf7d3d2cc11f41924d9188a9b47db240e1dea92f66933226646000f",
+      "sha_parity": "odd",
+      "entropy": 7.723,
+      "w": 534,
+      "h": 534,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file_00000000dcbc61f8bf4f62c4b829ebf0-8c1ecb57-048a-4445-bb1f-1afb365a9505.jpg",
+      "bytes": 250169,
+      "size_parity": "odd",
+      "sha256": "2e45d954864e3b94dcb9f730aad64efe54abc6207b43e1d4dae9ec35a266f6a2",
+      "sha_parity": "even",
+      "entropy": 7.969,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file-M9TmdTZ95nyK8NQFrcPZgb-1000343588.jpg",
+      "bytes": 71481,
+      "size_parity": "odd",
+      "sha256": "b10d80abf5e932897bd466911f1cb53e8953d03affda39aa2189060e79b9d932",
+      "sha_parity": "even",
+      "entropy": 7.958,
+      "w": 540,
+      "h": 1200,
+      "ratio": 0.45,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file_000000008a3c620a910c81e18c641bc7-3f695fa0-abd4-4307-91e1-8003d1f9a41b.jpg",
+      "bytes": 231480,
+      "size_parity": "even",
+      "sha256": "fe11d422a5b5e430c993beec338a4b95927df80dfbf886d84e51b4e80103a51f",
+      "sha_parity": "odd",
+      "entropy": 7.963,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file_00000000a7e0622f9e82b66bd4393d4a-7376e532-ba51-49da-9c77-aedc36e6cef8.jpg",
+      "bytes": 166429,
+      "size_parity": "odd",
+      "sha256": "8d8f50f515378b0439fbe5e51e7cf4b9fde1d3f93d265c194e7ffd97212a425b",
+      "sha_parity": "even",
+      "entropy": 7.951,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file_000000001660622f885685dd6c8fd48e-15d0fc5c-18b8-403e-84ac-c27be1284385.jpg",
+      "bytes": 201166,
+      "size_parity": "even",
+      "sha256": "d465714bfb45add895f4b0f9b6c75784133877c6ae17bc2e91da6e8ed2c9a903",
+      "sha_parity": "odd",
+      "entropy": 7.952,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file-FiAYx8rqwvXEePpBfPzszQ-IMG-20250501-WA0008.jpg",
+      "bytes": 164681,
+      "size_parity": "odd",
+      "sha256": "9c577b8a9e892eb0282bfd112b34ccd61c334d93bf2f0249f73ed0a3f184498e",
+      "sha_parity": "even",
+      "entropy": 7.975,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file-N2mtXSfzmU1wntWZjFJN59-IMG-20250513-WA0022.jpg",
+      "bytes": 258641,
+      "size_parity": "odd",
+      "sha256": "c3c2cee8a452bf2d659f72b62cfe7ceaa5122ee9b0f944e4619ef7d4a7b33809",
+      "sha_parity": "even",
+      "entropy": 7.958,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file-HEk5VSY4z69bLatKBjqKDe-IMG-20250512-WA0023.jpg",
+      "bytes": 170606,
+      "size_parity": "even",
+      "sha256": "861d5fcd80d691c060983da689bc98f876c1a1a98f23bb640b19ea908c2f1638",
+      "sha_parity": "even",
+      "entropy": 7.969,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file-6ZQ4YKkRjv9c62ZPpRFLXe-IMG-20250512-WA0050.jpg",
+      "bytes": 270876,
+      "size_parity": "even",
+      "sha256": "7dba8c68d9763f11bd9032ce9ea6d11702acfc0ab63e405ffd8a5e02117b26c0",
+      "sha_parity": "odd",
+      "entropy": 7.976,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file-QiDfphBJxoj7YB1vdCz1gL-IMG-20250512-WA0041.jpg",
+      "bytes": 109377,
+      "size_parity": "odd",
+      "sha256": "3740867e3a499bc0b71011ddb5eb2d41595a0e499f464ed0edeceafeac4114ac",
+      "sha_parity": "even",
+      "entropy": 7.948,
+      "w": 800,
+      "h": 1200,
+      "ratio": 0.6667,
+      "orientation": "portrait",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    },
+    {
+      "name": "d6e9db90fbd5ffb1158e68518e6f46005d1c78dbaef56427bb8a934c8f466c0a-2025-06-29-04-43-33-cefe5cb372804d79a18d0829d4655fee__file-Kx4kZ85Rjzd9oqWpj1B3Ep-IMG-20250512-WA0020.jpg",
+      "bytes": 113493,
+      "size_parity": "odd",
+      "sha256": "3e6398abe4293a2bc3273aeea1684e1cd28079caa35bf090f7224a68993aeb1f",
+      "sha_parity": "even",
+      "entropy": 7.849,
+      "w": 1024,
+      "h": 1024,
+      "ratio": 1.0,
+      "orientation": "square",
+      "ratio_flags": {
+        "phi_like": false,
+        "phi_inv_like": false,
+        "sqrt3_2_like": false
+      }
+    }
+  ]
+}
