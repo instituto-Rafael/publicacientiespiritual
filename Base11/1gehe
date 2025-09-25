@@ -1,0 +1,348 @@
+Perfeito — vou expandir a estrutura viva que já combinamos para incluir todas as palavras / atributos humanos que pediste: tudo o que existe no «cérebro», na centelha, no sopro, na consciência, na cognição, no aprendizado, nas emoções, nos rituais, nos sentidos, na ética, na memória, na vontade, na identidade e muito mais — e vou oferecer:
+
+1. Um bloco JSON canônico de token (token_vivo) com campo human_attributes já populado com centenas de termos (pronto para publicar no teu GitHub privado).
+
+
+2. Um script (Termux/Python + bash) que: varre um diretório, cria tokens para cada arquivo, extrai metadados e tenta mapear atributos humanos por heurística (palavras-chave no nome/conteúdo) e grava o token JSON pronto para commit.
+
+
+3. Instruções mínimas para commitar no GitHub privado (sem fazer nada por ti).
+
+
+
+Vou direto ao ponto — pega, copia e roda onde quiser.
+
+
+---
+
+1) Exemplo de token_vivo (JSON compacto) — inclui human_attributes
+
+{
+  "token_id": "RAFAELIA_v1::sha256:__HASH__",
+  "title": "Nome do ativo / arquivo",
+  "area": ["Engenharia de Software","Espiritualidade"],
+  "subarea_tags": ["termux","rclone","yshs","manifesto"],
+  "owner": {"name":"Rafael Melo","id":"user:rafaelia"},
+  "provenance": {
+    "source_files": ["TRABALHOia/raw/arquivo.ext"],
+    "created_at": "2025-09-25T12:00:00Z",
+    "created_by": "termux:device123",
+    "hash_sha256": "__HASH__"
+  },
+  "human_attributes": [
+    "consciência",
+    "sopro",
+    "centelha",
+    "intenção",
+    "vontade",
+    "livre-arbítrio",
+    "atenção",
+    "percepção",
+    "sensação",
+    "visão",
+    "audicao",
+    "olfato",
+    "paladar",
+    "tato",
+    "equilíbrio",
+    "propriocepção",
+    "memória_curta",
+    "memória_trabalhadora",
+    "memória_de_longo_prazo",
+    "memória_episódica",
+    "memória_semántica",
+    "memória_procedural",
+    "consolidação_de_memória",
+    "esquecimento",
+    "aprendizado",
+    "aprendizado_associativo",
+    "aprendizado_não_associativo",
+    "neuroplasticidade",
+    "atenção_executiva",
+    "controle_inibitório",
+    "planejamento",
+    "tomada_de_decisão",
+    "raciocínio_analítico",
+    "raciocínio_abstrato",
+    "criatividade",
+    "imaginação",
+    "intuição",
+    "insight",
+    "curiosidade",
+    "exploração",
+    "motivação",
+    "propósito",
+    "meta",
+    "objetivo",
+    "emoção",
+    "alegria",
+    "tristeza",
+    "raiva",
+    "medo",
+    "nojo",
+    "surpresa",
+    "amor",
+    "compaixão",
+    "empatia",
+    "culpa",
+    "vergonha",
+    "orgulho",
+    "resiliência",
+    "trauma",
+    "cura",
+    "acolhimento",
+    "ritual",
+    "hábito",
+    "rotina",
+    "disciplina",
+    "prática",
+    "expertise",
+    "habilidade_motora",
+    "coordenação",
+    "aprendizagem_motor",
+    "linguagem",
+    "fala",
+    "escrita",
+    "interpretação",
+    "compreensão",
+    "narrativa",
+    "símbolo",
+    "sacralidade",
+    "oração",
+    "meditação",
+    "contemplação",
+    "fé",
+    "espiritualidade",
+    "ética",
+    "moral",
+    "juízo",
+    "conselho",
+    "cuidado",
+    "proteção",
+    "guardiã/guardiã-eco",
+    "parentalidade",
+    "linhagem",
+    "ancestralidade",
+    "memória_coletiva",
+    "cultura",
+    "identidade",
+    "papel_social",
+    "ritual_de_passagem",
+    "cerimônia",
+    "arte",
+    "música",
+    "estética",
+    "beleza",
+    "sensibilidade",
+    "empoderamento",
+    "vulnerabilidade",
+    "limite",
+    "fronteira",
+    "sombra",
+    "integração",
+    "reparação",
+    "redenção",
+    "legado",
+    "testemunho",
+    "registro",
+    "testamento",
+    "autoconsciência",
+    "metacognição",
+    "autocontrole",
+    "autocompaixão",
+    "autoidentificação",
+    "intencionalidade",
+    "verbo",
+    "fiat_lux",
+    "fiat_verbum",
+    "fiat_voluntas",
+    "manifestação",
+    "transformação",
+    "transcendência",
+    "immanência",
+    "presença",
+    "ausência",
+    "sacramento",
+    "comunhão",
+    "cura_coletiva",
+    "ética_viva",
+    "responsabilidade",
+    "solidariedade",
+    "inclusão",
+    "acolhimento_social",
+    "proteção_infantil",
+    "educação",
+    "pedagogia",
+    "brincadeira",
+    "jogo",
+    "memória_emocional",
+    "padrão",
+    "ritmo",
+    "tempo",
+    "ritmo_circadiano",
+    "sonho",
+    "sonhar",
+    "imagética",
+    "síntese",
+    "abdução",
+    "analogia",
+    "heurística",
+    "diagnóstico",
+    "terapia",
+    "reabilitação",
+    "nutrição",
+    "sono",
+    "atenção plena",
+    "perdão",
+    "gratidão",
+    "compromisso",
+    "aliança",
+    "testemunho_vivo"
+  ],
+  "ethics": {
+    "sensitivity": "low",
+    "usage_policy": "preserve_provenance_and_reference_author"
+  },
+  "meta": {
+    "size_bytes": 12345,
+    "mime": "text/plain",
+    "created_locally": true
+  },
+  "analysis": {
+    "entropy": 6.5,
+    "duplication_score": 0.02,
+    "recommended_actions": ["index","backup","publish_to_private_github"]
+  }
+}
+
+> Observação: o array human_attributes acima é só um exemplo inicial — inclui muitas palavras humanas (sentidos, funções cognitivas, emoções, rituais, ética, sacralidade, memória, identidade, infância, cura, legado etc). Podemos torná-lo muito maior (centenas/ milhares de termos) conforme quiseres; também podemos mapear sinônimos (pt/en) e aliases.
+
+
+
+
+---
+
+2) Script pronto (Termux / Python) — cria tokens para TODOS os arquivos e tenta mapear human_attributes
+
+Salva o conteúdo abaixo como rafe_tokenize.py em Termux (~/TRABALHOia/tools/rafe_tokenize.py) e roda python3 rafe_tokenize.py /caminho/para/pasta.
+
+#!/data/data/com.termux/files/usr/bin/python3
+# rafe_tokenize.py
+# Usage: python3 rafe_tokenize.py /sdcard/Download/TRABALHOia/raw
+
+import os, sys, hashlib, json, time, re
+
+# tiny human-attributes lexicon (base) - estende como quiser
+HUMAN_LEXICON = [
+ "consciência","sopro","centelha","intenção","vontade","livre-arbítrio","atenção","percepção",
+ "memória","memória_episódica","memória_semántica","memória_procedural","aprendizado","neuroplasticidade",
+ "imaginação","intuição","emoção","amor","raiva","medo","compaixão","cura","ritual","hábito","rotina",
+ "linguagem","símbolo","fé","espiritualidade","ética","moral","legado","ancestralidade","cultura",
+ "identidade","autoconsciência","metacognição","criatividade","curiosidade","resiliência","trauma",
+ "cura_coletiva","sacralidade","presença","ausência","sonho","arte","música","brincadeira","jogo",
+ "paternidade","maternidade","vulnerabilidade","empatia","gratidão","perdão","sacramento","comunhão",
+ "responsabilidade","acolhimento","testemunho"
+]
+
+# helper: compute sha256
+def sha256_of_file(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        while True:
+            b = f.read(65536)
+            if not b: break
+            h.update(b)
+    return h.hexdigest()
+
+# basic keyword matching: read small bytes of file if textual
+def extract_text_snippet(path, maxbytes=20000):
+    try:
+        with open(path, "rb") as f:
+            data = f.read(maxbytes)
+        # try decode
+        for enc in ("utf-8","latin-1","cp1252"):
+            try:
+                return data.decode(enc, errors="ignore")
+            except:
+                pass
+    except Exception as e:
+        return ""
+    return ""
+
+def map_human_attributes(filename, snippet):
+    found = set()
+    text = (filename + " " + snippet).lower()
+    for kw in HUMAN_LEXICON:
+        if kw in text:
+            found.add(kw)
+    # heuristic: map some families
+    if re.search(r"\b(memóri|memoria|memo)\b", text):
+        found.add("memória")
+    if re.search(r"\b(amor|ama|querer)\b", text):
+        found.add("amor")
+    if re.search(r"\b(oração|reza|fiat|verbo|sopro)\b", text):
+        found.add("sacralidade")
+    return sorted(list(found))
+
+def create_token_for_file(path, outdir):
+    basename = os.path.basename(path)
+    h = sha256_of_file(path)
+    token = {
+        "token_id": f"RAFAELIA_v1::sha256:{h}",
+        "title": basename,
+        "area": ["Unspecified"],
+        "subarea_tags": [],
+        "owner": {"name":"Rafael Melo","id":"user:rafaelia"},
+        "provenance": {
+            "source_files": [path],
+            "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "created_by": "termux:device"
+        },
+        "human_attributes": [],
+        "ethics": {"sensitivity":"unknown","usage_policy":"manual_review"},
+        "meta": {"size_bytes": os.path.getsize(path), "mime":"application/octet-stream"},
+        "analysis": {}
+    }
+    snippet = extract_text_snippet(path)
+    attrs = map_human_attributes(basename, snippet)
+    token["human_attributes"] = attrs if attrs else ["intenção"]  # default seed
+    token["provenance"]["hash_sha256"] = h
+    token["analysis"]["entropy"] = None
+    # write file
+    os.makedirs(outdir, exist_ok=True)
+    tokenpath = os.path.join(outdir, f"{h}.token.json")
+    with open(tokenpath, "w", encoding="utf-8") as f:
+        json.dump(token, f, indent=2, ensure_ascii=False)
+    print("-> token:", token["token_id"], "attrs:", token["human_attributes"])
+    return tokenpath
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: python3 rafe_tokenize.py /path/to/rawfiles [/path/to/outdir]")
+        sys.exit(1)
+    raw = sys.argv[1]
+    out = sys.argv[2] if len(sys.argv) > 2 else os.path.join(raw,"../tokens")
+    out = os.path.abspath(out)
+    raw = os.path.abspath(raw)
+    if not os.path.isdir(raw):
+        print("Raw folder not found:", raw); sys.exit(1)
+    for root,dirs,files in os.walk(raw):
+        for fn in files:
+            p = os.path.join(root, fn)
+            try:
+                create_token_for_file(p, out)
+            except Exception as e:
+                print("ERR", p, e)
+
+if __name__ == "__main__":
+    main()
+
+Como usar no Termux:
+
+# no Termux
+pkg install python -y
+mkdir -p ~/TRABALHOia/raw
+# coloque arquivos em ~/TRABALHOia/raw
+python3 ~/TRABALHOia/tools/rafe_tokenize.py ~/TRABALHOia/raw ~/TRABALHOia/tokens
+# tokens JSON serão gerados em ~/TRABALHOia/t
+
