@@ -1,0 +1,343 @@
+RAFAELIA :: TURNO1 FULL ANALYSIS REPORT
+Generated: 2025-09-24T21:13:50.623063 UTC
+
+Files analyzed:
+- rafaelia_legacy.zip (99303353 bytes) SHA256: fa2b40e12b6000cecf6c84dba8414e6f9c0e2bc508f5748dd6b9b32c5fc717aa
+- termux-googleplay-2025-01-18 (1).xapk (72249657 bytes) SHA256: 696feca8bdbf88edc56282f6822e74be17d6fab3cf72db7f737f29e21bd9457e
+- winzip-7-1-1.apk (38700130 bytes) SHA256: e7e22714c7c53555e0e304f8e50979c95804669f555f16d28e8ce1f5f06374f7
+- es-file-explorer-4-4-2-2-1.apk (36858203 bytes) SHA256: 0f9f18684653696b1146700046f12e313c01e9fd5b794db35f6ba913cbc7c853
+- RAFAELOS_TERMUX_ZIPRAF (1).apk (72249657 bytes) SHA256: 696feca8bdbf88edc56282f6822e74be17d6fab3cf72db7f737f29e21bd9457e
+- raf_proof_bundle.zip (83927607 bytes) SHA256: 9e7ecf8a2457c2a4c03cceec33bf8d7fa157b58a661728513cad26ee9f39ad86
+- mt-manager-2-18-4.apk (27277073 bytes) SHA256: 24d622777f39d10ee5e1a700cd1617906e8e6144c67c40aa497ab50835b1841c
+- RAFAEL_TERMUX_MOD_REAL_COMPILADO (1).apk (2355 bytes) SHA256: bd22c7faf864bae9cbe951261bd04deeb6d87e120e003cea4badb9c23b1aee2b
+- antutu-benchmark-10-5-1.apk (68389127 bytes) SHA256: bbf7ecac42ee5478a046049a3550121b00cf43581d847fb67983a66bbf0b54b8
+- termux_modded.zip (9647486 bytes) SHA256: 4b625547a44c820391a777ad09d171a2c3058cece7cec7a00bb09deeb7043318
+- gboard-15-5-7-766552071-beta-arm64-v8a.xapk (62193823 bytes) SHA256: 7a3cb3f163d32497c9e8d96bba412fb0d47cdf712d0a011440db2ac2bedeb2a5
+- androidide-coder-1-0-5.apk (35044448 bytes) SHA256: bea2aeb929902eedf51ea4632cca389bd157bee9bba5654fb7b61eef38b53a31
+- 00000conversations2.zip (40761083 bytes) SHA256: d05078d225bc381ce023e538598cb7f8ef6520922b3ccb4e4b3bea7703bf69be
+- RAFAELOS_CORE_FINAL.zip (187666213 bytes) SHA256: 0c35520bab3f6896227c4ca801f74a4a63f91ff776469542b8f7bc0ff4c4d606
+- termux-googleplay-2025-01-18.xapk (72249657 bytes) SHA256: 696feca8bdbf88edc56282f6822e74be17d6fab3cf72db7f737f29e21bd9457e
+- matrizes_rafaelia_5x1000x1000.zip (44233732 bytes) SHA256: 13a770b05a7a62f1b744c2126366977e2037245c8210f9bb3a579011de890621
+- commandlinetools-linux-7583922_latest.zip (109673042 bytes) SHA256: 124f2d5115eee365df6cf3228ffbca6fc3911d16f8025bebd5b1c6e2fcfa7faf
+- Sketchware.Pro.v6.4.0-rc05-minApi26.apk (119197239 bytes) SHA256: 8a5ffb2b0bbf2e6a06a4d84358d9f76784b46d2344c3a3bd00be92825f18e36c
+- shizuku-13-6-0-r1090-16d28799.apk (2596710 bytes) SHA256: 40e47c85f1612d124c49db2613022023b40d6a322b0ee3be4f8945db09d4ba5b
+- link2sd-4-3-4.apk (3963894 bytes) SHA256: 95c0ffdba314aaa6dbf6ce7fed2fe8c18d88dde87411ac1ce9f68ed9c8706fd4
+- sd-maid-system-cleaning-tool-5-6-3.apk (8661382 bytes) SHA256: d606612715a9688beabc1d8a785c5913a4dcdcfb426fa378b6af54b2befb93a7
+- RAFAELIA_UNO_UNIFICADO_SIGNED (1).apk (357953881 bytes) SHA256: 31562a719c12d2b30e45744782bef4447ee43d4a2d6f289d31b7c3b08805cfd4
+- magisk-manager-29-0.apk (11801932 bytes) SHA256: 99d40df1a68a05a5e78452a9cd4f2d753434d7622baeeb44ea14ae8238c1a9ca
+- apks_compilados_sagrados.zip (245517114 bytes) SHA256: 40fb2ae10c143b052d67ded5e7c9f6124f107190d518d9b480b589515efd023f
+- com.termux_1002.apk (113880067 bytes) SHA256: e6265a57eb5ca363808488e3b01955958bed93bc0c8a0d281849b363b11027ec
+- _tmp_termux_modded.apk (12450962 bytes) SHA256: e44cf605c245910c3d1851e2c2aaadec96a23d8295f93bbaef0163b29316e959
+
+----
+Archive: rafaelia_legacy.zip
+Total entries: 1
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 0 (sample 20): []
+Contains AndroidManifest.xml: False
+
+----
+Archive: termux-googleplay-2025-01-18 (1).xapk
+Total entries: 85
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 0 (sample 20): []
+Nested APKs inside: ['com.termux.apk', 'config.uk.apk', 'config.en.apk', 'config.xxhdpi.apk', 'config.ru.apk', 'config.arm64_v8a.apk', 'config.ar.apk', 'config.fr.apk', 'config.bn.apk', 'config.tr.apk']
+Contains AndroidManifest.xml: False
+
+----
+Archive: winzip-7-1-1.apk
+Total entries: 2995
+META-INF entries (81): ['META-INF/CERT.RSA', 'META-INF/CERT.SF', 'META-INF/CHANGES', 'META-INF/MANIFEST.MF', 'META-INF/README.md', 'META-INF/android.support.design_material.version', 'META-INF/androidx.activity_activity.version', 'META-INF/androidx.annotation_annotation-experimental.version', 'META-INF/androidx.appcompat_appcompat-resources.version', 'META-INF/androidx.appcompat_appcompat.version', 'META-INF/androidx.arch.core_core-runtime.version', 'META-INF/androidx.asynclayoutinflater_asynclayoutinflater.version', 'META-INF/androidx.browser_browser.version', 'META-INF/androidx.cardview_cardview.version', 'META-INF/androidx.coordinatorlayout_coordinatorlayout.version', 'META-INF/androidx.core_core-ktx.version', 'META-INF/androidx.core_core.version', 'META-INF/androidx.cursoradapter_cursoradapter.version', 'META-INF/androidx.customview_customview.version', 'META-INF/androidx.databinding_viewbinding.version', 'META-INF/androidx.documentfile_documentfile.version', 'META-INF/androidx.drawerlayout_drawerlayout.version', 'META-INF/androidx.fragment_fragment.version', 'META-INF/androidx.interpolator_interpolator.version', 'META-INF/androidx.leanback_leanback-grid.version', 'META-INF/androidx.leanback_leanback.version', 'META-INF/androidx.legacy_legacy-support-core-ui.version', 'META-INF/androidx.legacy_legacy-support-core-utils.version', 'META-INF/androidx.legacy_legacy-support-v4.version', 'META-INF/androidx.lifecycle_lifecycle-livedata-core.version', 'META-INF/androidx.lifecycle_lifecycle-livedata.version', 'META-INF/androidx.lifecycle_lifecycle-process.version', 'META-INF/androidx.lifecycle_lifecycle-runtime.version', 'META-INF/androidx.lifecycle_lifecycle-service.version', 'META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version', 'META-INF/androidx.lifecycle_lifecycle-viewmodel.version', 'META-INF/androidx.loader_loader.version', 'META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version', 'META-INF/androidx.media_media.version', 'META-INF/androidx.print_print.version', 'META-INF/androidx.recyclerview_recyclerview.version', 'META-INF/androidx.room_room-runtime.version', 'META-INF/androidx.savedstate_savedstate.version', 'META-INF/androidx.slidingpanelayout_slidingpanelayout.version', 'META-INF/androidx.sqlite_sqlite-framework.version', 'META-INF/androidx.sqlite_sqlite.version', 'META-INF/androidx.startup_startup-runtime.version', 'META-INF/androidx.swiperefreshlayout_swiperefreshlayout.version', 'META-INF/androidx.tracing_tracing.version', 'META-INF/androidx.transition_transition.version']
+Signature related files: ['META-INF/CERT.RSA', 'META-INF/CERT.SF']
+  - META-INF/CERT.RSA SHA256: 51c9338bc7130551a32ba84f1fc6627ffe7d72659794c324774c1661f5c4fdc7
+  - META-INF/CERT.SF SHA256: 094a27e17008d73535dc7addb467f18a8505ca10d8eda4f04de1cb76872efb6c
+Native libs count: 20
+  Arch arm64-v8a: 5 libs (sample 10): ['lib/arm64-v8a/lib7zxa.so', 'lib/arm64-v8a/liberrno-lib.so', 'lib/arm64-v8a/libopencv_java3.so', 'lib/arm64-v8a/libusb-lib.so', 'lib/arm64-v8a/libwzziplib.so']
+  Arch armeabi-v7a: 5 libs (sample 10): ['lib/armeabi-v7a/lib7zxa.so', 'lib/armeabi-v7a/liberrno-lib.so', 'lib/armeabi-v7a/libopencv_java3.so', 'lib/armeabi-v7a/libusb-lib.so', 'lib/armeabi-v7a/libwzziplib.so']
+  Arch x86: 5 libs (sample 10): ['lib/x86/lib7zxa.so', 'lib/x86/liberrno-lib.so', 'lib/x86/libopencv_java3.so', 'lib/x86/libusb-lib.so', 'lib/x86/libwzziplib.so']
+  Arch x86_64: 5 libs (sample 10): ['lib/x86_64/lib7zxa.so', 'lib/x86_64/liberrno-lib.so', 'lib/x86_64/libopencv_java3.so', 'lib/x86_64/libusb-lib.so', 'lib/x86_64/libwzziplib.so']
+Code-like files count: 865 (sample 20): ['AndroidManifest.xml', 'META-INF/README.md', 'androidsupportmultidexversion.txt', 'assets/ShareSDK.xml', 'com/fasterxml/jackson/core/json/VERSION.txt', 'javax/annotation/CheckForNull.java', 'javax/annotation/CheckForSigned.java', 'javax/annotation/CheckReturnValue.java', 'javax/annotation/Detainted.java', 'javax/annotation/MatchesPattern.java', 'javax/annotation/Nonnegative.java', 'javax/annotation/Nonnull.java', 'javax/annotation/Nullable.java', 'javax/annotation/OverridingMethodsMustInvokeSuper.java', 'javax/annotation/ParametersAreNonnullByDefault.java', 'javax/annotation/ParametersAreNullableByDefault.java', 'javax/annotation/PropertyKey.java', 'javax/annotation/RegEx.java', 'javax/annotation/Signed.java', 'javax/annotation/Syntax.java']
+Contains AndroidManifest.xml: True
+
+----
+Archive: es-file-explorer-4-4-2-2-1.apk
+Total entries: 5180
+META-INF entries (7): ['META-INF/services/com.fasterxml.jackson.core.JsonFactory', 'META-INF/services/java.security.Provider', 'META-INF/services/kotlinx.coroutines.internal.MainDispatcherFactory', 'META-INF/services/kotlinx.coroutines.CoroutineExceptionHandler', 'META-INF/ESTRONGS.SF', 'META-INF/ESTRONGS.RSA', 'META-INF/MANIFEST.MF']
+Signature related files: ['META-INF/ESTRONGS.SF', 'META-INF/ESTRONGS.RSA']
+  - META-INF/ESTRONGS.SF SHA256: 9a4a2cecca36f57c8c85bfa5a4ca9ec44898243874080301f11784933b8b73ec
+  - META-INF/ESTRONGS.RSA SHA256: b66adf192c541f924b4a31c068a55ee4b06c00299bb0343eebbcdb1013056236
+Native libs count: 21
+  Arch x86: 5 libs (sample 10): ['lib/x86/libcrashsdk.so', 'lib/x86/libBugly.so', 'lib/x86/libpl_droidsonroids_gif.so', 'lib/x86/libumeng-spy.so', 'lib/x86/lib7-Zip-JBinding.so']
+  Arch armeabi-v7a: 5 libs (sample 10): ['lib/armeabi-v7a/libcrashsdk.so', 'lib/armeabi-v7a/libBugly.so', 'lib/armeabi-v7a/libpl_droidsonroids_gif.so', 'lib/armeabi-v7a/libumeng-spy.so', 'lib/armeabi-v7a/lib7-Zip-JBinding.so']
+  Arch armeabi: 3 libs (sample 10): ['lib/armeabi/libcrashsdk.so', 'lib/armeabi/libBugly.so', 'lib/armeabi/libumeng-spy.so']
+  Arch x86_64: 3 libs (sample 10): ['lib/x86_64/libBugly.so', 'lib/x86_64/libpl_droidsonroids_gif.so', 'lib/x86_64/lib7-Zip-JBinding.so']
+  Arch arm64-v8a: 5 libs (sample 10): ['lib/arm64-v8a/libcrashsdk.so', 'lib/arm64-v8a/libBugly.so', 'lib/arm64-v8a/libpl_droidsonroids_gif.so', 'lib/arm64-v8a/libumeng-spy.so', 'lib/arm64-v8a/lib7-Zip-JBinding.so']
+Code-like files count: 2311 (sample 20): ['AndroidManifest.xml', 'res/layout-v26/abc_screen_toolbar.xml', 'res/layout-v26/mtrl_calendar_month.xml', 'res/drawable/__picker_common_ok_btn_normal.xml', 'res/drawable/ad_default_content.xml', 'res/drawable/durec_edit_video_intro_outro_selector.xml', 'res/drawable/durec_edit_video_add_picture_selector.xml', 'res/drawable/shadow_tools_top.xml', 'res/drawable/btn_unlock_preminum_selector.xml', 'res/drawable/mtrl_popupmenu_background_dark.xml', 'res/drawable/icon_video_controller_next.xml', 'res/drawable/dash_line.xml', 'res/drawable/durec_volume_dialog_progress_thumb.xml', 'res/drawable/tt_ad_cover_btn_begin_bg.xml', 'res/drawable/sdcard_notification_status_88.xml', 'res/drawable/music_list_item_right_handle_btn.xml', 'res/drawable/background_address_bar_right.xml', 'res/drawable/junk_scan_progress_small.xml', 'res/drawable/action_button_bg.xml', 'res/drawable/switch_track.xml']
+Contains AndroidManifest.xml: True
+
+----
+Archive: RAFAELOS_TERMUX_ZIPRAF (1).apk
+Total entries: 85
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 0 (sample 20): []
+Nested APKs inside: ['com.termux.apk', 'config.uk.apk', 'config.en.apk', 'config.xxhdpi.apk', 'config.ru.apk', 'config.arm64_v8a.apk', 'config.ar.apk', 'config.fr.apk', 'config.bn.apk', 'config.tr.apk']
+Contains AndroidManifest.xml: False
+
+----
+Archive: raf_proof_bundle.zip
+Total entries: 3
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 1 (sample 20): ['hash_summary.txt']
+Nested APKs inside: ['RAFAELOS_TERMUX_ZIPRAF (1).apk', 'deepseek-1-2-5.apk']
+Contains AndroidManifest.xml: False
+
+----
+Archive: mt-manager-2-18-4.apk
+Total entries: 2131
+META-INF entries (9): ['META-INF/androidx/annotation/annotation/LICENSE.txt', 'META-INF/com/android/build/gradle/app-metadata.properties', 'META-INF/services/java.security.Provider', 'META-INF/services/kotlinx.coroutines.CoroutineExceptionHandler', 'META-INF/services/kotlinx.coroutines.internal.MainDispatcherFactory', 'META-INF/version-control-info.textproto', 'META-INF/MANIFEST.MF', 'META-INF/BIN.SF', 'META-INF/BIN.RSA']
+Signature related files: ['META-INF/BIN.SF', 'META-INF/BIN.RSA']
+  - META-INF/BIN.SF SHA256: f9c7ae846307c8c1347021c0635dbd336b0d55253e60da4207a6f2c27ee0a49c
+  - META-INF/BIN.RSA SHA256: a8e98387aaa2fcd4c146d97478d6dfec2a94865efc716eb0ec29fdc08050abfd
+Native libs count: 40
+  Arch arm64-v8a: 11 libs (sample 10): ['lib/arm64-v8a/libdeflate.so', 'lib/arm64-v8a/libffmpegJNI.so', 'lib/arm64-v8a/liblsplant.so', 'lib/arm64-v8a/libmt1.so', 'lib/arm64-v8a/libmt2.so', 'lib/arm64-v8a/libmt3.so', 'lib/arm64-v8a/libmtprotect.so', 'lib/arm64-v8a/libpl_droidsonroids_gif.so', 'lib/arm64-v8a/libterm.so', 'lib/arm64-v8a/libumeng-spy.so']
+  Arch armeabi-v7a: 10 libs (sample 10): ['lib/armeabi-v7a/libdeflate.so', 'lib/armeabi-v7a/liblsplant.so', 'lib/armeabi-v7a/libmt1.so', 'lib/armeabi-v7a/libmt2.so', 'lib/armeabi-v7a/libmt3.so', 'lib/armeabi-v7a/libmtprotect.so', 'lib/armeabi-v7a/libpl_droidsonroids_gif.so', 'lib/armeabi-v7a/libterm.so', 'lib/armeabi-v7a/libumeng-spy.so', 'lib/armeabi-v7a/libzstd-jni-1.5.7-1.so']
+  Arch x86: 10 libs (sample 10): ['lib/x86/libdeflate.so', 'lib/x86/liblsplant.so', 'lib/x86/libmt1.so', 'lib/x86/libmt2.so', 'lib/x86/libmt3.so', 'lib/x86/libmtprotect.so', 'lib/x86/libpl_droidsonroids_gif.so', 'lib/x86/libterm.so', 'lib/x86/libumeng-spy.so', 'lib/x86/libzstd-jni-1.5.7-1.so']
+  Arch x86_64: 9 libs (sample 10): ['lib/x86_64/libdeflate.so', 'lib/x86_64/liblsplant.so', 'lib/x86_64/libmt1.so', 'lib/x86_64/libmt2.so', 'lib/x86_64/libmt3.so', 'lib/x86_64/libmtprotect.so', 'lib/x86_64/libpl_droidsonroids_gif.so', 'lib/x86_64/libterm.so', 'lib/x86_64/libzstd-jni-1.5.7-1.so']
+Code-like files count: 1016 (sample 20): ['AndroidManifest.xml', 'META-INF/androidx/annotation/annotation/LICENSE.txt', 'assets/Log.smali', 'assets/agreement.txt', 'assets/com.tencent.open.config.json', 'kotlin-tooling-metadata.json', 'log4j.xml', '֡֫ۜ.xml', '֡ۖ᩺.xml', '֡ۘ۟.xml', '֡ۘܽ.xml', '֡ۙ۫.xml', '֡ۙ۬.xml', '֡ۙᩳ.xml', '֡ۙ᩶.xml', '֡ۚۖ.xml', '֡ۚ᩺.xml', '֡ۛ֡.xml', '֡ۛۘ.xml', '֡ۜ᩺.xml']
+Nested APKs inside: ['assets/filetransfer.apk']
+Contains AndroidManifest.xml: True
+
+----
+Archive: RAFAEL_TERMUX_MOD_REAL_COMPILADO (1).apk
+Total entries: 6
+META-INF entries (3): ['META-INF/MANIFEST.MF', 'META-INF/CERT.SF', 'META-INF/CERT.RSA']
+Signature related files: ['META-INF/CERT.SF', 'META-INF/CERT.RSA']
+  - META-INF/CERT.SF SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  - META-INF/CERT.RSA SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+Code-like files count: 1 (sample 20): ['AndroidManifest.xml']
+Contains AndroidManifest.xml: True
+
+----
+Archive: antutu-benchmark-10-5-1.apk
+Total entries: 2895
+META-INF entries (79): ['META-INF/com/android/build/gradle/app-metadata.properties', 'META-INF/version-control-info.textproto', 'META-INF/androidx.activity_activity-ktx.version', 'META-INF/androidx.activity_activity.version', 'META-INF/androidx.annotation_annotation-experimental.version', 'META-INF/androidx.appcompat_appcompat-resources.version', 'META-INF/androidx.appcompat_appcompat.version', 'META-INF/androidx.arch.core_core-runtime.version', 'META-INF/androidx.asynclayoutinflater_asynclayoutinflater.version', 'META-INF/androidx.cardview_cardview.version', 'META-INF/androidx.constraintlayout_constraintlayout.version', 'META-INF/androidx.coordinatorlayout_coordinatorlayout.version', 'META-INF/androidx.core_core-ktx.version', 'META-INF/androidx.core_core.version', 'META-INF/androidx.cursoradapter_cursoradapter.version', 'META-INF/androidx.customview_customview-poolingcontainer.version', 'META-INF/androidx.customview_customview.version', 'META-INF/androidx.databinding_viewbinding.version', 'META-INF/androidx.datastore_datastore-core.version', 'META-INF/androidx.datastore_datastore-preferences.version', 'META-INF/androidx.datastore_datastore.version', 'META-INF/androidx.documentfile_documentfile.version', 'META-INF/androidx.drawerlayout_drawerlayout.version', 'META-INF/androidx.dynamicanimation_dynamicanimation.version', 'META-INF/androidx.emoji2_emoji2-views-helper.version', 'META-INF/androidx.emoji2_emoji2.version', 'META-INF/androidx.exifinterface_exifinterface.version', 'META-INF/androidx.fragment_fragment-ktx.version', 'META-INF/androidx.fragment_fragment.version', 'META-INF/androidx.interpolator_interpolator.version', 'META-INF/androidx.legacy_legacy-support-core-ui.version', 'META-INF/androidx.legacy_legacy-support-core-utils.version', 'META-INF/androidx.legacy_legacy-support-v4.version', 'META-INF/androidx.lifecycle_lifecycle-livedata-core-ktx.version', 'META-INF/androidx.lifecycle_lifecycle-livedata-core.version', 'META-INF/androidx.lifecycle_lifecycle-livedata-ktx.version', 'META-INF/androidx.lifecycle_lifecycle-livedata.version', 'META-INF/androidx.lifecycle_lifecycle-process.version', 'META-INF/androidx.lifecycle_lifecycle-reactivestreams-ktx.version', 'META-INF/androidx.lifecycle_lifecycle-reactivestreams.version', 'META-INF/androidx.lifecycle_lifecycle-runtime-ktx.version', 'META-INF/androidx.lifecycle_lifecycle-runtime.version', 'META-INF/androidx.lifecycle_lifecycle-service.version', 'META-INF/androidx.lifecycle_lifecycle-viewmodel-ktx.version', 'META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version', 'META-INF/androidx.lifecycle_lifecycle-viewmodel.version', 'META-INF/androidx.loader_loader.version', 'META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version', 'META-INF/androidx.media_media.version', 'META-INF/androidx.print_print.version']
+Signature related files: ['META-INF/CERT.SF', 'META-INF/CERT.RSA']
+  - META-INF/CERT.SF SHA256: d40ecc88b82aa374498a2c288c687e4a3b06324d652192bc30df71d6b885c733
+  - META-INF/CERT.RSA SHA256: cda8e3708bedd5c823bf6b80594fb5f5fbec23fcf68afc17730d456997b913cc
+Native libs count: 33
+  Arch arm64-v8a: 22 libs (sample 10): ['lib/arm64-v8a/libCPS.so', 'lib/arm64-v8a/libabenchmark.so', 'lib/arm64-v8a/libavx.so', 'lib/arm64-v8a/libc++_shared.so', 'lib/arm64-v8a/libcommonV2DevInfo.so', 'lib/arm64-v8a/libcrashsdk.so', 'lib/arm64-v8a/libdatastore_shared_counter.so', 'lib/arm64-v8a/libdevInfo.so', 'lib/arm64-v8a/libimageprocess.so', 'lib/arm64-v8a/libimageprocesshalf.so']
+  Arch x86_64: 11 libs (sample 10): ['lib/x86_64/libabenchmark.so', 'lib/x86_64/libavx.so', 'lib/x86_64/libc++_shared.so', 'lib/x86_64/libdatastore_shared_counter.so', 'lib/x86_64/libdevInfo.so', 'lib/x86_64/libimageprocess.so', 'lib/x86_64/libimageprocesshalf.so', 'lib/x86_64/libmsaoaidauth.so', 'lib/x86_64/libmsaoaidsec.so', 'lib/x86_64/librenderscript-toolkit.so']
+Code-like files count: 1583 (sample 20): ['assets/certification.xml', 'assets/devices.json', 'assets/devices2.json', 'assets/grs_sdk_global_route_config_opendevicesdk.json', 'assets/grs_sdk_global_route_config_opensdkService.json', 'assets/grs_sdk_server_config.json', 'assets/imageprocess/configs/config.txt', 'assets/imageprocesshalf/configs/config.txt', 'assets/ksad_idc.json', 'assets/person_300.xml', 'assets/public_timeline.json', 'assets/ranking_chart.xml', 'assets/secapps.txt', 'assets/supplierconfig.json', 'assets/testwebview/data/show_data_cn.json', 'assets/testwebview/data/show_data_en.json', 'assets/uilagtest/ui_lag_test_data.json', 'assets/uilagtest/ui_lag_test_data_cn.json', 'META-INF/androidx/annotation/annotation/LICENSE.txt', 'META-INF/androidx/constraintlayout/constraintlayout-core/LICENSE.txt']
+Contains AndroidManifest.xml: True
+
+----
+Archive: termux_modded.zip
+Total entries: 1
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 0 (sample 20): []
+Nested APKs inside: ['termux_modded.apk']
+Contains AndroidManifest.xml: False
+
+----
+Archive: gboard-15-5-7-766552071-beta-arm64-v8a.xapk
+Total entries: 10
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 0 (sample 20): []
+Nested APKs inside: ['config.hdpi.apk', 'config.xhdpi.apk', 'config.xxxhdpi.apk', 'config.ldpi.apk', 'dictation_feature_split.apk', 'tenoranimation_feature_split.apk', 'brella_feature_split.apk', 'com.google.android.inputmethod.latin.apk', 'config.xxhdpi.apk', 'config.mdpi.apk']
+Contains AndroidManifest.xml: False
+
+----
+Archive: androidide-coder-1-0-5.apk
+Total entries: 1083
+META-INF entries (3): ['META-INF/TESTKEY.SF', 'META-INF/TESTKEY.RSA', 'META-INF/MANIFEST.MF']
+Signature related files: ['META-INF/TESTKEY.SF', 'META-INF/TESTKEY.RSA']
+  - META-INF/TESTKEY.SF SHA256: 37657c8e1b9a8ab4c57fbe7770ea7e94d99eb5ad594ba0ab36b8c15a24f310c6
+  - META-INF/TESTKEY.RSA SHA256: fbdc2e7cfe06f4ae1164fb48aa235f0bbc4a6c37a44bb3a34a8cb1a2e473a1ff
+Code-like files count: 618 (sample 20): ['AndroidManifest.xml', 'res/anim/abc_fade_in.xml', 'res/anim/abc_fade_out.xml', 'res/anim/abc_grow_fade_in_from_bottom.xml', 'res/anim/abc_popup_enter.xml', 'res/anim/abc_popup_exit.xml', 'res/anim/abc_shrink_fade_out_from_bottom.xml', 'res/anim/abc_slide_in_bottom.xml', 'res/anim/abc_slide_in_top.xml', 'res/anim/abc_slide_out_bottom.xml', 'res/anim/abc_slide_out_top.xml', 'res/anim/abc_tooltip_enter.xml', 'res/anim/abc_tooltip_exit.xml', 'res/anim/animate_card_enter.xml', 'res/anim/animate_card_exit.xml', 'res/anim/animate_diagonal_right_enter.xml', 'res/anim/animate_diagonal_right_exit.xml', 'res/anim/animate_fade_enter.xml', 'res/anim/animate_fade_exit.xml', 'res/anim/animate_in_out_enter.xml']
+Contains AndroidManifest.xml: True
+
+----
+Archive: 00000conversations2.zip
+Total entries: 1
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 1 (sample 20): ['conversations2.json']
+Contains AndroidManifest.xml: False
+
+----
+Archive: RAFAELOS_CORE_FINAL.zip
+Total entries: 6
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 0 (sample 20): []
+Nested APKs inside: ['winzip-7-1-1.apk', 'link2sd-4-3-4.apk', 'shizuku-13-6-0-r1090-16d28799.apk', 'magisk-manager-29-0.apk']
+Contains AndroidManifest.xml: False
+
+----
+Archive: termux-googleplay-2025-01-18.xapk
+Total entries: 85
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 0 (sample 20): []
+Nested APKs inside: ['com.termux.apk', 'config.uk.apk', 'config.en.apk', 'config.xxhdpi.apk', 'config.ru.apk', 'config.arm64_v8a.apk', 'config.ar.apk', 'config.fr.apk', 'config.bn.apk', 'config.tr.apk']
+Contains AndroidManifest.xml: False
+
+----
+Archive: matrizes_rafaelia_5x1000x1000.zip
+Total entries: 1
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 1 (sample 20): ['matrizes_rafaelia_5x1000x1000.json']
+Contains AndroidManifest.xml: False
+
+----
+Archive: commandlinetools-linux-7583922_latest.zip
+Total entries: 99
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 1 (sample 20): ['cmdline-tools/NOTICE.txt']
+Contains AndroidManifest.xml: False
+
+----
+Archive: Sketchware.Pro.v6.4.0-rc05-minApi26.apk
+Total entries: 2986
+META-INF entries (31): ['META-INF/com/android/build/gradle/app-metadata.properties', 'META-INF/com.google.dagger_dagger.version', 'META-INF/compiler.version', 'META-INF/eclipse.inf', 'META-INF/extensions/compiler.xml', 'META-INF/jandex.idx', 'META-INF/native/osx/libjansi.jnilib', 'META-INF/native/windows32/jansi.dll', 'META-INF/native/windows64/jansi.dll', 'META-INF/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat', 'META-INF/services/com.android.tools.r8.internal.WE', 'META-INF/services/com.android.tools.r8.internal.bF', 'META-INF/services/java.nio.charset.spi.CharsetProvider', 'META-INF/services/java.nio.file.spi.FileSystemProvider', 'META-INF/services/javax.annotation.processing.Processor', 'META-INF/services/javax.tools.JavaCompiler', 'META-INF/services/kotlin.reflect.jvm.internal.impl.builtins.BuiltInsLoader', 'META-INF/services/kotlin.reflect.jvm.internal.impl.resolve.ExternalOverridabilityCondition', 'META-INF/services/kotlinx.metadata.impl.extensions.MetadataExtensions', 'META-INF/services/org.apache.logging.log4j.core.util.ContextDataProvider', 'META-INF/services/org.apache.logging.log4j.message.ThreadDumpMessage$ThreadInfoFactory', 'META-INF/services/org.apache.logging.log4j.spi.Provider', 'META-INF/services/org.apache.logging.log4j.util.PropertySource', 'META-INF/services/org.jetbrains.kotlin.builtins.BuiltInsLoader', 'META-INF/services/org.jetbrains.kotlin.diagnostics.rendering.DefaultErrorMessages$Extension', 'META-INF/services/org.jetbrains.kotlin.org.jline.terminal.spi.JansiSupport', 'META-INF/services/org.jetbrains.kotlin.org.jline.terminal.spi.JnaSupport', 'META-INF/services/org.jetbrains.kotlin.resolve.ExternalOverridabilityCondition', 'META-INF/services/org.jetbrains.kotlin.resolve.jvm.jvmSignature.KotlinToJvmSignatureMapper', 'META-INF/services/org.jetbrains.kotlin.util.ModuleVisibilityHelper', 'META-INF/services/org.xmlpull.v1.XmlPullParserFactory']
+Signature related files: []
+Code-like files count: 862 (sample 20): ['assets/anim/guide_create.json', 'assets/anim/guide_imagine.json', 'assets/anim/guide_share.json', 'assets/anim/loading_3balls.json', 'assets/anim/loading_cloud.json', 'assets/anim/loading_simple_gray.json', 'assets/anim/login_lock.json', 'assets/anim/preloader.json', 'assets/anim/sketchware_logo.json', 'assets/debug/DebugActivity.java', 'assets/debug/SketchApplication.java', 'assets/debug/SketchLogger.java', 'assets/localization/strings.xml', 'assets/oss.txt', 'assets/textmate/themes/dracula.json', 'assets/textmate/xml.tmLanguage.json', 'META-INF/extensions/compiler.xml', 'androidsupportmultidexversion.txt', 'api_database/api_database_ambiguous.txt', 'com/android/apksigner/help.txt']
+Contains AndroidManifest.xml: True
+
+----
+Archive: shizuku-13-6-0-r1090-16d28799.apk
+Total entries: 945
+META-INF entries (3): ['META-INF/com/android/build/gradle/app-metadata.properties', 'META-INF/services/rikka.shizuku.N1', 'META-INF/services/rikka.shizuku.O1']
+Signature related files: []
+Native libs count: 12
+  Arch arm64-v8a: 3 libs (sample 10): ['lib/arm64-v8a/libadb.so', 'lib/arm64-v8a/librish.so', 'lib/arm64-v8a/libshizuku.so']
+  Arch armeabi-v7a: 3 libs (sample 10): ['lib/armeabi-v7a/libadb.so', 'lib/armeabi-v7a/librish.so', 'lib/armeabi-v7a/libshizuku.so']
+  Arch x86: 3 libs (sample 10): ['lib/x86/libadb.so', 'lib/x86/librish.so', 'lib/x86/libshizuku.so']
+  Arch x86_64: 3 libs (sample 10): ['lib/x86_64/libadb.so', 'lib/x86_64/librish.so', 'lib/x86_64/libshizuku.so']
+Code-like files count: 745 (sample 20): ['AndroidManifest.xml', 'res/-1.xml', 'res/-5.xml', 'res/-7.xml', 'res/-8.xml', 'res/-B.xml', 'res/-Q.xml', 'res/0C.xml', 'res/0E.xml', 'res/0E1.xml', 'res/0M.xml', 'res/0S.xml', 'res/1R.xml', 'res/1x.xml', 'res/1y.xml', 'res/20.xml', 'res/21.xml', 'res/27.xml', 'res/271.xml', 'res/2F.xml']
+Contains AndroidManifest.xml: True
+
+----
+Archive: link2sd-4-3-4.apk
+Total entries: 750
+META-INF entries (3): ['META-INF/CERT.RSA', 'META-INF/CERT.SF', 'META-INF/MANIFEST.MF']
+Signature related files: ['META-INF/CERT.RSA', 'META-INF/CERT.SF']
+  - META-INF/CERT.RSA SHA256: 3f008745789dd74cb7f0bb1ce2d36658a9fb7086c6a45431bb97ae3ab15bf02e
+  - META-INF/CERT.SF SHA256: 6c65646427e9435ff27b4129c3865653226bf20b2d948732a5883a6a6873f058
+Native libs count: 6
+  Arch arm64-v8a: 1 libs (sample 10): ['lib/arm64-v8a/liblink2sd.so']
+  Arch armeabi-v7a: 1 libs (sample 10): ['lib/armeabi-v7a/liblink2sd.so']
+  Arch armeabi: 1 libs (sample 10): ['lib/armeabi/liblink2sd.so']
+  Arch mips: 1 libs (sample 10): ['lib/mips/liblink2sd.so']
+  Arch x86: 1 libs (sample 10): ['lib/x86/liblink2sd.so']
+  Arch x86_64: 1 libs (sample 10): ['lib/x86_64/liblink2sd.so']
+Code-like files count: 237 (sample 20): ['AndroidManifest.xml', 'error_prone/Annotations.gwt.xml', 'jsr305_annotations/Jsr305_annotations.gwt.xml', 'res/anim/abc_fade_in.xml', 'res/anim/abc_fade_out.xml', 'res/anim/abc_grow_fade_in_from_bottom.xml', 'res/anim/abc_popup_enter.xml', 'res/anim/abc_popup_exit.xml', 'res/anim/abc_shrink_fade_out_from_bottom.xml', 'res/anim/abc_slide_in_bottom.xml', 'res/anim/abc_slide_in_top.xml', 'res/anim/abc_slide_out_bottom.xml', 'res/anim/abc_slide_out_top.xml', 'res/anim/clear_cache_rotation.xml', 'res/anim/move.xml', 'res/anim/shake.xml', 'res/anim/shake_layout_anim.xml', 'res/color-v11/abc_background_cache_hint_selector_material_dark.xml', 'res/color-v11/abc_background_cache_hint_selector_material_light.xml', 'res/color-v11/abc_hint_foreground_material_dark.xml']
+Contains AndroidManifest.xml: True
+
+----
+Archive: sd-maid-system-cleaning-tool-5-6-3.apk
+Total entries: 1539
+META-INF entries (42): ['META-INF/com/android/build/gradle/app-metadata.properties', 'META-INF/androidx.activity_activity.version', 'META-INF/androidx.annotation_annotation-experimental.version', 'META-INF/androidx.appcompat_appcompat-resources.version', 'META-INF/androidx.appcompat_appcompat.version', 'META-INF/androidx.arch.core_core-runtime.version', 'META-INF/androidx.browser_browser.version', 'META-INF/androidx.cardview_cardview.version', 'META-INF/androidx.coordinatorlayout_coordinatorlayout.version', 'META-INF/androidx.core_core-ktx.version', 'META-INF/androidx.core_core.version', 'META-INF/androidx.cursoradapter_cursoradapter.version', 'META-INF/androidx.customview_customview.version', 'META-INF/androidx.documentfile_documentfile.version', 'META-INF/androidx.drawerlayout_drawerlayout.version', 'META-INF/androidx.fragment_fragment.version', 'META-INF/androidx.interpolator_interpolator.version', 'META-INF/androidx.lifecycle_lifecycle-extensions.version', 'META-INF/androidx.lifecycle_lifecycle-livedata-core.version', 'META-INF/androidx.lifecycle_lifecycle-livedata.version', 'META-INF/androidx.lifecycle_lifecycle-process.version', 'META-INF/androidx.lifecycle_lifecycle-runtime.version', 'META-INF/androidx.lifecycle_lifecycle-service.version', 'META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version', 'META-INF/androidx.lifecycle_lifecycle-viewmodel.version', 'META-INF/androidx.loader_loader.version', 'META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version', 'META-INF/androidx.percentlayout_percentlayout.version', 'META-INF/androidx.preference_preference.version', 'META-INF/androidx.recyclerview_recyclerview.version', 'META-INF/androidx.savedstate_savedstate.version', 'META-INF/androidx.tracing_tracing.version', 'META-INF/androidx.transition_transition.version', 'META-INF/androidx.vectordrawable_vectordrawable-animated.version', 'META-INF/androidx.vectordrawable_vectordrawable.version', 'META-INF/androidx.versionedparcelable_versionedparcelable.version', 'META-INF/androidx.viewpager2_viewpager2.version', 'META-INF/androidx.viewpager_viewpager.version', 'META-INF/com.google.android.material_material.version', 'META-INF/CERT.SF', 'META-INF/CERT.RSA', 'META-INF/MANIFEST.MF']
+Signature related files: ['META-INF/CERT.SF', 'META-INF/CERT.RSA']
+  - META-INF/CERT.SF SHA256: d478949d4a71a46983f1637493bc9dabb595ab897e74183aa632566820863e00
+  - META-INF/CERT.RSA SHA256: 8913255b28b82762ae460d1e77ceb8cc8442b5c0e3796fcd001b700a3a5d28b6
+Native libs count: 8
+  Arch arm64-v8a: 2 libs (sample 10): ['lib/arm64-v8a/libsqlite3.so', 'lib/arm64-v8a/libtoybox.so']
+  Arch armeabi-v7a: 2 libs (sample 10): ['lib/armeabi-v7a/libsqlite3.so', 'lib/armeabi-v7a/libtoybox.so']
+  Arch x86: 2 libs (sample 10): ['lib/x86/libsqlite3.so', 'lib/x86/libtoybox.so']
+  Arch x86_64: 2 libs (sample 10): ['lib/x86_64/libsqlite3.so', 'lib/x86_64/libtoybox.so']
+Code-like files count: 699 (sample 20): ['assets/databases/core/db_clutter_markers.json', 'assets/databases/core/db_debug_markers.json', 'assets/databases/expendables/db_advertisement_files.json', 'assets/databases/expendables/db_analytics_files.json', 'assets/databases/expendables/db_bug_reporting_files.json', 'assets/databases/expendables/db_downloaded_game_files.json', 'assets/databases/expendables/db_hidden_caches_files.json', 'assets/databases/expendables/db_offline_cache_files.json', 'assets/databases/expendables/db_trash_files.json', 'assets/databases/expendables/db_webcaches.json', 'AndroidManifest.xml', 'res/--.xml', 'res/-2.xml', 'res/-A.xml', 'res/-G.xml', 'res/-Y.xml', 'res/-a.xml', 'res/-c.xml', 'res/-o.xml', 'res/-p.xml']
+Contains AndroidManifest.xml: True
+
+----
+Archive: RAFAELIA_UNO_UNIFICADO_SIGNED (1).apk
+Total entries: 6
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 0 (sample 20): []
+Nested APKs inside: ['RAFAELOS_TERMUX_ZIPRAF (1).apk', 'deepseek-1-2-5 (1).apk']
+Contains AndroidManifest.xml: False
+
+----
+Archive: magisk-manager-29-0.apk
+Total entries: 1024
+META-INF entries (7): ['META-INF/CERT.RSA', 'META-INF/CERT.SF', 'META-INF/MANIFEST.MF', 'META-INF/com/google/android/update-binary', 'META-INF/com/google/android/updater-script', 'META-INF/services/Q2.a', 'META-INF/services/Q2.b']
+Signature related files: ['META-INF/CERT.RSA', 'META-INF/CERT.SF']
+  - META-INF/CERT.RSA SHA256: 7cedcfe49e93e9d863f14481f8f7da29265d369451409954490032a175e41ed5
+  - META-INF/CERT.SF SHA256: 503aeec060a86f4d19bec574ebf1594ec41897b138b2b1bbddae13dba2d06abf
+Native libs count: 24
+  Arch arm64-v8a: 6 libs (sample 10): ['lib/arm64-v8a/libbusybox.so', 'lib/arm64-v8a/libinit-ld.so', 'lib/arm64-v8a/libmagisk.so', 'lib/arm64-v8a/libmagiskboot.so', 'lib/arm64-v8a/libmagiskinit.so', 'lib/arm64-v8a/libmagiskpolicy.so']
+  Arch armeabi-v7a: 6 libs (sample 10): ['lib/armeabi-v7a/libbusybox.so', 'lib/armeabi-v7a/libinit-ld.so', 'lib/armeabi-v7a/libmagisk.so', 'lib/armeabi-v7a/libmagiskboot.so', 'lib/armeabi-v7a/libmagiskinit.so', 'lib/armeabi-v7a/libmagiskpolicy.so']
+  Arch x86: 6 libs (sample 10): ['lib/x86/libbusybox.so', 'lib/x86/libinit-ld.so', 'lib/x86/libmagisk.so', 'lib/x86/libmagiskboot.so', 'lib/x86/libmagiskinit.so', 'lib/x86/libmagiskpolicy.so']
+  Arch x86_64: 6 libs (sample 10): ['lib/x86_64/libbusybox.so', 'lib/x86_64/libinit-ld.so', 'lib/x86_64/libmagisk.so', 'lib/x86_64/libmagiskboot.so', 'lib/x86_64/libmagiskinit.so', 'lib/x86_64/libmagiskpolicy.so']
+Code-like files count: 815 (sample 20): ['AndroidManifest.xml', 'assets/addon.d.sh', 'assets/app_functions.sh', 'assets/boot_patch.sh', 'assets/module_installer.sh', 'assets/uninstaller.sh', 'assets/util_functions.sh', 'res/-1.xml', 'res/-5.xml', 'res/-7.xml', 'res/-8.xml', 'res/-9.xml', 'res/-B.xml', 'res/-L.xml', 'res/-Q.xml', 'res/-R.xml', 'res/-h.xml', 'res/0C.xml', 'res/0F.xml', 'res/0M.xml']
+Nested APKs inside: ['assets/stub.apk']
+Contains AndroidManifest.xml: True
+
+----
+Archive: apks_compilados_sagrados.zip
+Total entries: 5
+META-INF entries (0): []
+Signature related files: []
+Code-like files count: 0 (sample 20): []
+Nested APKs inside: ['winzip-7-1-1.apk', 'link2sd-4-3-4.apk']
+Contains AndroidManifest.xml: False
+
+----
+Archive: com.termux_1002.apk
+Total entries: 738
+META-INF entries (50): ['META-INF/com/android/build/gradle/app-metadata.properties', 'META-INF/androidx.activity_activity.version', 'META-INF/androidx.annotation_annotation-experimental.version', 'META-INF/androidx.appcompat_appcompat-resources.version', 'META-INF/androidx.appcompat_appcompat.version', 'META-INF/androidx.arch.core_core-runtime.version', 'META-INF/androidx.cardview_cardview.version', 'META-INF/androidx.coordinatorlayout_coordinatorlayout.version', 'META-INF/androidx.core_core.version', 'META-INF/androidx.cursoradapter_cursoradapter.version', 'META-INF/androidx.customview_customview.version', 'META-INF/androidx.documentfile_documentfile.version', 'META-INF/androidx.drawerlayout_drawerlayout.version', 'META-INF/androidx.dynamicanimation_dynamicanimation.version', 'META-INF/androidx.fragment_fragment.version', 'META-INF/androidx.interpolator_interpolator.version', 'META-INF/androidx.legacy_legacy-support-core-utils.version', 'META-INF/androidx.lifecycle_lifecycle-livedata-core.version', 'META-INF/androidx.lifecycle_lifecycle-livedata.version', 'META-INF/androidx.lifecycle_lifecycle-runtime.version', 'META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version', 'META-INF/androidx.lifecycle_lifecycle-viewmodel.version', 'META-INF/androidx.loader_loader.version', 'META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version', 'META-INF/androidx.preference_preference.version', 'META-INF/androidx.print_print.version', 'META-INF/androidx.recyclerview_recyclerview.version', 'META-INF/androidx.savedstate_savedstate.version', 'META-INF/androidx.tracing_tracing.version', 'META-INF/androidx.transition_transition.version', 'META-INF/androidx.vectordrawable_vectordrawable-animated.version', 'META-INF/androidx.vectordrawable_vectordrawable.version', 'META-INF/androidx.versionedparcelable_versionedparcelable.version', 'META-INF/androidx.viewpager2_viewpager2.version', 'META-INF/androidx.viewpager_viewpager.version', 'META-INF/androidx.window_window.version', 'META-INF/annotation-experimental_release.kotlin_module', 'META-INF/com.google.android.material_material.version', 'META-INF/kotlin-stdlib-common.kotlin_module', 'META-INF/kotlin-stdlib-jdk7.kotlin_module', 'META-INF/kotlin-stdlib-jdk8.kotlin_module', 'META-INF/kotlin-stdlib.kotlin_module', 'META-INF/kotlinx-coroutines-android.kotlin_module', 'META-INF/kotlinx-coroutines-core.kotlin_module', 'META-INF/services/kotlinx.coroutines.CoroutineExceptionHandler', 'META-INF/services/kotlinx.coroutines.internal.MainDispatcherFactory', 'META-INF/window_release.kotlin_module', 'META-INF/84D3000E.SF', 'META-INF/84D3000E.RSA', 'META-INF/MANIFEST.MF']
+Signature related files: ['META-INF/84D3000E.SF', 'META-INF/84D3000E.RSA']
+  - META-INF/84D3000E.SF SHA256: de008263d92a8bfc5ff55218aaa17edcbd0328291140d071b01fcc14cdda340f
+  - META-INF/84D3000E.RSA SHA256: ad25911f686312f83f037d5a0855cee451ff8c879667624a8c6d4ecb35afe1b2
+Native libs count: 8
+  Arch arm64-v8a: 2 libs (sample 10): ['lib/arm64-v8a/libtermux-bootstrap.so', 'lib/arm64-v8a/libtermux.so']
+  Arch armeabi-v7a: 2 libs (sample 10): ['lib/armeabi-v7a/libtermux-bootstrap.so', 'lib/armeabi-v7a/libtermux.so']
+  Arch x86: 2 libs (sample 10): ['lib/x86/libtermux-bootstrap.so', 'lib/x86/libtermux.so']
+  Arch x86_64: 2 libs (sample 10): ['lib/x86_64/libtermux-bootstrap.so', 'lib/x86_64/libtermux.so']
+Code-like files count: 492 (sample 20): ['AndroidManifest.xml', 'res/--.xml', 'res/-A.xml', 'res/-A1.xml', 'res/-Y.xml', 'res/-c.xml', 'res/-o.xml', 'res/-u.xml', 'res/0N.xml', 'res/0b.xml', 'res/0w.xml', 'res/1L.xml', 'res/1N.xml', 'res/1V.xml', 'res/1u.xml', 'res/1y.xml', 'res/23.xml', 'res/2D.xml', 'res/2D1.xml', 'res/2p.xml']
+Contains AndroidManifest.xml: True
+
+----
+Archive: _tmp_termux_modded.apk
+Total entries: 2330
+META-INF entries (87): ['META-INF/com/android/build/gradle/app-metadata.properties', 'META-INF/version-control-info.textproto', 'META-INF/androidx.activity_activity-ktx.version', 'META-INF/androidx.activity_activity.version', 'META-INF/androidx.annotation_annotation-experimental.version', 'META-INF/androidx.appcompat_appcompat-resources.version', 'META-INF/androidx.appcompat_appcompat.version', 'META-INF/androidx.arch.core_core-runtime.version', 'META-INF/androidx.asynclayoutinflater_asynclayoutinflater.version', 'META-INF/androidx.browser_browser.version', 'META-INF/androidx.cardview_cardview.version', 'META-INF/androidx.constraintlayout_constraintlayout.version', 'META-INF/androidx.coordinatorlayout_coordinatorlayout.version', 'META-INF/androidx.core_core-ktx.version', 'META-INF/androidx.core_core.version', 'META-INF/androidx.cursoradapter_cursoradapter.version', 'META-INF/androidx.customview_customview-poolingcontainer.version', 'META-INF/androidx.customview_customview.version', 'META-INF/androidx.databinding_viewbinding.version', 'META-INF/androidx.datastore_datastore-core.version', 'META-INF/androidx.datastore_datastore-preferences.version', 'META-INF/androidx.datastore_datastore.version', 'META-INF/androidx.documentfile_documentfile.version', 'META-INF/androidx.drawerlayout_drawerlayout.version', 'META-INF/androidx.dynamicanimation_dynamicanimation.version', 'META-INF/androidx.emoji2_emoji2-views-helper.version', 'META-INF/androidx.emoji2_emoji2.version', 'META-INF/androidx.exifinterface_exifinterface.version', 'META-INF/androidx.fragment_fragment-ktx.version', 'META-INF/androidx.fragment_fragment.version', 'META-INF/androidx.interpolator_interpolator.version', 'META-INF/androidx.leanback_leanback-preference.version', 'META-INF/androidx.leanback_leanback.version', 'META-INF/androidx.legacy_legacy-preference-v14.version', 'META-INF/androidx.legacy_legacy-support-core-ui.version', 'META-INF/androidx.legacy_legacy-support-core-utils.version', 'META-INF/androidx.lifecycle_lifecycle-livedata-core-ktx.version', 'META-INF/androidx.lifecycle_lifecycle-livedata-core.version', 'META-INF/androidx.lifecycle_lifecycle-livedata-ktx.version', 'META-INF/androidx.lifecycle_lifecycle-livedata.version', 'META-INF/androidx.lifecycle_lifecycle-process.version', 'META-INF/androidx.lifecycle_lifecycle-runtime-ktx.version', 'META-INF/androidx.lifecycle_lifecycle-runtime.version', 'META-INF/androidx.lifecycle_lifecycle-service.version', 'META-INF/androidx.lifecycle_lifecycle-viewmodel-ktx.version', 'META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version', 'META-INF/androidx.lifecycle_lifecycle-viewmodel.version', 'META-INF/androidx.loader_loader.version', 'META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version', 'META-INF/androidx.media_media.version']
+Signature related files: ['META-INF/CERT.SF', 'META-INF/CERT.RSA']
+  - META-INF/CERT.SF SHA256: 9055f7fced0edb5ef57d3a19bf85be4153c5e41c8b32c3bdff92d96408b0945d
+  - META-INF/CERT.RSA SHA256: 573d1bd6c9123ede1801db06c3e51622b020a2d2d2567d664a835eab7fd57f6b
+Native libs count: 4
+  Arch arm64-v8a: 1 libs (sample 10): ['lib/arm64-v8a/libdatastore_shared_counter.so']
+  Arch armeabi-v7a: 1 libs (sample 10): ['lib/armeabi-v7a/libdatastore_shared_counter.so']
+  Arch x86: 1 libs (sample 10): ['lib/x86/libdatastore_shared_counter.so']
+  Arch x86_64: 1 libs (sample 10): ['lib/x86_64/libdatastore_shared_counter.so']
+Code-like files count: 1818 (sample 20): ['assets/builddatas.json', 'assets/rv_binddatas.xml', 'META-INF/androidx/constraintlayout/constraintlayout-core/LICENSE.txt', 'androidsupportmultidexversion.txt', 'kotlin-tooling-metadata.json', 'AndroidManifest.xml', 'res/-1.xml', 'res/-4.xml', 'res/-5.xml', 'res/-7.xml', 'res/-71.xml', 'res/-8.xml', 'res/-81.xml', 'res/-B.xml', 'res/-D.xml', 'res/-F.xml', 'res/-I.xml', 'res/-Q.xml', 'res/-T.xml', 'res/-Y.xml']
+Contains AndroidManifest.xml: True
+
+Found hash_summary.txt in raf_proof_bundle.zip: (first 2000 chars)
+
+RAFAELIA FORENSIC EXECUTION
+Timestamp: 2025-07-16T02:49:53.288177 UTC
+
+RAFAELOS_TERMUX_ZIPRAF (1).apk: 1c66317eace6e15e96c94c9cda7cd0bec100c3facc9c1c93365f56700f05d62222a2f0315e8c94f433cfba08c92caae6e5f359b773256796339cde1b9030aacc
+deepseek-1-2-5.apk: 47d40884940d30575d18f3df65794f9357dae35fc00ce5b20a0d1658609432c4ef88690e763f3409cefa5d5fbf31cabe3e8b516d1d3fb8af0817db9bcc0dd00d
+
+
+Parsed 0 entries from hash_summary.txt
+Hash comparison mismatches or missing: 0 (sample 10): []
+
+Found matrix JSON: matrizes_rafaelia_5x1000x1000.json size bytes: 101358717
+Matrix JSON keys count: 5
+Key matriz_0000: shape (1000, 1000) dtype float32 min 1.5703210465289885e-06 max 0.9999990463256836 mean 0.500335 std 0.288562
+Key matriz_0001: shape (1000, 1000) dtype float32 min 2.038378170254873e-06 max 0.9999999403953552 mean 0.499611 std 0.288649
+Key matriz_0002: shape (1000, 1000) dtype float32 min 4.1527229655002884e-07 max 0.9999999403953552 mean 0.500383 std 0.288732
+Key matriz_0003: shape (1000, 1000) dtype float32 min 8.600573409012213e-08 max 0.999998927116394 mean 0.500004 std 0.288728
+Key matriz_0004: shape (1000, 1000) dtype float32 min 6.360634330349058e-08 max 0.9999998211860657 mean 0.499939 std 0.288610
+Matrices saved to /mnt/data/turno1_full_analysis/matrizes_npy

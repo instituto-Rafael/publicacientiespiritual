@@ -1,0 +1,3079 @@
+{
+  "generated": "2025-09-24T21:31:33.740592",
+  "report": [
+    {
+      "apk": "termux-googleplay-2025-01-18 (1).xapk",
+      "so_files": []
+    },
+    {
+      "apk": "winzip-7-1-1.apk",
+      "so_files": [
+        {
+          "name": "lib/arm64-v8a/lib7zxa.so",
+          "sha256": "18b1520ee071a3c2ffae859c808919bde337778d6ef0e2cf2f59a384067c51ba",
+          "size": 1721576,
+          "strings_sample": [
+            "1!2LAB",
+            "\"6PP",
+            "@:a(",
+            " (@@ 6 Y<",
+            "Ph$D",
+            "J #|",
+            "T<*P$",
+            " X@@, ",
+            ";(!R ",
+            " D*5 `"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/liberrno-lib.so",
+          "sha256": "d14d2221e7e5ec416bc9cb8914395ea329c0539a73cb25bc8fb39c279a9b3c47",
+          "size": 4280,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "W/>=",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "Java_com_github_mjdev_libaums_ErrNo_getErrnoNative",
+            "Java_com_github_mjdev_libaums_ErrNo_getErrstrNative",
+            "__errno",
+            "strerror"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libopencv_java3.so",
+          "sha256": "4cb1be57efb01852ae40a4692431cd98bfbd36540a10cde81feeda1d51fb656f",
+          "size": 13699840,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_ZN2cv3Mat7releaseEv",
+            "_ZN2cv3Mat10deallocateEv",
+            "_Z17Mat_to_vector_intRN2cv3MatERSt6vectorIiSaIiEE",
+            "_ZNK2cv3Mat6copyToERKNS_12_OutputArrayE",
+            "_ZdlPv",
+            "_Znwm",
+            "_Unwind_Resume",
+            "__gxx_personality_v0"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libusb-lib.so",
+          "sha256": "d2845b1ce14f83399a0e477aa4c78b569bb24bd74015e343952a3961cb12898c",
+          "size": 5240,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "Java_me_jahnen_libaums_usb_AndroidUsbCommunication_clearHaltNative",
+            "Java_me_jahnen_libaums_usb_AndroidUsbCommunication_resetUsbDeviceNative",
+            "__android_log_print",
+            "__errno",
+            "__stack_chk_fail"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libwzziplib.so",
+          "sha256": "8635f27c6f646942d2b56cec52e23848842161745c513deaa4eb2722edd237bf",
+          "size": 3775792,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_Z23FileTimeToLocalFileTimePK9_FILETIMEPS_",
+            "_ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_a",
+            "lloc_EE1eE",
+            "_ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_14bad_e",
+            "xception_EE1eE",
+            "_ZGVZN5boost16exception_detail27get_static_exception_objectINS0_10bad_alloc_EEEN",
+            "S_13exception_ptrEvE2ep",
+            "_ZGVZN5boost16exception_detail27get_static_exception_objectINS0_14bad_exception_"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/lib7zxa.so",
+          "sha256": "ce7060389891a0111b45a6675900ebf1a6c49b4fdbaaf6a97e9def52684081d9",
+          "size": 846676,
+          "strings_sample": [
+            "td@}",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "CrcGenerateTable",
+            "__aeabi_unwind_cpp_pr1",
+            "g_CRCTableInit",
+            "__aeabi_uldivmod",
+            "_Z21ConvertUInt64ToStringyPcj",
+            "__stack_chk_fail",
+            "__stack_chk_guard"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/liberrno-lib.so",
+          "sha256": "b4026620370b0a3f5e243057d2fd1d6e20af18d5029353d8bb0aed348ff64b15",
+          "size": 2996,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "Java_com_github_mjdev_libaums_ErrNo_getErrnoNative",
+            "Java_com_github_mjdev_libaums_ErrNo_getErrstrNative",
+            "__errno",
+            "strerror",
+            "libc.so"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libopencv_java3.so",
+          "sha256": "cc4fe0fae0a75a052b3f4c2f33b276fe788912e5576b592c17dbc51744444830",
+          "size": 8358536,
+          "strings_sample": [
+            "/system/bin/linker",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_ZN2cv6StringC2EPKc",
+            "strlen",
+            "_ZN2cv6String8allocateEj",
+            "memcpy",
+            "__aeabi_unwind_cpp_pr0",
+            "_ZN2cv6StringC1EPKc",
+            "_ZN2cv5errorEiRKNS_6StringEPKcS4_i"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libusb-lib.so",
+          "sha256": "ca4690ccaacd8d577d1ca793776829c8cbaae6e131b5e8fa952d73f40ab01da9",
+          "size": 3928,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "Java_me_jahnen_libaums_usb_AndroidUsbCommunication_clearHaltNative",
+            "Java_me_jahnen_libaums_usb_AndroidUsbCommunication_resetUsbDeviceNative",
+            "__android_log_print",
+            "__errno",
+            "__stack_chk_fail"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libwzziplib.so",
+          "sha256": "91b2788d237fc454940ef230a2b544dc128ae94187b887886c33a378c6e061ef",
+          "size": 2159768,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_ZN5boost16exception_detail10clone_baseD2Ev",
+            "_ZTVN5boost16exception_detail10clone_baseE",
+            "__aeabi_unwind_cpp_pr0",
+            "_ZN5boost6detail15sp_counted_baseD2Ev",
+            "_ZTVN5boost6detail15sp_counted_baseE",
+            "_ZN5boost6detail15sp_counted_base7destroyEv",
+            "__aeabi_unwind_cpp_pr1",
+            "_ZN5WzLib7WzErroraSERKS0_"
+          ]
+        },
+        {
+          "name": "lib/x86/lib7zxa.so",
+          "sha256": "397ccb2a6dd3f3920d9c93bcc34c69a4c1f14b79a68dba42dad7c48eee2a2fea",
+          "size": 1466436,
+          "strings_sample": [
+            "__INIT_ARRAY__",
+            "__FINI_ARRAY__",
+            "__cxa_finalize",
+            "__deregister_frame_info_bases",
+            "__register_frame_info_bases",
+            "__cxa_atexit",
+            "__stack_chk_fail",
+            "CrcGenerateTable",
+            "g_CRCTableInit",
+            "__umoddi3"
+          ]
+        },
+        {
+          "name": "lib/x86/liberrno-lib.so",
+          "sha256": "7bb3286f0f79881aeb4456fad2cf8b849820afe7fcfe415cdcad948d554bd80f",
+          "size": 3108,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "Java_com_github_mjdev_libaums_ErrNo_getErrnoNative",
+            "Java_com_github_mjdev_libaums_ErrNo_getErrstrNative",
+            "__errno",
+            "strerror",
+            "libc.so"
+          ]
+        },
+        {
+          "name": "lib/x86/libopencv_java3.so",
+          "sha256": "7e43324121b2ca2b8170734631d1e5dfd7b94bba33077c1cdab9818508771327",
+          "size": 12831700,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__stack_chk_fail",
+            "_ZN2cv3MatD2Ev",
+            "_ZN2cv8fastFreeEPv",
+            "_ZN2cv3Mat10deallocateEv",
+            "_ZN2cv3MatD1Ev",
+            "_Z17vector_int_to_MatRSt6vectorIiSaIiEERN2cv3MatE",
+            "_ZNK2cv3Mat6copyToERKNS_12_OutputArrayE",
+            "_ZN2cv3Mat8copySizeERKS0_"
+          ]
+        },
+        {
+          "name": "lib/x86/libusb-lib.so",
+          "sha256": "616480216d067620186ced3fee4f133a641754d8d95048a7f76875c5cb1dada1",
+          "size": 4056,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "Java_me_jahnen_libaums_usb_AndroidUsbCommunication_clearHaltNative",
+            "Java_me_jahnen_libaums_usb_AndroidUsbCommunication_resetUsbDeviceNative",
+            "__android_log_print",
+            "__errno",
+            "__stack_chk_fail"
+          ]
+        },
+        {
+          "name": "lib/x86/libwzziplib.so",
+          "sha256": "a05b8e953bd4bbebb1076ddd2f2cb9050048f0e7db9c438f50126f1931821459",
+          "size": 3213564,
+          "strings_sample": [
+            "__INIT_ARRAY__",
+            "__FINI_ARRAY__",
+            "__cxa_finalize",
+            "__deregister_frame_info_bases",
+            "__register_frame_info_bases",
+            "__cxa_atexit",
+            "__stack_chk_fail",
+            "_ZN5boost6system14error_categoryD2Ev",
+            "_ZTVN5boost6system14error_categoryE",
+            "_ZNK5boost6system14error_category23default_error_conditionEi"
+          ]
+        },
+        {
+          "name": "lib/x86_64/lib7zxa.so",
+          "sha256": "568179f6e86b6d8c1611a0b87c238ace540d091675da4405ec735a8289ca91e0",
+          "size": 1910424,
+          "strings_sample": [
+            "Android",
+            "5594570",
+            "<PQ`",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "lib7zxa.so",
+            "__cxa_finalize",
+            "CrcGenerateTable",
+            "g_CRCTableInit"
+          ]
+        },
+        {
+          "name": "lib/x86_64/liberrno-lib.so",
+          "sha256": "f0240275d3513fa4ae5805c17a4a8ebd810719276d40c8f64ecfef479006b9f9",
+          "size": 4312,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "Java_com_github_mjdev_libaums_ErrNo_getErrnoNative",
+            "Java_com_github_mjdev_libaums_ErrNo_getErrstrNative",
+            "__errno",
+            "strerror",
+            "libc.so"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libopencv_java3.so",
+          "sha256": "de81b93a161193e7d61ec80d76a03c93638afc620e8afe1f20141be3972c8cca",
+          "size": 14962368,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_ZN2cv3Mat7releaseEv",
+            "_ZN2cv3Mat10deallocateEv",
+            "_Z17Mat_to_vector_intRN2cv3MatERSt6vectorIiSaIiEE",
+            "_ZNK2cv3Mat6copyToERKNS_12_OutputArrayE",
+            "_ZdlPv",
+            "memmove",
+            "_Znwm",
+            "_Unwind_Resume"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libusb-lib.so",
+          "sha256": "bb8649e3efccb4b3b30d55be1579906a230b56350d076b30fe0badcc553bdef5",
+          "size": 5256,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "Java_me_jahnen_libaums_usb_AndroidUsbCommunication_clearHaltNative",
+            "Java_me_jahnen_libaums_usb_AndroidUsbCommunication_resetUsbDeviceNative",
+            "__android_log_print",
+            "__errno",
+            "__stack_chk_fail"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libwzziplib.so",
+          "sha256": "6616a2dbbbdd2f39c3f7cd0aff7f9612f3c7328d684c2aff8b6ccc1351a73aeb",
+          "size": 3899024,
+          "strings_sample": [
+            "Android",
+            "r18b",
+            "5063045",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "libwzziplib.so",
+            "__cxa_finalize",
+            "_Z23FileTimeToLocalFileTimePK9_FILETIMEPS_",
+            "_ZGVN5boost16exception_detail37exception_ptr_static_exception_objectINS0_10bad_a"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "es-file-explorer-4-4-2-2-1.apk",
+      "so_files": [
+        {
+          "name": "lib/x86/libcrashsdk.so",
+          "sha256": "b18bfbccc0c286ebf989998b156d6eb0c0ac9014f45a673c842698e5e139adca",
+          "size": 585896,
+          "strings_sample": [
+            "libcrashsdk.so",
+            "CRASHSDK",
+            "CRASHSDK_150",
+            "CRASHSDK_210",
+            "CRASHSDK_323",
+            "crashsdk_registerFeature",
+            "crashsdk_registerInfoCallback2",
+            "crashsdk_addHeaderInfo",
+            "JNI_OnLoad",
+            "crashsdk_registerThread"
+          ]
+        },
+        {
+          "name": "lib/x86/libBugly.so",
+          "sha256": "cf66f822d8e275bd53d066b7dfbdc5a72bfe57ae73b7775620b7e46081d468be",
+          "size": 194280,
+          "strings_sample": [
+            "__cxa_finalize",
+            "LIBC",
+            "libc.so",
+            "libBugly.so",
+            "__cxa_atexit",
+            "__stack_chk_fail",
+            "jni_getNativeKeyValueList",
+            "jni_removeNativeKeyValue",
+            "delayRestoreSIGILLHandler",
+            "sleep"
+          ]
+        },
+        {
+          "name": "lib/x86/libpl_droidsonroids_gif.so",
+          "sha256": "bdd08f4cd69dcb9d6e6bd15341542a0650685ddab436da5cffb484e818eb1e88",
+          "size": 42620,
+          "strings_sample": [
+            "Android",
+            "5594570",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "libpl_droidsonroids_gif.so",
+            "__cxa_finalize",
+            "__stack_chk_fail",
+            "AndroidBitmap_getInfo",
+            "AndroidBitmap_lockPixels"
+          ]
+        },
+        {
+          "name": "lib/x86/libumeng-spy.so",
+          "sha256": "cbc3b95a1739f81bbb82fc503d60547e22eb32c2e7c96cf4a4022707b0471306",
+          "size": 522180,
+          "strings_sample": [
+            "Android",
+            "r16b",
+            "4479499",
+            "__cxa_finalize",
+            "LIBC",
+            "libc.so",
+            "libumeng-spy.so",
+            "__cxa_atexit",
+            "__stack_chk_fail",
+            "Java_com_support_callhoo_NativeMethodDef_xpCy"
+          ]
+        },
+        {
+          "name": "lib/x86/lib7-Zip-JBinding.so",
+          "sha256": "adeccc1ae90ae7d699b93ad34c0d46e107b79377edac5c5f7dff592604389185",
+          "size": 2668684,
+          "strings_sample": [
+            "td|7'",
+            "Android",
+            "r21b",
+            "6352462",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "lib7-Zip-JBinding.so",
+            "__cxa_finalize",
+            "__stack_chk_fail"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libcrashsdk.so",
+          "sha256": "6580020cec9b885a1bde409a099ad4b379b77c4b17cd2f5c206b2d342f9b4905",
+          "size": 491764,
+          "strings_sample": [
+            "/system/bin/linker",
+            "libcrashsdk.so",
+            "CRASHSDK",
+            "CRASHSDK_150",
+            "CRASHSDK_210",
+            "CRASHSDK_323",
+            "crashsdk_registerFeature",
+            "crashsdk_registerInfoCallback2",
+            "crashsdk_addHeaderInfo",
+            "JNI_OnLoad"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libBugly.so",
+          "sha256": "8ad91e1e2fa27ec3c0fbacb7a2663632d89c6ed74950e8efaccc66cf16eaf90b",
+          "size": 165628,
+          "strings_sample": [
+            "/system/bin/linker",
+            "__cxa_finalize",
+            "LIBC",
+            "libc.so",
+            "libBugly.so",
+            "__cxa_atexit",
+            "jni_getNativeKeyValueList",
+            "__aeabi_unwind_cpp_pr0",
+            "jni_removeNativeKeyValue",
+            "gettid"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libpl_droidsonroids_gif.so",
+          "sha256": "f5e7753f818da0788e58dc0e69d72b96774f4f4ab710de9ebdb56ab749c257f1",
+          "size": 46812,
+          "strings_sample": [
+            "Android",
+            "5594570",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "libpl_droidsonroids_gif.so",
+            "__cxa_finalize",
+            "AndroidBitmap_getInfo",
+            "AndroidBitmap_lockPixels",
+            "AndroidBitmap_unlockPixels"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libumeng-spy.so",
+          "sha256": "413064c587791e82193836cc7fe04c7fe7ca9eda6f5e217740b20fd618706e24",
+          "size": 358328,
+          "strings_sample": [
+            "Android",
+            "r16b",
+            "4479499",
+            "__cxa_finalize",
+            "LIBC",
+            "libc.so",
+            "libumeng-spy.so",
+            "__cxa_atexit",
+            "Java_com_umeng_umzid_Spy_getNativeLibraryVersion",
+            "__stack_chk_fail"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/lib7-Zip-JBinding.so",
+          "sha256": "c6aa71641ff620f230d414b0e4a223541e9b152e8d781229fe8001840014a180",
+          "size": 1808224,
+          "strings_sample": [
+            "Android",
+            "r21b",
+            "6352462",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "lib7-Zip-JBinding.so",
+            "__cxa_finalize",
+            "CriticalSection_Init",
+            "_ZGVN3jni9JavaClassINS_4DateEE9_instanceE"
+          ]
+        },
+        {
+          "name": "lib/armeabi/libcrashsdk.so",
+          "sha256": "4e320d8c7d0c4b4db87c412c921b27b99e6f04b4b4122139867f8b7ad20ddb35",
+          "size": 499904,
+          "strings_sample": [
+            "td8y",
+            "/system/bin/linker",
+            "=f4;",
+            "libcrashsdk.so",
+            "CRASHSDK",
+            "CRASHSDK_150",
+            "CRASHSDK_210",
+            "CRASHSDK_323",
+            "crashsdk_registerFeature",
+            "crashsdk_registerInfoCallback2"
+          ]
+        },
+        {
+          "name": "lib/armeabi/libBugly.so",
+          "sha256": "da22a45e81907f4736682ea51ecacd1b371e92060a2e81b2754d8e80ed357a09",
+          "size": 169704,
+          "strings_sample": [
+            "/system/bin/linker",
+            "__cxa_finalize",
+            "LIBC",
+            "libc.so",
+            "libBugly.so",
+            "__cxa_atexit",
+            "jni_getNativeKeyValueList",
+            "__aeabi_unwind_cpp_pr0",
+            "jni_removeNativeKeyValue",
+            "gettid"
+          ]
+        },
+        {
+          "name": "lib/armeabi/libumeng-spy.so",
+          "sha256": "46b3f10a05a70b3989f87cf9645c80a893055af8f6683b9f4c4b81aa09426b9f",
+          "size": 395192,
+          "strings_sample": [
+            "Android",
+            "r16b",
+            "4479499",
+            "g#Pm",
+            "__cxa_finalize",
+            "LIBC",
+            "libc.so",
+            "libumeng-spy.so",
+            "__cxa_atexit",
+            "Java_com_umeng_umzid_Spy_getNativeLibraryVersion"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libBugly.so",
+          "sha256": "410feb82e91c140c3c67174d0f187ce6ae0b2100f7845aa12eaf6503128a4bb8",
+          "size": 195240,
+          "strings_sample": [
+            "__cxa_finalize",
+            "LIBC",
+            "libc.so",
+            "libBugly.so",
+            "__cxa_atexit",
+            "jni_getNativeKeyValueList",
+            "jni_removeNativeKeyValue",
+            "delayRestoreSIGILLHandler",
+            "sleep",
+            "sigemptyset"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libpl_droidsonroids_gif.so",
+          "sha256": "d90f3bfa685c58632c1b0bd01a979c58fcef02816876336de38a26df30f6f356",
+          "size": 43288,
+          "strings_sample": [
+            "Android",
+            "5594570",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "libpl_droidsonroids_gif.so",
+            "__cxa_finalize",
+            "AndroidBitmap_getInfo",
+            "AndroidBitmap_lockPixels",
+            "AndroidBitmap_unlockPixels"
+          ]
+        },
+        {
+          "name": "lib/x86_64/lib7-Zip-JBinding.so",
+          "sha256": "f05760bb79be2e1abc63ad4ede50b37eb6ad5f5d7c947de45ba6f4f959d74c44",
+          "size": 2780416,
+          "strings_sample": [
+            "Android",
+            "r21b",
+            "6352462",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "lib7-Zip-JBinding.so",
+            "__cxa_finalize",
+            "CriticalSection_Init",
+            "_ZGVN3jni9JavaClassINS_4DateEE9_instanceE"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libcrashsdk.so",
+          "sha256": "0206fbd742e9996cb43b6731e8bccfaaeaddcf8b9566458094661957cf06c6b3",
+          "size": 647928,
+          "strings_sample": [
+            "/system/bin/linker64",
+            "libcrashsdk.so",
+            "CRASHSDK",
+            "CRASHSDK_150",
+            "CRASHSDK_210",
+            "CRASHSDK_323",
+            "JNI_OnLoad",
+            "__cxa_finalize",
+            "crashsdk_addHeaderInfo",
+            "__cxa_atexit"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libBugly.so",
+          "sha256": "29f485002f52e975fe7aac3e73b7680517613633d30e430e4ff73a56ed73ced3",
+          "size": 190656,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "jni_getNativeKeyValueList",
+            "jni_removeNativeKeyValue",
+            "delayRestoreSIGILLHandler",
+            "__stack_chk_guard",
+            "sigemptyset",
+            "sigaction",
+            "__stack_chk_fail",
+            "gettid"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libpl_droidsonroids_gif.so",
+          "sha256": "6fe3a2e6c3a0b092a79eb16d26516a28289305ad28f7354d5b41a03f4d203997",
+          "size": 43016,
+          "strings_sample": [
+            "s2Y2u",
+            " O(B",
+            "@B#:S+",
+            "RA, ^A",
+            "#@>g",
+            "+B:0",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "AndroidBitmap_getInfo",
+            "AndroidBitmap_lockPixels"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libumeng-spy.so",
+          "sha256": "a58490ef944f968dba70d425673e61c7a741f3befb7ab696dcb6adb45b77c0ff",
+          "size": 539240,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "Java_com_support_callhoo_NativeMethodDef_xpCy",
+            "Java_com_umeng_umzid_Spy_getNativeID",
+            "Java_com_umeng_umzid_Spy_getNativeLibraryVersion",
+            "Java_com_umeng_umzid_Spy_getNativeTag",
+            "__android_log_print",
+            "__gxx_personality_v0",
+            "__stack_chk_fail",
+            "__system_property_get"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/lib7-Zip-JBinding.so",
+          "sha256": "05c2e7a9525b3a5e56179ccdc4d73c01ff3e5fcd364de4e2ade13c29fb09be33",
+          "size": 2558960,
+          "strings_sample": [
+            "*~v~>9g",
+            "ZA{D",
+            "$A!C",
+            "$@Pp",
+            "gDHS@",
+            " p'b",
+            "hB 1!",
+            "PfDS",
+            "@ @0",
+            "W8j@3"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "RAFAELOS_TERMUX_ZIPRAF (1).apk",
+      "so_files": []
+    },
+    {
+      "apk": "mt-manager-2-18-4.apk",
+      "so_files": [
+        {
+          "name": "lib/arm64-v8a/libdeflate.so",
+          "sha256": "da92c488b02fdfa860d7c04477de5cb5565e0713627d2cc530e0c99e45b73a8d",
+          "size": 276768,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "IID_IUnknown",
+            "Java_bin_zip_DeflaterJni_compress",
+            "_ZN14ICompressCoderD0Ev",
+            "_ZN23JavaISequentialInStream14QueryInterfaceERK4GUIDPPv",
+            "_ZN23JavaISequentialInStream4ReadEPvjPj",
+            "_ZN23JavaISequentialInStream6AddRefEv",
+            "_ZN23JavaISequentialInStream7ReleaseEv",
+            "_ZN23JavaISequentialInStreamD0Ev"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libffmpegJNI.so",
+          "sha256": "495ebb6907b93230e145f3fb5fdff966f3dc04c42ee4c1d7d41665a7c65ca67f",
+          "size": 1295000,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            " r8%",
+            "H `0",
+            "6i,u",
+            "Rn?G",
+            "_\\\" ",
+            "Fz}y",
+            "rROd"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/liblsplant.so",
+          "sha256": "dcc6da6d0f141931e22f359cada1f75719a732ec1b49e69e47c2f9b5b3aa7e61",
+          "size": 129472,
+          "strings_sample": [
+            "Android",
+            "r26b",
+            "10909125",
+            "GW*~[",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_ZN7lsplant2v24InitEP7_JNIEnvRKNS0_8InitInfoE",
+            "_ZN7lsplant2v24HookEP7_JNIEnvP8_jobjectS4_S4_",
+            "_ZN7lsplant2v26UnHookEP7_JNIEnvP8_jobject",
+            "_ZN7lsplant2v28IsHookedEP7_JNIEnvP8_jobject"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libmt1.so",
+          "sha256": "1ae25d32538746678f3b146df1355c26efde133889be212c529a2adf1e5abbad",
+          "size": 268080,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "Fy(v",
+            "LtP&",
+            "69V5",
+            "l%Qd",
+            "l>Tn",
+            "#HnQ",
+            "BUYb"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libmt2.so",
+          "sha256": "933a6d67a53665f7f4dd81bc482f2417e7718c032b1e8678af0a346711195db4",
+          "size": 24264,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__stack_chk_fail",
+            "Java_bin_mt_plus_Features2_init",
+            "xhook_clear",
+            "xhook_register",
+            "xhook_refresh"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libmt3.so",
+          "sha256": "31f55e28d36784fb2fc31e97a5551dcd93880eb7ffff5cb84695b9f55019c144",
+          "size": 27224,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "n;uD",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "Java_bin_mt_plus_Features3_read",
+            "malloc",
+            "__read_chk",
+            "free"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libmtprotect.so",
+          "sha256": "14ed176da87adfedeac4d67d8bf4b3bde21ea6fc185eb2e634e544585a72a0d2",
+          "size": 2363616,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "Fy(v",
+            "LtP&",
+            "69V5",
+            "l%Qd",
+            "l>Tn",
+            "#HnQ",
+            "BUYb"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libpl_droidsonroids_gif.so",
+          "sha256": "8749489e1ff6c5acdb3e1d8ce98aacfde1abb10f02f1078a91ff3938d60e6d0c",
+          "size": 42464,
+          "strings_sample": [
+            "Android",
+            "r26d",
+            "11579264",
+            "#@>g*B:0u",
+            "\":S+@",
+            "@, ^",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "AndroidBitmap_getInfo",
+            "AndroidBitmap_lockPixels"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libterm.so",
+          "sha256": "458b8b5bff1e525883190581da8f74218bd876aa82d225f11250fc1a4e12d2f1",
+          "size": 10720,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "Java_bin_mt_term_Exec_createSubprocess",
+            "malloc",
+            "strdup",
+            "__open_2",
+            "grantpt"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libumeng-spy.so",
+          "sha256": "82db9d360b3606e6ebda1c5255b158c2d2642c55098a5bb6b920d60175a02e05",
+          "size": 239848,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "Java_com_umeng_umzid_Spy_getNativeID",
+            "Java_com_umeng_umzid_Spy_getNativeLibraryVersion",
+            "__gxx_personality_v0",
+            "__stack_chk_fail",
+            "_exit",
+            "close",
+            "fork",
+            "memset"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libzstd-jni-1.5.7-1.so",
+          "sha256": "2c00a1dc6a9a84c20922ab3d48f7353b79d983a14eb4a8fb7c4ddf359db5214f",
+          "size": 604160,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "g_debuglevel",
+            "ERR_getErrorString",
+            "FSE_decompress_wksp_bmi2",
+            "FSE_getErrorName",
+            "FSE_isError",
+            "FSE_readNCount",
+            "FSE_readNCount_bmi2",
+            "FSE_versionNumber"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libdeflate.so",
+          "sha256": "a112d6b2658c269011045297deebebd34898a2c172bf1b6a4a5a1caf20d6f945",
+          "size": 145256,
+          "strings_sample": [
+            "Android",
+            "r18b",
+            "5063045",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "libdeflate.so",
+            "__cxa_finalize",
+            "IID_IUnknown",
+            "Java_bin_zip_DeflaterJni_compress"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/liblsplant.so",
+          "sha256": "bcf54db0196ff5935a858df6d6e1cd708fd34b58a1a4e0be8e66ed2e6fdaaefd",
+          "size": 98376,
+          "strings_sample": [
+            "Android",
+            "r26b",
+            "10909125",
+            "GW*~[",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_ZN7lsplant2v24InitEP7_JNIEnvRKNS0_8InitInfoE",
+            "_ZN7lsplant2v24HookEP7_JNIEnvP8_jobjectS4_S4_",
+            "_ZN7lsplant2v26UnHookEP7_JNIEnvP8_jobject",
+            "_ZN7lsplant2v28IsHookedEP7_JNIEnvP8_jobject"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libmt1.so",
+          "sha256": "12d46f4599025aa327737e972f92adb94cf8eb889146a67c95aa2276efc73873",
+          "size": 157032,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "lBUYb",
+            "]B~1",
+            "gG1A",
+            "BHnQ",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "lstat"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libmt2.so",
+          "sha256": "baf6911de9e156b2554ccdb76a7eddcad0a24c5ffec9845fb793fae7b2ea48d4",
+          "size": 17592,
+          "strings_sample": [
+            "td <",
+            "Android",
+            "r27b",
+            "12297006",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__stack_chk_fail",
+            "__stack_chk_guard",
+            "Java_bin_mt_plus_Features2_init",
+            "xhook_clear"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libmt3.so",
+          "sha256": "adcb068bf1e4b0093bc4bf476750257e4de0bbb476806603192089e113ae1e87",
+          "size": 19072,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            ")YeXs",
+            "n;uF",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "Java_bin_mt_plus_Features3_read",
+            "malloc",
+            "__read_chk"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libmtprotect.so",
+          "sha256": "06faabae3d28e3373ba62a99494a8773b0716ce0d711d43d9eed3e249c87e8fd",
+          "size": 1464520,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "Fy(v",
+            "LtP&",
+            "69V5",
+            "gG1AxIk",
+            "#HnQ",
+            "BUYb",
+            "f4fN"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libpl_droidsonroids_gif.so",
+          "sha256": "f99c1a89dd587b62287925d79065fe179dfe572c0625d231dfad9d2386b7e267",
+          "size": 30264,
+          "strings_sample": [
+            "Android",
+            "r26d",
+            "11579264",
+            "#@>g*B:0u",
+            "\":S+@",
+            "@, ^",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "AndroidBitmap_getInfo",
+            "AndroidBitmap_lockPixels"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libterm.so",
+          "sha256": "86d1d37809021e5c675ddf04c66ef99faa111ef845104172f35381e2e225c0df",
+          "size": 7600,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "Java_bin_mt_term_Exec_createSubprocess",
+            "malloc",
+            "strdup",
+            "__open_2",
+            "grantpt"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libumeng-spy.so",
+          "sha256": "db419f273ca3bffa73432cf25b60ea2c6564bcd27cc491f7e42a6b1b301e07d8",
+          "size": 141024,
+          "strings_sample": [
+            "Android",
+            "r16b",
+            "4479499",
+            "__cxa_finalize",
+            "LIBC",
+            "libc.so",
+            "libumeng-spy.so",
+            "__cxa_atexit",
+            "Java_com_umeng_umzid_Spy_getNativeLibraryVersion",
+            "__stack_chk_fail"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libzstd-jni-1.5.7-1.so",
+          "sha256": "5eae1cffe55921510994fe2cf84e3b465066ec435e0b4084dcdfc2eb72a6d4b3",
+          "size": 472740,
+          "strings_sample": [
+            "Android",
+            "5232133",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "libzstd-jni-1.5.7-1.so",
+            "__cxa_finalize",
+            "g_debuglevel",
+            "ERR_getErrorString",
+            "FSE_decompress_wksp_bmi2"
+          ]
+        },
+        {
+          "name": "lib/x86/libdeflate.so",
+          "sha256": "8a3a7a10b65958a3250f8aae082ebb14d35da8344115116dbe3f5c4d951dd0ec",
+          "size": 272244,
+          "strings_sample": [
+            "Android",
+            "r18b",
+            "5063045",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "libdeflate.so",
+            "__cxa_finalize",
+            "__stack_chk_fail",
+            "IID_IUnknown"
+          ]
+        },
+        {
+          "name": "lib/x86/liblsplant.so",
+          "sha256": "e40c255c65076b4ce0c364ae4bc4c1840436d88515b66afa9d6b73355cbfc45c",
+          "size": 152000,
+          "strings_sample": [
+            "td0)",
+            "Android",
+            "r26b",
+            "10909125",
+            "GW*~[",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_ZN7lsplant2v24InitEP7_JNIEnvRKNS0_8InitInfoE",
+            "_ZN7lsplant2v24HookEP7_JNIEnvP8_jobjectS4_S4_",
+            "_ZN7lsplant2v26UnHookEP7_JNIEnvP8_jobject"
+          ]
+        },
+        {
+          "name": "lib/x86/libmt1.so",
+          "sha256": "2da25ad2386942e359823a1700ef339a4bef155a04f325eb369898288f1dfae0",
+          "size": 237844,
+          "strings_sample": [
+            "tdP{",
+            "Android",
+            "r27b",
+            "12297006",
+            "~w)v",
+            "Fy(v",
+            "LtP&",
+            "69V5",
+            "gG1AxIk",
+            "#HnQ"
+          ]
+        },
+        {
+          "name": "lib/x86/libmt2.so",
+          "sha256": "1ef5600ef3e1779d2c9e03dbdcea455f1cc820d0af6cc93e26a6927408d205bd",
+          "size": 21836,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__stack_chk_fail",
+            "Java_bin_mt_plus_Features2_init",
+            "xhook_clear",
+            "xhook_register",
+            "xhook_refresh"
+          ]
+        },
+        {
+          "name": "lib/x86/libmt3.so",
+          "sha256": "8badd955e6172f6982d72e5408eed11ba005637dfc7563e659be380586e7ddcb",
+          "size": 26472,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "n;uD",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "Java_bin_mt_plus_Features3_read",
+            "malloc",
+            "__read_chk",
+            "free"
+          ]
+        },
+        {
+          "name": "lib/x86/libmtprotect.so",
+          "sha256": "5f88609bfaa692f0d2bc265834f6663855862bc6a4311752afcdf33fc7e41b28",
+          "size": 1867928,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "Fy(v",
+            "LtP&",
+            "69V5",
+            "gG1AxIk",
+            "#HnQ",
+            "BUYb",
+            "f4fN"
+          ]
+        },
+        {
+          "name": "lib/x86/libpl_droidsonroids_gif.so",
+          "sha256": "b97f9e044e3e96810fc6eab9014c3886cb028e8e573776b7c6cc8583c14b498f",
+          "size": 40388,
+          "strings_sample": [
+            "td\\!",
+            "Android",
+            "r26d",
+            "11579264",
+            "#@>g*B:0u",
+            "\":S+@",
+            "@, ^",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "AndroidBitmap_getInfo"
+          ]
+        },
+        {
+          "name": "lib/x86/libterm.so",
+          "sha256": "c453f549cc819b375025ae161066c83080d6ce6fed5e511cf61bbdbfe62c4b3d",
+          "size": 8728,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "Java_bin_mt_term_Exec_createSubprocess",
+            "malloc",
+            "strdup",
+            "__open_2",
+            "grantpt"
+          ]
+        },
+        {
+          "name": "lib/x86/libumeng-spy.so",
+          "sha256": "1fd8db10d9123161be555320b69d7435c36eb9cb1805d51645cb5a396d04b55a",
+          "size": 231172,
+          "strings_sample": [
+            "td@n",
+            "Android",
+            "r16b",
+            "4479499",
+            "__cxa_finalize",
+            "LIBC",
+            "libc.so",
+            "libumeng-spy.so",
+            "__cxa_atexit",
+            "__stack_chk_fail"
+          ]
+        },
+        {
+          "name": "lib/x86/libzstd-jni-1.5.7-1.so",
+          "sha256": "804591e1218c2571118b5e7b77acf95de43a386b4cba52cedc9543bcdc29b051",
+          "size": 685672,
+          "strings_sample": [
+            "Android",
+            "5232133",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "libzstd-jni-1.5.7-1.so",
+            "__cxa_finalize",
+            "__stack_chk_fail",
+            "g_debuglevel",
+            "ERR_getErrorString"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libdeflate.so",
+          "sha256": "1e08b54d6ec906a32bc6b61894f4babab892495e4a00d0b867ac073613107e6e",
+          "size": 289328,
+          "strings_sample": [
+            "Android",
+            "r18b",
+            "5063045",
+            "QS`G>.",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "libdeflate.so",
+            "__cxa_finalize",
+            "IID_IUnknown"
+          ]
+        },
+        {
+          "name": "lib/x86_64/liblsplant.so",
+          "sha256": "750306355eed700efa171c8e38522c153b9ad2edb55c872a0bf798240d74ed75",
+          "size": 165912,
+          "strings_sample": [
+            "Android",
+            "r26b",
+            "10909125",
+            "GW*~[",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_ZN7lsplant2v24InitEP7_JNIEnvRKNS0_8InitInfoE",
+            "_ZN7lsplant2v24HookEP7_JNIEnvP8_jobjectS4_S4_",
+            "_ZN7lsplant2v26UnHookEP7_JNIEnvP8_jobject",
+            "_ZN7lsplant2v28IsHookedEP7_JNIEnvP8_jobject"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libmt1.so",
+          "sha256": "034a1caaf3611ac1e7864ebed0ac528f26f3ab1d46e81fbdb1ebfa4bd6758615",
+          "size": 255648,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "(MG]",
+            "8Kv1",
+            "e?Tn",
+            "f4fd",
+            "BUYb",
+            "__cxa_finalize",
+            "__cxa_atexit"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libmt2.so",
+          "sha256": "4e6c0cca33193f541178c8b23234bde4822a5552777d3c1f8e795b8a7c398f38",
+          "size": 24824,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__stack_chk_fail",
+            "Java_bin_mt_plus_Features2_init",
+            "xhook_clear",
+            "xhook_register",
+            "xhook_refresh"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libmt3.so",
+          "sha256": "b6d80c1b7131100412d637c014df833da154a724c0e4ba0d846721f28181dc2e",
+          "size": 28680,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "n;uD",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "Java_bin_mt_plus_Features3_read",
+            "malloc",
+            "__read_chk",
+            "free"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libmtprotect.so",
+          "sha256": "c7de0ebc60b390afdd2f4702dcc91747bfdf9fbb9f33bd72023c0abe85d736d0",
+          "size": 1916096,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "BUYbJ",
+            "l?Tn",
+            "l%Qd",
+            "69V5",
+            "f4f>",
+            "__cxa_finalize",
+            "__cxa_atexit"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libpl_droidsonroids_gif.so",
+          "sha256": "46652cefe6fb595a85f18af36823fa3f416bb386d6f819aa269f2b9d3186374b",
+          "size": 41856,
+          "strings_sample": [
+            "Android",
+            "r26d",
+            "11579264",
+            "#@>g*B:0u",
+            "\":S+@",
+            "@, ^",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "AndroidBitmap_getInfo",
+            "AndroidBitmap_lockPixels"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libterm.so",
+          "sha256": "6ac81d3945c90a1ddeafd2882b395069cb53d67718a616c8d057c5777af00234",
+          "size": 10720,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "Java_bin_mt_term_Exec_createSubprocess",
+            "malloc",
+            "strdup",
+            "__open_2",
+            "grantpt"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libzstd-jni-1.5.7-1.so",
+          "sha256": "b462763ef77f7c42c2442babb18d7edebfa92b45657758933e58834126e5ad6a",
+          "size": 714936,
+          "strings_sample": [
+            "Android",
+            "5232133",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "libzstd-jni-1.5.7-1.so",
+            "__cxa_finalize",
+            "g_debuglevel",
+            "ERR_getErrorString",
+            "FSE_decompress_wksp_bmi2"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "RAFAEL_TERMUX_MOD_REAL_COMPILADO (1).apk",
+      "so_files": []
+    },
+    {
+      "apk": "antutu-benchmark-10-5-1.apk",
+      "so_files": [
+        {
+          "name": "lib/arm64-v8a/libCPS.so",
+          "sha256": "4e283e9558efb3d16467fbda8e6c08a76df338ded4112fa486bd29dc84469d83",
+          "size": 150304,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "JNI_OnLoad",
+            "__stack_chk_fail",
+            "free",
+            "malloc",
+            "memcpy",
+            "memset",
+            "sprintf",
+            "strlen"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libabenchmark.so",
+          "sha256": "26dd548323d5466d026845b9d5d4bc6afb8c65efc748dfe487fdb2ac3691342d",
+          "size": 7076520,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "  @x",
+            "J`@B @`",
+            "J CJ",
+            "#@@!",
+            "( B@",
+            "AP &",
+            "C 0\""
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libavx.so",
+          "sha256": "49afe07b2ecaf671a38e8c8148d4437b36407a1a98a6aa450fc369a1c0c5a0eb",
+          "size": 5688,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "libz.so",
+            "liblog.so",
+            "libandroid.so",
+            "libGLESv2.so",
+            "libc.so",
+            "libm.so",
+            "libdl.so",
+            "_edata"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libc++_shared.so",
+          "sha256": "28e7a3a306d7fc222c62abe08741cfcba38c3f336216c4563726bf985ae3cfd6",
+          "size": 1027408,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            "e\\GS",
+            " 0( ",
+            "P\" `",
+            "M$$ ",
+            "HF! ",
+            "t6x3(",
+            "f $$"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libcommonV2DevInfo.so",
+          "sha256": "f02265bb3e9aad40a99ff13fa38366f7d689d21f49c5d00e7fdbbba95f9ec7a7",
+          "size": 268344,
+          "strings_sample": [
+            "0P @",
+            "!@`!",
+            " E  ",
+            "(`B*",
+            "BUYb",
+            "Y$s>~1",
+            "y)\\k",
+            "^$]Mw",
+            "B8[t",
+            "@$my"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libcrashsdk.so",
+          "sha256": "a8a0f925488f09d2321942f05ba8928784b4119d3da1ff55451f96c1ccd54f9c",
+          "size": 647928,
+          "strings_sample": [
+            "/system/bin/linker64",
+            "!U*.",
+            "libcrashsdk.so",
+            "CRASHSDK",
+            "CRASHSDK_150",
+            "CRASHSDK_210",
+            "CRASHSDK_323",
+            "JNI_OnLoad",
+            "__cxa_finalize",
+            "crashsdk_addHeaderInfo"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "sha256": "d3e48717c9aa147e0ab21063ba0e8e0211cabf8bf40b222640829519edbf58e1",
+          "size": 7112,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_Z16ThrowIoExceptionP7_JNIEnvPKc",
+            "Java_androidx_datastore_core_NativeSharedCounter_nativeTruncateFile",
+            "_ZN9datastore12TruncateFileEi",
+            "strerror",
+            "Java_androidx_datastore_core_NativeSharedCounter_nativeCreateSharedCounter"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libdevInfo.so",
+          "sha256": "49d7a9157f189b2c04a90029a95595f042ca9b128b554f32a95c3b87c12b99dd",
+          "size": 280632,
+          "strings_sample": [
+            "0P @",
+            "!@`!",
+            " @  ",
+            "(`B*",
+            "BUYb",
+            "Y$s>~1",
+            "y)\\k",
+            "^$]Mw",
+            "B8[t",
+            "@$my"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libimageprocess.so",
+          "sha256": "8b41a0e945a74fb46e16f70fd98aaafd7ad5fef3c3bb1c1e29fd8ffdc8c39785",
+          "size": 513672,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            "@-0HJ",
+            "p@`*",
+            "AB@ ",
+            " g;0",
+            "D` !",
+            "$!) @",
+            "LHrz7"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libimageprocesshalf.so",
+          "sha256": "5f843e06c3f439e647383564f352ae2fe70e66a49c91d85b4d9200391f63798e",
+          "size": 521424,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            "^lvLP",
+            "@-0HJ",
+            "p@`*",
+            "AB@ ",
+            " g;0",
+            "D` !",
+            "$!) @"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libmsaoaidauth.so",
+          "sha256": "1c1e7033edd6ceb06b8eadcaa038c4cdae520618dbdb462b4b355022434eeac9",
+          "size": 418952,
+          "strings_sample": [
+            "d`I2",
+            "I.f}",
+            "6f}xIk",
+            "_Pn>",
+            ">l8~",
+            "Rx=+L",
+            "2f}d",
+            "y))3",
+            "y8[t",
+            "__cxa_finalize"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libmsaoaidsec.so",
+          "sha256": "6c1986966ead21dee4e3850d470292204cef59b3b6306fe7806f63e9e1412e2a",
+          "size": 691976,
+          "strings_sample": [
+            "d`I2",
+            "I.f}",
+            "6f}xIk",
+            "_Pn>",
+            ">l8~",
+            "Rx=+L",
+            "2f}d",
+            "y))3",
+            "y8[t",
+            "__cxa_finalize"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libplt-base.so",
+          "sha256": "17af566643b0b771874c095af96922b95ec879d841bce1cf8b34384437fd6295",
+          "size": 373056,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "T\",$",
+            "]F@\"",
+            "lap0",
+            "4U+2",
+            "v'pF",
+            "Z(x1.",
+            "`x:\""
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/librenderscript-toolkit.so",
+          "sha256": "da73d0017d117789f343d3f3d83f31c9f3a68222225cc34459b7edd6de814ef4",
+          "size": 159248,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            "H&mv",
+            "sT]~",
+            "C,p1iRu",
+            "n-]z",
+            "JA6/",
+            "gn/~",
+            "__cxa_finalize"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libsgcore.so",
+          "sha256": "7f653053fd392fe8bfd02916ce9dd08756d9f085da5d70353b4506f26bd5d7fb",
+          "size": 92360,
+          "strings_sample": [
+            "P9wT<",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__stack_chk_fail",
+            "calloc",
+            "fclose",
+            "fgets",
+            "fopen",
+            "memcpy",
+            "memset"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libti-monitor.so",
+          "sha256": "9851b6db817b44810dcc39af63962cbf5040a13454c966bb1406141f11da3200",
+          "size": 115872,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "Java_com_kwai_performance_stability_artti_monitor_JvmtiHelper_avoidDeoptForRelea",
+            "seBuild",
+            "Java_com_kwai_performance_stability_artti_monitor_JvmtiHelper_disableJdwp",
+            "Java_com_kwai_performance_stability_artti_monitor_JvmtiHelper_enableJdwp",
+            "Java_com_kwai_performance_stability_artti_monitor_JvmtiHelper_unloadAgent"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libtnet-3.1.14.so",
+          "sha256": "2a2d9ec2dc19760d4dac6aec2f93c8e1eaeba45debe7045984de701e16266198",
+          "size": 362872,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__stack_chk_guard",
+            "__stack_chk_fail",
+            "malloc",
+            "pthread_mutexattr_init",
+            "pthread_mutexattr_settype",
+            "pthread_mutex_init",
+            "pthread_mutexattr_destroy",
+            "pthread_cond_init",
+            "pthread_mutex_lock"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libucrash-core.so",
+          "sha256": "d58845da46a49a090c3b414efc4217a2a34d560072a5d04fead57f5b5e15e036",
+          "size": 97280,
+          "strings_sample": [
+            "/system/bin/linker64",
+            "Android",
+            "r21d",
+            "6528147",
+            "liblog.so",
+            "libdl.so",
+            "libm.so",
+            "dl_iterate_phdr",
+            "libc.so",
+            "free"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libucrash.so",
+          "sha256": "18c8c8fed2a4e381a02d17082c94da8dbe5cc0cc8a2cf874f43f914636035885",
+          "size": 51648,
+          "strings_sample": [
+            "KQ5W",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "liblog.so",
+            "libdl.so",
+            "libm.so",
+            "abort",
+            "memcpy",
+            "memset",
+            "strlen"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libumeng-spy.so",
+          "sha256": "ad5cb3b406902fe8c247ee2bc8081e8b4367019421781eddb23541a0c75527b3",
+          "size": 365896,
+          "strings_sample": [
+            ")?)m/",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "Java_com_umeng_umzid_Spy_getNativeID",
+            "Java_com_umeng_umzid_Spy_getNativeLibraryVersion",
+            "Java_com_umeng_umzid_Spy_getNativeTag",
+            "_Z14signal_handleri",
+            "_ZNKSt6__ndk121__basic_string_commonILb1EE20__throw_length_errorEv",
+            "_ZNSt11logic_errorC2EPKc",
+            "_ZNSt12length_errorD1Ev"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libumonitor.so",
+          "sha256": "7cf3fccfd88c49b0ab8d3eadc729eb57d5ad183b0cad68270a2bf078f77ecab0",
+          "size": 247352,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "strerror",
+            "__errno",
+            "fork",
+            "alarm",
+            "prctl"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libweibosdkcore.so",
+          "sha256": "be9562a75f118aa5b74a2eae230df8e31215e0f4b5c3705d76965cd44d4ea769",
+          "size": 26136,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__stack_chk_guard",
+            "__stack_chk_fail",
+            "MDString",
+            "strlen",
+            "sprintf",
+            "malloc",
+            "strtol",
+            "free"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libabenchmark.so",
+          "sha256": "ced19531761d405cc6b9d57868301d07ec172ea8da8f2607f4cb2d5a723c5a1a",
+          "size": 7876912,
+          "strings_sample": [
+            "Android",
+            "r23b",
+            "7779620",
+            "  @x",
+            "0D (",
+            "J`@B @`",
+            "J CJ",
+            "#@@!",
+            "( B@",
+            "AP &"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libavx.so",
+          "sha256": "d4031ef665b4658ed118699e83b87c68072de60552f2bc4726ee34bf1b998859",
+          "size": 211288,
+          "strings_sample": [
+            "Android",
+            "r18b",
+            "5063045",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "libavx.so",
+            "__cxa_finalize",
+            "_ZdaPv",
+            "avx_s"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libc++_shared.so",
+          "sha256": "5db2cfb8e41bb0f7851733bc8d97385ca786b354376005a817387d3ec98024f6",
+          "size": 1045960,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            " 0( ",
+            "P\" `",
+            "M$$ ",
+            "HF! ",
+            "6x3(",
+            "f $$",
+            ":Ima"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libdatastore_shared_counter.so",
+          "sha256": "fb6c9208988c49ae94943bc3236fa763ba584722e044fa4ea9a12d2941027105",
+          "size": 6224,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_Z16ThrowIoExceptionP7_JNIEnvPKc",
+            "Java_androidx_datastore_core_NativeSharedCounter_nativeTruncateFile",
+            "_ZN9datastore12TruncateFileEi",
+            "strerror",
+            "Java_androidx_datastore_core_NativeSharedCounter_nativeCreateSharedCounter"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libdevInfo.so",
+          "sha256": "cc206761425488b60988a78e9cebf0fbeb5a68f75d2c4597b90e1f903c34d301",
+          "size": 305480,
+          "strings_sample": [
+            "Android",
+            "r21d",
+            "6528147",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "libdevInfo.so",
+            "__cxa_finalize",
+            "Java_com_beizi_ad_internal_utilities_DeviceInfo_getBootMark",
+            "Java_com_beizi_ad_internal_utilities_DeviceInfo_getUpdateMark"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libimageprocess.so",
+          "sha256": "bf40dd109547bc687c47d95c269fc276616aa035d90e57c5704b2b116a79cbd3",
+          "size": 531792,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            "#2Ov",
+            "@-0HJ",
+            "p@`*",
+            "AB@ ",
+            " m;0",
+            "D` !",
+            "$!) @"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libimageprocesshalf.so",
+          "sha256": "8a39e53f924bf0cc78c756104e90b1142ab37031c0545133de520b05c1b03c14",
+          "size": 541680,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            "@-0HJ",
+            "p@`*",
+            "AB@ ",
+            " m;0",
+            "D` !",
+            "$!) @",
+            "q|z:"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libmsaoaidauth.so",
+          "sha256": "c4d66f0303610b168537c0d9f1a6b7d099526368c7b87fbe389f394a23ba079a",
+          "size": 304552,
+          "strings_sample": [
+            "__cxa_finalize",
+            "LIBC",
+            "libc.so",
+            "libmsaoaidauth.so",
+            "pqrstuvwxyz.so",
+            "__cxa_atexit",
+            "JNI_OnLoad",
+            "_Znwm",
+            "__stack_chk_fail",
+            "__strlen_chk"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libmsaoaidsec.so",
+          "sha256": "2ce38fc2ed0bbf0cbcd85dab5d6e03f1cc3b8694f203d733ec2cb88f9c749f08",
+          "size": 673312,
+          "strings_sample": [
+            "__cxa_finalize",
+            "LIBC",
+            "libc.so",
+            "libmsaoaidsec.so",
+            "opqrstuvwxyz.so",
+            "__cxa_atexit",
+            "JNI_OnLoad",
+            "_Znwm",
+            "__stack_chk_fail",
+            "__strlen_chk"
+          ]
+        },
+        {
+          "name": "lib/x86_64/librenderscript-toolkit.so",
+          "sha256": "59559d6145e53e4038542ce6bfb78a47f1fc7723abc18de574f5ff874b63cd11",
+          "size": 109312,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            " `D`",
+            "n-]{",
+            "Ybn/~",
+            "H&mv",
+            "JA6J",
+            "GT]~",
+            ".2R{"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libtnet-3.1.14.so",
+          "sha256": "86efe602b36e2b239d393b5d9f3c2576a1d85ee02729f8357800600f4d3ebd6e",
+          "size": 375696,
+          "strings_sample": [
+            "Android",
+            "r16b",
+            "4479499",
+            "C|.+#",
+            "__cxa_finalize",
+            "LIBC",
+            "libc.so",
+            "libtnet-3.1.14.so",
+            "__cxa_atexit",
+            "__stack_chk_fail"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "gboard-15-5-7-766552071-beta-arm64-v8a.xapk",
+      "so_files": []
+    },
+    {
+      "apk": "androidide-coder-1-0-5.apk",
+      "so_files": []
+    },
+    {
+      "apk": "termux-googleplay-2025-01-18.xapk",
+      "so_files": []
+    },
+    {
+      "apk": "Sketchware.Pro.v6.4.0-rc05-minApi26.apk",
+      "so_files": []
+    },
+    {
+      "apk": "shizuku-13-6-0-r1090-16d28799.apk",
+      "so_files": [
+        {
+          "name": "lib/arm64-v8a/libadb.so",
+          "sha256": "872485121f43f71374ad62447312d034f98ad4c2d4be691ecbefaa6af45a14b8",
+          "size": 90392,
+          "strings_sample": [
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "nP&W",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__register_atfork",
+            "JNI_OnLoad",
+            "__android_log_print",
+            "free"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/librish.so",
+          "sha256": "1ac3bc4f8887d9d4caab79b9fcc7a1effc42173fc8f71c217d62880a75684f85",
+          "size": 19512,
+          "strings_sample": [
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "u3h3",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__register_atfork",
+            "JNI_OnLoad",
+            "__android_log_print",
+            "__errno"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libshizuku.so",
+          "sha256": "00a54245b00b8c0d4d53aaa228323da0e1c9a3c4d1ebdbee8fbfdcf908e1fb33",
+          "size": 15632,
+          "strings_sample": [
+            "/system/bin/linker64",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "__libc_init",
+            "__cxa_atexit",
+            "__register_atfork",
+            "strncmp",
+            "getuid",
+            "fprintf"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libadb.so",
+          "sha256": "1a7c64c0797c9404e5556c30d6c7f2c43e2ecae26a14fe8fecc30207ee91384d",
+          "size": 62176,
+          "strings_sample": [
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__register_atfork",
+            "JNI_OnLoad",
+            "__android_log_print",
+            "free",
+            "calloc"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/librish.so",
+          "sha256": "4b67ff1ea7327808db903ea2b53ef809419628983b1fe223fba93970368325a6",
+          "size": 11672,
+          "strings_sample": [
+            "td`&",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "y~lE",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__register_atfork",
+            "JNI_OnLoad",
+            "__android_log_print"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libshizuku.so",
+          "sha256": "570ae93011bb59100866c5ff1ee254e8805f628deccbba67cdef3631090fe095",
+          "size": 10928,
+          "strings_sample": [
+            "/system/bin/linker",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "e:U(",
+            "__libc_init",
+            "__cxa_atexit",
+            "__register_atfork",
+            "strncmp",
+            "getuid"
+          ]
+        },
+        {
+          "name": "lib/x86/libadb.so",
+          "sha256": "986260d61b5eb14f4a8fe65e141f59ac431b575225a2505710a0e26da132bff5",
+          "size": 109548,
+          "strings_sample": [
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__register_atfork",
+            "JNI_OnLoad",
+            "__android_log_print",
+            "free",
+            "calloc"
+          ]
+        },
+        {
+          "name": "lib/x86/librish.so",
+          "sha256": "aaf3fa142cf746daedb28e3e4571a710d7cd08a302ae06fef4da677f7e1a7ed4",
+          "size": 14092,
+          "strings_sample": [
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__register_atfork",
+            "JNI_OnLoad",
+            "__android_log_print",
+            "__errno",
+            "strerror"
+          ]
+        },
+        {
+          "name": "lib/x86/libshizuku.so",
+          "sha256": "267108681dab4ba590832630312a75dae9e72f4537a324c37d64c403bf2a47ff",
+          "size": 12832,
+          "strings_sample": [
+            "/system/bin/linker",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "__libc_init",
+            "__cxa_atexit",
+            "__register_atfork",
+            "strncmp",
+            "getuid",
+            "fprintf"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libadb.so",
+          "sha256": "9107275cd07152d595494ae5e61cbc341534b712f40d847a3d817b94fd0c87ef",
+          "size": 137560,
+          "strings_sample": [
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__register_atfork",
+            "JNI_OnLoad",
+            "__android_log_print",
+            "free",
+            "calloc"
+          ]
+        },
+        {
+          "name": "lib/x86_64/librish.so",
+          "sha256": "d7b94b771c65b6e0df3fc5e1ef071f39e7a3d1d9ecfc05f103a2e9ca2047586f",
+          "size": 16512,
+          "strings_sample": [
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "KCD3b7",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__register_atfork",
+            "JNI_OnLoad",
+            "__android_log_print",
+            "__errno"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libshizuku.so",
+          "sha256": "4e1e7d800595e4ba7002e22d6464d2ff7f6d7ccac502a5d89c554540f7ff262c",
+          "size": 15408,
+          "strings_sample": [
+            "/system/bin/linker64",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "__libc_init",
+            "__cxa_atexit",
+            "__register_atfork",
+            "strncmp",
+            "getuid",
+            "fprintf"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "link2sd-4-3-4.apk",
+      "so_files": [
+        {
+          "name": "lib/arm64-v8a/liblink2sd.so",
+          "sha256": "1e79fef46b7a77d0e0df3e835e5e91fa220df63fc7668d0b7060820076617d0c",
+          "size": 5440,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "malloc_readlink",
+            "realloc",
+            "free",
+            "Java_com_buak_Link2SD_N_ndkIsLinked",
+            "__stack_chk_guard",
+            "lstat",
+            "strcpy",
+            "__stack_chk_fail"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/liblink2sd.so",
+          "sha256": "4ce487501d1bb7dc5b32896dd9504f074b427c6d7f38709ecd87b75dadcefa28",
+          "size": 9404,
+          "strings_sample": [
+            "/system/bin/linker",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "malloc_readlink",
+            "realloc",
+            "readlink",
+            "free",
+            "__aeabi_unwind_cpp_pr0",
+            "Java_com_buak_Link2SD_N_ndkIsLinked",
+            "lstat"
+          ]
+        },
+        {
+          "name": "lib/armeabi/liblink2sd.so",
+          "sha256": "79543a1d79c53f1679f04ab201fc3b1bf040b4bad0e7dcd833d8579f61171fe3",
+          "size": 13492,
+          "strings_sample": [
+            "/system/bin/linker",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "malloc_readlink",
+            "realloc",
+            "readlink",
+            "free",
+            "__aeabi_unwind_cpp_pr0",
+            "Java_com_buak_Link2SD_N_ndkIsLinked",
+            "lstat"
+          ]
+        },
+        {
+          "name": "lib/mips/liblink2sd.so",
+          "sha256": "2d1ee74dddd11d395f4eeae6ef4bb00e535ef8c3086e6aa9e9d7ad41b14fdd93",
+          "size": 5440,
+          "strings_sample": [
+            "_gp_disp",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "malloc_readlink",
+            "realloc",
+            "free",
+            "Java_com_buak_Link2SD_N_ndkIsLinked",
+            "lstat",
+            "strcpy",
+            "Java_com_buak_Link2SD_N_ndkChmod"
+          ]
+        },
+        {
+          "name": "lib/x86/liblink2sd.so",
+          "sha256": "9de4007ca00ded851a4cbdd8c8d95c0169409af6b882a3db843a7d9551d7f82b",
+          "size": 5156,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__stack_chk_fail",
+            "malloc_readlink",
+            "realloc",
+            "readlink",
+            "free",
+            "Java_com_buak_Link2SD_N_ndkIsLinked",
+            "__stack_chk_guard",
+            "lstat"
+          ]
+        },
+        {
+          "name": "lib/x86_64/liblink2sd.so",
+          "sha256": "a143d673ca4b8b30cec9a64fe42401c1a8e5457a69784b7e856a38ddbc3085c2",
+          "size": 5632,
+          "strings_sample": [
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "malloc_readlink",
+            "realloc",
+            "readlink",
+            "free",
+            "Java_com_buak_Link2SD_N_ndkIsLinked",
+            "__stack_chk_guard",
+            "lstat",
+            "strcpy"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "sd-maid-system-cleaning-tool-5-6-3.apk",
+      "so_files": [
+        {
+          "name": "lib/arm64-v8a/libsqlite3.so",
+          "sha256": "4d5e96da9c72296c99216df7c0db24db80d2c01aafe1b9342a82b808f2e23eb7",
+          "size": 523580,
+          "strings_sample": [
+            "/system/bin/linker",
+            "Android",
+            "r18b",
+            "5063045",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "__libc_init",
+            "__aeabi_memclr",
+            "__aeabi_memclr4"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libtoybox.so",
+          "sha256": "c3e33493d0e64c62b8c728819854a5d7c02394474c29cf4288ec808005e24131",
+          "size": 198512,
+          "strings_sample": [
+            "@ #!",
+            "!1C \"",
+            ":  R",
+            "Unknown option %s",
+            "%s-%c",
+            "Missing argument to ",
+            "%s--%.*s",
+            "-%c < %ld",
+            "-%c > %ld",
+            "-%c < %lf"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libsqlite3.so",
+          "sha256": "4d5e96da9c72296c99216df7c0db24db80d2c01aafe1b9342a82b808f2e23eb7",
+          "size": 523580,
+          "strings_sample": [
+            "/system/bin/linker",
+            "Android",
+            "r18b",
+            "5063045",
+            "__cxa_atexit",
+            "LIBC",
+            "libc.so",
+            "__libc_init",
+            "__aeabi_memclr",
+            "__aeabi_memclr4"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libtoybox.so",
+          "sha256": "c3e33493d0e64c62b8c728819854a5d7c02394474c29cf4288ec808005e24131",
+          "size": 198512,
+          "strings_sample": [
+            "@ #!",
+            "!1C \"",
+            ":  R",
+            "Unknown option %s",
+            "%s-%c",
+            "Missing argument to ",
+            "%s--%.*s",
+            "-%c < %ld",
+            "-%c > %ld",
+            "-%c < %lf"
+          ]
+        },
+        {
+          "name": "lib/x86/libsqlite3.so",
+          "sha256": "bdffb0f51b99453a4df6423cad7b47044d13c96b129fd38f9eed08573b002dd6",
+          "size": 728296,
+          "strings_sample": [
+            "/system/bin/linker",
+            "Android",
+            "r18b",
+            "5063045",
+            "strcspn",
+            "LIBC",
+            "libc.so",
+            "sysconf",
+            "write",
+            "__cxa_atexit"
+          ]
+        },
+        {
+          "name": "lib/x86/libtoybox.so",
+          "sha256": "c8acb99171efc3ef8550d314d9e445b9c0f6afb1e0f6ec6094f5d1389c3b4cdc",
+          "size": 178028,
+          "strings_sample": [
+            "PPQh",
+            "[^_]",
+            "TTRh",
+            "[^_]",
+            "=<<u",
+            "PPVh0",
+            "PPVh7",
+            "G(<#u",
+            "'<.u#CRR",
+            "[^_]"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libsqlite3.so",
+          "sha256": "bdffb0f51b99453a4df6423cad7b47044d13c96b129fd38f9eed08573b002dd6",
+          "size": 728296,
+          "strings_sample": [
+            "/system/bin/linker",
+            "Android",
+            "r18b",
+            "5063045",
+            "strcspn",
+            "LIBC",
+            "libc.so",
+            "sysconf",
+            "write",
+            "__cxa_atexit"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libtoybox.so",
+          "sha256": "c8acb99171efc3ef8550d314d9e445b9c0f6afb1e0f6ec6094f5d1389c3b4cdc",
+          "size": 178028,
+          "strings_sample": [
+            "PPQh",
+            "[^_]",
+            "TTRh",
+            "[^_]",
+            "=<<u",
+            "PPVh0",
+            "PPVh7",
+            "G(<#u",
+            "'<.u#CRR",
+            "[^_]"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "RAFAELIA_UNO_UNIFICADO_SIGNED (1).apk",
+      "so_files": []
+    },
+    {
+      "apk": "magisk-manager-29-0.apk",
+      "so_files": [
+        {
+          "name": "lib/arm64-v8a/libbusybox.so",
+          "sha256": "4d60ab3f5a59ebb2ca863f2f514e6924401b581e9b64f602665c008177626651",
+          "size": 1710600,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "align != 0 && powerof2(align + 0) && skew < align",
+            "ZipArchive",
+            "attempted to close file descriptor %d, expected to be owned by %s 0x%lx, actuall",
+            "y owned by %s 0x%lx",
+            "double-close of file descriptor %d detected",
+            "fatal",
+            "LD_DYNAMIC_WEAK"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libinit-ld.so",
+          "sha256": "a3ffb6478bda20cc2071e44dfb914be84ab04af490711b54b271db99f64ad598",
+          "size": 5208,
+          "strings_sample": [
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__register_atfork",
+            "security_load_policy",
+            "unsetenv",
+            "unlink",
+            "close"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libmagisk.so",
+          "sha256": "b7b9fe3362c28f365b96eed86b96ee9265a6fe8226fdda7184042153379ce685",
+          "size": 345880,
+          "strings_sample": [
+            "/system/bin/linker64",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "isatty",
+            "strcpy",
+            "strncpy",
+            "memcpy",
+            "strlcpy",
+            "pthread_mutex_destroy"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libmagiskboot.so",
+          "sha256": "a2b14ec3b5c953ffd519ab6f944de346f564c6a2bcb944c6f056ed10a319a4fb",
+          "size": 769600,
+          "strings_sample": [
+            "InvalidArguments",
+            "0123456789ABCDEF",
+            "KEEPFORCEENCRYPTs)",
+            "modnarodsetybdet",
+            "Create symlink [",
+            "connection reset",
+            "(D#$w",
+            "entity not found",
+            ">'uespemosarenegyl",
+            "integer overflowhost unreachable"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libmagiskinit.so",
+          "sha256": "afc5d5a317e74f0a0130329fc684fe9d1e8e37d228695eb0a9075d69b42cf923",
+          "size": 206672,
+          "strings_sample": [
+            "priv_appgenfscon ",
+            "realpathchr_fileunlinkat ",
+            "readlink",
+            "security",
+            "dev_typedeadlock ",
+            "transferlnk_fileblk_filesetxattrrenameat",
+            "/init",
+            "init-ld",
+            "/null",
+            "/data/magiskinithwservicemanager"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libmagiskpolicy.so",
+          "sha256": "d2f0cf74d09a6c39edea6bab8118a90e67b84de70c11624bf0fbabd4e476ebba",
+          "size": 351120,
+          "strings_sample": [
+            "/system/bin/linker64",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "isatty",
+            "strcpy",
+            "memcpy",
+            "stdout",
+            "qsort",
+            "abort"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libbusybox.so",
+          "sha256": "7edf6024ed2305dc7bc5d91bad6a8f0ebffbecdd41b8a861d0ced297a5ea1b6d",
+          "size": 1282828,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "align != 0 && powerof2(align + 0) && skew < align",
+            "ZipArchive",
+            "double-close of file descriptor %d detected",
+            "fatal",
+            "LD_DYNAMIC_WEAK",
+            "Terminate on a type mismatch in allocation-deallocation functions, eg: malloc/de",
+            "lete, new/free, new/delete[], etc."
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libinit-ld.so",
+          "sha256": "bbbfc6864ee38b3c7733964e9875f2b6e0b38d1b884452872033d5201c30f602",
+          "size": 3712,
+          "strings_sample": [
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__register_atfork",
+            "security_load_policy",
+            "unsetenv",
+            "unlink",
+            "close"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libmagisk.so",
+          "sha256": "774d36ac5ad46a379f357a71bae0596012ba4d81e0d30272259ecaf398756b38",
+          "size": 220296,
+          "strings_sample": [
+            "td D",
+            "/system/bin/linker",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "isatty",
+            "strcpy",
+            "strncpy",
+            "strlcpy",
+            "pthread_mutex_destroy"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libmagiskboot.so",
+          "sha256": "4a55f710bd74bf5db4a4cd765947f5a70d58dadf754d2a1e058a22a3abeaa0be",
+          "size": 704856,
+          "strings_sample": [
+            ".XTm",
+            "[0QUUU",
+            "wUUUUU",
+            "EgUUU",
+            "?e=B",
+            "x(8[",
+            "0Him",
+            "0$v}s",
+            "`/ y",
+            ",k>n"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libmagiskinit.so",
+          "sha256": "ce9d60e0826181894de611f58cf09d68e5434ac620abd4d4e3f55f6d3709e7f8",
+          "size": 150212,
+          "strings_sample": [
+            "td\\F",
+            "/system_root",
+            ".backup/.magisk",
+            "service flash_recovery /system/bin/true",
+            "perm %.*s does not exist in class %.*s",
+            "Type %.*s already exists",
+            "attribute %.*s does not exist",
+            "Is a directory",
+            "Illegal seek",
+            "truncated table"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libmagiskpolicy.so",
+          "sha256": "71ed7f1cae80b27441b89541c2f38209467fe6296184038653782fa369723be5",
+          "size": 240560,
+          "strings_sample": [
+            "/system/bin/linker",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "isatty",
+            "strcpy",
+            "stdout",
+            "qsort",
+            "abort",
+            "__cxa_atexit"
+          ]
+        },
+        {
+          "name": "lib/x86/libbusybox.so",
+          "sha256": "52def0088cd6e55a6fec699e92c5952b4539f7fb68d7be847d8a82003ed21b7b",
+          "size": 1715048,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "align != 0 && powerof2(align + 0) && skew < align",
+            "ZipArchive",
+            "double-close of file descriptor %d detected",
+            "fatal",
+            "LD_DYNAMIC_WEAK",
+            "Terminate on a type mismatch in allocation-deallocation functions, eg: malloc/de",
+            "lete, new/free, new/delete[], etc."
+          ]
+        },
+        {
+          "name": "lib/x86/libinit-ld.so",
+          "sha256": "43cfd8dee1c06d021c381f576c227991d5400db236963c6ff1a84a378324ffb7",
+          "size": 3984,
+          "strings_sample": [
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__register_atfork",
+            "security_load_policy",
+            "unsetenv",
+            "unlink",
+            "close"
+          ]
+        },
+        {
+          "name": "lib/x86/libmagisk.so",
+          "sha256": "e040427c7ed1c2e8971abd8145263693123c9fbc3897d5c12864b1ae9169c42d",
+          "size": 377812,
+          "strings_sample": [
+            "/system/bin/linker",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "isatty",
+            "strcpy",
+            "strncpy",
+            "memcpy",
+            "strlcpy",
+            "pthread_mutex_destroy"
+          ]
+        },
+        {
+          "name": "lib/x86/libmagiskboot.so",
+          "sha256": "8d329df7ad9749b155dfd728c1d1bd641dcc8efe25cfce223d4379174fe2be41",
+          "size": 1093840,
+          "strings_sample": [
+            "\"K8o",
+            "ASEQUENCE",
+            "ArecoveryNotFoundTimedOutOverflowGibibyteGigabyte",
+            "terabytemebibytepebibyteTebibyte",
+            "C   this gibibyte",
+            "sendfile",
+            "0CTerabyte",
+            "exbibyte",
+            "Megabyte",
+            "0@Backup [tebibytepetabyte"
+          ]
+        },
+        {
+          "name": "lib/x86/libmagiskinit.so",
+          "sha256": "24edb406ce6a6b62e6ef4e3e2f63dea90bb610247b23970b75906726f769276b",
+          "size": 245004,
+          "strings_sample": [
+            "(&Sc",
+            "Ht9J",
+            "/data/magiskinithwservicemanager",
+            "connection reset",
+            "mlstrustedobject",
+            "/sys/block",
+            "LD_PRELOAD",
+            "entity not foundLegacy SAR Init",
+            "host unreachable",
+            "/dev/kmsg"
+          ]
+        },
+        {
+          "name": "lib/x86/libmagiskpolicy.so",
+          "sha256": "2e2ec90e75747462e06351faaafe4782e63f6ca8b81cabb46c16d34ae8e11939",
+          "size": 415240,
+          "strings_sample": [
+            "td@F",
+            "/system/bin/linker",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "}]x0",
+            "isatty",
+            "strcpy",
+            "memcpy",
+            "stdout"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libbusybox.so",
+          "sha256": "060844b0769f7a50262854af027c4d6076a212d160a51309b53057cfb7122900",
+          "size": 1767048,
+          "strings_sample": [
+            "Android",
+            "r27b",
+            "12297006",
+            "align != 0 && powerof2(align + 0) && skew < align",
+            "ZipArchive",
+            "attempted to close file descriptor %d, expected to be owned by %s 0x%lx, actuall",
+            "y owned by %s 0x%lx",
+            "double-close of file descriptor %d detected",
+            "fatal",
+            "LD_DYNAMIC_WEAK"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libinit-ld.so",
+          "sha256": "d5e432688ece1e4f30077f6d9c5c63fab2da8f540a7221b7b0ccb967f9e27976",
+          "size": 5240,
+          "strings_sample": [
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "__register_atfork",
+            "security_load_policy",
+            "unsetenv",
+            "unlink",
+            "close"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libmagisk.so",
+          "sha256": "71da8eb7931a0768ff7a46e63f0fd8b0e93d8312a3fbe0ba4ccd388933a41d89",
+          "size": 372944,
+          "strings_sample": [
+            "/system/bin/linker64",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "isatty",
+            "strcpy",
+            "strncpy",
+            "memcpy",
+            "strlcpy",
+            "pthread_mutex_destroy"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libmagiskboot.so",
+          "sha256": "21be0ef297957c74184f0632dcf7d54777f064e64c8418c7d6ee107b9ddb3ffe",
+          "size": 918832,
+          "strings_sample": [
+            "SEQUENCE",
+            "ArecoveryNotFoundTimedOutOverflowGibibyteGigabyte",
+            "terabytemebibytepebibyteTebibyte",
+            "C   this gibibyte",
+            "sendfile",
+            "0CTerabyteexbibyteMegabyte",
+            "P?Backup [tebibytepetabyte",
+            "p=unlinkat",
+            "Y@gigabyteKibibyteKilobyte",
+            "?Patch @ "
+          ]
+        },
+        {
+          "name": "lib/x86_64/libmagiskinit.so",
+          "sha256": "c805789d08549488d63711d8164a95c66768a8e20c4a77987f4a2618e3967ec8",
+          "size": 237872,
+          "strings_sample": [
+            "/init",
+            "init-ld",
+            "/null",
+            "/data/magiskinithwservicemanager",
+            "/proc",
+            "connection resetmlstrustedobjectentity not foundLegacy SAR Init",
+            "host unreachableinvalid filename",
+            "tmpfs",
+            "/sdcard",
+            "/apex"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libmagiskpolicy.so",
+          "sha256": "d8cfb635fb7ae7d6eb4c6cc499b8403c236f0e170641b76d8b582d6594eb5461",
+          "size": 407384,
+          "strings_sample": [
+            "/system/bin/linker64",
+            "Android",
+            "r29-beta1",
+            "13113456",
+            "isatty",
+            "strcpy",
+            "memcpy",
+            "stdout",
+            "qsort",
+            "abort"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "com.termux_1002.apk",
+      "so_files": [
+        {
+          "name": "lib/arm64-v8a/libtermux-bootstrap.so",
+          "sha256": "6ebaabb7d42234077f0cabdcc4581d0b680077ef858e926aba915c24b58178d8",
+          "size": 29392992,
+          "strings_sample": [
+            "Android",
+            "r22b",
+            "7171670",
+            "__cxa_finalize",
+            "__register_atfork",
+            "__cxa_atexit",
+            "blob",
+            "blob_size",
+            "Java_com_termux_app_TermuxInstaller_getZip",
+            "libc.so"
+          ]
+        },
+        {
+          "name": "lib/arm64-v8a/libtermux.so",
+          "sha256": "ef4af97952e003b33863dc312389e06d87d1ce8777ad8701e5c7052e4f1385b6",
+          "size": 9008,
+          "strings_sample": [
+            "Android",
+            "r22b",
+            "7171670",
+            "__cxa_finalize",
+            "__register_atfork",
+            "__cxa_atexit",
+            "Java_com_termux_terminal_JNI_close",
+            "Java_com_termux_terminal_JNI_createSubprocess",
+            "Java_com_termux_terminal_JNI_setPtyUTF8Mode",
+            "Java_com_termux_terminal_JNI_setPtyWindowSize"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libtermux-bootstrap.so",
+          "sha256": "86459840c62a81e67433706b4c93d2d4732514704746abf71036329b9074c441",
+          "size": 26517580,
+          "strings_sample": [
+            "Android",
+            "r22b",
+            "7171670",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "__register_atfork",
+            "blob",
+            "blob_size",
+            "Java_com_termux_app_TermuxInstaller_getZip",
+            "libc.so"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libtermux.so",
+          "sha256": "34fbaa8cd4a4bbd4a61b0cfec5582d1075deafdc4a8a750ded76d607ce665624",
+          "size": 6492,
+          "strings_sample": [
+            "Android",
+            "r22b",
+            "7171670",
+            "-1`1\\",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "__register_atfork",
+            "Java_com_termux_terminal_JNI_close",
+            "Java_com_termux_terminal_JNI_createSubprocess",
+            "Java_com_termux_terminal_JNI_setPtyUTF8Mode"
+          ]
+        },
+        {
+          "name": "lib/x86/libtermux-bootstrap.so",
+          "sha256": "b9eb2a4b3acfb83a661ca363e4e70949f60bee942473d05438f42533d35a9991",
+          "size": 28649312,
+          "strings_sample": [
+            "Android",
+            "r22b",
+            "7171670",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "__register_atfork",
+            "__stack_chk_fail",
+            "blob",
+            "blob_size",
+            "Java_com_termux_app_TermuxInstaller_getZip"
+          ]
+        },
+        {
+          "name": "lib/x86/libtermux.so",
+          "sha256": "4dfedc7f2c0eae386d5c6e8a622abfa15a5df84fd6608a61a1a8a91a6aa1fd13",
+          "size": 8576,
+          "strings_sample": [
+            "Android",
+            "r22b",
+            "7171670",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "__register_atfork",
+            "__stack_chk_fail",
+            "Java_com_termux_terminal_JNI_close",
+            "Java_com_termux_terminal_JNI_createSubprocess",
+            "Java_com_termux_terminal_JNI_setPtyUTF8Mode"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libtermux-bootstrap.so",
+          "sha256": "54d1beeb476c0a07355cc2a74b41a974e115343b245a907e1886733065fd8af7",
+          "size": 29476832,
+          "strings_sample": [
+            "Android",
+            "r22b",
+            "7171670",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "__register_atfork",
+            "blob",
+            "blob_size",
+            "Java_com_termux_app_TermuxInstaller_getZip",
+            "libc.so"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libtermux.so",
+          "sha256": "35edda42d0d73f6be8bdb17e72a0608202170d8db1a77fa40b65289417bf5898",
+          "size": 9248,
+          "strings_sample": [
+            "Android",
+            "r22b",
+            "7171670",
+            "__cxa_atexit",
+            "__cxa_finalize",
+            "__register_atfork",
+            "Java_com_termux_terminal_JNI_close",
+            "Java_com_termux_terminal_JNI_createSubprocess",
+            "Java_com_termux_terminal_JNI_setPtyUTF8Mode",
+            "Java_com_termux_terminal_JNI_setPtyWindowSize"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "_tmp_termux_modded.apk",
+      "so_files": [
+        {
+          "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "sha256": "d3e48717c9aa147e0ab21063ba0e8e0211cabf8bf40b222640829519edbf58e1",
+          "size": 7112,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_Z16ThrowIoExceptionP7_JNIEnvPKc",
+            "Java_androidx_datastore_core_NativeSharedCounter_nativeTruncateFile",
+            "_ZN9datastore12TruncateFileEi",
+            "strerror",
+            "Java_androidx_datastore_core_NativeSharedCounter_nativeCreateSharedCounter"
+          ]
+        },
+        {
+          "name": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+          "sha256": "716c5d8d2cac8ca0edf65da8f139c7886b726ac79d542a14edeb94994ba6d3dc",
+          "size": 4416,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_Z16ThrowIoExceptionP7_JNIEnvPKc",
+            "Java_androidx_datastore_core_NativeSharedCounter_nativeTruncateFile",
+            "_ZN9datastore12TruncateFileEi",
+            "strerror",
+            "Java_androidx_datastore_core_NativeSharedCounter_nativeCreateSharedCounter"
+          ]
+        },
+        {
+          "name": "lib/x86/libdatastore_shared_counter.so",
+          "sha256": "cd4a1649e2c8350703146f94a6ee2bf4c3c8c9f172159f805b61a4a2abdf0659",
+          "size": 5148,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_Z16ThrowIoExceptionP7_JNIEnvPKc",
+            "Java_androidx_datastore_core_NativeSharedCounter_nativeTruncateFile",
+            "_ZN9datastore12TruncateFileEi",
+            "strerror",
+            "Java_androidx_datastore_core_NativeSharedCounter_nativeCreateSharedCounter"
+          ]
+        },
+        {
+          "name": "lib/x86_64/libdatastore_shared_counter.so",
+          "sha256": "fb6c9208988c49ae94943bc3236fa763ba584722e044fa4ea9a12d2941027105",
+          "size": 6224,
+          "strings_sample": [
+            "Android",
+            "r25c",
+            "9519653",
+            "__cxa_finalize",
+            "__cxa_atexit",
+            "_Z16ThrowIoExceptionP7_JNIEnvPKc",
+            "Java_androidx_datastore_core_NativeSharedCounter_nativeTruncateFile",
+            "_ZN9datastore12TruncateFileEi",
+            "strerror",
+            "Java_androidx_datastore_core_NativeSharedCounter_nativeCreateSharedCounter"
+          ]
+        }
+      ]
+    }
+  ]
+}
