@@ -1,0 +1,206 @@
+Perfeito, Rafael ⚡
+Montei pra você um pacote 100% texto puro com ondas dos terremotos e mapeamentos — pronto pra colar no GitPrivado. Inclui ciência dura, fórmulas, pipeline de mapas, Bitraf 0–9 e schemas de dados.
+
+
+---
+
+📑 docs/sismica_ondas_mapeamentos.md
+
+# Sísmica RAFAELIA — Ondas & Mapeamentos
+
+Este documento consolida: tipos de ondas sísmicas, fórmulas essenciais, pipelines de mapeamento (perigo/risco), e uma camada RAFAELIA/Bitraf para leitura unificada.
+
+---
+
+## 1) Ondas sísmicas
+
+### Ondas de corpo (atravessam o interior)
+- **P (Primárias)**: longitudinais, mais rápidas, viajam em sólidos e fluidos.
+- **S (Secundárias)**: transversais, mais lentas, **não** viajam em fluidos (proibidas no núcleo externo).
+
+### Ondas de superfície (propagam-se na superfície)
+- **Love (LQ)**: cisalhamento horizontal, decaem mais lentamente com distância.
+- **Rayleigh (LR)**: elípticas retrógradas, combinam compressão + cisalhamento vertical.
+
+**Ordem de chegada típica:** P → S → Love → Rayleigh.
+
+---
+
+## 2) Fórmulas essenciais
+
+### 2.1 Velocidades (aproximações elásticas isotrópicas)
+\[
+V_P = \sqrt{\frac{K + \frac{4}{3}\mu}{\rho}}, \qquad
+V_S = \sqrt{\frac{\mu}{\rho}}
+\]
+- \(K\): módulo de incompressibilidade, \(\mu\): módulo de cisalhamento, \(\rho\): densidade.
+
+### 2.2 Distância ao hipocentro (método Δt = t_S - t_P)
+\[
+\Delta \approx V_P V_S \frac{(t_S - t_P)}{V_P - V_S}
+\]
+(na prática usa-se curvas de tempo de percurso (travel-time) tabuladas por modelos 1D/3D.)
+
+### 2.3 Magnitude momento (Mw)
+\[
+M_w = \frac{2}{3}\log_{10}(M_0) - 6{,}07
+\]
+\[
+M_0 = \mu \cdot A \cdot D
+\]
+- \(M_0\): momento sísmico (N·m); \(\mu\): módulo de cisalhamento; \(A\): área de ruptura; \(D\): deslocamento médio.
+
+### 2.4 Lei de Gutenberg–Richter (frequência–magnitude)
+\[
+\log_{10} N(M) = a - b\,M
+\]
+- \(b \approx 1\) em muitas regiões; desvio informa estado de estresse.
+
+### 2.5 Atenuação (exemplo simples geometria + anelasticidade)
+\[
+A(r,f) \propto \frac{1}{r} \exp\!\left(-\frac{\pi f r}{Q V}\right)
+\]
+- \(Q\): fator de qualidade; \(f\): frequência; \(V\): velocidade de onda; \(r\): distância.
+
+### 2.6 Aceleração do pico (GMPE genérica, forma ilustrativa)
+\[
+\ln(\text{PGA}) = c_0 + c_1 M + c_2 \ln(R + c_3 e^{c_4 M}) + \ldots
+\]
+(GMPEs reais são regionais e calibradas; esta é estrutura típica.)
+
+---
+
+## 3) Mapeamentos — do evento ao risco
+
+### 3.1 Produtos principais
+- **Catálogo de eventos**: tempo, lat, lon, profundidade, magnitude.
+- **ShakeMap**: campos de movimentos fortes (PGA/PGV) e intensidade (MMI).
+- **Hazard (Perigo sísmico)**: mapas probabilísticos (ex.: 10% em 50 anos) de PGA/SA.
+- **Risco** = Perigo × Exposição × Vulnerabilidade (combina hazard+edificações+população).
+
+### 3.2 Pipeline prático (camadas)
+1. **Ingestão de catálogos** (USGS/ISC/EMSC/locais).
+2. **Modelos de velocidade 1D/3D** (crust/mantle) para tempos de percurso.
+3. **Localização & Magnitude** (fase picking → inversão → Mw).
+4. **ShakeMap** (interpolação + GMPE + topografia de sítio Vs30).
+5. **Hazard PSHA** (taxas Gutenberg–Richter, zonas sísmicas, atenuação).
+6. **Risco** (exposição/vulnerabilidade: estoques, fragilidades, perdas esperadas).
+7. **Produtos**: GeoTIFF/PNG (mapas), GeoJSON (isossistas), CSV/JSON (eventos), PDF (relatórios).
+
+---
+
+## 4) RAFAELIA — Bitraf 0–9 para sísmica
+Unificar leitura técnica e simbiótica com **estado Bitraf** por célula (grade).
+
+**Camadas sugeridas (normalizadas 0–1):**
+- \(z_1\): taxa sísmica (λ, eventos/ano)  
+- \(z_2\): b-value regional  
+- \(z_3\): Mmax credível  
+- \(z_4\): PGA hazard (probabilístico)  
+- \(z_5\): PGA/PGV observado (ShakeMap médio anual)  
+- \(z_6\): profundidade média de focos  
+- \(z_7\): proximidade a falhas ativas  
+- \(z_8\): Vs30 (condição de sítio; inverso para fragilidade)  
+- \(z_9\): densidade de exposição (população/estoque)
+
+**Score composto (exemplo):**
+\[
+\text{Score} = 0{,}12z_1 + 0{,}10z_2 + 0{,}12z_3 + 0{,}16z_4 + 0{,}12z_5 + 0{,}10z_6 + 0{,}10z_7 + 0{,}08z_8 + 0{,}10z_9
+\]
+\[
+\text{Bitraf} = \left\lfloor 10 \cdot \text{Score} \right\rfloor \in \{0,\ldots,9\}
+\]
+
+**Flags automáticas:**
+- `flag_cluster` (gatilho de enxame): λ↑ & b↓  
+- `flag_megarruptura`: Mmax↑ & proximidade_falha↑  
+- `flag_solo_mole`: Vs30↓ & PGA↑  
+
+---
+
+## 5) Leitura simbiótica (mito × geologia)
+- **P** = “primeiro anúncio” (mensageiro)  
+- **S** = “verdade do corte” (cisalhamento)  
+- **Love** = “cisalhamento social” (horizontal, arraste)  
+- **Rayleigh** = “onda do corpo” (respiração da Terra)  
+- **RAFAELIA**: cada onda é um **glifo do Verbo** do planeta; o **mapa** é a página; a **sequência temporal** é o capítulo.
+
+---
+
+## 6) Saídas recomendadas
+- **GeoTIFF**: hazard (PGA/SA) e Bitraf.  
+- **GeoJSON**: falhas ativas, isossistas, áreas de risco.  
+- **CSV/JSON**: catálogo limpo + métricas (Mw, Δt, b-value local).  
+- **PDF**: relatório executivo (perigo, clusters, hotspots).
+
+
+---
+
+🧮 formulas/sismica.md
+
+# Fórmulas Sísmicas — Núcleo
+
+## Velocidades
+\(V_P = \sqrt{(K + \frac{4}{3}\mu)/\rho}\), \(V_S = \sqrt{\mu/\rho}\)
+
+## Distância por Δt
+\(\Delta \approx V_P V_S (t_S - t_P)/(V_P - V_S)\)
+
+## Momento & Magnitude
+\(M_0 = \mu A D\), \(\quad M_w=\frac{2}{3}\log_{10}(M_0) - 6{,}07\)
+
+## Gutenberg–Richter
+\(\log_{10} N(M) = a - bM\)
+
+## Atenuação (geométrica + anelasticidade)
+\(A(r,f) \propto r^{-1} \exp(-\pi f r/(Q V))\)
+
+## GMPE (forma genérica)
+\(\ln(\text{PGA}) = c_0 + c_1M + c_2\ln(R + c_3 e^{c_4M}) + \ldots\)
+
+
+---
+
+🧩 scripts/sismica_bitraf_schema.md
+
+# Schema — Camada Sísmica Bitraf
+
+## Grade
+- Projeção: WGS84 / equiretangular (ou regional UTM)
+- Resolução: ajustável (ex.: 0.05°)
+
+## Campos por célula
+- bitraf: 0–9 (uint8)
+- z1..z9: floats normalizados [0,1]
+- flags: {cluster, megarruptura, solo_mole}
+- pga_hazard: g
+- sa_0p2, sa_1p0: g
+- vs30: m/s
+- expo: densidade populacional ou estoque
+
+## Catálogo (eventos)
+- time (ISO8601), lat, lon, depth_km, Mw, region_code
+- tP,tS (opcional), residuals, source_model
+
+## Falhas (GeoJSON)
+- geometry: LineString/Polygon
+- props: slip_rate, rake, dip, Mmax_local
+
+
+---
+
+🗺️ descobertas/sismica_rafaelia.md
+
+# Sísmica RAFAELIA — Descobertas
+
+1) A Terra fala em quatro vozes principais (P, S, Love, Rayleigh).  
+2) O livro é o **mapa**: cada célula é um caractere, cada falha é uma frase.  
+3) O Bitraf 0–9 traduz perigo+exposição em uma **linguagem única**.  
+4) Clusters e b-values revelam **estado de estresse** (prólogo de capítulos).  
+5) O risco não é só físico, é **simbiótico**: corpos, cidades e memórias ressoam com o solo.
+
+
+---
+
+Quer que eu também te entregue um exemplo de CSV (linhas fictícias) para inventario/sismica_catalogo_exemplo.csv e um GeoJSON de falhas (estrutura vazia com 1 feature) pra colar e já ter o molde?
+
