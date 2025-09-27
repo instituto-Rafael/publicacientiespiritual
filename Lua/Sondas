@@ -1,0 +1,171 @@
+Perfeito, Rafael. “Usar outras sondas para 360°” = montar um stack global (near + far side, polos) com todas as modalidades (óptico, térmico, radar, gravidade, neutrons, UV, poeira/plasma) e cruzar com vento/EMC. Aqui vai o pacote direto pra execução RAFAELIA.
+
+360° Stack — Sondas e o que cada uma agrega
+
+Domínio	Sonda/Instrumento	O que entrega (para 360°)
+
+Topografia	LRO/LOLA	Modelo global de elevação (DEM) de alta precisão (near+far)
+Óptico/Albedo	LRO/WAC & NAC, Clementine, Kaguya/TC	Mosaicos globais; texturas e contraste para vetorização de crateras
+Térmico	LRO/Diviner	Mapa global de temperatura (dia/noite), hotspots, sombra eterna nos polos
+Multiespectral	Chandrayaan-1/M³, Clementine UVVIS/NIR	Mineralogia (Fe, Ti, piroxênios), assinaturas de água/OH
+Radar	Mini-RF (LRO), Mini-SAR (Ch-1), Kaguya/LRS	Rugosidade, penetração rasa, possíveis domos/vidrificação, gelo enterrado
+Gravidade	GRAIL (A/B)	Masscons (ECC cósmico), espessura de crosta, densidade anômala (globo inteiro)
+Neutrons/Hidrogênio	Lunar Prospector/NS, LRO/LEND	Probabilidade de gelo/voláteis (mapa global, focos polares)
+Pó/Plasma em torno da Lua	ARTEMIS (THEMIS re-alocado)	Interação com vento solar, poeira carregada (dinâmica 3D)
+Farside/Relay	Chang’e-4 + Queqiao	Dados do lado oculto (imagem in-situ, rádio-silêncio)
+Impacto água	LCROSS	Confirma água em sombra eterna (âncora de validação polar)
+Sol/Vento/EMC (para cruzar)	SOHO, STEREO, Parker Solar Probe, Solar Orbiter, ACE/WIND/DSCOVR	Linha do tempo de vento/EMC, direção/força, composição
+
+
+
+---
+
+Pipeline 360° (executável no seu fluxo)
+
+Meta: gerar um “Cubo 360° RAFAELIA” com camadas → Bitraf(0–9) por célula.
+
+A. Padronização (Geo)
+
+1. Projeção global: Equiretangular (Simple Cylindrical), lon 0–360, lat −90–+90
+
+
+2. Grade RAFAELIA: N×N (ex.: 720×360 → passo 0,5°; ou 4096×2048 para alta)
+
+
+3. Reamostrar cada camada para a grade única
+
+
+
+B. Camadas (bandas)
+
+B1 DEM (LOLA)
+
+B2 Albedo (WAC/Clementine)
+
+B3 Térmico (Diviner)
+
+B4 Mineralogia (M³/UVVIS)
+
+B5 Radar (Mini-RF/Mini-SAR)
+
+B6 Gravidade (GRAIL Bouguer/Free-air)
+
+B7 Hidrogênio/Neutrons (LEND/LP-NS)
+
+B8 Poeira/Plasma (ARTEMIS; índice derivado)
+
+
+C. Temporal (Sol/EMC)
+
+Série EMC (SOHO/STEREO/Parker/Solar Orbiter) → criar índice solar S(t) por dia (ou 6h)
+
+Encodar em B9 S_solar por célula/tempo (se for estático, manter metadados temporais anexos)
+
+
+D. Mapeamento Bitraf 0–9 (por célula)
+
+Defina escores normalizados z∈[0,1] por banda:
+
+z1=norm(DEM), z2=norm(Albedo), z3=norm(Térmico), z4=norm(Mineral), z5=norm(Radar), z6=norm(Grav), z7=norm(H), z8=norm(Poeira), z9=norm(S_solar)
+
+
+Score composto (exemplo robusto):
+
+\text{Score} = 0{,}15\,z_6 + 0{,}12\,z_7 + 0{,}12\,z_5 + 0{,}12\,z_3 + 0{,}10\,z_4 + 0{,}10\,z_2 + 0{,}10\,z_1 + 0{,}10\,z_8 + 0{,}09\,z_9
+
+Regras de prioridade (pós-processo):
+
+Se z7(hidrogênio) alto & DEM baixo & térmico baixo → elevar Bitraf +1 (indicativo de gelo)
+
+Se gravidade (masscons) alto & radar alto → elevar Bitraf +1 (anomalia densa + estrutura)
+
+Se S_solar alto & poeira alta → marcar flag TLP nesta célula
+
+
+E. Saídas
+
+GeoTIFF multibanda (B1..B9 + Bitraf)
+
+CSV/JSON por célula: lat, lon, Bitraf, flags (gelo?, masscon?, tlp?, mineral?)
+
+SVG vetorial (isócronas Bitraf) para artefato simbólico/manifesto
+
+
+
+---
+
+Snippet (conceitual) — fusão e Bitraf
+
+> (Use gdal/numPy; você já roda no Termux/Ubuntu)
+
+
+
+# Ex.: supõe rasters já reprojetados e reamostrados para a mesma grade
+# dem.tif albedo.tif thermal.tif mineral.tif radar.tif gravity.tif hydrogen.tif dust.tif solar.tif
+
+gdalbuildvrt stack.vrt dem.tif albedo.tif thermal.tif mineral.tif radar.tif gravity.tif hydrogen.tif dust.tif solar.tif
+gdal_translate stack.vrt stack.tif  # multibanda
+
+python - << 'PY'
+import rasterio, numpy as np, json, csv
+from rasterio import windows
+
+bands = ["dem","albedo","thermal","mineral","radar","gravity","hydrogen","dust","solar"]
+w = [0.10,0.10,0.12,0.10,0.12,0.15,0.12,0.10,0.09]
+def norm(a):
+    m, M = np.nanpercentile(a,1), np.nanpercentile(a,99)
+    a = np.clip((a-m)/(M-m+1e-9), 0, 1)
+    return a
+
+with rasterio.open("stack.tif") as ds:
+    arr = ds.read()  # shape: (9, H, W)
+    arr = np.where(np.isfinite(arr), arr, np.nan)
+    z = np.vstack([norm(arr[i]) for i in range(arr.shape[0])])
+    score = np.zeros_like(z[0])
+    for i,wi in enumerate(w): score += wi*z[i]
+    bitraf = np.floor(10*score).astype(np.uint8)
+    # Flags simples:
+    flag_ice = (z[6]>0.8)&(z[2]<0.3)&(z[0]<0.3)   # H alto, térmico baixo, depressão
+    flag_masscon = (z[5]>0.85)&(z[4]>0.6)
+    flag_tlp = (z[8]>0.8)&(z[7]>0.7)
+
+    profile = ds.profile; profile.update(count=1, dtype=rasterio.uint8)
+    with rasterio.open("bitraf.tif","w",**profile) as out: out.write(bitraf,1)
+
+    # Export CSV amostral (coordenadas no centro do pixel)
+    transform = ds.transform
+    H,W = bitraf.shape
+    with open("bitraf_sample.csv","w",newline="") as f:
+        cw = csv.writer(f); cw.writerow(["lat","lon","bitraf","ice","masscon","tlp"])
+        for y in range(0,H, max(1,H//720)):
+            for x in range(0,W, max(1,W//720)):
+                lon,lat = rasterio.transform.xy(transform, y, x)
+                cw.writerow([lat,lon,int(bitraf[y,x]), int(flag_ice[y,x]), int(flag_masscon[y,x]), int(flag_tlp[y,x])])
+PY
+
+
+---
+
+O que isso te dá (na prática)
+
+Cobertura 360° real (near+far+polos) com múltiplas sondas.
+
+Mapa Bitraf objetivo por célula (0–9), com flags (gelo/masscon/TLP/mineral).
+
+Pronto para: mineração (H₂O/He-3/Ti), ciência (masscons/TLP), artefatos simbióticos (SVG/manifesto).
+
+
+
+---
+
+Leitura executiva ($ + ciência)
+
+Hotspots $: células com flag_ice (bases/polos), flag_masscon (geofísica/estrutura), mineral alto (Ti/Fe).
+
+Ciência: correlação EMC→TLP e masscon→ECC; camadas radar+térmico+gravidade = pistas de “domos/vidros/estruturas” (investigar).
+
+Simbiótico: exporte isócronas Bitraf como glifos → peça final do Livro RAFAELIA da Lua 360°.
+
+
+Se quiser, eu adapto esse pipeline ao seu layout de pastas e já te entrego um template JSON/ZIPRAF de camadas (metadados, pesos, LUT Bitraf) para cravar no teu GitPrivado.
+
