@@ -1,0 +1,220 @@
+
+[∞FCEA] ~ $ python raf_corpo_cipher.py --demo
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/raf_corpo_cipher.py", line 129, in <module>
+    demo()
+  File "/data/data/com.termux/files/home/raf_corpo_cipher.py", line 119, in demo
+    seed = bk.seed()
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/home/raf_corpo_cipher.py", line 84, in seed
+    return hashlib.blake2s(raw, digest_size=32, person=b"RAFCODE-PHI").digest()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: maximum person length is 8 bytes
+[∞FCEA] ~ $ nano raf_corpo_cipher.pyt
+[∞FCEA] ~ $
+[∞FCEA] ~ $ python raf_corpo_cipher.py --demo
+=== RAFAELIA CORPO CIPHER DEMO ===
+SEED (blake2s): 5d76d2b261fa9eb9b80be4fb48cadf3d5ca7a2521dc157c1c65b5cfae597ae4d
+Fib classic  : [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+Fib Rafael #1: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+Fib Rafael #2: [512, 256, 128, 64, 32, 16, 8, 4, 2, 1]
+[∞FCEA] ~ $ nano raf_corpo_cipher_v2.py
+[∞FCEA] ~ $ python raf_corpo_cipher_v2.py --demo
+=== RAFAELIA CORPO CIPHER v2 ===
+Fib Classic : [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+Fib Rafael#1: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+Fib Rafael#2: [512, 256, 128, 64, 32, 16, 8, 4, 2, 1]
+
+Matriz 3×3 (corpo):
+↖ ↑ ↗
+← ●(cabeça) →
+↙ ↓ ↘
+
+Matriz 10×10 (resumo — centro 👅 e borda 🦷)
+
+→ Exportado em raf_corpo_out.json e raf_corpo_out.csv
+[∞FCEA] ~ $ cat raf_corpo_out.json
+{
+  "fib_classic": [
+    1,
+    1,
+    2,
+    3,
+    5,
+    8,
+    13,
+    21,
+    34,
+    55
+  ],
+  "fib_rafael1": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "fib_rafael2": [
+    512,
+    256,
+    128,
+    64,
+    32,
+    16,
+    8,
+    4,
+    2,
+    1
+  ],
+  "matriz_3x3": [
+    [
+      "↖",
+      "↑",
+      "↗"
+    ],
+    [
+      "←",
+      "●(cabeça)",
+      "→"
+    ],
+    [
+      "↙",
+      "↓",
+      "↘"
+    ]
+  ],
+  "matriz_10x10": [
+    [
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷"
+    ],
+    [
+      "🦷",
+      "✦",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "◆",
+      "🦷"
+    ],
+    [
+      "🦷",
+      "",
+      "✦",
+      "",
+      "",
+      "",
+      "",
+      "◆",
+      "",
+      "🦷"
+    ],
+    [
+      "🦷",
+      "",
+      "",
+      "✦",
+      "",
+      "",
+      "◆",
+      "",
+      "",
+      "🦷"
+    ],
+    [
+      "🦷",
+      "",
+      "",
+      "",
+      "✦",
+      "◆",
+      "",
+      "",
+      "",
+      "🦷"
+    ],
+    [
+      "🦷",
+      "",
+      "",
+      "",
+      "◆",
+      "👅",
+      "",
+      "",
+      "",
+      "🦷"
+    ],
+    [
+      "🦷",
+      "",
+      "",
+      "◆",
+      "",
+      "",
+      "✦",
+      "",
+      "",
+      "🦷"
+    ],
+    [
+      "🦷",
+      "",
+      "◆",
+      "",
+      "",
+      "",
+      "",
+      "✦",
+      "",
+      "🦷"
+    ],
+    [
+      "🦷",
+      "◆",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "✦",
+      "🦷"
+    ],
+    [
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷",
+      "🦷"
+    ]
+  ],
+  "comentario": {
+    "fib_classic": "Fluxo natural da vida (orgânico, biológico)",
+    "fib_rafael1": "Potência de 2 — crescimento exponencial, digital, cósmico",
+    "fib_rafael2": "Reverso — retorno, memória, DNA espelho",
+    "matriz_3x3": "Cabeça no centro; direções e diagonais representam corpo",
+    "matriz_10x10": "Dedos em paridade, dentes na periferia, língua no centro"
+  }
+}[∞FCEA] ~ $
