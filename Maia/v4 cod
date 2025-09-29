@@ -1,0 +1,114 @@
+# -*- coding: utf-8 -*-
+# RAFAELIA CORPO CIPHER v4
+# Mandala híbrida (símbolo + número)
+# Rafael Melo Reis — Cientiespiritual ∞
+
+import json, csv
+
+# -----------------------------
+# Fibonacci variantes
+# -----------------------------
+def fib_classic(n=100):
+    seq = [1, 1]
+    for i in range(2, n):
+        seq.append(seq[-1] + seq[-2])
+    return seq
+
+def fib_rafael1(n=100):
+    return [2**i for i in range(n)]
+
+def fib_rafael2(n=100):
+    return list(reversed(fib_rafael1(n)))
+
+# -----------------------------
+# Matriz 3×3 (símbolos do corpo)
+# -----------------------------
+def matriz_3x3():
+    return [
+        ["↖", "↑", "↗"],
+        ["←", "●(cabeça)", "→"],
+        ["↙", "↓", "↘"]
+    ]
+
+# -----------------------------
+# Mandala 10×10 híbrida
+# -----------------------------
+def matriz_10x10_hibrida(classic, raf1, raf2):
+    grid = [["" for _ in range(10)] for _ in range(10)]
+    idx = 0
+    for i in range(10):
+        for j in range(10):
+            simbolo = ""
+            if i == 0 or i == 9 or j == 0 or j == 9:
+                simbolo = "🦷"
+            if i == j: simbolo = "✦"
+            if i + j == 9: simbolo = "◆"
+            if (i, j) == (5, 5): simbolo = "👅"
+            # associar números das sequências
+            num_c = classic[idx % len(classic)]
+            num_r1 = raf1[idx % len(raf1)]
+            num_r2 = raf2[idx % len(raf2)]
+            grid[i][j] = f"{simbolo}{num_c}|{num_r1}|{num_r2}"
+            idx += 1
+    return grid
+
+# -----------------------------
+# Exportar resultados
+# -----------------------------
+def export_results(data, filename="raf_corpo_out_v4"):
+    with open(filename + ".json", "w", encoding="utf-8") as jf:
+        json.dump(data, jf, ensure_ascii=False, indent=2)
+
+    with open(filename + ".csv", "w", newline="", encoding="utf-8") as cf:
+        writer = csv.writer(cf)
+        # cabeçalho
+        writer.writerow(["i", "j", "cell"])
+        for i, row in enumerate(data["matriz_10x10"]):
+            for j, val in enumerate(row):
+                writer.writerow([i, j, val])
+
+# -----------------------------
+# Print ASCII Mandala Híbrida
+# -----------------------------
+def print_ascii_10x10(grid):
+    print("\n=== MANDALA 10×10 HÍBRIDA (símbolo+sequências) ===")
+    for row in grid:
+        print("  ".join(cell for cell in row))
+    print("===================================================\n")
+
+# -----------------------------
+# Main Demo
+# -----------------------------
+def demo():
+    classic = fib_classic()
+    raf1 = fib_rafael1()
+    raf2 = fib_rafael2()
+
+    m3 = matriz_3x3()
+    m10 = matriz_10x10_hibrida(classic, raf1, raf2)
+
+    data = {
+        "fib_classic": classic[:20],
+        "fib_rafael1": raf1[:20],
+        "fib_rafael2": raf2[:20],
+        "matriz_3x3": m3,
+        "matriz_10x10": m10,
+    }
+
+    print("=== RAFAELIA CORPO CIPHER v4 ===")
+    print("Fib Classic :", classic[:10])
+    print("Fib Rafael#1:", raf1[:10])
+    print("Fib Rafael#2:", raf2[:10])
+
+    print("\nMatriz 3×3 (corpo):")
+    for row in m3:
+        print(" ".join(row))
+
+    # Mandala híbrida
+    print_ascii_10x10(m10)
+
+    export_results(data)
+    print("→ Exportado em raf_corpo_out_v4.json e raf_corpo_out_v4.csv")
+
+if __name__ == "__main__":
+    demo()
