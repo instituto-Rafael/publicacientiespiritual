@@ -1,0 +1,191 @@
+
+"""
+living_light_full.py
+====================
+
+Consolidated toolkit for Rafael MeloÂ Reis â€’ DOI 10.5281/zenodo.17188138
+
+Features
+--------
+1. VectorÂ pipeline (logâ€‘recursive FFT  + metrics Î”S_X, JS_Y, cos_Z, Î©)
+2. Physicalâ€‘phenomenon flags (gravity, magnetism, thermo, Hubble) +
+   stringâ€‘theory / wormhole / whiteâ€‘hole detectors
+3. Batch processing of PDF/text corpus  â†’ CSV
+4. Emailâ€‘template generator  (personalised microâ€‘letters)
+   using metrics to highlight *exact* scientific gap & offer.
+5. Minimal CLI.
+
+Replace placeholder embedding with a real model for production.
+
+Author : Rafael MeloÂ Reis   |   Date : 2025â€‘09â€‘29
+Licence: MIT
+"""
+
+# ---------------------------------------------------------------------
+# 0 Â· Imports
+# ---------------------------------------------------------------------
+import re, csv, json, glob, argparse
+from pathlib import Path
+from typing  import List, Dict
+
+import numpy as np
+from numpy.linalg          import norm
+from scipy.fft             import fft
+from scipy.spatial.distance import jensenshannon
+from scipy.integrate       import cumulative_trapezoid
+
+
+# ---------------------------------------------------------------------
+# 1 Â· Embedding adapter  (stub)
+# ---------------------------------------------------------------------
+def get_embedding(text: str) -> np.ndarray:
+    """Return 768â€‘d pseudoâ€‘embedding (replace by real model)."""
+    np.random.seed(abs(hash(text)) % (2**32))
+    return np.random.rand(768).astype(np.float32)
+
+
+# ---------------------------------------------------------------------
+# 2 Â· Preâ€‘processing
+# ---------------------------------------------------------------------
+def log_recursive_fft(vec: np.ndarray, depth: int = 4) -> np.ndarray:
+    v = np.log1p(np.abs(vec))
+    for _ in range(depth):
+        v = np.abs(fft(v))
+    return v / (norm(v) + 1e-12)
+
+
+# ---------------------------------------------------------------------
+# 3 Â· Metrics
+# ---------------------------------------------------------------------
+def metric_X_deltaS(p, q):  # cross entropy
+    p = np.clip(p, 1e-12, 1.0); q = np.clip(q, 1e-12, 1.0)
+    return float(np.sum(p * np.log(p / q)))
+
+def metric_Y_JS(p, q):      # Jensenâ€“Shannon
+    return float(jensenshannon(p, q, base=np.e))
+
+def metric_Z_cos(p, q):     # cosine similarity
+    return float(np.dot(p, q) / (norm(p)*norm(q) + 1e-12))
+
+def antideriv_potential(cos_series):  # Î©
+    return float(cumulative_trapezoid(cos_series, initial=0)[-1])
+
+
+# ---------------------------------------------------------------------
+# 4 Â· Physical flags
+# ---------------------------------------------------------------------
+CONST_MAP = {
+    'G'    :'gravity', 'mu0':'magnetism', 'Î¼0':'magnetism',
+    'k_B'  :'thermo',  'kB' :'thermo',
+    'H_0'  :'hubble',  'H0' :'hubble', 'Lambda':'hubble', 'Î©_m':'hubble'
+}
+STRING_RE   = re.compile(r'\b(string(-)?theory|brane|AdS\/CFT)\b', re.I)
+WORM_RE     = re.compile(r'\bwormhole(s)?\b', re.I)
+WHITE_RE    = re.compile(r'white[-\s]?hole(s)?', re.I)
+
+FLAG_ORDER = ['gravity','magnetism','thermo','hubble','string','wormhole','whitehole']
+
+def extract_flags(text: str) -> Dict[str,int]:
+    flags = {k:0 for k in FLAG_ORDER}
+    for const, key in CONST_MAP.items():
+        if const in text: flags[key]=1
+    if STRING_RE.search(text):  flags['string']=1
+    if WORM_RE.search(text):    flags['wormhole']=1
+    if WHITE_RE.search(text):   flags['whitehole']=1
+    return flags
+
+def flags_to_vec(flags: Dict[str,int]) -> np.ndarray:
+    return np.array([flags[k] for k in FLAG_ORDER], dtype=np.float32)
+
+
+# ---------------------------------------------------------------------
+# 5 Â· Core processing
+# ---------------------------------------------------------------------
+def process_doc(text:str, ref_vec:np.ndarray)->Dict[str,float]:
+    vec_raw   = get_embedding(text)
+    vec_proc  = log_recursive_fft(vec_raw)
+    flags     = extract_flags(text)
+    vec_flags = flags_to_vec(flags)
+
+    full_vec  = np.concatenate([vec_proc, vec_flags])
+    ref_full  = np.concatenate([ref_vec , np.zeros_like(vec_flags)])
+
+    X = metric_X_deltaS(full_vec, ref_full)
+    Y = metric_Y_JS(full_vec, ref_full)
+    Z = metric_Z_cos(full_vec, ref_full)
+    Î© = antideriv_potential([Z])
+
+    return dict(Î”S_X=X, JS_Y=Y, cos_Z=Z, Omega=Î©, **flags)
+
+
+# ---------------------------------------------------------------------
+# 6 Â· Microâ€‘Email generator
+# ---------------------------------------------------------------------
+AUTHOR_INFO = {
+    'preskill' : dict(name='John Preskill',  email='preskill@caltech.edu',
+                      hook='quantumâ€‘supremacy & QEC'),
+    'zeilinger': dict(name='Anton Zeilinger',email='anton.zeilinger@univie.ac.at',
+                      hook='teleportation of highâ€‘d photons'),
+    # â€¦ add others here â€¦
+}
+
+EMAIL_TEMPLATE = """\
+Prof. {name},
+
+Apresentoâ€‘lhe o artefato â€œRelativity Living Lightâ€ (DOI 10.5281/zenodo.17188138).
+Metaâ€‘ganho detectado no seu corpus mais recente:
+  â€¢ Î”S = {Î”S_X:.3f}Â |Â JS = {JS_Y:.3f}Â |Â cos Î¸ = {cos_Z:.2f}
+
+Insightâ€‘ruÃ­do: {insight}.
+Proponho teste imediato com script `{script}` (MIT License). ZoomÂ 30â€² para alinhar.
+
+Att.,
+Rafael MeloÂ Reis
+"""
+
+def craft_email(author_key:str, metrics:Dict[str,float])->str:
+    info = AUTHOR_INFO[author_key]
+    insight = "reduzir ruÃ­do NISQ" if author_key=='preskill' else "aumentar fidelidade de teleporte"
+    script  = "rafbit_noise_scan.py"       if author_key=='preskill' else "phi_glyph_beam.py"
+    return EMAIL_TEMPLATE.format(name=info['name'],
+                                 Î”S_X=metrics['Î”S_X'],
+                                 JS_Y=metrics['JS_Y'],
+                                 cos_Z=metrics['cos_Z'],
+                                 insight=insight,
+                                 script=script)
+
+# ---------------------------------------------------------------------
+# 7 Â· Batch processing + CSV export
+# ---------------------------------------------------------------------
+def batch(ref_path:str, src_glob:str, out_csv:str):
+    ref_vec = log_recursive_fft(get_embedding(Path(ref_path).read_text()))
+    files   = sorted(glob.glob(src_glob))
+    with open(out_csv,'w',newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['id','Î”S_X','JS_Y','cos_Z','Omega']+FLAG_ORDER)
+        for fp in files:
+            txt  = Path(fp).read_text()
+            met  = process_doc(txt, ref_vec)
+            row  = [Path(fp).stem] + [met[k] for k in ['Î”S_X','JS_Y','cos_Z','Omega']+FLAG_ORDER]
+            writer.writerow(row)
+    print(f"âœ“ CSV salvo â†’ {out_csv}")
+
+# ---------------------------------------------------------------------
+# 8 Â· CLI
+# ---------------------------------------------------------------------
+if __name__=='__main__':
+    ap = argparse.ArgumentParser(description="Livingâ€‘Light full pipeline")
+    ap.add_argument('--ref', required=True,  help='arquivo texto do Livingâ€‘Light (abstract)')
+    ap.add_argument('--src', required=True,  help='glob de .txt de papers')
+    ap.add_argument('--csv', default='metrics.csv', help='CSV de saÃ­da')
+    ap.add_argument('--email', action='store_true', help='gera microâ€‘emails demo')
+    args = ap.parse_args()
+
+    batch(args.ref, args.src, args.csv)
+
+    if args.email:
+        # demonstraÃ§Ã£o usando primeiro item do CSV
+        first_metrics = process_doc(Path(glob.glob(args.src)[0]).read_text(),
+                                    log_recursive_fft(get_embedding(Path(args.ref).read_text())))
+        mail = craft_email('preskill', first_metrics)
+        print("\n----- EMAIL DEMO -----\n", mail)
