@@ -1,0 +1,126 @@
+📏 Como estimar “confiança, previsibilidade, acurácia, margem de acerto e previsão de inversão”
+
+(usando o pipeline living_light_full.py + um corpora já privado no GitHub, sem expor seus dados)
+
+
+---
+
+1 · Defina o “ground-truth”
+
+Alvo	Como marcar	Exemplo
+
+PORTAL = 1	artigo onde você de fato obteve colaboração / resposta positiva	42 papers rotulados 1
+PORTAL = 0	artigo ignorado ou rejeitado	158 papers rotulados 0
+
+
+> n = 200 rótulos = base mínima p/ boa estatística.
+
+
+
+
+---
+
+2 · Gere a matriz de confusão
+
+from sklearn.metrics import confusion_matrix
+y_true = [...]   # 0/1 ground-truth
+y_pred = [...]   # modelo (cos_Z > 0.45 e JS<0.32 etc.)
+tn, fp, fn, tp = confusion_matrix(y_true, y_pred).ravel()
+
+Símbolo	Significado
+
+TP	PORTAL previsto & real
+FP	falso convite (previu 1, mas era 0)
+FN	oportunidade perdida
+TN	corretamente ignorado
+
+
+
+---
+
+3 · Calcule as métricas-chave
+
+Métrica	Fórmula	Interpretação
+
+Accuracy	(TP + TN) / n	acertos globais
+Precision	TP / (TP + FP)	“confiabilidade” do PORTAL
+Recall (sensibilidade)	TP / (TP + FN)	cobertura de oportunidades
+F1-score	2 · Prec · Rec / (Prec + Rec)	equilíbrio
+Specificity	TN / (TN + FP)	filtro de ruído
+
+
+> Previsão de inversão = FP rate: você “inverteu” sinal (convidou quem não era bom).
+$$ \text{FP-rate} = \frac{FP}{FP+TN} $$
+
+
+
+
+---
+
+4 · Margem de erro & confiança
+
+Use intervalo de Wilson (95 %) p/ precisão ou accuracy:
+
+ME = z\sqrt{\frac{p(1-p)}{n}}
+
+com .
+Ex.: accuracy = 0.86, n = 200 → ME ≈ ±0.025 → [0.835 – 0.885].
+
+
+---
+
+5 · Exemplo numérico (hipotético)
+
+Métrica	Valor	95 % CI
+
+Accuracy	0.86	± 0.03
+Precision	0.72	± 0.07
+Recall	0.64	± 0.08
+F1	0.68	–
+FP-rate (inversão)	0.11	± 0.04
+
+
+Lê-se: 72 % dos artigos marcados PORTAL realmente viram resposta; 11 % foram convites “em vão”.
+
+
+---
+
+6 · Passo-a-passo no seu repo
+
+# 1. produz o CSV
+python living_light_full.py --ref abstract.txt --src "./txt/*.txt" --csv metrics.csv
+
+# 2. rótulos manuais -> labels.csv (id, label)
+# 3. avalia
+python - << 'PY'
+import pandas as pd, numpy as np, scipy.stats as st
+metrics = pd.read_csv('metrics.csv')
+labels  = pd.read_csv('labels.csv')
+y_true  = labels.label
+y_pred  = (metrics.cos_Z > .45) & (metrics.JS_Y < .32)
+from sklearn.metrics import confusion_matrix, precision_score, recall_score, accuracy_score, f1_score
+acc  = accuracy_score(y_true, y_pred)
+prec = precision_score(y_true, y_pred)
+rec  = recall_score(y_true, y_pred)
+f1   = f1_score(y_true, y_pred)
+print(acc, prec, rec, f1)
+PY
+
+
+---
+
+🔑 Leitura rápida
+
+Confiança ≈ Precision.
+
+Previsibilidade ≈ Recall (o quanto prevê os que importam).
+
+Acurácia = acertos globais.
+
+Margem de acerto = intervalo de confiança de accuracy.
+
+Previsão de inversão = FP-rate (quanto “sinal ao contrário” você produz).
+
+
+Aperte os limiares (cos θ, JS) + re-treine embeddings → sobe precisão, cai recall (trade-off). Use curva ROC p/ decidir.
+
