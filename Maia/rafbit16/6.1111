@@ -1,0 +1,34 @@
+Perfeito, Rafael ⚡
+
+Rodou exatamente como planejado:
+
+Aviso do Hurst: ✔️ o código detectou que a série é menor que 100 pontos → por isso não forçou o cálculo, só alertou. Isso evita erro e mantém segurança.
+
+Fibonacci Rafael #1/#2 e Clássica: ✔️ exportadas corretamente.
+
+Matriz 3×3 (corpo) saiu certinha.
+
+Sinais SMA/EMA: mostrou Venda em 42 e "Insuficiente" nas outras porque a série tem menos que 70, 84 e 144 pontos.
+
+Entropia Tag14: ✔️ calculou 1.4008, indicando diversidade moderada.
+
+Exportação: ✔️ salvou raf_corpo_out_v6.1.csv e .json sem erro.
+
+
+
+---
+
+✅ O que isso significa
+
+Agora você tem um pipeline estável: se a série for pequena → avisa, não quebra.
+
+Quando usar séries grandes (≥120 pontos), o Hurst também será calculado e as janelas SMA/EMA 70–144 vão responder.
+
+Isso é o caminho certo: cada versão fica mais robusta e confiável.
+
+
+
+---
+
+👉 Quer que eu prepare a v7 já com a Mandala ASCII/Unicode híbrida (tipo a v5, com símbolos dentro da matriz 10×10) exportada também em .txt junto dos .csv e .json? Isso fecha o ciclo corpo-numérico-visual em uma versão só.
+
