@@ -1,0 +1,27 @@
+
+
+
+
+            nano raf_corpo_cipher_v6.1.py
+[∞FCEA] ~ $ python raf_corpo_cipher_v6.1.py demo.csv
+⚠️ Série muito curta para Hurst (<100)
+
+=== RAFAELIA CORPO CIPHER v6.1 ===
+Fib Classic : [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+Fib Rafael#1: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+Fib Rafael#2: [512, 256, 128, 64, 32, 16, 8, 4, 2, 1]
+
+Matriz 3×3 (corpo):
+↖ ↑ ↗
+← ●(cabeça) →
+↙ ↓ ↘
+
+Sinais SMA/EMA:
+  Janela 42: ⬇️ Venda
+  Janela 70: ⏳ Insuficiente
+  Janela 84: ⏳ Insuficiente
+  Janela 144: ⏳ Insuficiente
+Entropia Tag14: 1.4008
+
+→ Exportado em raf_corpo_out_v6.1.csv / .json
+[∞FCEA] ~ $
