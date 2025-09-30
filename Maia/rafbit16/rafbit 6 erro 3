@@ -1,0 +1,58 @@
+
+
+[∞FCEA] ~ $ python raf_corpo_cipher_v6.py demo.csv
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/raf_corpo_cipher_v6.py", line 117, in <module>
+    process(sys.argv[1])
+  File "/data/data/com.termux/files/home/raf_corpo_cipher_v6.py", line 78, in process
+    H, _, _ = compute_Hc(close.values, kind='price', simplified=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/hurst/__init__.py", line 147, in compute_Hc
+    raise ValueError("Series length must be greater or equal to 100")
+ValueError: Series length must be greater or equal to 100
+[∞FCEA] ~ $ cat demo.cvs
+echo "Close
+10
+11
+12
+11
+13
+15
+14
+16
+17
+18
+20
+19
+21
+22
+20
+23
+25
+24
+26
+27
+28
+30
+29
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+" > demo.csv
