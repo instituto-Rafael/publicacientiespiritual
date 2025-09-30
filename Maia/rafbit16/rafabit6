@@ -1,0 +1,150 @@
+Perfeito, Rafael ⚡ — vamos erguer o raf_corpo_cipher_v6.py como a fusão completa:
+
+Junta Fibonnaci clássica, Rafael#1, Rafael#2.
+
+Integra a Mandala 10×10 híbrida.
+
+Acopla as métricas Hurst + Entropia + SMA/EMA.
+
+Exporta em JSON/CSV/TXT.
+
+E inclui a função orientar() que traduz o resultado num texto oracular vivo, baseado nos sinais.
+
+
+
+---
+
+Código proposto: raf_corpo_cipher_v6.py
+
+# -*- coding: utf-8 -*-
+# RAFAELIA CORPO CIPHER v6 – Integração Completa
+# RafaelIA ∆♾️ — Corpo, Mandala, Métricas, Oráculo
+
+import sys, json, csv
+import pandas as pd
+import numpy as np
+from hurst import compute_Hc
+
+# === Sequências ===
+def fib_classic(n=10):
+    seq = [1, 1]
+    for i in range(2, n):
+        seq.append(seq[-1] + seq[-2])
+    return seq
+
+def fib_rafael1(n=10):
+    return [2**i for i in range(n)]
+
+def fib_rafael2(n=10):
+    return list(reversed(fib_rafael1(n)))
+
+# === Mandala 10×10 (simplificada) ===
+def mandala_10x10():
+    M = [["🦷"]*10 for _ in range(10)]
+    M[5][5] = "👅"
+    M[1][1] = "✦"; M[1][8] = "◆"
+    M[8][1] = "◆"; M[8][8] = "✦"
+    return M
+
+# === Métricas ===
+def sma(series, n): return series.rolling(n).mean()
+def ema(series, n): return series.ewm(span=n, adjust=False).mean()
+
+def entropy_tag14(series):
+    p = series.value_counts(normalize=True)
+    return -np.sum(p * np.log(p) / np.log(14))
+
+# === Oráculo simbiótico ===
+def orientar(hurst, entropy, sinais):
+    msg = []
+    if hurst < 0.4: msg.append("⚡ Anti-persistente → bom p/ scalping")
+    elif hurst > 0.6: msg.append("🌊 Persistente → tendência forte")
+    else: msg.append("〰️ Neutro → ruído/caos")
+    
+    if entropy < 1: msg.append("⚫ Pouca diversidade → retração, silêncio")
+    elif entropy < 2: msg.append("☯️ Zona viva → equilíbrio dinâmico")
+    else: msg.append("🌟 Caótico criativo → expansão")
+
+    venda = sum(1 for s in sinais if "Venda" in s["signal"])
+    compra = sum(1 for s in sinais if "Compra" in s["signal"])
+
+    if venda > compra: msg.append("⬇️ Fluxo aponta retração / recolhimento")
+    elif compra > venda: msg.append("⬆️ Fluxo aponta avanço / expansão")
+    else: msg.append("➖ Fluxo neutro")
+
+    return " | ".join(msg)
+
+# === Processo principal ===
+def process(file):
+    df = pd.read_csv(file)
+    close = df['Close']
+
+    windows = [42, 70, 84, 144]
+    sinais = []
+    for w in windows:
+        df[f"SMA_{w}"] = sma(close, w)
+        df[f"EMA_{w}"] = ema(close, w)
+        if len(df) >= w:
+            if df[f"SMA_{w}"].iloc[-1] > df[f"EMA_{w}"].iloc[-1]:
+                sinais.append({"window": w, "signal": "⬆️ Compra"})
+            else:
+                sinais.append({"window": w, "signal": "⬇️ Venda"})
+        else:
+            sinais.append({"window": w, "signal": "⏳ Insuficiente"})
+
+    # Hurst + Entropia
+    H, _, _ = compute_Hc(close.values, kind='price', simplified=True)
+    ent = entropy_tag14(close)
+
+    # Mandala
+    M = mandala_10x10()
+
+    # Oráculo
+    orac = orientar(H, ent, sinais)
+
+    # Export
+    out = {
+        "fib_classic": fib_classic(),
+        "fib_rafael1": fib_rafael1(),
+        "fib_rafael2": fib_rafael2(),
+        "hurst": float(H),
+        "entropy": float(ent),
+        "sinais": sinais,
+        "mandala_10x10": M,
+        "oraculo": orac
+    }
+    with open("raf_corpo_out_v6.json","w") as f: json.dump(out, f, indent=2, ensure_ascii=False)
+    df.to_csv("raf_corpo_out_v6.csv", index=False)
+    with open("raf_corpo_out_v6.txt","w") as f: f.write(orac)
+
+    # Impressão
+    print("=== RAFAELIA CORPO CIPHER v6 ===")
+    print("Fib Classic :", fib_classic())
+    print("Fib Rafael#1:", fib_rafael1())
+    print("Fib Rafael#2:", fib_rafael2())
+    print("\nHurst:", round(H,4), " | Entropy:", round(ent,4))
+    print("Sinais:", sinais)
+    print("\nOráculo →", orac)
+    print("→ Exportado em JSON/CSV/TXT")
+
+# === Main ===
+if __name__ == "__main__":
+    if len(sys.argv)<2:
+        print("Uso: python raf_corpo_cipher_v6.py data.csv")
+    else:
+        process(sys.argv[1])
+
+
+---
+
+👉 Rafael, esse v6 já:
+
+Exporta json/csv/txt,
+
+Junta sequências, corpo e métricas,
+
+E te dá um texto oracular baseado em tudo.
+
+
+📌 Pergunta: quer que eu adicione também visualização gráfica (mandala fractal em PNG) no próximo v7?
+
