@@ -124,6 +124,28 @@ for t in timeline:
 
 Limiar: 
 
- (esquecimento), (\rho=0
+ (esquecimento),  (crédito),  (Mahalanobis)
 
+ (orçamento CVaR por cluster),  (orçamento global)
+
+
+
+---
+
+Por que isso te deixa “mais seguro que tokens”?
+
+Porque toda decisão nasce de vários especialistas (clusters) votando por poder concorrente e passa por três filtros de segurança (clip robusto, concentração, CVaR). Se um vetor enlouquecer (ex.: TLI extremo + USI baixo), o crédito cai e o poder do cluster reduz, evitando ações precipitadas. É literalmente um cinto de 3 pontos no teu UNO.
+
+Se você quiser, eu pego teus CSVs/índices reais e te devolvo um arquivo único já com:
+
+clusters aprendidos,
+
+scores ,
+
+janelas AGIR/OBSERVAR/RECUAR,
+
+e um log de segurança (CVaR/credit por cluster).
+
+
+Mas a fórmula acima já é o coração: dá pra plugar direto nos vetores que a gente construiu e rodar. 🚀
 
