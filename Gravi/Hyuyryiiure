@@ -1,0 +1,193 @@
+Bora 🔥, ∆RafaelVerboΩ — o núcleo que você descreveu é praticamente um kernel cosmológico-financeiro 🧠⚛️, e dá pra transformar isso num código Python funcional, simulando alimentação fractal de clusters + expansão cósmica (matéria escura + energia escura) + ações forçadas com guardrails estatísticos.
+
+Abaixo vai um protótipo bem fiel à tua descrição, em NumPy puro — focado em clareza e execução. A ideia é que você possa plugar dados reais (CSV ou streaming) depois 👇
+
+
+---
+
+🌌 Código Python — Núcleo Operador Fractal com Cluster Feeding e Expansão Cósmica
+
+import numpy as np
+from scipy.stats import median_abs_deviation
+from numpy.linalg import inv
+from math import log, exp
+
+# ------------------------------
+# 🔸 Parâmetros Globais
+# ------------------------------
+np.random.seed(42)
+TIMESTEPS = 500
+N_FEATURES = 8     # TLI, 1−USI, ICI, HWI, PCI, GAX, GSH, MCGI
+P_INIT = 0.25
+LAMBDA = 0.1
+THETA_UP = 0.7
+THETA_DOWN = 0.3
+
+# Energia escura (Ω_DE ~ 0.7)
+OMEGA_DE = 0.7
+H0 = 0.001   # taxa de expansão base (tipo Hubble)
+
+# ------------------------------
+# 🔸 Geração de dados simulados
+# ------------------------------
+# Features: mistura de padrões visíveis + clusters ocultos (matéria escura)
+features = np.random.rand(TIMESTEPS, N_FEATURES)
+# Matéria escura: cluster oculto que puxa PCI/GAX em bursts
+dark_cluster_signal = np.sin(np.linspace(0, 20*np.pi, TIMESTEPS)) * 0.3
+features[:, 4] += dark_cluster_signal  # PCI
+features[:, 5] += dark_cluster_signal  # GAX
+
+# Energia escura: acelera expansão com o tempo
+expansion_factor = 1 + OMEGA_DE * (1 - np.exp(-H0 * np.arange(TIMESTEPS)))
+
+# ------------------------------
+# 🔸 Funções utilitárias
+# ------------------------------
+def robust_clip(x, k=3.5):
+    """Clip robusto via MAD."""
+    m = np.median(x, axis=0)
+    mad = median_abs_deviation(x, axis=0)
+    lower = m - k * mad
+    upper = m + k * mad
+    return np.clip(x, lower, upper)
+
+def power_mean(x, p, w=None):
+    """Média de potência ponderada."""
+    if w is None:
+        w = np.ones_like(x) / len(x)
+    else:
+        w = w / np.sum(w)
+    return (np.sum(w * (x ** p))) ** (1 / p)
+
+def sigmoid(z):
+    return 1 / (1 + np.exp(-z))
+
+# ------------------------------
+# 🔸 Estrutura dos clusters
+# ------------------------------
+class Cluster:
+    def __init__(self, x):
+        self.mu = x.copy()
+        self.Sigma = np.eye(len(x)) * 0.1
+        self.credit = 1.0
+        self.snr = 1.0
+        self.curvature = 1.0
+
+    def mahalanobis(self, x):
+        diff = x - self.mu
+        try:
+            return np.sqrt(diff.T @ inv(self.Sigma) @ diff)
+        except np.linalg.LinAlgError:
+            return np.linalg.norm(diff)
+
+    def update(self, x):
+        diff = x - self.mu
+        self.mu = (1 - LAMBDA) * self.mu + LAMBDA * x
+        self.Sigma = (1 - LAMBDA) * self.Sigma + LAMBDA * np.outer(diff, diff)
+        # Atualização SNR e curvatura simplificada
+        self.snr = 1.0 / (np.trace(self.Sigma) + 1e-6)
+        self.curvature = np.linalg.norm(diff) + 1e-3
+
+    def vote_power(self):
+        return (self.snr ** 0.6) * (self.curvature ** 0.4) * self.credit
+
+# ------------------------------
+# 🔸 Loop temporal principal
+# ------------------------------
+clusters = []
+actions = []
+p_t = P_INIT
+
+for t in range(TIMESTEPS):
+    x_t = features[t] * expansion_factor[t]  # expansão cósmica aplicada
+    x_t = robust_clip(x_t[np.newaxis, :])[0]
+
+    # Atribuição ou criação de cluster
+    if clusters:
+        dists = [c.mahalanobis(x_t) for c in clusters]
+        idx = np.argmin(dists)
+        if dists[idx] < 3.0:
+            c = clusters[idx]
+        else:
+            c = Cluster(x_t)
+            clusters.append(c)
+    else:
+        c = Cluster(x_t)
+        clusters.append(c)
+
+    c.update(x_t)
+
+    # Poder concorrente adaptativo
+    p_t = np.clip(p_t + 0.001 * (x_t[4] + x_t[7] - x_t[1]), 0.25, 1.0)  # PCI+MCGI - USI
+    P = power_mean(x_t, p_t)
+
+    # Voto cluster
+    Vc = sigmoid(1.0*P + 0.8*x_t[4] + 0.5*x_t[5] + 0.3*x_t[6] - 0.7*x_t[1])
+
+    # Cluster feeding
+    weights = np.array([cl.vote_power() for cl in clusters])
+    weights /= np.sum(weights)
+    mix = np.sum([w * Vc for w in weights])
+
+    # Ação forçada
+    if mix >= THETA_UP:
+        action = "AGIR"
+    elif mix <= THETA_DOWN:
+        action = "RECUAR"
+    else:
+        action = "OBSERVAR"
+
+    actions.append(action)
+
+# ------------------------------
+# 🔸 Resultado resumido
+# ------------------------------
+from collections import Counter
+summary = Counter(actions)
+print("Resumo de ações:")
+for k,v in summary.items():
+    print(f"{k}: {v}")
+
+print(f"Número de clusters criados: {len(clusters)}")
+
+
+---
+
+✨ O que esse código faz
+
+Gera um fluxo temporal de 8 features com ruído + padrões ocultos (matéria escura).
+
+Cria clusters online por Mahalanobis, atualizando média e covariância dinamicamente.
+
+Calcula poder concorrente adaptativo (power mean), aumentando p_t quando PCI/MCGI sobem e USI cai.
+
+Mistura votos de clusters proporcionalmente a SNR × curvatura × crédito.
+
+Aplica expansão cósmica multiplicando os sinais por um fator crescente Ω_DE × H₀.
+
+Usa sigmoid + thresholds para decidir entre AGIR / OBSERVAR / RECUAR em tempo real.
+
+
+
+---
+
+🧠 Extensões possíveis (que encaixam direto no teu framework):
+
+🔭 Injetar dados reais (CSV de mercado ou sensores cosmológicos).
+
+🌑 Simular clusters “escuros” que só aparecem por efeito gravitacional (ex.: alterar GAX sem PCI).
+
+🛰️ Adicionar camada de CVaR real (simulação de drawdowns + orçamento de risco).
+
+🌀 Inserir produto de especialistas (log-likelihood multiplicativo) no lugar da média de potência.
+
+
+
+---
+
+Quer que eu adapte esse núcleo para:
+1️⃣ Dados financeiros reais (ex.: B3, Binance),
+ou 2️⃣ Dados cosmológicos simulados (matéria escura + expansão acelerada em estilo ΛCDM)?
+
+👉 Qual dos dois caminhos quer seguir primeiro?
+
