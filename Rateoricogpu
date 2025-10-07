@@ -1,0 +1,189 @@
+Bora direto ao ponto: dá pra estimar a “velocidade de cálculos” (pico teórico e o que realmente entrega) e o que você consegue espremer num PC “comum” (i7 5ª geração) e num Galaxy S22 (com root e SO próprio).
+
+
+---
+
+PC (i7 5ª geração + muita RAM ECC + “GPU 3D”)
+
+1) CPU — ordem de grandeza (pico teórico)
+
+Use a regra geral (single-precision, AVX2 + FMA):
+
+GFLOPS ≈ núcleos × clock(GHz) × (largura vetor em floats) × (FMA=2) × (unidades FMA por core)
+
+Para um i7-5ª gen típico (4C/8T, ~3.2–3.6 GHz, AVX2 256-bit):
+
+vetor 256-bit = 8 floats
+
+FMA = 2 flops por oper.
+
+há 1–2 unidades FMA por core (depende do SKU)
+
+
+Estimativa conservadora por core:
+
+~3.4 GHz × 8 × 2 × 1 ≈ 54 GFLOPS/core
+× 4 cores  ≈ 200–220 GFLOPS (pico SP)
+
+Em double-precision, cai ~2×–4× ⇒ ~50–100 GFLOPS pico.
+
+> Real (sustentado): 30–60% do pico, por causa de cache/banda de memória.
+Resultado típico: ~70–130 GFLOPS (SP) em GEMM/BLAS bem otimizadas.
+
+
+
+2) GPU — sem o modelo exato não dá valor numérico
+
+“512 GB de vídeo” não existe em placa comum; talvez 512 MB (bem antiga) ou 24–48 GB (HEDT).
+Sem o modelo, não dá para falar em TFLOPS. Use esta régua:
+
+GPU antiga (512 MB): poucos centenas de GFLOPS (SP), muitas vezes < CPU moderna.
+
+GPU intermediária (6–12 GB): 5–15 TFLOPS (SP).
+
+GPU alta (24 GB+): 20–60 TFLOPS (SP) e boa em FP16/INT8 para IA.
+
+
+> Memória ECC 512 GB (RAM do sistema) ajuda cargas grandes (datasets/modelos), mas não aumenta FLOPS; quem limita é banda de memória e cache.
+
+
+
+3) Gargalos e como destravar
+
+Banda de memória: habilite XMP/EXPO (ou ajuste ECC no BIOS), HugeTLB/Transparent Huge Pages, numactl se for dual-socket.
+
+Compiladores/BLAS: OpenBLAS/MKL com AVX2; compile com -O3 -march=native -ffast-math.
+
+CUDA/OpenCL/Vulkan (GPU): drivers recentes, Pinned memory, Streams, cuBLAS/cuDNN.
+
+I/O: NVMe + filesystem que aguente leitura paralela (XFS/ext4 com opções de noatime; ZFS quando a integridade for prioridade).
+
+
+4) Bench rápido (Linux)
+
+CPU BLAS: OPENBLAS_NUM_THREADS=8 ./bench_gemm (do OpenBLAS)
+
+clpeak (OpenCL GPU): mede topo de GFLOPS e banda
+
+nvidia-smi / rocm-smi: clocks e limites de potência
+
+Geekbench/linpack: outra referência rápida
+
+
+
+---
+
+Galaxy S22 (root + bootloader + SO próprio)
+
+Há duas variantes de S22: Snapdragon 8 Gen 1 ou Exynos 2200. Sem web aqui, não arrisco número exato de “TOPS”; então foco no que você pode fazer com SO próprio:
+
+1) Pipeline de compute
+
+GPU compute: Vulkan (via VK_KHR_shader_float16_int8) ou OpenCL (dependendo do driver).
+
+DSP/NPU: acessível por NNAPI/vendor SDK; com root e ROM custom dá para liberar driver stacks e perf hints.
+
+CPU big.LITTLE: pinos de afinidade (taskset), schedutil tunado, cpufreq sem throttling agressivo.
+
+
+2) Onde o S22 brilha
+
+INT8/FP16 para IA (inference local) → latências de ms, consumo baixo.
+
+Vulkan compute para filtros, FFTs, convoluções, kernels personalizados.
+
+Sensor fusion: câmera+IMU+audio, tempo real, com zero cópia quando possível.
+
+
+3) O que o root/bootloader destrava
+
+Kernel com HZ alto, PREEMPT, binderfs otimizado.
+
+GPU DVFS/thermal mais permissivo (cuidado com temperaturas!).
+
+Acesso a /dev para mapeamentos, huge pages, zram bem calibrado.
+
+Termux + NDK: compilar kernels de compute (C/C++/Rust) e rodar microbench no aparelho.
+
+
+4) Medir no Android (Termux)
+
+Compile um microbenchmark de FLOPS (FMA/NEON) → mede SP/FP16.
+
+Para GPU: use Vulkan samples (Sascha Willems) ou clpeak se OpenCL disponível.
+
+Para IA: rodar tflite-benchmark (NNAPI / GPU delegate) em modelos padronizados (mobilenet, resnet).
+
+
+
+---
+
+Se você tiver “o seu SO”
+
+Em PC e S22, seu SO/ROM própria permite:
+
+Escalonador sob medida (prioridades por fluxo cognitivo: CPU vs GPU vs I/O).
+
+HugeTLB + mempolicy (NUMA/UMA) e pinned memory para evitar page-faults.
+
+Pipelines zero-copy (DMA-BUF/ION no Android; GPUDirect no PC).
+
+Perfil térmico custom (mobile) + governadores de frequência agressivos (com proteção).
+
+Criptografia/ECC end-to-end e telemetria de erro (EDAC/rasdaemon no PC; logs de gpu fault no Android).
+
+Toolchain afinada (LTO/PGO), kernels com BPF para observabilidade em tempo real.
+
+
+
+---
+
+Checklist final (prático)
+
+PC
+
+BIOS: XMP/EXPO/ECC on, IOMMU on, Resizable BAR (se NVIDIA/AMD recente).
+
+SO: kernel recente, intel_pstate/amd_pstate, THP=always, numactl se aplicável.
+
+Libs: MKL/OpenBLAS + CUDA/ROCm/Vulkan; compile com -march=native -O3 -ffast-math.
+
+Discos: NVMe + fio para calibrar filas; pré-carregar datasets em tmpfs quando couber.
+
+
+S22
+
+ROM/Kernel: permissões para Vulkan/NNAPI completas; thermal config ajustada.
+
+Termux: NDK + cmake + clang; compilar microbench de NEON/Vulkan.
+
+Compute: usar FP16/INT8 quando possível (ganho de 2–8× vs FP32).
+
+Telemetria: logcat GPU, perfetto; perf event counters se expostos.
+
+
+
+---
+
+Resumo em números (seguros como ordem de grandeza)
+
+i7 5ª gen (CPU, SP): ~200 GFLOPS pico, ~70–130 GFLOPS sustentado em BLAS.
+
+GPU: depende totalmente do modelo; pode variar de <0.5 TFLOPS (antiga) a >30 TFLOPS (topo).
+
+S22 (on-device IA): excelente em INT8/FP16 (latência baixa para inferência); FLOPS “brutos” menos relevantes que TOPS efetivos via NNAPI/Vulkan.
+
+
+Se você quiser, eu te entrego um pacotinho de bench (scripts para PC e Termux) que imprime:
+
+GFLOPS CPU (SP/DP),
+
+banda de memória,
+
+GFLOPS GPU (se OpenCL/Vulkan),
+
+throughput NNAPI (S22).
+
+
+É só rodar e ver o número real da sua máquina.
+
