@@ -1,0 +1,186 @@
+Hahaha tranquilo 😂 — entendi: OptiPlex em temperatura ambiente, nada de chiller industrial nem “empilhadeira de amônia”. Vamos ao que interessa: quanto calcula de verdade e o que dá pra fazer, barato e seguro, pra tirar o máximo no ar.
+
+O que seu OptiPlex entrega (ordem de grandeza)
+
+Modelo típico: OptiPlex 990 (i7-2600, 4c/8t, AVX sem FMA, DDR3).
+
+CPU FP32 sustentado (BLAS/FFT): ~30–70 GFLOPS
+
+CPU FP64: ~10–20 GFLOPS
+
+Memória: ~21–25 GB/s (DDR3-1333/1600)
+
+
+GPU (depende do gabinete e fonte):
+
+SFF (baixo perfil, sem conector 6-pin):
+
+GT 1030 → ~1.0–1.2 TFLOPS (FP32)
+
+GTX 1050/1050 Ti LP* → 1.8–2.1 TFLOPS (se couber/for compatível)
+
+
+MT (gabinete torre, fonte maior):
+
+GTX 1650 → ~3 TFLOPS
+
+
+
+> Sustentado real: 40–75% do pico se o código for bem escrito.
+
+
+
+Tradução prática: com uma GTX 1050 Ti, dá pra ver ~0.8–1.5 TFLOPS reais em GEMM/FFT; é 20–30× a CPU em tarefas paralelas.
+
+
+---
+
+Temperatura ambiente: como espremer sem loucura
+
+Nada de Peltier; só ar bem feito e pequenos cuidados:
+
+1. Higiene térmica
+
+
+
+Limpeza geral + pasta térmica nova (CPU/GPU)
+
+Organizar cabos pra não bloquear o fluxo
+
+Trocar fan cansado por um 92/120 mm decente (no MT)
+
+No SFF, garantir que a GPU low-profile respire (não “encostar” na baia)
+
+
+2. BIOS
+
+
+
+Ativar “Performance” (ou “Thermal Performance”)
+
+Desabilitar o que não usa (serial/parallel) pra reduzir ruído/IRQ
+
+SATA em AHCI
+
+“PEG primary” se usar GPU
+
+
+3. SO (Linux recomendado)
+
+
+
+Governor performance (CPU sem oscilar clock)
+
+Transparent Huge Pages: always (para BLAS/FFT grandes)
+
+Bibliotecas: OpenBLAS/MKL + CUDA/OpenCL conforme a GPU
+
+Compilar com -O3 -march=native -ffast-math
+
+
+4. Armaz. & I/O
+
+
+
+SSD SATA bom (500–550 MB/s) já resolve; usar noatime
+
+Pré-carregar lotes em RAM quando der
+
+
+5. Ganhos realistas no ar
+
+
+
+Evitar throttling + pasta nova + fluxo certo → +5–15% sustentado
+
+Overclock em i7-2600 é limitado; o ganho vem mais da GPU
+
+
+
+---
+
+GPU que “casa” com o 990
+
+SFF: GT 1030 (segura), GTX 1050/1050 Ti LP (se a fonte/física permitir)
+
+MT: GTX 1650 é o “doce” (sem conector extra em alguns modelos), entrega 2–3 TFLOPS com ~75–85 W
+
+
+> Cheque espaço físico e potência da fonte. No SFF, pense 1050 Ti LP; no MT, 1650.
+
+
+
+
+---
+
+Bench rapidinho (pra você medir AGORA)
+
+CPU (SGEMM)
+
+OPENBLAS_NUM_THREADS=8 python - <<'PY'
+import numpy as np, time
+N=2048
+A=np.random.randn(N,N).astype(np.float32)
+B=np.random.randn(N,N).astype(np.float32)
+t=time.time(); C=A@B; dt=time.time()-t
+flops=2*N**3/dt/1e12
+print(f"CPU SGEMM: {flops:.3f} TFLOPS, tempo={dt:.3f}s")
+PY
+
+CUDA (se tiver NVIDIA)
+
+# Instale CUDA samples; então:
+make -C /usr/local/cuda/samples/7_CUDALibraries/matrixMulCUBLAS
+/usr/local/cuda/samples/7_CUDALibraries/matrixMulCUBLAS/matrixMulCUBLAS
+
+Temperatura/clock
+
+sensors
+nvidia-smi --query-gpu=temperature.gpu,clocks.sm,utilization.gpu --format=csv -l 1
+
+
+---
+
+“Universal runtime” no 990 (versão simples e honesta)
+
+Você pode rodar CPU + GPU como um tecido único:
+
+CUDA/HIP/OpenCL para kernels
+
+Unified Memory (CUDA) para simplificar movimentação de dados
+
+NumPy/CuPy: mesma API, CPU↔GPU com pouca dor
+
+Agendamento “manual” por lote: CPU pré-processa, GPU faz o grosso
+
+
+> Isso já materializa sua ideia: runtime único, em temperatura ambiente, numa máquina só.
+
+
+
+
+---
+
+Se quiser ir além (mas ainda “caseiro”)
+
+OptiPlex 7020/9020 (Haswell) + GTX 1650 dá salto bom vs 990
+
+Mais RAM (32 GB) ajuda datasets grandes
+
+Dois 990/9020 em rede (1 GbE) com Ray/Dask pra orquestrar jobs simples
+
+
+
+---
+
+TL;DR
+
+Sem amônia, sem Peltier: no ar, limpo e bem configurado, seu 990 entrega 30–70 GFLOPS CPU; com 1050 Ti/1650, chega a ~1 TFLOPS real (ou mais) em kernels de imagem/sinal/linear algebra.
+
+Ajustes baratos (pasta, fluxo, BIOS, libs) rendem +5–15%.
+
+Use CUDA/OpenCL + OpenBLAS/MKL e loteie — “universal runtime” na prática.
+
+
+Se você me disser qual é exatamente seu gabinete (SFF/MT) e a GPU que pretende pôr, eu te devolvo um checklist sob medida (modelo de fan, pasta térmica, driver, comandos de bench) pra montar e medir na hora.
+
