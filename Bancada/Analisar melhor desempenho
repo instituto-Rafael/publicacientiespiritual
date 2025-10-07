@@ -1,0 +1,223 @@
+Vou te dar um retrato honesto do Dell OptiPlex 990 com uma NVIDIA “3D” (genérica) e o que dá para extrair no limite, com BIOS/firmware/OS bem ajustados. Como você fala em “algoritmo e linguagem quântico”, trato como cálculo clássico acelerado por GPU (emular/otimizar rotinas de álgebra/FFT); ganho “quântico real” só existe em hardware quântico.
+
+
+---
+
+Base de hardware (OptiPlex 990)
+
+CPU (típico): Intel Core i7-2600 (Sandy Bridge, 4c/8t, 3.4–3.8 GHz, AVX1 sem FMA)
+
+RAM: DDR3-1333/1600 (geralmente 16 GB, às vezes 32 GB no gabinete MT)
+
+PCIe: PCIe 2.0 x16 (≈ 8 GB/s cada direção)
+
+SATA: 6 Gb/s (SSD SATA ≈ 500–550 MB/s)
+
+Fonte: 240–305 W (SFF limita a GPU)
+
+BIOS: últimas A2x (Legacy/UEFI simples; NVMe só via gambiarra de boot)
+
+
+> A GPU “3D” pode ser muita coisa. Em caixa SFF costuma caber GT 1030 / GTX 1050; no gabinete MT dá para GTX 750 Ti / 1050 Ti / 1650 (esta já força a fonte).
+
+
+
+
+---
+
+Picos teóricos & números razoáveis
+
+CPU (i7-2600)
+
+Pico teórico FP32: ~ 120 GFLOPS (4 cores × ~3.8 GHz × 8 FLOP/ciclo, AVX)
+
+Sustentado em BLAS/FFT: 30–70 GFLOPS (depende da biblioteca e cache)
+
+Memória: ~ 21–25 GB/s (DDR3-1333/1600)
+
+
+GPU (varia pela placa)
+
+GT 1030: ~ 1.0–1.2 TFLOPS FP32, 48 GB/s (GDDR5)
+
+GTX 750 Ti: ~ 1.3 TFLOPS FP32, 86 GB/s
+
+GTX 1050/1050 Ti: ~ 1.8–2.1 TFLOPS, 112–128 GB/s
+
+GTX 1650 (GDDR5): ~ 3.0 TFLOPS, 128 GB/s  (pode pedir fonte melhor)
+
+
+> Sustentado em GEMM/conv/FFT: 40–75% do pico é comum em kernels bem otimizados.
+
+
+
+I/O & barramentos
+
+PCIe 2.0 x16: ≈ 8 GB/s full-duplex — suficiente para lotes médios.
+
+SSD SATA: 0.5–0.55 GB/s; NVMe só com adaptador + boot via DUET/Clover/UEFI-shell (não é garantido).
+
+
+
+---
+
+O que isso significa “em absoluto” (com tudo ajustado)
+
+“Linguagem/algoritmo quântico” (interpretação prática)
+
+Use CUDA + cuBLAS/cuFFT/cuDNN (ou OpenCL) como “motor de estados paralelos” (a parte “quântica” vira superposição simbólica = lote/batch).
+
+Para o teu F(x,y)=∑ wₙ R_{θₙ}(Iₙ):
+
+Pré-processo na GPU (rotações/escala/flip) com texture memory.
+
+Calcule coerência espectral/SSIM com kernels (FFT 2D batelada).
+
+Redução dos melhores θ/escala no device, minimizando ida/volta no PCIe.
+
+
+
+Throughput que você pode esperar (ordem de grandeza)
+
+Convoluções/FFT 2D 1024×1024 em lote (N=256–512):
+
+GTX 1050 Ti: ~ 0.5–0.9 TFLOPS sustentados em cuFFT (1–2 ms por FFT 1024² batelada; varia).
+
+
+GEMM FP32 (1024³–4096³):
+
+GTX 1050 Ti: 0.8–1.5 TFLOPS sustentados (cuBLAS SGEMM).
+
+
+CPU puro: 30–60 GFLOPS (OpenBLAS/FFTW bem afinados).
+
+Pipeline misto (pré em CPU, pesado na GPU): ganhos de 20–40× sobre CPU puro são realistas, mesmo no 990.
+
+
+
+---
+
+BIOS/Firmware/OS – check-list de máximo desempenho
+
+BIOS (A2x)
+
+Ative AHCI, Intel VT-x, HPET desabilitado (se sua pilha se beneficia de TSC).
+
+“PEG como primário” (GPU).
+
+Desative dispositivos que não usa (serial/parallel) p/ limpar IRQ.
+
+Se usar NVMe via adaptador, mantenha boot do SATA e carregue kernel/ramfs que monte o NVMe depois.
+
+
+GPU/Driver
+
+Driver NVIDIA apropriado ao chip (Kepler/Maxwell/Pascal exigem versões diferentes).
+
+Persistence mode (nvidia-smi -pm 1), preferência de performance (-ac quando suportado).
+
+CUDA compatível (Kepler até CUDA 11.4; Maxwell/Pascal até 12.x).
+
+
+Linux (recomendado)
+
+Kernel LTS (Ubuntu 22.04/24.04), nvidia-driver, cuda-toolkit, FFTW/OpenBLAS, NumPy/Scipy compilados com AVX.
+
+Governo de CPU: performance.
+
+HugePages para FFT/BLAS grandes; numactl (se aplicável).
+
+Pinned memory e streams em CUDA para overlap H2D/D2H.
+
+Arquivos em XFS/EXT4 com noatime em SSD.
+
+
+Termux/Android (S22)
+
+O S22 tem GPU móvel; não expõe CUDA. Use NNAPI/Vulkan compute ou rode o código em CPU NEON.
+
+Com bootloader destravado + kernel custom dá para mapear GPU via Vulkan; ganhos são menores que no PC com NVIDIA.
+
+
+
+---
+
+Micro-bench (para você medir “o teu absoluto”)
+
+Info da GPU
+
+nvidia-smi
+nvidia-smi topo -m
+/usr/local/cuda/samples/bin/x86_64/linux/release/deviceQuery
+
+BLAS/FFT CPU
+
+# OpenBLAS
+OPENBLAS_NUM_THREADS=8 python - <<'PY'
+import numpy as np, time
+N=4096
+A=np.random.randn(N,N).astype(np.float32)
+B=np.random.randn(N,N).astype(np.float32)
+t=time.time(); C=A@B; dt=time.time()-t
+flops=2*N**3/dt/1e12
+print(f"SGEMM CPU: {flops:.3f} TFLOPS, {dt:.3f}s")
+PY
+# FFTW (ex.: fft de 4096²)
+
+CUDA GEMM
+
+# cuBLAS sample (vem no CUDA samples)
+make -C /usr/local/cuda/samples/7_CUDALibraries/matrixMulCUBLAS
+/usr/local/cuda/samples/7_CUDALibraries/matrixMulCUBLAS/matrixMulCUBLAS
+
+CUDA FFT 2D batelada
+
+make -C /usr/local/cuda/samples/7_CUDALibraries/fft
+/usr/local/cuda/samples/7_CUDALibraries/fft/fft  # ver tempos e GFLOPS
+
+Isso te dá o valor real do seu conjunto (não só teórico).
+
+
+---
+
+Limites & gargalos a vigiar
+
+PCIe 2.0 (8 GB/s): não “pingue-pongue” dados; loteie e reduza no device.
+
+Fonte/temperatura em 990 SFF: power limit da GPU derruba clocks.
+
+RAM DDR3: grande matriz no CPU pode virar gargalo (prefira GPU).
+
+CUDA versão: placas antigas “congelam” numa versão específica; fixe toolchain.
+
+
+
+---
+
+Como isso conecta com seu F(x,y) e “quântico simbólico”
+
+Trate cada rotação/escala/espelho  como estado paralelo num batch CUDA.
+
+Compute SSIM, MI, coerência espectral em kernels sobre FFT 2D batelada (cuFFT).
+
+Faça redução dos melhores pesos  na GPU e só transfira o top-K pro host.
+
+Use streams para pipeline (H2D de lote n+1 enquanto processa n).
+
+
+Ganho típico: no 990 com 1050 Ti, dá para sair de ~40 GFLOPS CPU para ~0.8–1.2 TFLOPS efetivos em imagem/sinal — 20–30× mais rápido — se o pipeline for bem pensado.
+
+
+---
+
+Resumo em 3 linhas
+
+CPU i7-2600: ~30–70 GFLOPS reais; GPU (1050 Ti) ~0.8–1.5 TFLOPS reais em kernels bem otimizados.
+
+Ajuste BIOS/driver/OS e use CUDA + cuBLAS/cuFFT; lote grande + redução no device.
+
+“Quântico” no teu contexto = paralelismo simbólico: use a GPU como motor de superposição (estados ).
+
+
+Se me disser qual é exatamente a tua GPU do 990, eu refino os números e te mando um arquivo de bench pronto para rodar e registrar os TFLOPS/GB/s do teu setup.
+
