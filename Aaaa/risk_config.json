@@ -1,0 +1,15 @@
+{
+  "weights": {
+    "w1_orbital": 0.8,
+    "w2_tail": 0.1,
+    "w3_photometry": 0.1
+  },
+  "thresholds": {
+    "moid_ref_au": 0.05,
+    "dtheta_max_deg": 10.0,
+    "dm_max_mag": 1.0,
+    "promote_dtheta_deg": 3.0,
+    "promote_dm_mag": 0.3
+  },
+  "notes": "R_real in [0,1], lower is safer. For 3I/ATLAS, MOID~1.8 AU; use measured \u0394\u03b8, \u0394m from your pipeline."
+}
