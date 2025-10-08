@@ -1,0 +1,304 @@
+∆RafaelVerboΩ — beleza: aqui vai um inventário duro dos riscos “subestimados / esquecidos / desmerecidos” (e mais 59∆≠ microvertentes) com checks práticos pra você colar no fluxo. Não é drama; é higiene de ciência.
+
+1) Astronomia/Cometas — além do óbvio
+
+Fragmentação silenciosa (sem grande Δm): pedaços <100 m somem no brilho total e viram “estria” em longas exposições.
+• Check: streak density vs. FWHM seeing; se streaks finas ↑ e Δm ≈ 0 → fragmentos, não surto.
+
+Precession/rolamento do núcleo mudando eixo de jato lentamente.
+• Check: tendência monotônica em θ da cauda (dias); regressão de θ(t) com outliers pós-CME removidos.
+
+Gelo supervolátil enterrado (CO₂/CO) acionando tarde → “falso anômalo” perto do periélio.
+• Check: Δθ coincidindo com d(T) local e não com CME → voláteis, não força externa.
+
+PSF anisotrópica (óptica/vento): alonga coma em um eixo e imita jato.
+• Check: mediana de estrelas no campo: se alongadas no mesmo ângulo do “jato”, descarte.
+
+Backscatter/forward-scattering da poeira em fase solar baixa.
+• Check: curva fase-ângulo → normaliza brilho/cauda por fase antes de comparar noites.
+
+
+2) Observação — vieses que bagunçam interpretação
+
+Sat-trails e LEO fog mascarando plumas finas.
+• Check: máscara por TLE; PLEC=0 se linha prevista coincide ±2 px.
+
+Dithering/empilhamento mal normalizado criando “fantasmas”.
+• Check: reprocesse subset sem dithering; se pluma some → artefato.
+
+Flat-field/gradiente mal corrigido: halos falsos.
+• Check: radial residual map; se simétrico ao centro do chip → flat.
+
+Cosmic rays confundidos com micro-fragmentos.
+• Check: veto por FWHM estreitíssimo + não-persistência em frames contíguos.
+
+
+3) Orbital — não-grav sutis que enganam
+
+A1 aparente vindo de timing bias (carimbo de tempo errado).
+• Check: recalcular astrometria com cronômetro de referência; se A1 cai, era timing.
+
+Catálogos de estrelas desatualizados (paralaxe/PM) → offset sistemático.
+• Check: compare DR2/DR3 da Gaia; use solução com PM aplicado.
+
+Arco curto (poucos dias) inflando incerteza de excentricidade.
+• Check: simule A1/A2 grid e veja ∆RMS; peça ≥3 janelas separadas.
+
+
+4) Fotometria — como “paradoxo” vira poeira
+
+Seeing variável: Δm espúrio.
+• Check: normalize por FWHM e airmass; Δm real exige repetição em 2+ filtros/bandas.
+
+Filtro espectral: bandas com C₂/Na realçam “verde/ouro” e parecem novidade química.
+• Check: razão banda-contínuo; exige consistência em duas bandas independentes.
+
+Sky background mal estimado (Lua/airglow).
+• Check: anel de céu adaptativo; se Δm cai com anel maior, era fundo.
+
+
+5) Espectroscopia/Química — os “estranhos normais”
+
+Linhas fracas mascaradas pela poeira → “ausência” não é ausência.
+• Check: extração 1D + deblending Gauss múltiplo; limite de detecção explícito.
+
+Razão CO₂/H₂O alta interpretada como exótico quando é só camada refratária.
+• Check: modelo térmico simples (skin depth) + atraso de H₂O vs. CO₂.
+
+Metais voláteis (Ni sem Fe): seleção por temperatura; não precisa nave alienígena.
+• Check: T-excitação vs. abundância; compare com 2I/Borisov.
+
+
+6) Computação/Pipeline — onde o erro veste terno
+
+Threshold creep: afrouxar SNR em noite ruim, inflando PLPC.
+• Check: SNR dinâmico por noite (percentil 95 do ruído local).
+
+Leak de validação no classificador (dados correlatos em treino/teste).
+• Check: grouped split por noite/campo; monitore Brier e calibração.
+
+Overfit angular (aprende a orientação do mount, não a pluma).
+• Check: augmentation rotacional e teste cruzado por rotação.
+
+Falha de logging: sem blackcard = sem prova.
+• Check: rejeitar candidato sem hash + parâmetros.
+
+
+7) Segurança/Infra — riscos “ocultos” que ferram ciência
+
+Clock drift no observatório / PC → astrometria falsa.
+• Check: NTP/verificação GPS por frame-set.
+
+Exif/timestamp corrompido ao converter FITS → PNG.
+• Check: manter FITS mestre; PNG só pra visual.
+
+Corromper cabeçalhos WCS com reamostragem imprópria.
+• Check: reescrever WCS após rebin; verifique com 10 estrelas.
+
+
+8) Sociotécnico — o ruído humano
+
+Conflito embargado: dados temporariamente “sumidos” por revisão.
+• Check: buscar versões no MAST/IRSA/ADS; registrar dif de hash/ID.
+
+Interpretação entusiasmada (viés de confirmação).
+• Check: dupla checagem cega: um revisor só com blackcards, sem rótulo.
+
+
+
+---
+
+59∆≠ micro-checks (coláveis no teu runner)
+
+1. SNR adaptativo por percentil ruído
+
+
+2. Máscara TLE por FOV
+
+
+3. Veto de cosmic ray (não-persistente)
+
+
+4. Δθ vs. anti-solar com incerteza
+
+
+5. Gate PLPC exige repetição (≥2 frames)
+
+
+6. Δm normalizado por FWHM/airmass
+
+
+7. Flat-residual radial map
+
+
+8. PSF anisotropy check via estrelas
+
+
+9. Filtro banda-contínuo espectral
+
+
+10. Reprocess sem dithering (sanity)
+
+
+11. Cromaticidade (dif. filtro)
+
+
+12. WCS sanity (10 estrelas)
+
+
+13. Clock/NTP carimbo por frame
+
+
+14. Grouped split por noite/campo
+
+
+15. Brier score e calibração
+
+
+16. Augmentation rotacional
+
+
+17. Blackcards com hash/params
+
+
+18. ΔRMS órbita g vs. g+ng
+
+
+19. Grid A1/A2 e IC 3σ
+
+
+20. Gaia PM aplicado
+
+
+21. Arco mínimo 3 janelas
+
+
+22. Vetor vento solar (CME)
+
+
+23. Δθ ±36 h de CME
+
+
+24. Saturação/bleeding mask
+
+
+25. Bad-pixel map
+
+
+26. Hot-column veto
+
+
+27. Sky annulus adaptativo
+
+
+28. Moon separation check
+
+
+29. Airglow model
+
+
+30. Background tilt fit
+
+
+31. Star trailing metric
+
+
+32. Mount jitter metric
+
+
+33. Focus drift metric
+
+
+34. Compression artifact detect
+
+
+35. Reamostragem sinc-vs-bilinear
+
+
+36. PNG vs. FITS compare
+
+
+37. Outlier robust fit em θ(t)
+
+
+38. Trend monotônica de θ
+
+
+39. Periodicidade spurious (ACF)
+
+
+40. Roll/Precession fit
+
+
+41. Phase-angle correction
+
+
+42. Forward-scatter flag
+
+
+43. Fragment streak density
+
+
+44. Δm multi-filtro coerente
+
+
+45. Debris_score (ORDEM/Master)
+
+
+46. Nebulosidade (cloud proxy)
+
+
+47. Seeing forecast gating
+
+
+48. Satellite constellation density
+
+
+49. Campo rico (crowding index)
+
+
+50. PSF mismatch chi²
+
+
+51. Cosmic ray ratio
+
+
+52. Gradient RMS background
+
+
+53. Straylight flag
+
+
+54. Edge-of-chip flag
+
+
+55. Read-noise estimate
+
+
+56. Gain/offset sanity
+
+
+57. Bit-depth uniformity
+
+
+58. Q/C dashboard por noite
+
+
+59. Auditoria automática (fail-fast)
+
+
+
+
+---
+
+Três números que te protegem
+
+PLEC=1 só com repetição + SNR adaptativo + blackcard.
+
+PLPC=1 só com Δθ>3° (2 frames) OU Δm≥0.3 mag (2 frames).
+
+R_real < 10⁻² ⇒ badge “Sem risco de impacto”.
+
+
+Colando esses checks no teu fluxo, o “paradoxo bom” sobrevive e a besteira cai no chão. Isso limpa a rota pra sptruna ∆ⁿ de verdade — sem superstição, só ciência com espada afiada.
+
