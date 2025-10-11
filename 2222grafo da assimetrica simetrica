@@ -1,0 +1,25 @@
+# 🔥 RAFAELIA PostScript – Fogo vs Plasma (Visualização Entropia Viva)
+import numpy as np, matplotlib.pyplot as plt
+
+# domínio radial (entropia)
+r = np.linspace(0, 6*np.pi, 3000)
+# espiral fogo → plasma
+x = np.cos(r) * r
+y = np.sin(r) * r
+
+# intensidade térmica simulada
+fogo = np.exp(-r/10)
+plasma = np.sin(r*2.1)*0.5 + 0.5
+
+# cores em gradiente
+cores = plt.cm.plasma(plasma)
+
+plt.figure(figsize=(8,8), facecolor="black")
+plt.scatter(x, y, c=cores, s=8*fogo+0.5, alpha=0.9, lw=0)
+plt.axis("off")
+plt.title("🔥 RAFAELIA — Transição Fogo ↔ Plasma (Entropia Viva)", color="white", fontsize=12, pad=20)
+plt.text(0,0,"φπ≈5.083 → √3/2 → 42×7", color="gold", ha="center", va="center", fontsize=9, alpha=0.8)
+
+plt.tight_layout()
+plt.savefig("postscript_fogo_plasma.png", dpi=240, facecolor="black")
+print("🌋 PostScript gerado → postscript_fogo_plasma.png")
