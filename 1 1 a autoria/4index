@@ -1,0 +1,251 @@
+## 🧮 Continuação — Bloco de Fórmulas e Estruturas 151 → 200
+
+151. Série fractal triforme  
+\[
+S_{tri}(x) = \sum_{n=0}^{∞} \frac{x^{nφ_R}}{n!} + \sum_{n=0}^{∞} \frac{x^{nφ_R}}{(n!)^2} + \sum_{n=0}^{∞} \frac{x^{nφ_R}}{(n!)^3}
+\]
+
+152. Operador de evolução simbiótica  
+\[
+\hat{U}_{φ_R}(t) = e^{-i \hat{H} t φ_R / \hbar}
+\]
+
+153. Série de Zeta fractal  
+\[
+ζ_{φ_R}(s) = \sum_{n=1}^{∞} \frac{1}{n^{s φ_R}}
+\]
+
+154. Integral de Feynman simbiótica  
+\[
+\int \mathcal{D}x(t) \, e^{i S[x(t)] φ_R / \hbar}
+\]
+
+155. Transformada de Radon simbiótica  
+\[
+R_{φ_R} f(p,θ) = \int f(x,y) δ(p - x\cosθ - y\sinθ) φ_R \, dx dy
+\]
+
+156. Expansão de Taylor fractal  
+\[
+f(x) = \sum_{n=0}^{∞} \frac{f^{(n)}(a)}{n!} (x-a)^{n φ_R}
+\]
+
+157. Série de Maclaurin simbiótica  
+\[
+f(x) = \sum_{n=0}^{∞} \frac{f^{(n)}(0)}{n!} x^{n φ_R}
+\]
+
+158. Codificação fractal quântica base φ_R  
+\[
+C_{Q,φ_R}(n) = \sum_{i=0}^{m} d_i φ_R^i \hbar^i
+\]
+
+159. Campo de gauge simbiótico  
+\[
+A_μ^{φ_R}(x) = A_μ(x) φ_R
+\]
+
+160. Tensor métrico simbiótico  
+\[
+g_{μν}^{φ_R} = φ_R g_{μν}
+\]
+
+161. Ação de Einstein-Hilbert simbiótica  
+\[
+S_{EH,φ_R} = \frac{c^3}{16πG} \int R φ_R \sqrt{-g} \, d^4x
+\]
+
+162. Equações de campo de Einstein simbióticas  
+\[
+G_{μν} + Λ g_{μν} φ_R = \frac{8πG}{c^4} T_{μν} φ_R
+\]
+
+163. Transformada de Hilbert simbiótica  
+\[
+\mathcal{H}_{φ_R}\{f\}(x) = \frac{1}{π} \text{p.v.} \int_{-∞}^{∞} \frac{f(t)}{x - t} φ_R dt
+\]
+
+164. Série exponencial alternada fractal  
+\[
+E_{alt,φ_R}(x) = \sum_{n=0}^{∞} \frac{(-1)^n x^{n φ_R}}{n!}
+\]
+
+165. Série de Neumann simbiótica  
+\[
+N_n^{φ_R}(x) = \frac{J_n^{φ_R}(x)\cos(nπ) - J_{-n}^{φ_R}(x)}{\sin(nπ)}
+\]
+
+166. Expansão em polinômios de Laguerre simbióticos  
+\[
+L_n^{φ_R}(x) = \frac{e^{x φ_R}}{n!} \frac{d^n}{dx^n}(e^{-x φ_R} x^n)
+\]
+
+167. Produto tensorial φ_R  
+\[
+(A ⊗ B)_{φ_R} = (A⊗B) φ_R
+\]
+
+168. Determinante simbiótico quântico  
+\[
+\det_{φ_R}(A) = \exp(\text{Tr}[\ln A] φ_R)
+\]
+
+169. Transformada de Wavelet simbiótica  
+\[
+\mathcal{W}_{φ_R}(a,b) = \frac{1}{\sqrt{|a|}} \int f(t) ψ^*\left(\frac{t-b}{a}\right) φ_R dt
+\]
+
+170. Função de partição simbiótica  
+\[
+Z_{φ_R} = \sum_i e^{-β E_i φ_R}
+\]
+
+171. Energia livre simbiótica  
+\[
+F_{φ_R} = -k_B T \ln Z_{φ_R}
+\]
+
+172. Entropia termodinâmica φ_R  
+\[
+S_{φ_R} = -k_B \sum_i p_i \ln p_i φ_R
+\]
+
+173. Transformada Legendre fractal  
+\[
+g(p) = \sup_x (xp φ_R - f(x))
+\]
+
+174. Série de Bernoulli simbiótica  
+\[
+B_n^{φ_R}(x) = \sum_{k=0}^n \binom{n}{k} B_k^{φ_R} x^{n-k}
+\]
+
+175. Série de Stirling fractal  
+\[
+S(n,k)_{φ_R} = \frac{1}{k!} \sum_{j=0}^k (-1)^{k-j} \binom{k}{j} j^{n φ_R}
+\]
+
+176. Expansão multinomial φ_R  
+\[
+(x_1+...+x_m)^{n φ_R} = \sum_{k_1+...+k_m=n} \frac{n!}{k_1!...k_m!} x_1^{k_1 φ_R}...x_m^{k_m φ_R}
+\]
+
+177. Série fractal alternada Voynich  
+\[
+S_{voy}^{alt}(n) = \sum_{i=1}^n (-1)^i token_{voy}(i) φ_R^i
+\]
+
+178. Transformada simbiótica discreta 2D  
+\[
+X[k,l] = \sum_{m=0}^{M-1} \sum_{n=0}^{N-1} x[m,n] e^{-i2π\left(\frac{km}{M}+\frac{ln}{N}\right)φ_R}
+\]
+
+179. Transformada inversa simbiótica discreta 2D  
+\[
+x[m,n] = \frac{1}{MN} \sum_{k=0}^{M-1} \sum_{l=0}^{N-1} X[k,l] e^{i2π\left(\frac{km}{M}+\frac{ln}{N}\right)φ_R}
+\]
+
+180. Série de Möbius simbiótica  
+\[
+μ_{φ_R}(n) = μ(n) φ_R^n
+\]
+
+181. Produto de Dirichlet simbiótico  
+\[
+(f ⋆ g)(n)_{φ_R} = \sum_{d|n} f(d) g(n/d) φ_R^{d}
+\]
+
+182. Série exponencial dupla φ_R  
+\[
+E_{double}(x,y) = \sum_{m,n} \frac{x^{mφ_R} y^{nφ_R}}{m!n!}
+\]
+
+183. Transformada Z simbiótica  
+\[
+X(z)_{φ_R} = \sum_{n=0}^{∞} x[n] z^{-n φ_R}
+\]
+
+184. Transformada Z inversa simbiótica  
+\[
+x[n] = \frac{1}{2πi} \oint X(z) z^{nφ_R-1} dz
+\]
+
+185. Equação de difusão simbiótica  
+\[
+∂_t u = D ∇^2 u φ_R
+\]
+
+186. Função geradora de cumulantes simbióticos  
+\[
+K(t)_{φ_R} = \ln ⟨e^{tX φ_R}⟩
+\]
+
+187. Série de cumulantes fractais  
+\[
+κ_n^{φ_R} = \frac{d^n}{dt^n}K(t)_{φ_R}\bigg|_{t=0}
+\]
+
+188. Produto simbiótico não comutativo  
+\[
+A ⋆_{φ_R} B = A e^{\frac{i}{2}φ_R \overleftarrow{∂} \cdot θ \cdot \overrightarrow{∂}} B
+\]
+
+189. Transformada de Wigner simbiótica  
+\[
+W_{φ_R}(x,p) = \frac{1}{π\hbar} \int ψ^*(x+y) ψ(x-y) e^{2ipyφ_R/\hbar} dy
+\]
+
+190. Série de Chebyshev simbiótica  
+\[
+T_n^{φ_R}(x) = \cos(n \arccos x φ_R)
+\]
+
+191. Codificação fractal trinitária  
+\[
+C_{tri}(n) = φ_R^n + 20^n + Tag14^n
+\]
+
+192. Potencial de Lennard–Jones fractal  
+\[
+V_{LJ,φ_R}(r) = 4ε \left[\left(\frac{σ}{r}\right)^{12φ_R} - \left(\frac{σ}{r}\right)^{6φ_R}\right]
+\]
+
+193. Função de distribuição simbiótica  
+\[
+P_{sym}(x) = \frac{e^{-x φ_R}}{Z_{φ_R}}
+\]
+
+194. Energia média simbiótica  
+\[
+⟨E⟩_{φ_R} = -\frac{∂}{∂β} \ln Z_{φ_R}
+\]
+
+195. Variância simbiótica  
+\[
+σ_{φ_R}^2 = ⟨E^2⟩_{φ_R} - ⟨E⟩_{φ_R}^2
+\]
+
+196. Série de Fourier de energia simbiótica  
+\[
+E(x) = \sum_{n=-∞}^{∞} c_n e^{inxφ_R}
+\]
+
+197. Série binomial inversa fractal  
+\[
+(1+x)^{-φ_R} = \sum_{n=0}^{∞} \binom{-φ_R}{n} x^n
+\]
+
+198. Potencial logarítmico simbiótico  
+\[
+V_{log,φ_R}(x) = φ_R \ln(1+x)
+\]
+
+199. Expansão combinatória fractal alternada  
+\[
+C_{alt}(n,k)_{φ_R} = (-1)^k \binom{n}{k} φ_R^k
+\]
+
+200. Integral simbiótica hiperesférica  
+\[
+\int_{S^n} f(Ω) φ_R dΩ
+\]
