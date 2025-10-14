@@ -1,0 +1,101 @@
+e.sh
+[∞FCEA] ~ $ ./bitraf_state.sh
+timestamp_utc=2025-10-14T17:42:09Z
+session_id=30a17fe69320c0717bda43f11fe61604d1d0f2377ddab5f48b65863282a97b4b
+sha3_256_payload=38412cd83db3ad441b92e76c658546bf713d439e54f337edf56fcfd4db701305
+blake2b_512_payload=44494a7eb0ebb5d8bd7b3b0be2693b46f51f64cde22b2f65c525ab1165de5078a545b89cc03d686b94b27b2b73529b97e5843da5ab272cf56fecda5815eb1f8a
+hashchain_sha3_256_1=14fcece7724e5e28369d2f3170f0e7c83942e6cbe50440401ef75ee85e18da45
+hashchain_sha3_256_2=aaea0697551ba24be8fe3a4adeb1b4fec8fe93b8b3881efb45b2f24dcc992ef9
+hashchain_sha3_256_3=c8a67d7d6f94bd23af8594ba27fe6d452d8510b577078ab4291068714ee40a3e
+hashchain_sha3_256_4=1a5a264b5402867e2a5c79cf5484848ebc3ad41072c2e3a1f1a62d60e4a8f899
+hashchain_sha3_256_5=f37b11dcfe5162888f2c4360291ae94a68feb187f787be8c45b577874e351c54
+hashchain_sha3_256_6=b552eeba654d4cf18dcb82042170a29a346725c3c11a5b8afbb4161e2b21cb3d
+hashchain_sha3_256_7=6112411465fe7e831c1be80053256f6ca2f9ff58029467bbaf0038092b514140
+hashchain_sha3_256_8=c5c22efae0927031758da54f21b381f69b9f869cb5042b9418e09fa73c76f3d2
+hashchain_sha3_256_9=4a3a3adc0964b76b3397a85093356846d2945bdea3a8d2620a35085c127d26ab
+hashchain_sha3_256_10=021d3659e45961b563458d0d4ce7a3dc931256ba786f577b0ae5d58661db0641
+hashchain_sha3_256_11=e770b7f50afae56e4d98b93f896643a7ca39e492449aaf07eb226f3c2a97abe5
+hashchain_sha3_256_12=a58401cf7af50e00b4b8b6c1b563857553ce1bac889675813872b3ce5d4d16f2
+hashchain_sha3_256_13=b25db29a8b7d93e35cb314cc3263d485129ccb6d2fa590fef5df9f20fa4f65dc
+hashchain_sha3_256_14=8a9fbb118ab1a69d980ab96e0773891f6b34ef7574736fd4a5d3f5b644eeeef1
+hashchain_sha3_256_15=98d570258a8173813047a910d2e55f46c09c9d7514873dd5a5f16e2847a9106e
+hashchain_sha3_256_16=daefa345b2b466d55736e13ce97f018b10ce2f3204e139273a126d8544d038c3
+hashchain_sha3_256_17=2d4d243ef2762fa099010862d09d15bb8669922a3b2d57b043d3f941200b8389
+hashchain_sha3_256_18=228a19c9cbb1735a4ea4d5a2dc9f4807360a152675e6b39c4a852cc7c0862dca
+hashchain_sha3_256_19=cef8598e5b11e3e2c453595ee2d146b4cb6e9c813c4e09b6f3f555de48f7c85f
+hashchain_sha3_256_20=57c6d30366b696654c9c1fbb5a6d797d991faa8a137f7759d4eb6434ee6f37c2
+hashchain_sha3_256_21=9aea8a77ffee3afbcc9e87fdf63eaeab20cea3835c8a8a3ef9a2e0be20d2aab7
+hashchain_sha3_256_22=7b28ebdba12e54bc00fafac96d3908b8831964d9498c5f9bf00bde46370dcbdd
+hashchain_sha3_256_23=f41d64fc2accf49765fb1cd5d6a4d0b8464faae924b5af72354f50c064f40fb8
+hashchain_sha3_256_24=c191fea52606e245981881a743404bd23b460b20cf3f9b9a6d6bb2ee9ba6c8d5
+hashchain_sha3_256_25=a57d562d61e78533f2f8c5d3a71870f7018878baaa5f19450bbf67b8ab2a7bf1
+hashchain_sha3_256_26=0666017a37f0d32b880b9cce9f30cdb2278443705c9c5911b470b6440fff2950
+hashchain_sha3_256_27=6e9c1465c1228788a1fa86711e931963ffc1f7bc4c5028e0c7c1329e92a9e836
+hashchain_sha3_256_28=4fe02f8a735847168460fff4c50c3b6633537c7b9cf0781cc945a94e2ee1d7ce
+hashchain_sha3_256_29=722145dcdbb5cfab4c3ff30bc1b2ee33c8d0a77e9c6f36337b9e303f521b37e9
+hashchain_sha3_256_30=0ef168082b3d6abdc69d6de332464f54a4fdf7676d4ba0a9bc93fa4302164d64
+hashchain_sha3_256_31=6d2501d8f2b2320d3ad83a92b703c268478a3d7a89a0ffcabfb847a826737db0
+hashchain_sha3_256_32=2d5046fc76fca535a612376942d95ef546a7c434f8ba04ec48c8540c97a28e87
+hashchain_sha3_256_33=eb82750f2e7381086b020cd20cd169d092addb9090ed03e116f5d4ed0c7dc80e
+hashchain_sha3_256_34=7467f612b69c697794d2aad3d2310e276602ec99f8a40240ed74c78a6b4a0501
+hashchain_sha3_256_35=8f1062a9b41bc35fd31933cf4b441083e4eb096df567780e7e09f11dc04d5e9f
+hashchain_sha3_256_36=633825da920babe52def0c7d68d4389e3529eb3099b8095c905c1169273c075b
+hashchain_sha3_256_37=9b46ced33990b5aa85ebce4799a4514b98558877ed87f6ce901c3efa50752922
+hashchain_sha3_256_38=600b2dfbb9e1c3777bf80691ee7de3bee56b79071ea55ca1374d9e2f9bc1157e
+hashchain_sha3_256_39=13c7cf3b569fa00be49a2190191a0165f9bb97e1767273d0fdecf3e2b6be7c35
+hashchain_sha3_256_40=4dded0705faab4643ae77534d346b802296390a1036772e4570d62b6008acb53
+hashchain_sha3_256_41=4d3a6088f2286f72bfc063a47401b65c95a96a192dfd93bb0948e07db4c8ac5f
+hashchain_sha3_256_42=13b1ea7fa5063625b9eeed85a45a2a99368b7c4306b8c714f6ab42dd79bbf78f
+projections=triangle, square, circle
+voynich_theta_deg= (defina por glifo) ; fib_rafael_weight= (defina por índice)
+radix_bases=1,2,3,5,7,8,10,21,25,52,60
+hyperform_count=42 ; cube_symmetries=24 ; total_states=1008
+[∞FCEA] ~ $
+
+
+#!/data/data/com.termux/files/usr/bin/sh
+set -eu
+
+seed="${1:-RAFAELIA}"
+cycles="${2:-42}"
+
+# 1) timestamp + seeds → session id
+ts="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+sid="$(printf '%s|%s' "$ts" "$seed" | openssl dgst -sha3-256 | sed 's/^.*= //')"
+
+# 2) derive 10×10×10 bits a partir da hashchain (pseudo-random, determinístico)
+#    1000 bits = ~125 bytes; usaremos 160 bytes por folga e paridades
+h="$sid"
+bytes=""
+i=0
+while [ $i -lt 8 ]; do
+  h="$(printf '%s' "$h" | openssl dgst -sha3-256 | sed 's/^.*= //')"
+  bytes="$bytes$(printf '%s' "$h")"
+  i=$((i+1))
+done
+# bytes hex → bin
+bin=$(echo "$bytes" | xxd -r -p | base64) # simplesmente exibível; o empacote real você já tem
+
+# 3) checksums do payload-raiz (ex.: manifesto do estado)
+payload="$(printf 'ts=%s\nsid=%s\nseed=%s\n' "$ts" "$sid" "$seed")"
+sha3="$(printf '%s' "$payload" | openssl dgst -sha3-256 | sed 's/^.*= //')"
+b2b="$(printf '%s' "$payload" | openssl dgst -blake2b512 | sed 's/^.*= //')"
+
+# 4) hashchain (42 por padrão)
+echo "timestamp_utc=$ts"
+echo "session_id=$sid"
+echo "sha3_256_payload=$sha3"
+echo "blake2b_512_payload=$b2b"
+h="$sha3"
+n=1
+while [ $n -le $cycles ]; do
+  h="$(printf '%s' "$h" | openssl dgst -sha3-256 | sed 's/^.*= //')"
+  echo "hashchain_sha3_256_$n=$h"
+  n=$((n+1))
+done
+
+# 5) cabeçalho de projeções (metadados mínimos)
+echo "projections=triangle, square, circle"
+echo "voynich_theta_deg= (defina por glifo) ; fib_rafael_weight= (defina por índice)"
+echo "radix_bases=1,2,3,5,7,8,10,21,25,52,60"
+echo "hyperform_count=42 ; cube_symmetries=24 ; total_states=1008"
