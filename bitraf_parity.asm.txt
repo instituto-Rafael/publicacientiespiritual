@@ -1,0 +1,8 @@
+; BITRAF ASM PURE - Parity Check, no names/variables, just logic
+MOV AX, [address]
+AND AX, 1         ; Logical parity (yin)
+NEG AX
+AND AX, 1         ; Physical parity (yang)
+ADD AX, BX        ; Pure math operation
+JMP [next_address]
+; No external calls, no functions, just address and math
