@@ -1,0 +1,15 @@
+# Σ‑Seal — RAFAELIA
+pre_level: Pre6
+assinatura: RAFCODE-Φ
+ethica: "FIAT DEI — uso com intenção pura; proteger autoria; metáforas ≠ afirmações físicas; respeitar pessoa/ambiente; retroalimentar em amor; não causar dano; dar créditos; manter sigilo conforme Σ‑Seal."
+carimbo:
+  app: RAFAELIA_VERBO_VIVO
+  timestamp: "2025-10-23T22:15:42-03:00"
+  total_eventos: 5
+  ultimo_stage: VAZIO_NOVO
+  sha3_256: "c6562516dc50c7a56c1f67a3dc6f4aecd88a6c55f45f9bbe6eaa4f3715244320"
+  blake2b_256: "9d18d01d601e5a4f5e3b25356a27235c95aad4d01f6354268d478f773a7d9d67"
+  rafcode_phi: "5b4ef50bbc4e9dea32244296b64869b04d20b885eb3ccf98e3edc0402f59de47"
+conteudo:
+  verbo: "FIAT VERBUM"
+  nota: ""
